@@ -2,7 +2,7 @@
     <div class="flex relative">
         <div class="w-full">
             <div class="p-4 flex relative z-20">
-                <fa class="mr-4"  :class="color" :icon="['fas', icon]" size="2x" />
+                <fa class="mr-4" :class="color" :icon="['fas', icon]" size="2x" />
                 <div>
                     <h3 class="text-white/75">
                         <t :path="`${name}`" />
@@ -10,8 +10,8 @@
                     <p>
                         {{ formattedValue }}
                         <span v-if="max">
-                        / {{ formattedMax }}
-                    </span>
+                            / {{ formattedMax }}
+                        </span>
                     </p>
                 </div>
             </div>
@@ -56,7 +56,7 @@ export default defineComponent({
             if (!props.max) return 0;
 
             // Clamp to 100% width to avoid going outside of the div
-            // @see https://github.com/wisp-gg/frontend/issues/190
+            // @see https://github.com/physgun-com/frontend/issues/190
             return Math.min(100, props.value / props.max * 100);
         });
 

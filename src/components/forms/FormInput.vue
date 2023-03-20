@@ -5,53 +5,25 @@
         </label>
 
         <div class="flex">
-            <div v-if="prefix" class="flex items-center bg-primary-400 rounded-l text-white-opacity-75 p-4 border-r border-white/10">
+            <div v-if="prefix"
+                class="flex items-center bg-primary-400 rounded-l text-white-opacity-75 p-4 border-r border-white/10">
                 <t :path="prefix" />
             </div>
 
             <span class="flex-grow" v-tippy="tippy" v-if="permission" tabindex="0">
-                <input
-                    class="input"
-                    :class="[prefix ? '!rounded-l-none' : '', suffix ? '!rounded-r-none' : '']"
-
-                    v-model="input"
-
-                    :id="id"
-                    :type="type"
-                    :name="name"
-                    :placeholder="placeholder ? t(placeholder) : ''"
-                    :disabled="!hasPerms || inputDisabled"
-                    :readonly="readonly"
-                    :checked="checked"
-                    @blur="change"
-                    @input="emitUpdate"
-                    @keydown="emitKeyDown"
-                    @keyup="emitKeyUp"
-                >
+                <input class="input" :class="[prefix ? '!rounded-l-none' : '', suffix ? '!rounded-r-none' : '']"
+                    v-model="input" :id="id" :type="type" :name="name" :placeholder="placeholder ? t(placeholder) : ''"
+                    :disabled="!hasPerms || inputDisabled" :readonly="readonly" :checked="checked" @blur="change"
+                    @input="emitUpdate" @keydown="emitKeyDown" @keyup="emitKeyUp">
             </span>
 
-            <input
-                class="input"
-                :class="[prefix ? '!rounded-l-none' : '', suffix ? '!rounded-r-none' : '']"
+            <input class="input" :class="[prefix ? '!rounded-l-none' : '', suffix ? '!rounded-r-none' : '']" v-model="input"
+                :id="id" :type="type" :name="name" :placeholder="placeholder ? t(placeholder) : ''"
+                :disabled="inputDisabled" :readonly="readonly" @blur="blur" @change="change" @input="emitUpdate"
+                @keydown="emitKeyDown" @keyup="emitKeyUp" v-else>
 
-                v-model="input"
-
-                :id="id"
-                :type="type"
-                :name="name"
-                :placeholder="placeholder ? t(placeholder) : ''"
-                :disabled="inputDisabled"
-                :readonly="readonly"
-                @blur="blur"
-                @change="change"
-                @input="emitUpdate"
-                @keydown="emitKeyDown"
-                @keyup="emitKeyUp"
-
-                v-else
-            >
-
-            <div v-if="suffix" class="flex items-center bg-primary-400 rounded-r text-white-opacity-75 p-4 border-l border-white/10">
+            <div v-if="suffix"
+                class="flex items-center bg-primary-400 rounded-r text-white-opacity-75 p-4 border-l border-white/10">
                 <t :path="suffix" />
             </div>
 
@@ -213,7 +185,7 @@ export default defineComponent({
                  * Autofill on iOS triggers this event, so we need to check whether the value was changed
                  * and update it if so.
                  *
-                 * @see https://github.com/wisp-gg/frontend/issues/61
+                 * @see https://github.com/physgun-com/frontend/issues/61
                  */
                 const target = evt.target as HTMLInputElement;
                 if (input.value !== target.value) input.value = target.value;

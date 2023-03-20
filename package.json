@@ -1,5 +1,5 @@
 {
-  "name": "@wisp-gg/frontend",
+  "name": "@physgun-com/frontend",
   "version": "v0.0.0",
   "scripts": {
     "dev": "vite",

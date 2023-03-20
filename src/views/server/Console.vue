@@ -5,19 +5,12 @@
             <div class="text-accent-500 terminal-prompt">
                 $
             </div>
-            <v-input
-                class="flex-grow"
-                name=""
-                permission="control.command"
-                placeholder="server.console.type_a_command"
-                v-model:value="textInput"
-                @keydown="inputKeyDown"
-                no-margin
-                hide-label
-            />
+            <v-input class="flex-grow" name="" permission="control.command" placeholder="server.console.type_a_command"
+                v-model:value="textInput" @keydown="inputKeyDown" no-margin hide-label />
             <div class="flex flex-row items-center justify-center pr-2">
                 <upload-logs-button />
-                <v-button v-tippy="'server.console.console_popup'" class="p-4 hover:text-white" @click="server?.openConsolePopup()">
+                <v-button v-tippy="'server.console.console_popup'" class="p-4 hover:text-white"
+                    @click="server?.openConsolePopup()">
                     <fa :icon="['fas', 'external-link-square-alt']" size="lg" />
                 </v-button>
             </div>
@@ -26,34 +19,34 @@
 </template>
 
 <style>
-    .terminal {
-        padding: 1rem 1rem 0 1rem;
-    }
+.terminal {
+    padding: 1rem 1rem 0 1rem;
+}
 
-    .xterm {
-        flex-grow: 1;
-    }
+.xterm {
+    flex-grow: 1;
+}
 
-    .xterm-viewport {
-        border-radius: 5px 5px 0 0;
-    }
+.xterm-viewport {
+    border-radius: 5px 5px 0 0;
+}
 
-    .terminal-input {
-        background-color: #181818 !important;
-        border-radius: 0 0 5px 5px !important;
-    }
+.terminal-input {
+    background-color: #181818 !important;
+    border-radius: 0 0 5px 5px !important;
+}
 
-    .terminal-input input {
-        background-color: #181818 !important;
-    }
+.terminal-input input {
+    background-color: #181818 !important;
+}
 
-    .terminal-input input:focus {
-        background-color: #181818 !important;
-    }
+.terminal-input input:focus {
+    background-color: #181818 !important;
+}
 
-    .terminal-prompt {
-        padding: 1rem .5rem 1rem 1.5rem;
-    }
+.terminal-prompt {
+    padding: 1rem .5rem 1rem 1.5rem;
+}
 </style>
 
 <script lang="ts">
@@ -273,7 +266,7 @@ export default defineComponent({
             inputKeyDown: (e: KeyboardEvent) => {
                 // Although keyCode is deprecated, it seems that in certain cases the browser sends fancier key names
                 // that aren't fully documented? (e.g. Enter also has "Middle Enter" and "Numpad Enter", etc.)
-                // @see https://github.com/wisp-gg/frontend/issues/139
+                // @see https://github.com/physgun-com/frontend/issues/139
                 switch(e.keyCode) {
                     case 38: { // ArrowUp
                         e.preventDefault();
