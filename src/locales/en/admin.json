@@ -1,8 +1,7 @@
 {
   "index": {
     "instance_overview": "Instance Overview",
-    "current_version": "Welcome to WISP Panel! You are currently running on version {version}.",
-    "license_information": "License Information"
+    "current_version": "Welcome to Physgun Panel! You are currently running on version {version}."
   },
 
   "settings": {
@@ -56,7 +55,7 @@
       "sso_integration": "WHMCS SSO Integration",
       "whmcs_notice": "Please look at the guide on how to gather the credentials required to configure WHMCS SSO for your panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
 
-      "sso_enabled_footer": "Enables the WHMCS Single-Sign-On integration, allowing users to login to your WISP Panel with their WHMCS account. Required for all other fields to be configured",
+      "sso_enabled_footer": "Enables the WHMCS Single-Sign-On integration, allowing users to login to your Physgun Panel with their WHMCS account. Required for all other fields to be configured",
       "button_text_footer": "The login button text that is shown on the login page.",
       "url_footer": "The URL your whmcs installation is available at. e.g. https://mywhmcs.com/",
       "client_id_footer": "The WHMCS SSO API Client ID",

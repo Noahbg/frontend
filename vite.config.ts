@@ -6,6 +6,8 @@ import analyze from 'rollup-plugin-analyzer'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import viteSentry from 'vite-plugin-sentry'
 
+const userFolder = process.env.USERPROFILE || process.env.HOME || process.env.HOMEPATH;
+
 const config: UserConfig = {
     build: {
         assetsDir: 'panel',
@@ -93,8 +95,15 @@ const config: UserConfig = {
         }),
     ],
     server: {
-        host: '0.0.0.0',
-        https: true,
+        host: 'wisp.test',
+        hmr: {
+            host: 'wisp.test',
+        },
+        https: {
+            key: userFolder + '\\.config\\valet\\Certificates\\wisp.test.key',
+            cert: userFolder + '\\.config\\valet\\Certificates\\wisp.test.crt',
+        },
+        cors: false
     },
     define: {
         // vue-i18n legacy API somehow breaks the egg scripts page with multiple v-editors, but as we don't use this anyways
