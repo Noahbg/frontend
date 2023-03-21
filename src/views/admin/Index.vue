@@ -6,10 +6,6 @@
                     <code>{{ version }}</code>
                 </template>
             </i18n-t>
-
-            <can permission="license.read">
-                <license-info />
-            </can>
         </container>
     </div>
 </template>
@@ -22,10 +18,8 @@ ul li::after {
 
 <script lang="ts">
 import { computed, defineComponent } from 'vue';
-import LicenseInfo from './LicenseInfo.vue';
 
 export default defineComponent({
-    components: { LicenseInfo },
     setup() {
         return {
             version: computed(() => window.Wisp.Version || 'unknown'),

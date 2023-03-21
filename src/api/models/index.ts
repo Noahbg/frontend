@@ -9,7 +9,6 @@ export { Domain } from './Domain';
 export { Egg } from './Egg';
 export { EggVariable } from './EggVariable';
 export { File } from './File';
-export { License } from './License';
 export { Location } from './Location';
 export { Mod } from './Mod';
 export { Features } from './Features';
