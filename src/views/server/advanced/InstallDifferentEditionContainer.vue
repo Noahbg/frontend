@@ -1,11 +1,13 @@
 <template>
     <skeleton-context when="advanced@fetchVersions">
         <container title="server.advanced.install_different_edition">
-            <p class="flex-grow">
-                <t path="server.advanced.install_edition.description" />
-            </p>
+            <template #container-header-extra>
+                <div class="inline pl-2">
+                  <fa class="text-white/50 inline" v-tippy="'server.advanced.install_edition.description'" :icon="['fas', 'circle-info']" size="sm" fixed-width />
+                </div>
+            </template>
 
-            <v-form class="mt-3" service-id="advanced@installVersion" :on-success="onSuccess">
+            <v-form service-id="advanced@installVersion" :on-success="onSuccess">
                 <skeleton :content="16">
                     <v-select
                         name="edition"

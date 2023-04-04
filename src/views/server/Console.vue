@@ -44,9 +44,18 @@
     background-color: #181818 !important;
 }
 
-.terminal-prompt {
-    padding: 1rem .5rem 1rem 1.5rem;
-}
+    .terminal-prompt {
+        padding: 1rem .5rem 1rem 1.5rem;
+    }
+
+    .terminal-container{
+        /* this is important */
+        overflow: hidden;
+    }
+    .xterm .xterm-viewport {
+        /* see : https://github.com/xtermjs/xterm.js/issues/3564#issuecomment-1004417440 */
+        width: initial !important;
+    }
 </style>
 
 <script lang="ts">
@@ -151,7 +160,7 @@ export default defineComponent({
                     lastCols = cols;
                 }
             };
-            useWindowEvent('resize', debounce(resize, 100));
+            //useWindowEvent('resize', debounce(resize, 100));
             resize();
 
             let hooked = false;
