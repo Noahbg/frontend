@@ -34,25 +34,25 @@ const config: UserConfig = {
                     const index = id.search(prefix);
                     if (index !== -1) return id.substring(index + prefix.length).split('/').shift();
 
-                //     const prefix = '/src/views/';
-                //     const index = id.search(prefix);
-                //     if (index !== -1) {
-                //         const suffix = id.substring(index + prefix.length);
-                //         if (suffix.search('/') === -1) return defaultChunk; // We're not in a namespace
-                //
-                //         const namespace = suffix.split('/').shift();
-                //         if (namespace === 'errors') return defaultChunk;
-                //
-                //         // If the namespace is server, we want to have separate chunks for file manager (due to ace-editor),
-                //         // and console (due to xterm).
-                //         if (suffix.startsWith('server/files/')) return 'server-files';
-                //         else if (suffix.startsWith('server/Console.vue')) return 'server-console';
-                //
-                //         // Client index and account settings are part of the same namespace
-                //         if (suffix.startsWith('Index.vue') || suffix.startsWith('account/')) return 'client';
-                //
-                //         return namespace;
-                //     }
+                    //     const prefix = '/src/views/';
+                    //     const index = id.search(prefix);
+                    //     if (index !== -1) {
+                    //         const suffix = id.substring(index + prefix.length);
+                    //         if (suffix.search('/') === -1) return defaultChunk; // We're not in a namespace
+                    //
+                    //         const namespace = suffix.split('/').shift();
+                    //         if (namespace === 'errors') return defaultChunk;
+                    //
+                    //         // If the namespace is server, we want to have separate chunks for file manager (due to ace-editor),
+                    //         // and console (due to xterm).
+                    //         if (suffix.startsWith('server/files/')) return 'server-files';
+                    //         else if (suffix.startsWith('server/Console.vue')) return 'server-console';
+                    //
+                    //         // Client index and account settings are part of the same namespace
+                    //         if (suffix.startsWith('Index.vue') || suffix.startsWith('account/')) return 'client';
+                    //
+                    //         return namespace;
+                    //     }
 
                     return defaultChunk;
                 },
@@ -64,7 +64,7 @@ const config: UserConfig = {
         vueI18n({
             compositionOnly: true,
             include: ['admin', 'audits', 'client', 'components', 'daemon', 'generic', 'login', 'navigation', 'permissions', 'notifications', 'server']
-                        .map(a => path.resolve(`src/locales/*/${a}.json`)),
+                .map(a => path.resolve(`src/locales/*/${a}.json`)),
         }),
         tsconfigPaths({
             extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.vue'],
@@ -95,14 +95,6 @@ const config: UserConfig = {
         }),
     ],
     server: {
-        host: 'wisp.test',
-        hmr: {
-            host: 'wisp.test',
-        },
-        https: {
-            key: userFolder + '\\.config\\valet\\Certificates\\wisp.test.key',
-            cert: userFolder + '\\.config\\valet\\Certificates\\wisp.test.crt',
-        },
         cors: false
     },
     define: {
