@@ -10,7 +10,7 @@ export function enableSentry(app: App, router: Router) {
     // TODO: provide additional metadata, e.g. current version
     Sentry.init({
         app,
-        dsn: 'https://f6110e66e1d24661ade5d00d96245ddb@o323313.ingest.sentry.io/6201231',
+        dsn: 'https://5349164b6c7445038ff6cad0308d5bcc@sentry.physgun.com/7',
         integrations: [
             new BrowserTracing({
                 routingInstrumentation: Sentry.vueRouterInstrumentation(router),
