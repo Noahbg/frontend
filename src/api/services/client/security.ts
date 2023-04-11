@@ -35,7 +35,6 @@ class SecurityService {
         return RequestService.delete('/security/totp', { data })
             .then(Parser.parse)
             .then((res: User) => {
-                console.log(res);
 
                 dispatch('user/update', {
                     has2fa: res.has2fa,
