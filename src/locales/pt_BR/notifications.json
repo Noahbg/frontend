@@ -1,0 +1,46 @@
+{
+  "server": {
+    "backup": {
+      "created": "Criação do backup {name} concluída.",
+      "failed_to_create": "Falha na criação do backup {name}: {err}",
+      "deployed": "Concluída a implantação do backup {name}.",
+      "failed_to_deploy": "Falha na implementação do backup {name}."
+    },
+    "update": {
+      "updated": "Atualização concluída.",
+      "failed": "Falha ao atualizar o servidor."
+    },
+    "installed": "Instalação concluída.",
+    "version": {
+      "installed": "A instalação da versão {name} foi concluída.",
+      "failed": "Falha ao instalar a versão {name}."
+    },
+    "modpack": {
+      "installed": "A instalação do modpack {name} foi concluída.",
+      "failed": "Falha ao instalar o modpack {name}."
+    },
+    "fastdl": {
+      "synced": "O FastDL foi sincronizado.",
+      "failed": "Falha na sincronização do FastDL."
+    },
+    "move": {
+      "moved": "Movimentação concluída.",
+      "db_migration_failed": "Falha ao migrar o banco de dados {name}.",
+      "failed": "Transferência de servidor falhou.",
+      "failed_to_delete_archive": "Falha ao excluir arquivo de transferência de servidor para {name}.",
+      "failed_to_delete_created_server": "Falha ao excluir servidor criado em {name}.",
+      "failed_to_update_allocation": "Falha ao liberar alocação antiga em {name}.",
+      "failed_final_stage": "Falha no estágio final para a transferência de servidor (certifique-se de que o servidor antigo foi excluído de {name} e dbs moveu host se não falhou)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migração",
+      "finished_migrating_data": "Migração de dados de {fqdn} concluída.",
+      "exceeded_limits": "Migração falhou para {fqdn}: {message} Contate-nos para migração manual.",
+      "aborted_migration": "Migração abortada para {fqdn}: {message}",
+      "data_mismatch": "Falha na migração para {fqdn} devido à incompatibilidade de dados: {message}",
+      "failed_due_to_internal_error": "Falha na migração para {fqdn}: Algo deu errado internamente, por favor contate-nos através de um ticket de suporte."
+    }
+  }
+}

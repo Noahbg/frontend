@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Din servercontainer skal genopbygges. Dette bør kun tage et par sekunder, men kan tage et par minutter. Du behøver ikke at gøre noget andet, mens dette sker. Din server vil automatisk fortsætte med opstart, når denne proces er afsluttet.",
+    "rebuild_started": "{yellow}Genopbygger servercontainer...",
+    "rebuild_in_progress": "{yellow}Vent venligst, mens din server genopbygges.",
+    "rebuild_updating_config": "{yellow}Ny container bygget...",
+    "rebuild_complete": "{cyan}Færdiggjort genopbygningsprocessen for serveren. Serveren er nu ved at starte op.",
+    "logs_throttled": "{yellow}Din server sender for mange data for hurtigt! Automatisk spamdetektion udløst.",
+    "checking_size": "{cyan}Kontrollerer størrelsen af serverens datakatalog...",
+    "disk_usage": "{yellow}Diskforbrug: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Sikring af filtilladelser.",
+    "initializing_container": "{yellow}Containeren er ved at blive initialiseret...",
+    "running_preflight": "{yellow}Kører server preflight.",
+    "starting_container": "{green}Starter serverbeholder.",
+    "resource_limits_modified": "{warning}Din server har fået ændret nogle ressourcegrænser, og du skal muligvis genstarte for at anvende dem.",
+    "aborting_reboot": "{red}Afbryder automatisk genstart på grund af nedbrud inden for de sidste 60 sekunder.",
+    "crash_detected_rebooting": "{red}Serverprocessen er registreret som værende ved at gå ind i en nedbrudt tilstand; genstartes.",
+    "crash_detected": "{bgRed}---------- Registreret serverproces i en nedbrudt tilstand! ----------",
+    "exit_code": "{red}Afslut kode: {white}{exitCode}",
+    "out_of_memory": "{red}Ikke mere hukommelse: {white}{oomKilled}",
+    "error_response": "{red}Fejlsvar: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Server markeret som {bold}TÆNDT",
+      "off": "{cyan}Server markeret som {bold}SLUKKET",
+      "killed": "{cyan}Server markeret som {bold}DRÆBT",
+      "starting": "{cyan}Server markeret som {bold}STARTER",
+      "stopping": "{cyan}Server markeret som {bold}STOPPER"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Registreret igangværende kortændring, sætter Health Monitor på pause...",
+    "map_change_timeout": "{yellow}Kortændring tager over 3 minutter, antager health monitor kan genoptages...",
+    "map_change_finished": "{yellow}Kortændring afsluttet, genoptagelse af helbredsovervågning..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Der er opstået en fejl under forsøget på at læse logfilen!",
+    "preflight_file_parse": "Der opstod en fejl under behandlingen af {file} -- dette kan føre til problemer med at køre serveren.\n{message}",
+    "no_egg_configuration": "Der kunne ikke findes nogen server egg konfiguration; opstart afbrydes.",
+    "no_stop_configuration": "Der er ikke defineret nogen stopkonfiguration for dette egg.",
+    "fatal_start_error": "Der er opstået en fatal fejl ved start af denne server.",
+    "not_enough_disk_space": "Ikke nok diskplads! {current}M / {limit}M",
+    "disk_space_violation": "Server overskrider diskpladsgrænser, stopper processen! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Vi har nogle problemer med at oprette forbindelse til din server, vent venligst...",
+      "couldnt_validate_permissions": "Der var en fejl ved valideringen af de oplysninger, der er angivet for websocket. Opdater venligst siden.",
+      "no_permission": "Du har ikke tilladelse til at få adgang til websocket til denne server.",
+      "no_upload_permission": "Du har ikke tilladelse til at få adgang til upload-websocket'en for denne server.",
+      "invalid_namespace": "Serverens websocket blev ikke fundet på dæmonen, opdater venligst siden."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "Du har ikke adgang til denne funktion.",
+      "not_enough_disk_space": "Ikke nok diskplads! {current}M / {total} M",
+      "invalid_id": "Modtog en ugyldig værkstedsartikel.",
+      "internal_server_error": "Noget gik galt, da du forsøgte at hente værkstedsgenstanden, prøv igen senere.",
+      "invalid_http_code": "Modtog HTTP-kode {code} i forsøget på at hente værkstedsemnet.",
+      "no_results": "Kunne ikke finde nogen resultater for værkstedsartiklen.",
+      "invalid_json": "Der blev modtaget ugyldig JSON, da man forsøgte at hente værkstedsemnet.",
+      "failed_getting_collection": "Det er ikke muligt at hente samlingsemnerne fra det angivne værkstedsemne.",
+      "unable_to_resolve_file_size": "Filstørrelsen for værkstedsemnet kan ikke opgøres.",
+      "exceeds_download_size_limit": "Emnet overstiger den maksimale størrelse af indhold, der kan downloades, på {max_content_size} (elementets størrelse er {item_size})",
+      "unable_to_resolve_file_name": "Filnavnet for værkstedsemnet kan ikke opløses.",
+      "failed_to_download_workshop_item": "Det lykkedes ikke at downloade værkstedsemnet {title}.",
+      "failed_to_connect_to_steam": "Forbindelsen til steam-servere mislykkedes for at kunne hente download-URL'en for {title}",
+      "item_does_not_exist": "Elementet {title} synes ikke at eksistere.",
+      "failed_getting_additional_information": "Det mislykkedes at få yderligere oplysninger for {title} (ejer Steam-brugeren dette spil?)",
+      "item_already_exists": "Elementet {title} findes allerede."
+    }
+  }
+}

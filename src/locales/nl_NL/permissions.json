@@ -1,0 +1,618 @@
+{
+  "server": {
+    "support": {
+      "title": "Ondersteuning OP Toegang",
+      "description": "Rechten die verband houden met het verlenen van toegang tot deze server aan support op.",
+      "update": {
+        "title": "Update",
+        "description": "Schakel Ondersteuning OP Toegang voor deze server in het tabblad Ondersteuning."
+      }
+    },
+    "control": {
+      "title": "Controle",
+      "description": "Machtigingen die te maken hebben met de stroomstatus van de servers of de console.",
+      "console": {
+        "title": "Console",
+        "description": "Hiermee kan de gebruiker de console logs voor deze server bekijken."
+      },
+      "command": {
+        "title": "Opdrachten uitvoeren",
+        "description": "Staat de gebruiker toe om commando's naar de console te sturen. Als de gebruiker geen stop- of herstartrechten heeft, kan hij het stopcommando van de toepassing niet verzenden."
+      },
+      "start": {
+        "title": "Start",
+        "description": "Staat de gebruiker toe deze server te starten."
+      },
+      "stop": {
+        "title": "Stop",
+        "description": "Staat de gebruiker toe deze server te stoppen."
+      },
+      "restart": {
+        "title": "Herstart",
+        "description": "Staat de gebruiker toe deze server opnieuw op te starten."
+      }
+    },
+    "subuser": {
+      "title": "Subgebruiker",
+      "description": "Rechten waarmee gebruikers andere subgebruikers kunnen beheren die aan de server zijn toegewezen.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker een lijst"
+      },
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker machtigingen wijzigen die aan andere subgebruikers zijn toegewezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Staat de gebruiker toe extra subgebruikers op deze server aan te maken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Staat de gebruiker toe andere subgebruikers op deze server te verwijderen."
+      }
+    },
+    "allocation": {
+      "title": "Toewijzing",
+      "description": "Rechten die de gebruiker toelaten om alle toegewezen IP:Port's aan deze server te beheren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker alle toewijzingen bekijken die aan deze server zijn toegewezen. Gebruikers met toegang tot de server kunnen altijd de standaardtoewijzing bekijken via de pagina Details."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker de primaire toewijzing wijzigen."
+      }
+    },
+    "startup": {
+      "title": "Opstart Parameters",
+      "description": "Machtigingen die gebruikers in staat stellen de configuratie van de server te beheren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker het opstartcommando en de bijbehorende variabelen voor deze server bekijken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Stelt de gebruiker in staat om opstartvariabelen voor deze server te wijzigen."
+      }
+    },
+    "database": {
+      "title": "Database",
+      "description": "Rechten die gebruikers toestaan MySQL databases voor de server te beheren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker alle databases bekijken die met deze server zijn verbonden, inclusief de gebruikersnamen en wachtwoorden voor de databases."
+      },
+      "update": {
+        "title": "Wachtwoord resetten",
+        "description": "Hiermee kan de gebruiker de wachtwoorden voor databases opnieuw instellen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Stelt de gebruiker in staat extra databases voor deze server aan te maken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Staat de gebruiker toe de databases van deze server te verwijderen."
+      }
+    },
+    "file": {
+      "title": "Bestandsbeheerder",
+      "description": "Machtigingen waarmee gebruikers de op een server opgeslagen bestanden kunnen beheren via Bestandsbeheer of de SFTP-server.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Staat de gebruiker toe verbinding te maken met de SFTP server."
+      },
+      "list": {
+        "title": "Lijst",
+        "description": "Hiermee kan de gebruiker alle bestanden en mappen op deze server weergeven, maar de bestandsinhoud niet bekijken."
+      },
+      "read": {
+        "title": "Lees",
+        "description": "Stelt de gebruiker in staat de inhoud van bestaande bestanden te bekijken."
+      },
+      "write": {
+        "title": "Schrijf",
+        "description": "Hiermee kan de gebruiker de inhoud van bestaande bestanden voor deze server bijwerken."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Staat de gebruiker toe nieuwe bestanden voor deze server aan te maken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Staat de gebruiker toe bestanden van deze server te verwijderen in de bestandsmanager of SFTP."
+      },
+      "archive": {
+        "title": "Archief",
+        "description": "Laat de gebruiker bestanden en mappen comprimeren in de bestandsbeheerder."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Hiermee kan de gebruiker git acties gebruiken (bijv. Klonen, Pulling)."
+      },
+      "steam_workshop": {
+        "title": "Stoom werkplaats",
+        "description": "Staat de gebruiker toe de werkplaatsdownloader te gebruiken."
+      }
+    },
+    "schedule": {
+      "title": "Schema",
+      "description": "Rechten waarmee de gebruiker automatische taken kan aanmaken die periodiek op de server worden uitgevoerd.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker schema's oplijsten"
+      },
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker een agenda bewerken, inclusief alle taken in de agenda. Hiermee kan de gebruiker individuele taken verwijderen, maar niet het rooster zelf."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Hiermee kan de gebruiker een nieuw schema maken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Hiermee kan de gebruiker schema's van deze server verwijderen."
+      }
+    },
+    "backup": {
+      "title": "Backup",
+      "description": "Machtigingen waarmee de gebruiker back-ups van de bestanden van de server kan beheren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker alle back-ups voor deze server bekijken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker back-ups vergrendelen/deblokkeren om te voorkomen dat ze automatisch worden verwijderd om plaats te maken voor toekomstige back-ups."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Staat de gebruiker toe backups te maken voor deze server."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Staat de gebruiker toe een backup van deze server te verwijderen."
+      },
+      "deploy": {
+        "title": "Inzetten",
+        "description": "Staat de gebruiker toe een backup op deze server te implementeren."
+      },
+      "download": {
+        "title": "Download",
+        "description": "Staat de gebruiker toe een backup te downloaden die bij deze server hoort."
+      }
+    },
+    "details": {
+      "title": "Details",
+      "description": "Machtigingen waarmee de gebruiker de naam kan wijzigen die de server in het paneel identificeert.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker de details van deze server bekijken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Staat de gebruiker toe om de naam van de server te veranderen. Dit staat de gebruiker alleen toe om de naam van de server te veranderen in het paneel, niet in-game."
+      }
+    },
+    "audit": {
+      "title": "Auditlogboek",
+      "description": "Rechten die de gebruiker toelaten om alle acties die voor deze server gaande zijn te inspecteren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker de actielogboeken van deze server bekijken. Opmerking: Dit kan informatie bevatten die achter andere permissies vergrendeld kan zijn."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Rechten die de gebruiker toestaan de FastDL koppeling te bekijken of inhoud te synchroniseren met FastDL voor deze server.",
+      "read": {
+        "title": "Lees",
+        "description": "Stelt de gebruiker in staat de FastDL pagina voor deze server te zien."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Stelt de gebruiker in staat om FastDL inhoud van deze server te synchroniseren."
+      }
+    },
+    "scanner": {
+      "title": "Achterdeur Scanner",
+      "description": "Rechten die de gebruiker toestaan om de bestanden van de server te scannen op achterdeurtjes.",
+      "update": {
+        "title": "Update",
+        "description": "Staat de gebruiker toe de Backdoor Scanner voor deze server te gebruiken."
+      }
+    },
+    "mod": {
+      "title": "Mod Manager",
+      "description": "Machtigingen waarmee de gebruiker kan zien",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker de beschikbare one-click mods bekijken om op deze server te installeren."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Staat de gebruiker toe om één-klik mods te installeren op deze server."
+      }
+    },
+    "modpack": {
+      "title": "Modpack Manager",
+      "description": "Permissies die de gebruiker toestaan om Minecraft Modpacks op deze server te installeren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker zien welke modpacks beschikbaar zijn voor installatie op deze server."
+      },
+      "update": {
+        "title": "Installeer",
+        "description": "Staat de gebruiker toe om een modpack op deze server te installeren."
+      }
+    },
+    "plugin": {
+      "title": "Plugin Beheerder",
+      "description": "Rechten die de gebruiker toestaan om Minecraft Plugins te installeren op deze server.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker zien welke plugins beschikbaar zijn voor installatie op deze server."
+      },
+      "update": {
+        "title": "Installeer",
+        "description": "Staat de gebruiker toe een plugin op deze server te installeren."
+      }
+    },
+    "updater": {
+      "title": "Stoom Updater",
+      "description": "Rechten die de gebruiker toestaan om steamcmd gebaseerde servers te updaten.",
+      "update": {
+        "title": "Update",
+        "description": "Staat de gebruiker toe om de Steam Updater voor deze server te gebruiken."
+      }
+    },
+    "monitor": {
+      "title": "Gezondheidsmonitor",
+      "description": "Machtigingen die de gebruiker toestaan de gezondheidsmonitor voor deze server te beheren.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker de status van de gezondheidsmonitor van de server bekijken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker de status van de gezondheidsmonitor van de server wijzigen."
+      }
+    },
+    "reinstall": {
+      "title": "Installeer opnieuw",
+      "description": "Rechten die de gebruiker toestaan een herinstallatie voor deze server te starten.",
+      "update": {
+        "title": "Update",
+        "description": "Hiermee kan de gebruiker deze server opnieuw installeren."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licentie",
+      "description": "Machtigingen die het mogelijk maken de licentie-informatie van WISP-instanties te bekijken.",
+      "read": {
+        "title": "Lees",
+        "description": "Hiermee kan de gebruiker de Licentie-informatie op de overzichtspagina bekijken."
+      }
+    },
+    "settings": {
+      "title": "Instellingen",
+      "description": "Rechten waarmee beheerders de WISP-instance kunnen aanpassen.",
+      "update": {
+        "title": "Update",
+        "description": "Mogelijkheid om instantie-instellingen bij te werken."
+      }
+    },
+    "migrator": {
+      "title": "Migrator",
+      "description": "Toestemming om het migrator systeem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om migrators te lezen."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om migrators bij te werken."
+      }
+    },
+    "announcement": {
+      "title": "Aankondiging",
+      "description": "Toestemming om het aankondigingssysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om aankondigingen te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om aankondigingen te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om aankondigingen bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om aankondigingen te verwijderen."
+      }
+    },
+    "application_api": {
+      "title": "Application Api",
+      "description": "Toestemming om het applicatie api systeem te gebruiken.",
+      "read": {
+        "description": "Toestemming om applicatie apis te lezen.",
+        "title": "Lees"
+      },
+      "create": {
+        "description": "Toestemming om applicatie-api's te maken.",
+        "title": "Maak"
+      },
+      "update": {
+        "description": "Toestemming om applicatie apis bij te werken.",
+        "title": "Update"
+      },
+      "delete": {
+        "description": "Toestemming om applicatie apis te verwijderen.",
+        "title": "Delete"
+      }
+    },
+    "database_host": {
+      "title": "Databank Gastheer",
+      "description": "Toestemming om het database hostsysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om database hosts te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om database hosts aan te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om database hosts bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om database hosts te verwijderen."
+      }
+    },
+    "location": {
+      "title": "Locatie",
+      "description": "Toestemming om het locatiesysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om locaties te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om locaties te creëren."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om locaties bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om locaties te wissen."
+      }
+    },
+    "node": {
+      "description": "Toestemming om de node te gebruiken.",
+      "title": "Knooppunt",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming de nodes te lezen."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om de nodes bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om nodes te verwijderen."
+      }
+    },
+    "node_allocation": {
+      "title": "Toewijzing nodes",
+      "description": "Toestemming om het knooppunttoewijzingssysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om knooppunt-toewijzingen te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om knooppunt-toewijzingen te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om knooppunttoewijzingen bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om knooppunttoewijzingen te verwijderen."
+      }
+    },
+    "user": {
+      "title": "Gebruiker",
+      "description": "Toestemming om het gebruikerssysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om gebruikers te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om gebruikers aan te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om gebruikers bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om gebruikers te verwijderen."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Toestemming om het mod-systeem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om mods te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om mods te maken."
+      },
+      "update": {
+        "title": "Installeer",
+        "description": "Toestemming om mods te updaten."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om mods te verwijderen."
+      }
+    },
+    "nest": {
+      "title": "Nest",
+      "description": "Toestemming om het nestsysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om nesten te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om nesten te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om nesten bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om nesten te verwijderen."
+      }
+    },
+    "egg": {
+      "title": "Ei",
+      "description": "Toestemming om het ei systeem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om eieren te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Toestemming om eieren te maken."
+      },
+      "update": {
+        "title": "Update",
+        "description": "Toestemming om eieren bij te werken."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om eieren te verwijderen."
+      }
+    },
+    "egg_variable": {
+      "title": "Ei Variabele",
+      "description": "Toestemming om het eivariabele systeem te gebruiken.",
+      "read": {
+        "description": "Toestemming om ei-variabelen te lezen.",
+        "title": "Lees"
+      },
+      "create": {
+        "description": "Toestemming om ei-variabelen te creëren.",
+        "title": "Maak"
+      },
+      "update": {
+        "description": "Toestemming om eivariabelen bij te werken.",
+        "title": "Update"
+      },
+      "delete": {
+        "description": "Toestemming om ei-variabelen te wissen.",
+        "title": "Delete"
+      }
+    },
+    "server": {
+      "title": "Server",
+      "description": "Toestemming om het server systeem te gebruiken.",
+      "suspend": {
+        "title": "Opschorten",
+        "description": "Toestemming om servers op te schorten."
+      },
+      "toggle_backup": {
+        "title": "Back-up Toggle",
+        "description": "Toestemming om van backup server te wisselen."
+      },
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om servers te lezen."
+      },
+      "create": {
+        "description": "Toestemming om servers aan te maken.",
+        "title": "Maak"
+      },
+      "move": {
+        "title": "Verplaats",
+        "description": "Toestemming om servers te verplaatsen."
+      },
+      "reset_mods": {
+        "title": "Reset Mods",
+        "description": "Toestemming om mods servers te resetten."
+      },
+      "details_update": {
+        "title": "Details Bijwerken",
+        "description": "Toestemming voor details update servers."
+      },
+      "toggle_move": {
+        "title": "Toggle Verplaatsen",
+        "description": "Toestemming om van server te wisselen."
+      },
+      "toggle_update": {
+        "title": "Toggle Update",
+        "description": "Toestemming om te wisselen tussen updateservers."
+      },
+      "toggle_install": {
+        "title": "Toggle Install",
+        "description": "Toestemming om te wisselen tussen installatieservers."
+      },
+      "build_update": {
+        "title": "Build Update",
+        "description": "Toestemming om updateservers te bouwen."
+      },
+      "rebuild": {
+        "title": "Herbouwen",
+        "description": "Toestemming om servers te herbouwen."
+      },
+      "reinstall": {
+        "title": "Installeer  opnieuw.",
+        "description": "Toestemming om servers opnieuw te installeren."
+      },
+      "delete": {
+        "title": "Delete",
+        "description": "Toestemming om servers te verwijderen."
+      }
+    },
+    "server_database": {
+      "title": "Server Databank",
+      "description": "Toestemming om het server databasesysteem te gebruiken.",
+      "read": {
+        "title": "Lees",
+        "description": "Toestemming om server databases te lezen."
+      },
+      "create": {
+        "title": "Maak",
+        "description": "Permissie om server databases aan te maken."
+      },
+      "update": {
+        "title": "Bijwerken",
+        "description": "Toestemming om server databases bij te werken."
+      },
+      "delete": {
+        "title": "Verwijderen",
+        "description": "Toestemming om server databases te verwijderen."
+      }
+    }
+  }
+}

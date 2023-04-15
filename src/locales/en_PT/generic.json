@@ -1,0 +1,17 @@
+{
+  "server": {
+    "status": {
+      "online": "On deck"
+    }
+  },
+  "units": {
+    "bytes": "B",
+    "kilobytes": "KB",
+    "megabytes": "MB",
+    "gigabytes": "GB",
+    "terabytes": "TB"
+  },
+  "dates": {
+    "minute_abbreviation": "m"
+  }
+}

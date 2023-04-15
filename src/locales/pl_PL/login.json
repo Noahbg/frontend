@@ -1,0 +1,22 @@
+{
+  "sign_in": "Zaloguj się",
+  "or": "lub",
+  "sso": "Zaloguj się przy użyciu SSO",
+  "struggling_to_login": "Masz problem z zalogowaniem się?",
+  "reset_password": "Resetuj hasło",
+  "back": "Powrót do logowania",
+  "password_reset_email_sent": "Instrukcje resetowania hasła zostały wysłane na Twój adres e-mail, jeśli konto jest z nim powiązane.",
+  "passwords": {
+    "throttled": "Zostałeś tymczasowo zablokowany z powodu zbyt wielu prób zmiany hasła, proszę spróbować ponownie później.",
+    "token": "Nieprawidłowy token powiązany z żądaniem hasła, spróbuj poprosić o nowy link resetowania hasła.",
+    "user": "Nie można zresetować hasła dla nieprawidłowego użytkownika.",
+    "confirmation": "Podane hasło i potwierdzenie hasła nie są zgodne."
+  },
+  "two_factor_token": "Token dwuskładnikowy",
+  "invalid_user": "Podane dane uwierzytelniające nie są zgodne z danymi, które posiadamy. Jeśli nie jesteś pewien, czy Twoje hasło jest poprawne, spróbuj je zresetować.",
+  "sso_down": "Nie udało się skontaktować z serwerami w celu weryfikacji konta, proszę spróbować ponownie później.",
+  "sso_failed": "Coś poszło nie tak podczas próby weryfikacji konta, proszę spróbować ponownie później.",
+  "sso_invalid": "Poprzednia sesja wygasła, proszę spróbować ponownie.",
+  "sso_non_existing_account": "Nie można znaleźć powiązanego konta w panelu. Proszę użyć normalnego logowania i włączyć szybkie logowanie w ustawieniach konta.",
+  "sso_disabled_for_account": "To konto ma wyłączone szybkie logowanie. Zamiast tego proszę użyć normalnego logowania."
+}

@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Containerul serverului dvs. trebuie reconstruit. Acest lucru ar trebui să dureze doar câteva secunde, dar ar putea dura câteva minute. Nu trebuie să faceți nimic altceva în timp ce se întâmplă acest lucru. Serverul dvs. va continua automat cu pornirea odată ce acest proces este finalizat.",
+    "rebuild_started": "{yellow}Reconstituirea containerului server...",
+    "rebuild_in_progress": "{yellow}Vă rugăm să așteptați în timp ce serverul dumneavoastră este reconstruit.",
+    "rebuild_updating_config": "{yellow}Container nou construit, hamsteri în rotație...",
+    "rebuild_complete": "{cyan}S-a finalizat procesul de reconstrucție pentru server. Serverul pornește acum.",
+    "logs_throttled": "{yellow}Serverul dvs. trimite prea multe date prea repede! S-a declanșat detectarea automată a spam-ului.",
+    "checking_size": "{cyan}Verificarea dimensiunii directorului de date al serverului...",
+    "disk_usage": "{yellow}Utilizare disc: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Asigurarea permisiunilor pentru fișiere.",
+    "initializing_container": "{yellow}Containerul este în curs de inițializare...",
+    "running_preflight": "{yellow}Se execută preflight-ul serverului.",
+    "starting_container": "{green}Pornirea containerului server.",
+    "resource_limits_modified": "{warning}Serverului dvs. i-au fost modificate unele limite de resurse, este posibil să fie nevoie să reporniți pentru a le aplica.",
+    "aborting_reboot": "{red}Abandonarea repornirii automate din cauza unui accident în ultimele 60 de secunde.",
+    "crash_detected_rebooting": "{red}Procesul serverului a fost detectat ca intrând într-o stare de avarie; se repornește.",
+    "crash_detected": "{bgRed}---------- A detectat un proces server în stare de crash! ----------",
+    "exit_code": "{red}Cod de ieșire: {white}{exitCode}",
+    "out_of_memory": "{red}Memorie epuizată: {white}{oomKilled}",
+    "error_response": "{red}Răspuns de eroare: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Server marcat ca {bold}ON",
+      "off": "{cyan}Server marcat ca {bold}OFF",
+      "killed": "{cyan}Server marcat ca {bold}KILLED",
+      "starting": "{cyan}Server marcat ca {bold}STARTING",
+      "stopping": "{cyan}Server marcat ca {bold}STOPPING"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}A detectat o schimbare de hartă în curs de desfășurare, punând în pauză Health Monitor...",
+    "map_change_timeout": "{yellow}Schimbarea hărții durează peste 3 minute, presupunând că Health Monitor poate fi reluat...",
+    "map_change_finished": "{yellow}Schimbarea hărții s-a terminat, reluarea Monitorului de sănătate..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "S-a produs o eroare în timpul încercării de a citi fișierul jurnal!",
+    "preflight_file_parse": "A apărut o eroare în timpul procesării {file} -- acest lucru ar putea duce la probleme de funcționare a serverului.\n{message}",
+    "no_egg_configuration": "Nu a putut fi localizată nicio configurație de ouă de server; se întrerupe pornirea.",
+    "no_stop_configuration": "Pentru acest ou nu este definită nicio configurație de oprire.",
+    "fatal_start_error": "A fost întâlnită o eroare fatală la pornirea acestui server.",
+    "not_enough_disk_space": "Nu este suficient spațiu pe disc! {current}M / {limit}M",
+    "disk_space_violation": "Serverul încalcă limitele de spațiu pe disc, oprind procesul! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Avem probleme cu conectarea la serverul dvs., vă rugăm să așteptați...",
+      "couldnt_validate_permissions": "S-a produs o eroare la validarea acreditărilor furnizate pentru websocket. Vă rugăm să reîmprospătați pagina.",
+      "no_permission": "Nu aveți permisiunea de a accesa websocket-ul pentru acest server.",
+      "no_upload_permission": "Nu aveți permisiunea de a accesa websocket-ul de încărcare pentru acest server.",
+      "invalid_namespace": "Websocket-ul serverului nu a fost găsit pe daemon, vă rugăm să reîmprospătați pagina."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "Nu aveți acces la această funcție.",
+      "not_enough_disk_space": "Nu este suficient spațiu pe disc! {current}M / {total} M",
+      "invalid_id": "Ați primit un articol de atelier invalid.",
+      "internal_server_error": "Ceva nu a mers bine în timpul încercării de a prelua elementul de atelier, încercați din nou mai târziu.",
+      "invalid_http_code": "S-a primit codul HTTP {code} când s-a încercat preluarea elementului de atelier.",
+      "no_results": "Nu am găsit niciun rezultat pentru articolul atelier.",
+      "invalid_json": "S-a primit un JSON invalid atunci când s-a încercat să se aducă elementul atelierului.",
+      "failed_getting_collection": "Imposibil să se obțină elementele de colecție din elementul de atelier furnizat.",
+      "unable_to_resolve_file_size": "Imposibil de rezolvat dimensiunea fișierului pentru elementul atelier.",
+      "exceeds_download_size_limit": "Elementul depășește dimensiunea maximă a conținutului descărcabil din {max_content_size} (dimensiunea elementului este {item_size})",
+      "unable_to_resolve_file_name": "Nu s-a putut rezolva numele de fișier pentru elementul atelier.",
+      "failed_to_download_workshop_item": "Nu s-a reușit descărcarea elementului atelier {title}.",
+      "failed_to_connect_to_steam": "A eșuat conectarea la serverele steam pentru a putea prelua URL-ul de descărcare pentru {title}",
+      "item_does_not_exist": "Elementul {title} nu pare să existe.",
+      "failed_getting_additional_information": "Nu a reușit să obțină informații suplimentare pentru {title} (utilizatorul de steam deține acest joc?)",
+      "item_already_exists": "Elementul {title} există deja."
+    }
+  }
+}

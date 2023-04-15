@@ -1,0 +1,130 @@
+{
+  "server": {
+    "update": {
+      "title": "Server opdateret",
+      "message": "{user} opdaterede oplysningerne om denne server"
+    },
+    "subuser": {
+      "create": {
+        "title": "Underbruger oprettet",
+        "message": "{user} har oprettet en ny underbruger til {target}"
+      },
+      "update": {
+        "title": "Underbruger opdateret",
+        "message": "{user} opdaterede underbrugertilladelserne for {target}"
+      },
+      "delete": {
+        "title": "Adgang til underbruger tilbagekaldt",
+        "message": "{user} har slettet en underbruger, der tilhører {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Database oprettet",
+        "message": "{user} oprettede en ny database ved navn {name}"
+      },
+      "update": {
+        "title": "Database opdateret",
+        "message": "{user} regenererede databaseadgangskoden for {target}"
+      },
+      "delete": {
+        "title": "Database slettet",
+        "message": "{user} har slettet databasen {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Udførelse af tidsplan udløst",
+        "message": "{user} udløste {target} tidsplanen"
+      },
+      "create": {
+        "title": "Oprettet tidsplan",
+        "message": "{user} har oprettet en ny tidsplan ved navn {name}"
+      },
+      "update": {
+        "title": "Opdateret tidsplan",
+        "message": "{user} opdaterede {target} tidsplanen"
+      },
+      "delete": {
+        "title": "Tidsplan slettet",
+        "message": "{user} slettede {target} tidsplanen og de indeholdende opgaver"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Opstartsvariabler opdateret",
+        "message": "{user} opdaterede serverens opstartsvariabler"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Health Monitor slået til",
+        "message": "{user} skiftede Health Monitor"
+      },
+      "restart": {
+        "title": "Server genstart",
+        "message": "Servergenstart udløst af health monitor"
+      }
+    },
+    "crash": {
+      "title": "Servernedbrud",
+      "message": "Serveren er gået ned"
+    },
+    "backup": {
+      "create": {
+        "title": "Sikkerhedskopi oprettet",
+        "message": "{user} oprettede en sikkerhedskopi med navnet {name}"
+      },
+      "update": {
+        "title": "Backup opdateret",
+        "message": "{user} skiftede status til låst status for backup {name}"
+      },
+      "deploy": {
+        "title": "Sikkerhedskopiering implementeret på serveren",
+        "message": "{user} indsat backup {name} på serveren"
+      },
+      "download": {
+        "title": "Backup downloadet",
+        "message": "{user} hentede {name} backup"
+      },
+      "delete": {
+        "title": "Backup slettet",
+        "message": "{user} slettede {name} sikkerhedskopien"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Mod-status opdateret",
+        "message": "{user} skiftede status for installation af {name} mod"
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Underdomæne oprettet",
+        "message": "{user} oprettede underdomænet {subdomain}"
+      },
+      "delete": {
+        "title": "Underdomæne slettet",
+        "message": "{user} har slettet underdomænet {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack installeret",
+        "message": "{user} har installeret {modpack} modpack"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin installeret",
+        "message": "{user} installerede plugin {plugin}"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL synkroniseret",
+        "message": "{user} synkroniserede FastDL-indholdet for denne server"
+      }
+    }
+  }
+}

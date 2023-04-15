@@ -1,0 +1,30 @@
+{
+  "sign_in": "Se connecter",
+  "or": "ou",
+  "sso": "Connexion avec SSO",
+  "struggling_to_login": "Vous avez du mal à vous connectez ?",
+  "reset_password": "Réinitialiser le mot de passe",
+  "back": "Retour à la page de connexion",
+  "password_reset_email_sent": "Les instructions de réinitialisation du mot de passe ont été envoyées à votre adresse électronique si un compte y est associé.",
+  "passwords": {
+    "throttled": "Vous avez été temporairement bloqué en raison d'un trop grand nombre de tentatives de changement de mot de passe, veuillez réessayer plus tard.",
+    "token": "Jeton invalide associé à la demande de mot de passe, veuillez essayer de demander un nouveau lien de réinitialisation du mot de passe.",
+    "user": "Impossible de réinitialiser le mot de passe d'un utilisateur non valide.",
+    "confirmation": "Le mot de passe fourni et la confirmation du mot de passe ne correspondent pas."
+  },
+  "security_keys": {
+    "insert_and_touch": "Insérez votre clé de sécurité et appuyez dessus.",
+    "not_responding": "Votre clé de sécurité ne répond pas, ",
+    "not_responding_click_here": "cliquez ici.",
+    "unknown_key": "Vous avez utilisé une clé de sécurité inconnue, réessayez avec une autre clé ou utilisez TOTP si configuré. Sinon, contactez un administrateur du panel."
+  },
+  "two_factor_token": "Authentification à deux facteurs",
+  "use_different_method": "Utilisez une autre méthode",
+  "invalid_user": "Les informations d'identification fournies ne correspondent pas à celles que nous avons enregistrées. Si vous n'êtes pas sûr que votre mot de passe est correct, essayez de le réinitialiser.",
+  "invalid_mfa_session": "La session précédente a expiré, veuillez réessayer.",
+  "sso_down": "Impossible de contacter les serveurs pour vérifier le compte, veuillez réessayer plus tard.",
+  "sso_failed": "Un problème est survenu lors de la vérification du compte, veuillez réessayer plus tard.",
+  "sso_invalid": "La session précédente a expiré, veuillez réessayer.",
+  "sso_non_existing_account": "Impossible de trouver un compte associé sur le panneau. Veuillez utiliser la connexion normale et activer la connexion rapide dans les paramètres du compte.",
+  "sso_disabled_for_account": "La connexion rapide de ce compte est désactivée. Veuillez utiliser la connexion normale à la place."
+}

@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Din serverbehållare måste byggas om. Detta bör bara ta några sekunder, men kan ta några minuter. Du behöver inte göra något annat medan detta sker. Din server kommer automatiskt att fortsätta med uppstarten när den här processen är klar.",
+    "rebuild_started": "{yellow}Återuppbyggnad av serverbehållare...",
+    "rebuild_in_progress": "{yellow}Vänligen vänta medan servern byggs om.",
+    "rebuild_updating_config": "{yellow}Ny container byggd, roterande hamstrar...",
+    "rebuild_complete": "{cyan}Slutförd återuppbyggnadsprocess för servern. Servern startar nu upp.",
+    "logs_throttled": "{yellow}Din server skickar för mycket data för snabbt! Automatisk upptäckt av skräppost har utlösts.",
+    "checking_size": "{cyan}Kontrollerar storleken på serverns datakatalog...",
+    "disk_usage": "{yellow}Diskanvändning: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Säkerställer filbehörigheter.",
+    "initializing_container": "{yellow}Behållaren initieras...",
+    "running_preflight": "{yellow}Kör serverpreflight.",
+    "starting_container": "{green}Startar serverbehållare.",
+    "resource_limits_modified": "{warning}Resursgränserna på din server har ändrats och du kan behöva starta om för att tillämpa dem.",
+    "aborting_reboot": "{red}Avbryter automatisk omstart på grund av krasch inom de senaste 60 sekunderna.",
+    "crash_detected_rebooting": "{red}Serverprocessen har upptäckt att den har gått in i ett kraschat tillstånd och startar om.",
+    "crash_detected": "{bgRed}---------- Upptäckte en serverprocess i ett kraschat tillstånd! ----------",
+    "exit_code": "{red}Avslutningskod: {white}{exitCode}",
+    "out_of_memory": "{red}Inget minne kvar: {white}{oomKilled}",
+    "error_response": "{red}Felsvar: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Server markerad som {bold}PÅ",
+      "off": "{cyan}Server markerad som {bold}AV",
+      "killed": "{cyan}Server markerad som {bold}TVINGAT STOPPAD",
+      "starting": "{cyan}Server markerad som {bold}STARTANDE",
+      "stopping": "{cyan}Server markerad som {bold}STOPPANDE"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Upptäckte pågående kartändring, pausar hälsoövervakaren...",
+    "map_change_timeout": "{yellow}Kartändringen tar över 3 minuter, förutsätter att hälsoövervakaren kan återupptas...",
+    "map_change_finished": "{yellow}Kartändring klar, återupptar hälsoövervakaren..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Ett fel inträffade när du försökte läsa loggfilen!",
+    "preflight_file_parse": "Ett fel inträffade vid behandlingen av {file} - detta kan leda till problem med att köra servern.\n{message}",
+    "no_egg_configuration": "Ingen serveräggskonfiguration kunde hittas; avbryter uppstarten.",
+    "no_stop_configuration": "Ingen stoppkonfiguration har definierats för detta ägg.",
+    "fatal_start_error": "Ett allvarligt fel inträffade när den här servern startade.",
+    "not_enough_disk_space": "Inte tillräckligt med diskutrymme! {current}M / {limit}M",
+    "disk_space_violation": "Servern bryter mot gränserna för diskutrymme, stoppar processen! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Vi har problem med att ansluta till din server, vänligen vänta...",
+      "couldnt_validate_permissions": "Det var ett fel vid valideringen av de autentiseringsuppgifter som tillhandahölls för websockeln. Vänligen uppdatera sidan.",
+      "no_permission": "Du har inte behörighet att få tillgång till den här serverns webbsockel.",
+      "no_upload_permission": "Du har inte behörighet att komma åt uppladdningswebbsockeln för den här servern.",
+      "invalid_namespace": "Serverns webbsockel hittades inte på daemon, uppdatera sidan."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "Du har ingen tillgång till denna funktion.",
+      "not_enough_disk_space": "Inte tillräckligt med diskutrymme! {current}M / {total} M",
+      "invalid_id": "Du fick ett ogiltigt verkstadsobjekt.",
+      "internal_server_error": "Något gick fel när du försökte hämta verkstadsobjektet, försök igen senare.",
+      "invalid_http_code": "Mottagit HTTP-kod {code} när du försökte hämta verkstadsobjektet.",
+      "no_results": "Kunde inte hitta några resultat för verkstadsobjektet.",
+      "invalid_json": "Vi fick ogiltig JSON när vi försökte hämta verkstadsobjektet.",
+      "failed_getting_collection": "Det går inte att hämta samlingsobjekt från det tillhandahållna verkstadsobjektet.",
+      "unable_to_resolve_file_size": "Det går inte att fastställa filstorleken för verkstadsobjektet.",
+      "exceeds_download_size_limit": "Artikeln överskrider den maximala storleken på nedladdningsbart innehåll {max_content_size} (artikelstorlek är {item_size})",
+      "unable_to_resolve_file_name": "Filnamnet för verkstadsobjektet kunde inte hämtas.",
+      "failed_to_download_workshop_item": "Det gick inte att ladda ner verkstadsobjektet {title}.",
+      "failed_to_connect_to_steam": "Misslyckades med att ansluta till steamservrar för att kunna hämta nedladdningsadressen för {title}",
+      "item_does_not_exist": "Objektet {title} verkar inte existera.",
+      "failed_getting_additional_information": "Misslyckades med att hämta ytterligare information för {title} (äger Steam-användaren det här spelet?)",
+      "item_already_exists": "Objektet {title} finns redan."
+    }
+  }
+}

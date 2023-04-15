@@ -1,0 +1,56 @@
+{
+  "account": {
+    "update_identity": "Actualizarea identității",
+    "updated_identity": "Identitatea a fost actualizată!",
+    "update_email": "Actualizarea adresei de e-mail",
+    "updated_email": "Adresa de e-mail a fost actualizată!",
+    "update_password": "Actualizarea parolei",
+    "updated_password": "Parola a fost actualizată!",
+    "quick_login": "Conectare rapidă",
+    "quick_login_description": "Conectarea rapidă vă permite să vă conectați rapid la panou și la SFTP folosind contul dumneavoastră de facturare.",
+    "enable_quick_login": "Activați autentificarea rapidă",
+    "disable_quick_login": "Dezactivați autentificarea rapidă",
+    "failed_linking_sso": "Nu s-a reușit conectarea contului extern. Vă rugăm să încercați din nou mai târziu.",
+    "password_requirements": "Parolele trebuie să conțină cel puțin o majusculă, o minusculă și un caracter numeric și trebuie să aibă o lungime de cel puțin 8 caractere.",
+    "invalidate_sessions_footer": "Selectând această opțiune vei forța toate celelalte dispozitivele conectate la acest cont să se reautentifice, altfel sesiunile vor rămâne active.",
+    "invalid_confirmation_password": "Parola furnizată pentru contul dvs. a fost invalidă.",
+    "invalid_totp": "Tokenul 2FA furnizat nu era valid.",
+    "totp_already_in_use": "Ați activat deja 2FA.",
+    "navbar_position": {
+      "left": "Stânga",
+      "top": "Sus"
+    },
+    "2fa_must_be_enabled": "Administratorul panoului v-a cerut să activați 2FA pentru contul dvs. înainte de a putea utiliza panoul."
+  },
+  "security": {
+    "active_sessions": "Sesiuni active",
+    "sessions_disabled": "Gazda dvs. nu a activat capacitatea de a gestiona sesiunile de cont prin intermediul acestei interfețe.",
+    "credentials_list": "Lista de acreditare",
+    "2fa": "Autentificare cu 2 factori",
+    "2fa_modal_header": "Configurați 2FA pe contul dvs.",
+    "2fa_secret": "Codul secret",
+    "2fa_notice": "Utilizați aplicația 2FA de pe telefon pentru a face o fotografie a codului QR din stânga sau introduceți manual codul de sub acesta. După ce ați făcut acest lucru, generați un token și introduceți-l mai jos.",
+    "2fa_enabled": "Autentificarea cu 2 factori este activată pe acest cont și va fi necesară pentru a vă conecta la panou. Dacă doriți să dezactivați 2FA, introduceți pur și simplu un token valid mai jos și trimiteți formularul.",
+    "2fa_disabled": "Autentificarea cu 2 factori este dezactivată în contul dvs.! Ar trebui să activați 2FA pentru a adăuga un nivel suplimentar de protecție în contul dvs.",
+    "enable_2fa": "Activați autentificarea cu 2 factori",
+    "disable_2fa": "Dezactivați autentificarea cu 2 factori",
+    "create_credentials": "Creați o cheie API",
+    "memo_description": "Setați o descriere ușor de înțeles pentru această cheie API pentru a vă ajuta să o identificați mai târziu.",
+    "allowed_ips_description": "Dacă doriți să limitați această cheie API la anumite adrese IP, introduceți-le mai sus, câte una pe linie. Este permisă notarea CIDR pentru fiecare adresă IP. Lăsați spațiul gol pentru a permite orice adresă IP.",
+    "api_key_generated": "A fost generată o nouă cheie API client pentru contul dvs."
+  },
+  "security_keys": {
+    "title": "Chei de securitate",
+    "create_security_key": "Creare cheie de securitate",
+    "successfully_added": "Cheia de securitate a fost adăugată cu succes.",
+    "delete_key": "Șterge cheia de securitate",
+    "delete_key_notice": "Sunteți sigur că doriți să ștergeți cheia de securitate {name}?"
+  },
+  "support": {
+    "your_servers": "Serverele dvs.",
+    "enable_access": "Activează Asistență OP Acces",
+    "disable_access": "Dezactivați Accesul la Asistență OP",
+    "enable_access_submit": "Accesul Asistență OP a fost activat pentru server-ul dumneavoastră.",
+    "disable_access_submit": "Accesul OP a fost activat pentru serverul dumneavoastră."
+  }
+}

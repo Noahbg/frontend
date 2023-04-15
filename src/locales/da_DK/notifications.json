@@ -1,0 +1,46 @@
+{
+  "server": {
+    "backup": {
+      "created": "Færdig med at oprette sikkerhedskopien {name}.",
+      "failed_to_create": "Det lykkedes ikke at oprette sikkerhedskopien {name}: {err}",
+      "deployed": "Færdig med at implementere backupen {name}.",
+      "failed_to_deploy": "Det lykkedes ikke at implementere sikkerhedskopien {name}."
+    },
+    "update": {
+      "updated": "Færdig med at opdatere.",
+      "failed": "Det lykkedes ikke at opdatere serveren."
+    },
+    "installed": "Færdig med at installere.",
+    "version": {
+      "installed": "Færdig med at installere version {name}.",
+      "failed": "Det lykkedes ikke at installere versionen {name}."
+    },
+    "modpack": {
+      "installed": "Færdig med at installere modpack {name}.",
+      "failed": "Det lykkedes ikke at installere modpack {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL er blevet synkroniseret.",
+      "failed": "Synkronisering af FastDL mislykkedes."
+    },
+    "move": {
+      "moved": "Færdig med at flytte.",
+      "db_migration_failed": "Det lykkedes ikke at overføre databasen {name}.",
+      "failed": "Serveroverførsel mislykkedes.",
+      "failed_to_delete_archive": "Fejl ved sletning af serveroverførselsarkiv for {name}.",
+      "failed_to_delete_created_server": "Fejl ved sletning af oprettet server på {name}.",
+      "failed_to_update_allocation": "Det lykkedes ikke at frigøre gammel allokering på {name}.",
+      "failed_final_stage": "Sidste fase af serveroverførsel mislykkedes (sørg for, at den gamle server blev slettet fra {name}, og at databaserne flyttede vært, hvis det ikke mislykkedes)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrering",
+      "finished_migrating_data": "Overflytning af data fra {fqdn} er afsluttet.",
+      "exceeded_limits": "Mislykket migrering for {fqdn}: {message} Kontakt os for manuel migration.",
+      "aborted_migration": "Afbrudt migration for {fqdn}: {message}",
+      "data_mismatch": "Mislykket overførsel for {fqdn} på grund af data mismatch: {message}",
+      "failed_due_to_internal_error": "Mislykket migration for {fqdn}: Noget gik galt internt, kontakt os venligst via en support ticket."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "server": {
+    "backup": {
+      "created": "Slutförde skapandet av säkerhetskopian {name}.",
+      "failed_to_create": "Misslyckades med att skapa säkerhetskopian {name}: {err}",
+      "deployed": "Slutförde distributionen av säkerhetskopian {name}.",
+      "failed_to_deploy": "Misslyckades med att distribuera säkerhetskopian {name}."
+    },
+    "update": {
+      "updated": "Uppdateringen är avslutad.",
+      "failed": "Uppdateringen av servern misslyckades."
+    },
+    "installed": "Slutförd installation.",
+    "version": {
+      "installed": "Slutförd installation av version {name}.",
+      "failed": "Installation av versionen {name}misslyckades."
+    },
+    "fastdl": {
+      "synced": "FastDL har synkroniserats.",
+      "failed": "Synkroniseringen av FastDL misslyckades."
+    },
+    "move": {
+      "moved": "Slutförd flyttning.",
+      "db_migration_failed": "Migreringen av databasen misslyckades {name}.",
+      "failed": "Överföringen av servern misslyckades.",
+      "failed_to_delete_archive": "Det gick inte att ta bort serveröverföringsarkivet för {name}.",
+      "failed_to_delete_created_server": "Det gick inte att ta bort en skapad server på {name}.",
+      "failed_to_update_allocation": "Misslyckades med att frigöra gammal allokering på {name}.",
+      "failed_final_stage": "Slutsteget för serveröverföringen misslyckades (kontrollera att den gamla servern raderades från {name} och att databaser flyttades till en annan värd om det inte misslyckades)."
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrator",
+      "finished_migrating_data": "Avslutade migrering av data från {fqdn}.",
+      "exceeded_limits": "Misslyckad migrering för {fqdn}: {message} Kontakta oss för manuell migrering."
+    }
+  }
+}

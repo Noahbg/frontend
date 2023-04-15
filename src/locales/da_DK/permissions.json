@@ -1,0 +1,654 @@
+{
+  "server": {
+    "support": {
+      "title": "Support OP Adgang",
+      "description": "Tilladelser, der er relateret til at give supportmedarbejdere adgang til denne server.",
+      "update": {
+        "title": "Opdater",
+        "description": "Slå Support OP Adgang fra for denne server i fanen Support."
+      }
+    },
+    "control": {
+      "title": "Kontrol",
+      "description": "Tilladelser, der er relateret til serverens strømtilstand eller konsol.",
+      "console": {
+        "title": "Konsol",
+        "description": "Giver brugeren mulighed for at se konsollogfilerne for denne server."
+      },
+      "command": {
+        "title": "Kør kommandoer",
+        "description": "Giver brugeren mulighed for at sende kommandoer til konsollen. Hvis brugeren ikke har tilladelse til at stoppe eller genstarte, kan han/hun ikke sende programmets stopkommando."
+      },
+      "start": {
+        "title": "Start",
+        "description": "Giver brugeren mulighed for at starte denne server."
+      },
+      "stop": {
+        "title": "Stop",
+        "description": "Giver brugeren mulighed for at stoppe denne server."
+      },
+      "restart": {
+        "title": "Genstart",
+        "description": "Giver brugeren mulighed for at genstarte denne server."
+      }
+    },
+    "subuser": {
+      "title": "Underbruger",
+      "description": "Tilladelser, der giver brugere mulighed for at administrere andre underbrugere, der er tildelt serveren.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at liste og inspicere underbrugere, der er tildelt denne server."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at redigere tilladelser, der er tildelt andre underbrugere."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Giver brugeren mulighed for at oprette yderligere underbrugere på denne server."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Giver brugeren mulighed for at slette andre underbrugere på denne server."
+      }
+    },
+    "allocation": {
+      "title": "Tildeling",
+      "description": "Tilladelser, der giver brugeren mulighed for at administrere alle tildelte IP:porte til denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se alle tildelinger, der er tildelt denne server. Brugere med enhver adgang til serveren kan altid se standardtildelingen via siden Detaljer."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at ændre den primære tildeling."
+      }
+    },
+    "startup": {
+      "title": "Parametre for opstart",
+      "description": "Tilladelser, der giver brugere mulighed for at administrere serverens konfiguration.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at få vist startkommandoen og de tilhørende variabler for denne server."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at ændre opstartsvariabler for denne server."
+      }
+    },
+    "database": {
+      "title": "Database",
+      "description": "Tilladelser, der giver brugere mulighed for at administrere MySQL-databaser for serveren.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se alle databaser, der er tilknyttet denne server, herunder brugernavne og adgangskoder til databaserne."
+      },
+      "update": {
+        "title": "Nulstil adgangskode",
+        "description": "Giver brugeren mulighed for at nulstille adgangskoderne til databaser."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Giver brugeren mulighed for at oprette yderligere databaser for denne server."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Giver brugeren mulighed for at slette databaserne fra denne server."
+      }
+    },
+    "file": {
+      "title": "Filhåndtering",
+      "description": "Tilladelser, der giver brugerne mulighed for at administrere de filer, der er gemt på en server via Filhåndtering eller SFTP-serveren.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Giver brugeren mulighed for at oprette forbindelse til SFTP-serveren."
+      },
+      "list": {
+        "title": "Liste",
+        "description": "Giver brugeren mulighed for at få en liste over alle filer"
+      },
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se indholdet af eksisterende filer."
+      },
+      "write": {
+        "title": "Skriv",
+        "description": "Giver brugeren mulighed for at opdatere indholdet af eksisterende filer for denne server."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Giver brugeren mulighed for at oprette nye filer for denne server."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Giver brugeren mulighed for at slette filer fra denne server i filhåndteringsprogrammet eller SFTP."
+      },
+      "archive": {
+        "title": "Arkiv",
+        "description": "Giver brugeren mulighed for at komprimere filer"
+      },
+      "git": {
+        "title": "Git",
+        "description": "Giver brugeren mulighed for at bruge Git-handlinger (f.eks. Clone, Pull)."
+      },
+      "steam_workshop": {
+        "title": "Steam workshop",
+        "description": "Giver brugeren mulighed for at bruge værksteds-downloader."
+      }
+    },
+    "schedule": {
+      "title": "Tidsplan",
+      "description": "Tilladelser, der giver brugeren mulighed for at oprette automatiske opgaver, der kører regelmæssigt på serveren.",
+      "read": {
+        "title": "Læs",
+        "description": "Gør det muligt for brugeren at liste tidsplaner og få vist detaljer om en tidsplan, herunder alle de tildelte opgaver."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at redigere en tidsplan, herunder alle tidsplanens opgaver. Dette gør det muligt for brugeren at fjerne individuelle opgaver, men ikke at slette selve tidsplanen."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Giver brugeren mulighed for at oprette en ny tidsplan."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Giver brugeren mulighed for at slette tidsplaner fra denne server."
+      }
+    },
+    "backup": {
+      "title": "Backup",
+      "description": "Tilladelser, der giver brugeren mulighed for at administrere sikkerhedskopier af serverens filer.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se alle sikkerhedskopier for denne server."
+      },
+      "update": {
+        "title": "Opdatering",
+        "description": "Giver brugeren mulighed for at låse/oplåse sikkerhedskopier for at forhindre, at de automatisk slettes for at gøre plads til fremtidige sikkerhedskopier."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Giver brugeren mulighed for at oprette sikkerhedskopier for denne server."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Giver brugeren mulighed for at slette en sikkerhedskopi, der tilhører denne server."
+      },
+      "deploy": {
+        "title": "Udrulning",
+        "description": "Giver brugeren mulighed for at installere en sikkerhedskopi på denne server."
+      },
+      "download": {
+        "title": "Download",
+        "description": "Giver brugeren mulighed for at downloade en sikkerhedskopi, der tilhører denne server."
+      }
+    },
+    "details": {
+      "title": "Detaljer",
+      "description": "Tilladelser, der giver brugeren mulighed for at ændre det navn, der identificerer serveren i panelet.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se serveroplysningerne."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at ændre dette servernavn. Dette giver kun brugeren mulighed for at ændre navnet på serveren i panelet, ikke i spillet."
+      }
+    },
+    "audit": {
+      "title": "Revisionslog",
+      "description": "Tilladelser, der giver brugeren mulighed for at inspicere alle handlinger, der foregår på denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se denne serveraktionslogs. Bemærk: Dette kan indeholde oplysninger, som kan være låst bag andre tilladelser."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Tilladelser, der giver brugeren mulighed for at se FastDL-linket eller synkronisere indhold til FastDL for denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se FastDL-siden for denne server."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at synkronisere FastDL-indhold fra denne server."
+      }
+    },
+    "scanner": {
+      "title": "Bagdør Scanner",
+      "description": "Tilladelser, der giver brugeren mulighed for at scanne serverens filer for bagdøre.",
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at bruge bagdørsscanneren til denne server."
+      }
+    },
+    "subdomain": {
+      "title": "Underdomæne Manager",
+      "description": "Tilladelse til at bruge serverens domæne system.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse domæner."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette et domæne, der bruges til at oprette forbindelse til denne server."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette server domæner."
+      }
+    },
+    "mod": {
+      "title": "Mod Manager",
+      "description": "Tilladelser, der giver brugeren mulighed for at se og installere one-click mods til denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se tilgængelige one-click mods, der kan installeres på denne server."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at installere mods med et enkelt klik på denne server."
+      }
+    },
+    "modpack": {
+      "title": "Modpack Manager",
+      "description": "Tilladelser, der giver brugeren mulighed for at installere Minecraft Modpacks på denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se, hvilke modpacks der er tilgængelige til installation på denne server."
+      },
+      "update": {
+        "title": "Installer",
+        "description": "Giver brugeren mulighed for at installere en modpack på denne server."
+      }
+    },
+    "plugin": {
+      "title": "Plugin Manager",
+      "description": "Tilladelser, der giver brugeren mulighed for at installere Minecraft-plugins på denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se, hvilke plugins der er tilgængelige til installation på denne server."
+      },
+      "update": {
+        "title": "Installer",
+        "description": "Giver brugeren mulighed for at installere et plugin på denne server."
+      }
+    },
+    "updater": {
+      "title": "Steam Updater",
+      "description": "Tilladelser, der giver brugeren mulighed for at opdatere steamcmd-baserede servere.",
+      "update": {
+        "title": "Opdatering",
+        "description": "Giver brugeren mulighed for at bruge Steam Updater for denne server."
+      }
+    },
+    "monitor": {
+      "title": "Health Monitor",
+      "description": "Tilladelser, der giver brugeren mulighed for at bruge Health Monitor til at administrere denne server.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at se status for serverens Health Monitor."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at skifte serverens status for Health Monitor."
+      }
+    },
+    "reinstall": {
+      "title": "Geninstaller",
+      "description": "Tilladelser, der giver brugeren mulighed for at udløse en geninstallation for denne server.",
+      "update": {
+        "title": "Opdater",
+        "description": "Giver brugeren mulighed for at geninstallere denne server."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licens",
+      "description": "Tilladelser, der gør det muligt at se licensoplysningerne for WISP-instanserne.",
+      "read": {
+        "title": "Læs",
+        "description": "Giver brugeren mulighed for at få vist licensoplysningerne på oversigtssiden."
+      }
+    },
+    "settings": {
+      "title": "Indstillinger",
+      "description": "Tilladelser, som giver administratorer mulighed for at tilpasse WISP-instansen.",
+      "update": {
+        "title": "Opdater",
+        "description": "Mulighed for at opdatere instansindstillinger."
+      }
+    },
+    "migrator": {
+      "title": "Migrator",
+      "description": "Tilladelse til at bruge migrator-systemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse migratorer."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere migratorer."
+      }
+    },
+    "announcement": {
+      "title": "Meddelelse",
+      "description": "Tilladelse til at bruge meddelelsessystemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse meddelelser."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette meddelelser."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere meddelelser."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette meddelelser."
+      }
+    },
+    "application_api": {
+      "title": "Applikation Api",
+      "description": "Tilladelse til at bruge applikationsapisystemet.",
+      "read": {
+        "description": "Tilladelse til at læse applikationsapis.",
+        "title": "Læs"
+      },
+      "create": {
+        "description": "Tilladelse til at oprette applikationsapis.",
+        "title": "Opret"
+      },
+      "update": {
+        "description": "Tilladelse til at opdatere applikationsapis.",
+        "title": "Opdater"
+      },
+      "delete": {
+        "description": "Tilladelse til at slette applikationsapis.",
+        "title": "Slet"
+      }
+    },
+    "database_host": {
+      "title": "Database-vært",
+      "description": "Tilladelse til at bruge databasens værtssystem.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse databaseværter."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette databaseværter."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere databaseværter."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette databaseværter."
+      }
+    },
+    "location": {
+      "title": "Lokation",
+      "description": "Tilladelse til at bruge lokaliseringssystemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse lokationer."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette lokationer."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere lokationer."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette lokationer."
+      }
+    },
+    "node": {
+      "description": "Tilladelse til at bruge node systemet.",
+      "title": "Node",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse noder."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere noder."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette noder."
+      }
+    },
+    "node_allocation": {
+      "title": "Node Allokation",
+      "description": "Tilladelse til at bruge node allokation systemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse nodetildelinger."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette node allokationer."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere node allokationer."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette nodetildelinger."
+      }
+    },
+    "user": {
+      "title": "Bruger",
+      "description": "Tilladelse til at bruge brugersystemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse brugere."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette brugere."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere brugere."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette brugere."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Tilladelse til at bruge mod-systemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse mods."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette mods."
+      },
+      "update": {
+        "title": "Installer",
+        "description": "Tilladelse til at opdatere mods."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette mods."
+      }
+    },
+    "nest": {
+      "title": "Nest",
+      "description": "Tilladelse til at bruge nest systemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse nests."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette nests."
+      },
+      "update": {
+        "title": "Opdatering",
+        "description": "Tilladelse til at opdatere nests."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette nests."
+      }
+    },
+    "egg": {
+      "title": "Egg",
+      "description": "Tilladelse til at bruge egg systemet.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse eggs."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette eggs."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere eggs."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette eggs."
+      }
+    },
+    "egg_variable": {
+      "title": "Egg Variabel",
+      "description": "Tilladelse til at anvende egg variabel systemet.",
+      "read": {
+        "description": "Tilladelse til at læse egg variabler.",
+        "title": "Læs"
+      },
+      "create": {
+        "description": "Tilladelse til at oprette egg variabler.",
+        "title": "Opret"
+      },
+      "update": {
+        "description": "Tilladelse til at opdatere egg variabler.",
+        "title": "Opdater"
+      },
+      "delete": {
+        "description": "Tilladelse til at slette egg variabler.",
+        "title": "Slet"
+      }
+    },
+    "server": {
+      "title": "Server",
+      "description": "Tilladelse til at bruge serversystemet.",
+      "suspend": {
+        "title": "Suspender",
+        "description": "Tilladelse til at suspendere servere."
+      },
+      "toggle_backup": {
+        "title": "Skift sikkerhedskopi",
+        "description": "Tilladelse til at skifte mellem backupservere."
+      },
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse servere."
+      },
+      "create": {
+        "description": "Tilladelse til at oprette servere.",
+        "title": "Opret"
+      },
+      "move": {
+        "title": "Flyt",
+        "description": "Tilladelse til at flytte servere."
+      },
+      "reset_mods": {
+        "title": "Nulstil mods",
+        "description": "Tilladelse til at nulstille mods-servere."
+      },
+      "details_update": {
+        "title": "Opdatering af detaljer",
+        "description": "Tilladelse til at opdatere serveroplysninger."
+      },
+      "toggle_move": {
+        "title": "Skift bevægelse",
+        "description": "Tilladelse til at skifte mellem at flytte servere."
+      },
+      "toggle_update": {
+        "title": "Skift opdatering",
+        "description": "Tilladelse til at skifte mellem opdateringsservere."
+      },
+      "toggle_install": {
+        "title": "Skift installation",
+        "description": "Tilladelse til at skifte installationsservere."
+      },
+      "build_update": {
+        "title": "Opdater build",
+        "description": "Tilladelse til at opbygge opdateringsservere."
+      },
+      "rebuild": {
+        "title": "Ombygning",
+        "description": "Tilladelse til at genopbygge servere."
+      },
+      "reinstall": {
+        "title": "Geninstaller",
+        "description": "Tilladelse til at geninstallere servere."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette servere."
+      }
+    },
+    "server_database": {
+      "title": "Serverdatabase",
+      "description": "Tilladelse til at bruge serverens databasesystem.",
+      "read": {
+        "title": "Læs",
+        "description": "Tilladelse til at læse serverdatabaser."
+      },
+      "create": {
+        "title": "Opret",
+        "description": "Tilladelse til at oprette serverdatabaser."
+      },
+      "update": {
+        "title": "Opdater",
+        "description": "Tilladelse til at opdatere serverdatabaser."
+      },
+      "delete": {
+        "title": "Slet",
+        "description": "Tilladelse til at slette serverdatabaser."
+      }
+    }
+  },
+  "domain": {
+    "title": "Domæne",
+    "description": "Tilladelse til at bruge serverens domæne system.",
+    "read": {
+      "title": "Læs",
+      "description": "Tilladelse til at læse domæner."
+    },
+    "create": {
+      "title": "Opret",
+      "description": "Tilladelse til at oprette domæner."
+    },
+    "update": {
+      "title": "Opdater",
+      "description": "Tilladelse til at opdatere domæner og alle relaterede serverdomæner."
+    },
+    "delete": {
+      "title": "Slet",
+      "description": "Tilladelse til at slette domæner og alle relaterede serverdomæner."
+    }
+  }
+}

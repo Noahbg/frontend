@@ -1,0 +1,120 @@
+{
+  "server": {
+    "update": {
+      "title": "Server uppdaterad",
+      "message": "{user} uppdaterade serverns detaljer"
+    },
+    "subuser": {
+      "create": {
+        "title": "Underanvändare skapad",
+        "message": "{user} skapade en ny underanvändare för {target}"
+      },
+      "update": {
+        "title": "Underanvändare uppdaterad",
+        "message": "{user} uppdaterade underanvändarbehörigheterna för {target}"
+      },
+      "delete": {
+        "title": "Åtkomst för underanvändare återkallad",
+        "message": "{user} tog bort en underanvändare som tillhörde {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Databas skapad",
+        "message": "{user} skapade en ny databas med namnet {name}"
+      },
+      "update": {
+        "title": "Databas uppdaterad",
+        "message": "{user} ändrade databaslösenordet för {target}"
+      },
+      "delete": {
+        "title": "Databas raderad",
+        "message": "{user} raderade databasen: {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Schemakörning kallades",
+        "message": "{user} körde schemat {target}"
+      },
+      "create": {
+        "title": "Schema skapat",
+        "message": "{user} skapade ett nytt schema med namnet {name}"
+      },
+      "update": {
+        "title": "Schemat uppdaterades",
+        "message": "{user} uppdaterade schemat {target}"
+      },
+      "delete": {
+        "title": "Schemat raderades",
+        "message": "{user} tog bort schemat {target} och de uppgifter som ingår i det"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Startvariabler uppdaterade",
+        "message": "{user} uppdaterade serverns startvariabler"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Hälsoövervakarens status ändrades",
+        "message": "{user} ändrade hälsoövervakarens status"
+      },
+      "restart": {
+        "title": "Omstart av servern",
+        "message": "Omstart av servern utlöses av hälsokontrollen"
+      }
+    },
+    "crash": {
+      "title": "Servernkrash",
+      "message": "Servern har kraschat"
+    },
+    "backup": {
+      "create": {
+        "title": "Säkerhetskopia skapad",
+        "message": "{user} skapade en säkerhetskopia med namnet {name}"
+      },
+      "update": {
+        "title": "Säkerhetskopia uppdaterad",
+        "message": "{user} växlade låsstatusen för säkerhetskopian {name}"
+      },
+      "deploy": {
+        "title": "Servern återställdes från en säkerhetskopia",
+        "message": "{user} har återställt säkerhetskopian {name} på servern"
+      },
+      "download": {
+        "title": "En säkerhetskopia laddades ned",
+        "message": "{user} laddade ned säkerhetskopian {name}"
+      },
+      "delete": {
+        "title": "Säkerhetskopia raderad",
+        "message": "{user} raderade säkerhetskopian {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Mod-status uppdaterad",
+        "message": "{user} växlade statusen för installation av moddet {name}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack installerat",
+        "message": "{user} installerade modpacket {modpack}"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin installerat",
+        "message": "{user} installerade pluginet {plugin}"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL synkroniserat",
+        "message": "{user} synkroniserade FastDL-innehållet för den här servern."
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "weekdays": [
+    "Duminică",
+    "Luni",
+    "Marți",
+    "Miercuri",
+    "Joi",
+    "Vineri",
+    "Sâmbătă"
+  ],
+  "months": [
+    "Ianuarie",
+    "Februarie",
+    "Martie",
+    "Aprilie",
+    "Mai",
+    "Iunie",
+    "Iulie",
+    "August",
+    "Septembrie",
+    "Octombrie",
+    "Noiembrie",
+    "Decembrie"
+  ],
+  "formats": {
+    "L": "DD/MM/YYYY",
+    "LT": "h:mm A",
+    "LLLL": "dddd, MMMM D, YYYY h:mm A"
+  },
+  "relative_time": {
+    "future": "în {time}",
+    "past": "în urmă cu {time}",
+    "s": "acuma cateva secunde",
+    "m": "un minut",
+    "mm": "{time} minute",
+    "h": "o oră",
+    "hh": "{time} ore",
+    "d": "o zi",
+    "dd": "{time} zile",
+    "M": "o lună",
+    "MM": "{time} luni",
+    "y": "un an",
+    "yy": "{time} ani"
+  }
+}

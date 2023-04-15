@@ -1,0 +1,365 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Non migré",
+      "description": "Le node du serveur n'est pas encore configuré depuis la migration."
+    },
+    "invalid_license": {
+      "title": "Licence invalide",
+      "description": "Le node du serveur n'a pas de clé de licence valide associée - veuillez contacter le propriétaire du panel."
+    },
+    "moving": {
+      "title": "Déplacement du serveur",
+      "description": "Le serveur est en train d'être déplacé vers une nouvelle node."
+    },
+    "suspended": {
+      "title": "Serveur suspendu",
+      "description": "Le serveur est actuellement suspendu et ne peut être accédé tant qu'il n'est pas réactivé."
+    },
+    "install_failed": {
+      "title": "Échec de l'installation",
+      "description": "Le serveur a échoué le processus d'installation. Contactez le support."
+    },
+    "deploying_backup": {
+      "title": "Déploiement de la sauvegarde",
+      "description": "Le serveur déploie une sauvegarde."
+    },
+    "installing": {
+      "title": "Installation du serveur",
+      "description": "Le serveur est en cours d'installation."
+    },
+    "updating": {
+      "title": "Mise à jour du serveur",
+      "description": "Le serveur est en train de terminer le processus de mise à jour."
+    },
+    "backup_creating": {
+      "title": "Sauvegarde en cours",
+      "description": "Le serveur est en train de faire une sauvegarde."
+    }
+  },
+  "console": {
+    "type_a_command": "Tapez une commande...",
+    "console_popup": "Ouvrir la fenêtre pop-up de la console",
+    "upload_logs": "Envoyer les logs",
+    "eula_acceptance": "Acceptation des EULA",
+    "eula_notice": "En appuyant sur \"J'accepte\" ci-dessous, vous indiquez votre accord avec le EULA de Mojang."
+  },
+  "power": {
+    "start": "Démarrer",
+    "restart": "Redémarrer",
+    "stop": "Arrêter",
+    "kill": "Tuer"
+  },
+  "logs": {
+    "upload_logs": "Envoyer les logs",
+    "upload_logs_description": "Souhaitez-vous transférer vos logs afin qu'ils puissent être partagés ?",
+    "upload_complete": "Vos logs ont été envoyés à: {url}",
+    "upload_failed": "Un problème est survenu lors de la tentative de transfert des logs du serveur. Essayez à nouveau plus tard."
+  },
+  "details": {
+    "server_name": "Nom Serveur",
+    "server_limits": "Limites serveur",
+    "server_info": "Informations serveur",
+    "update_server_name": "Mise à jour du nom du serveur",
+    "name_description": "Nom du serveur visible dans le panel. Cela ne change pas le nom d'hôte réel du serveur, mais seulement la façon dont il est identifié dans le panel.",
+    "updated": "Les détails de votre serveur ont été mis à jour !"
+  },
+  "sftp": {
+    "sftp_details": "Details SFTP",
+    "alert_note": "Le mot de passe SFTP est le mot de passe que vous utilisez pour vous connecter au panneau. Assurez-vous que votre client est configuré pour utiliser SFTP et non FTP ou FTPS pour les connexions, il y a une différence entre les protocoles."
+  },
+  "audit_logs": {
+    "no_audits": "Aucun Journaux d'audit",
+    "no_audits_description": "On dirait que vous n'avez aucun journal d'audit. Effectuez certaines actions sur votre serveur pour générer et voir un aperçu de ce qui se passe sur votre serveur ici.",
+    "changes": {
+      "hidden_value": "Changé de {key} pour une nouvelle valeur cachée",
+      "from_to": "{key} modifié de {old} à {new}"
+    },
+    "device": {
+      "city": "Ville",
+      "country": "Pays",
+      "user_agent": "Agent utilisateur"
+    }
+  },
+  "files": {
+    "new_file": "Nouveau Fichier",
+    "new_folder": "Nouveau dossier",
+    "upload": "Envoyer",
+    "rename_or_move": "Renommer/Déplacer",
+    "copy": "Copier",
+    "compress": "Compresser",
+    "decompress": "Décompresser",
+    "download": "Télécharger",
+    "delete_files": "Supprimer les fichiers",
+    "delete_following": "Êtes-vous sûr de vouloir supprimer les fichiers suivants ? La suppression de fichiers est une opération irréversible qui ne peut pas être annulée à moins que vous n'ayez pris des sauvegardes.",
+    "upload_unavailable": "Le téléchargement de fichiers est actuellement indisponible, réessayez plus tard ou essayez d'utiliser SFTP.",
+    "upload_too_large": "Impossible de télécharger le fichier {name} car il est trop volumineux, veuillez utiliser SFTP à la place.",
+    "search": "Recherche",
+    "search_results": "Résultats de recherche pour « {query} »",
+    "too_many_results": "Nous avons trouvé trop de résultats pour le terme de recherche. Veuillez être plus précis pour pouvoir voir tous les résultats.",
+    "git_clone": "Dupliquer",
+    "get_access_token_here": "Obtenez votre jeton ici",
+    "cloned_repository": "Le dépôt {repository} a été cloné dans {path}.",
+    "git_pull": "Pull",
+    "git_pull_description": "Tirez les dernières modifications du référentiel dans le répertoire courant.",
+    "pulled_repository": "Le dépôt a été tiré et le dernier commit est {commit}.",
+    "git_auth_required": "Ce dépôt nécessite une authentification, veuillez fournir votre jeton d'accès personnel.",
+    "steam_workshop": "Steam Workshop",
+    "steam_workshop_finished": "L'élément de l'atelier a été téléchargé.",
+    "steam_workshop_finished_but_with_errors": "Terminé avec les erreurs suivantes :",
+    "steam_workshop_n_more": "Et plus d'éléments... | {n} éléments... | {n} autres éléments...",
+    "steam_workshop_state": {
+      "waiting": "en attente",
+      "downloading": "téléchargement",
+      "extracting": "extraction en cours",
+      "parsing": "analyse en cours",
+      "writing": "écriture de fichiers {files}"
+    },
+    "file_contents": "Contenu du fichier",
+    "save_file": "Enregistrer le fichier",
+    "return_to_file_manager": "Retour au gestionnaire de fichiers",
+    "file_saved": "Le fichier a été enregistré"
+  },
+  "databases": {
+    "title": "Bases de données",
+    "using_databases": "Utilisation des bases de données {count} / {limit}",
+    "create_new": "Créer une nouvelle base de données",
+    "delete_database": "Supprimer la base de données",
+    "delete_database_notice": "Êtes-vous sûr de vouloir supprimer la base de données {name} ? Il n'y a aucun retour en arrière, toutes les données seront immédiatement supprimées.",
+    "host_footer": "Ceci devrait être l'hôte sur lequel la base de données doit être déployée.",
+    "name_footer": "Ce devrait être le nom de la base de données que vous voulez utiliser.",
+    "connections_from_footer": "Cela devrait refléter l'adresse IP à partir de laquelle les connexions sont autorisées. Utilise la notation standard de MySQL. Si vous n'êtes pas sûr de laisser comme %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Vous avez déjà atteint le quota de bases de données autorisées pour ce serveur.",
+      "duplicate": "Il y a déjà une base de données créée en utilisant votre nom pour ce serveur.",
+      "no_suitable_host": "Aucun hôte de base de données n'a été trouvé répondant aux exigences de ce serveur."
+    }
+  },
+  "subusers": {
+    "title": "Gérer les utilisateurs",
+    "add_new_subuser": "Nouveau sous-utilisateur",
+    "update_subuser": "Modifier le sous-utilisateur",
+    "delete_subuser": "Supprimer le sous-utilisateur",
+    "delete_subuser_notice": "Cela supprimera immédiatement {name} ({email}) de ce serveur et révoquera toutes les autorisations.",
+    "configure_permissions": "Configurer les droits d'accès",
+    "subuser_added": "L'utilisateur a été ajouté avec succès en tant que sous-utilisateur pour ce serveur. Nous lui avons envoyé un e-mail avec les instructions sur la façon de terminer la configuration de son compte.",
+    "cant_add_owner": "Vous ne pouvez pas ajouter le propriétaire du serveur en tant que sous-utilisateur pour ce serveur.",
+    "subuser_already_exists": "Un utilisateur avec cette adresse e-mail est déjà assigné en tant que sous-utilisateur pour ce serveur."
+  },
+  "allocations": {
+    "available_allocations": "Allocations disponibles",
+    "help_title": "Aide sur l'allocation",
+    "help_description": "La liste à gauche inclut tous les adresses IP et ports disponibles qui sont ouverts à votre serveur pour les connexions entrantes.",
+    "primary": "Principal",
+    "make_primary": "Définir comme principale"
+  },
+  "startup": {
+    "startup_command": "Commande de démarrage",
+    "input_rules": "Règles d'entrée:",
+    "variable_saved": "Variable de démarrage enregistrée avec succès.",
+    "variable_not_editable_admin": "Cette variable n'est pas modifiable par l'utilisateur - mais comme vous êtes un administrateur, vous pouvez la mettre à jour dans la zone d'administration de ce serveur.",
+    "variable_not_editable": "Cette variable n'est pas modifiable par l'utilisateur."
+  },
+  "backups": {
+    "all_results": "Toutes les sauvegardes",
+    "create_new": "Créer sauvegarde",
+    "create_warning": "La création d'une nouvelle sauvegarde arrêtera le serveur s'il est déjà en cours d'exécution",
+    "created": "La sauvegarde {name} est en cours de création",
+    "already_creating": "Une sauvegarde est déjà en cours de création.",
+    "creation_would_exceed_limit": "La création de cette sauvegarde dépasserait la limite de sauvegarde du serveur.",
+    "cant_delete_locked": "Vous devez déverrouiller la sauvegarde avant d'essayer de la supprimer.",
+    "delete_backup": "Supprimer la sauvegarde",
+    "delete_backup_notice": "Êtes-vous sûr de vouloir supprimer la base de données {name} ? Il n'y a aucun retour en arrière, toutes les données seront immédiatement supprimées."
+  },
+  "schedules": {
+    "name": "Tâche automatique",
+    "create_new": "Créer une planification",
+    "create_task": "Créer une tâche",
+    "edit_schedule": "Modifier la planification",
+    "edit_task": "Modifier la tâche",
+    "delete_schedule": "Supprimer la plannification",
+    "delete_task": "Effacer Tâche",
+    "delete_notice": "Veuillez confirmer que vous souhaitez supprimer la planification \"{name}\" en répétant le nom dans l'entrée ci-dessous. Il s'agit d'une action irréversible qui ne peut pas être annulée.",
+    "delete_task_notice": "Voulez-vous vraiment supprimer cet utilisateur? Cette opération est irréversible.",
+    "enabled_footer": "Si la règle spécifiée est activée ou non.",
+    "last_run_at": "Dernière exécution le : ",
+    "next_run_at": "Prochaine exécution dans: ",
+    "next_run_at_time": "Prochaine exécution le {time}",
+    "invalid_cron": "Utilisez une expression cron valide pour afficher la description et la prochaine exécution.",
+    "runs_description": "Exécute {description}",
+    "pause_for_seconds": "Suspendre pendant {seconds} secondes",
+    "chain_interval_too_long": "La durée maximale de l'intervalle pour une tâche enchaînée est de 15 minutes.",
+    "states": {
+      "active": "Actif",
+      "disabled": "Désactivé",
+      "processing": "En cours de traitement"
+    },
+    "actions": {
+      "power": "Envoyer une action d'alimentation",
+      "command": "Envoyer la commande",
+      "backup": "Créer une sauvegarde"
+    },
+    "power_actions": {
+      "start": "Démarrer le serveur",
+      "restart": "Redémarrer le serveur",
+      "stop": "Arrêter le serveur",
+      "kill": "Arrêt forcé du serveur"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Activer/désactiver l'accès au support OP",
+    "update_server": "Mettre à jour le serveur",
+    "health_monitor": "Moniteur de santé",
+    "install_different_edition": "Installer une version differente",
+    "reinstall_server": "Réinstaller le serveur",
+    "support": {
+      "enable_access_alert": "Les accès du support ont été activé pour ce serveur.",
+      "disable_access_alert": "Les accès du support ont été desactivé pour ce serveur."
+    },
+    "updater": {
+      "description": "Ceci mettra à jour le serveur. Cela peut prendre un certain temps et verrouillera votre serveur pendant sa mise à jour. REMARQUE : Toute modification des fichiers de base du jeu pourrait être remplacée par la mise à jour.",
+      "no_script": "Cet egg n'a pas de script de mise à jour disponible.",
+      "beta": "Utiliser la branche bêta"
+    },
+    "monitor": {
+      "description": "Surveille votre serveur, et le redémarre automatiquement si elle est détectée sans réponse pendant 15 secondes. NOTE : certains jeux peuvent ne pas le prendre en charge et ne rien faire.",
+      "toggled": "Le moniteur de santé a été activé avec succès."
+    },
+    "install_edition": {
+      "description": "Ceci installera différentes versions de Minecraft de votre choix sur le serveur.",
+      "edition_footer": "L'édition du serveur.",
+      "version_footer": "La version de l'édition.",
+      "format_footer": "Tous les fichiers du serveur seront SUPPRIMES (certaines éditions peuvent ne pas fonctionner avec les fichiers existants)"
+    },
+    "reinstall": {
+      "description": "Cela réinstallera le serveur à l'état d'origine que vous avez reçu. Danger ! Cela écrasera toutes les données du serveur, alors assurez-vous de sauvegarder tous les fichiers importants."
+    }
+  },
+  "subdomains": {
+    "title": "Sous-domaines",
+    "create_new": "Créer un nouveau sous-domaine",
+    "name_footer": "Le nom de vanité du sous-domaine.",
+    "domain_footer": "Le domaine sur lequel le sous-domaine sera créé.",
+    "allocation_footer": "L'allocation vers laquelle le sous-domaine pointera.",
+    "delete_subdomain": "Supprimer le domaine",
+    "delete_subdomain_notice": "Êtes-vous sûr de vouloir supprimer le sous-domaine {name} ? Toutes les connexions utilisant ce sous-domaine ne fonctionneront plus."
+  },
+  "mods": {
+    "mod_installed": "Le mod {name} a bien été installé.",
+    "mod_uninstalled": "Le mod {name} a bien été désinstallé.",
+    "states": {
+      "install": "Installer",
+      "installing": "Installation",
+      "uninstalling": "Désinstallation",
+      "uninstall": "Désinstaller"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Scanner",
+    "show_non_high_severity": "Voulez-vous montrer les résultats qui ne sont pas de haute gravité ?",
+    "reliability_warning": "Cet outil suppose que vous avez des connaissances en Lua et sur le fonctionnement des backdoors. Les résultats trouvés ne sont pas garantis comme étant de véritables backdoors et nécessitent donc une vérification manuelle.",
+    "levels": {
+      "low": "Faible",
+      "medium": "Moyen",
+      "high": "Élevée",
+      "known_backdoor": "Backdoor connue"
+    },
+    "detection": "Détection",
+    "description": "Description",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "SteamID codé",
+        "description": "Utilisé souvent pour coder les autorisations uniquement pour une personne spécifique, ou simplement pour créditer son propre travail."
+      },
+      "arbitrary_code_execution": {
+        "title": "Exécution de code arbitraire",
+        "description": "Utilisé souvent pour exécuter du code malveillant, ou pour exécuter un DRM."
+      },
+      "external_networking": {
+        "title": "Réseau externe",
+        "description": "Utilisé pour obtenir des informations d'une source externe, comme la dernière version ou éventuellement une porte dérobée pour exécuter du code."
+      },
+      "set_usergroup": {
+        "title": "Définir le groupe d'utilisateur",
+        "description": "Utilisé pour définir le groupe d'utilisateurs du joueur dans le jeu à un rang spécifique."
+      },
+      "_g_access": {
+        "title": "Accès _G",
+        "description": "Peut être utilisé pour obtenir n'importe quelle variable globale, souvent utilisée pour masquer une fonction appélé."
+      },
+      "getfenv": {
+        "title": "Usage de getfenv",
+        "description": "Peut potentiellement être utilisé pour obtenir _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Setting metatable."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Utilisé pour créer une chaîne à partir d'octets, souvent utilisé avec du code obfusqué."
+      },
+      "console_command": {
+        "title": "Commande de console",
+        "description": "Exécute une commande de console en tant que client ou serveur."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX in a string",
+        "description": "Souvent utilisé dans les backdoor pour fixer des rangs ou faire d'autres travaux avec ULX."
+      },
+      "ip_tracking": {
+        "title": "Surveillance IP",
+        "description": "Permet d'obtenir l'adresse IP du serveur ou d'un client."
+      },
+      "massive_indentation": {
+        "title": "Indentation massive",
+        "description": "Tentative possible de cacher une backdoor."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Peut être utilisé pour envoyer du code malveillant à un client."
+      },
+      "backdoor": {
+        "title": "Backdoor",
+        "description": "Backdoor confirmé."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Synchroniser le contenu FastDL",
+    "sync_button": "Synchroniser FastDL",
+    "note": "Cela synchronisera tout votre contenu FastDL à partir du serveur de jeu, le compresse et le téléversera sur notre serveur web. Tout ce qui se trouve dans le dossier garrysmod/, garrysmod/addons/ et garrysmod/gamemodes/ qui contient du contenu téléchargeable sera synchronisé.",
+    "click_button": "Cliquez sur ce bouton:",
+    "enable_fastdl": "Pour activer FastDL pour votre serveur après une synchronisation, vous devez ajouter {code} à votre fichier {file}.",
+    "sync_started": "FastDL est maintenant en cours de synchronisation. Vous serez notifié quand il se terminera."
+  },
+  "modpacks": {
+    "install_modpack": "Installation du Modpack",
+    "install_warning": "Vous êtes sur le point d'installer {modpack}, c'est une opération qui peut écraser les fichiers existants et ne peut pas être inversée.",
+    "format_footer": "Si vous cochez l'option format, tous les fichiers existants seront supprimés avant d'installer le modpack.",
+    "installing": "Le modpack est en cours d'installation. Vous serez averti lorsqu'il sera terminé."
+  },
+  "plugins": {
+    "plugin_installed": "Ce plugin a été installé : {name}.",
+    "premium": "Non disponible (premium)"
+  },
+  "minecraft": {
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snapshots)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

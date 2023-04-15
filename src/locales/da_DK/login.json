@@ -1,0 +1,30 @@
+{
+  "sign_in": "Log ind",
+  "or": "eller",
+  "sso": "Login med SSO",
+  "struggling_to_login": "Har du svært ved at logge ind?",
+  "reset_password": "Nulstil kodeord",
+  "back": "Tilbage til login",
+  "password_reset_email_sent": "Der er blevet sendt instruktioner til nulstilling af adgangskode til din e-mail, hvis der er en konto tilknyttet den.",
+  "passwords": {
+    "throttled": "Du er blevet midlertidigt afbrudt på grund af for mange forsøg på at ændre adgangskode, prøv venligst igen senere.",
+    "token": "Ugyldigt token tilknyttet anmodningen om adgangskode, prøv at anmode om et nyt link til nulstilling af adgangskode.",
+    "user": "Kan ikke nulstille adgangskode for en ugyldig bruger.",
+    "confirmation": "Den angivne adgangskode og adgangskodebekræftelsen stemmer ikke overens."
+  },
+  "security_keys": {
+    "insert_and_touch": "Indsæt din sikkerhedsnøgle, og berør den.",
+    "not_responding": "Hvis din sikkerhedsnøgle ikke reagerer, ",
+    "not_responding_click_here": "klik hér.",
+    "unknown_key": "Du har brugt en ukendt sikkerhedsnøgle, prøv igen med en anden nøgle, eller brug TOTP, hvis det er konfigureret. Ellers skal du kontakte en paneladministrator."
+  },
+  "two_factor_token": "To-faktor-token",
+  "use_different_method": "Brug en anden metode",
+  "invalid_user": "De oplyste legitimationsoplysninger stemmer ikke overens med de oplysninger, vi har. Hvis du ikke er sikker på, at din adgangskode er korrekt, kan du prøve at nulstille den.",
+  "invalid_mfa_session": "Den forrige session er udløbet, prøv venligst igen.",
+  "sso_down": "Det er ikke muligt at kontakte serverne for at bekræfte kontoen, prøv venligst igen senere.",
+  "sso_failed": "Noget gik galt, da vi forsøgte at bekræfte kontoen, prøv igen senere.",
+  "sso_invalid": "Den forrige session er udløbet, prøv venligst igen.",
+  "sso_non_existing_account": "Kunne ikke finde en tilknyttet konto på panelet. Brug venligst det normale login og aktiver hurtig login i kontoindstillingerne.",
+  "sso_disabled_for_account": "Denne konto har deaktiveret hurtiglogin. Brug venligst det normale login i stedet."
+}

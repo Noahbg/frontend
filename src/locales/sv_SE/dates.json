@@ -1,0 +1,45 @@
+{
+  "weekdays": [
+    "Söndag",
+    "Måndag",
+    "Tisdag",
+    "Onsdag",
+    "Torsdag",
+    "Fredag",
+    "Lördag"
+  ],
+  "months": [
+    "Januari",
+    "Februari",
+    "Mars",
+    "April",
+    "Maj",
+    "Juni",
+    "Juli",
+    "Augusti",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+  ],
+  "formats": {
+    "L": "DD/MM/YYYY",
+    "LT": "h:mm A",
+    "LLLL": "dddd, MMMM D, YYYY h:mm A"
+  },
+  "relative_time": {
+    "future": "om {time}",
+    "past": "{time} sedan",
+    "s": "några sekunder",
+    "m": "en minut",
+    "mm": "{time} minuter",
+    "h": "en timme",
+    "hh": "{time} timmar",
+    "d": "en dag",
+    "dd": "{time} dagar",
+    "M": "en månad",
+    "MM": "{time} månader",
+    "y": "ett år",
+    "yy": "{time} år"
+  }
+}

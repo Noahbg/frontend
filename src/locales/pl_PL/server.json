@@ -1,0 +1,347 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Nie przeniesiono",
+      "description": "Węzeł serwera nie jest jeszcze skonfigurowany po migracji."
+    },
+    "invalid_license": {
+      "title": "Nieprawidłowa licencja",
+      "description": "Węzeł serwera nie posiada poprawnego klucza licencyjnego połączonego z nim - skontaktuj się z właścicielem panelu."
+    },
+    "moving": {
+      "title": "Przenoszenie serwera",
+      "description": "Serwer jest obecnie przenoszony do nowego węzła."
+    },
+    "suspended": {
+      "title": "Serwer zawieszony",
+      "description": "Serwer jest obecnie zawieszony i nie może być dostępny, dopóki nie zostanie odwieszony."
+    },
+    "install_failed": {
+      "title": "Instalacja nieudana",
+      "description": "Proces instalacji nie powiódł się. Skontaktuj się z pomocą techniczną."
+    },
+    "deploying_backup": {
+      "title": "Wdrażanie kopii zapasowej",
+      "description": "Serwer wdraża kopię zapasową."
+    },
+    "installing": {
+      "title": "Instalowanie serwera",
+      "description": "Serwer jest obecnie instalowany."
+    },
+    "updating": {
+      "title": "Aktualizacja serwera",
+      "description": "Serwer obecnie kończy proces aktualizacji."
+    },
+    "backup_creating": {
+      "title": "Kopia zapasowa w toku",
+      "description": "Serwer aktualnie wykonuje kopię zapasową."
+    }
+  },
+  "console": {
+    "type_a_command": "Wpisz polecenie...",
+    "console_popup": "Otwórz okienko konsoli",
+    "upload_logs": "Wgraj logi",
+    "eula_acceptance": "Akceptacja EULA",
+    "eula_notice": "Naciskając przycisk 'Akceptuj' poniżej pokazujecie swoją zgodę na EULA Mojang."
+  },
+  "power": {
+    "start": "Uruchom",
+    "restart": "Zrestartuj",
+    "stop": "Zatrzymaj",
+    "kill": "Uśmierć"
+  },
+  "logs": {
+    "upload_logs": "Wgraj logi",
+    "upload_logs_description": "Czy chcesz przesłać swoje logi, aby mogły być udostępnione?",
+    "upload_complete": "Twoje logi zostały przesłane na: {url}",
+    "upload_failed": "Coś poszło nie tak podczas próby wgrania logów. Spróbuj ponownie później."
+  },
+  "details": {
+    "server_name": "Nazwa serwera",
+    "server_limits": "Ograniczenia serwera",
+    "server_info": "Informacje o serwerze",
+    "update_server_name": "Zaktualizuj nazwę serwera",
+    "name_description": "Nazwa serwera widoczna w panelu. To nie zmienia nazwy hosta serwera, tylko jak identyfikuje się go w panelu.",
+    "updated": "Szczegóły Twojego serwera zostały zaktualizowane!"
+  },
+  "sftp": {
+    "sftp_details": "Dane SFTP",
+    "alert_note": "Hasło SFTP to hasło, którego używasz do logowania do panelu. Upewnij się, że Twój klient jest ustawiony na używanie SFTP, a nie FTP lub FTPS do połączeń, istnieje różnica między protokołami."
+  },
+  "audit_logs": {
+    "no_audits": "Brak dzienników audytu",
+    "no_audits_description": "Wygląda na to, że nie masz dzienników audytu. Wykonaj kilka akcji na swoim serwerze, aby wygenerować i zobaczyć przegląd tego, co dzieje się na Twoim serwerze tutaj.",
+    "changes": {
+      "hidden_value": "Zmieniono {key} na nową ukrytą wartość",
+      "from_to": "Zmieniono {key} z {old} na {new}"
+    },
+    "device": {
+      "city": "Miasto",
+      "country": "Państwo",
+      "user_agent": "Agent użytkownika"
+    }
+  },
+  "files": {
+    "new_file": "Nowy plik",
+    "new_folder": "Nowy folder",
+    "upload": "Prześlij",
+    "rename_or_move": "Zmień nazwę/Przenieś",
+    "copy": "Skopiuj",
+    "compress": "Skompresuj",
+    "decompress": "Rozpakuj",
+    "download": "Pobierz",
+    "delete_files": "Usuń pliki",
+    "delete_following": "Czy na pewno chcesz usunąć poniższe pliki? Usuwanie plików jest nieodwracalną operacją, której nie można cofnąć, chyba że wykonałeś kopie zapasowe.",
+    "upload_unavailable": "Przesyłanie plików jest obecnie niemożliwe, spróbuj ponownie później lub spróbuj użyć SFTP.",
+    "upload_too_large": "Nie można przesłać pliku {name} ze względu na zbyt duże rozmiary, użyj SFTP.",
+    "search": "Szukaj",
+    "search_results": "Wyniki wyszukiwania dla {query}",
+    "too_many_results": "Znaleźliśmy zbyt wiele wyników dla wyszukiwarki. Bądź bardziej szczegółowy, aby zobaczyć wszystkie wyniki.",
+    "git_clone": "Kopiuj",
+    "get_access_token_here": "Pobierz swój token tutaj",
+    "cloned_repository": "Repozytorium {repository} zostało sklonowane do {path}.",
+    "git_pull": "Przyciągnij",
+    "git_pull_description": "Pobierz najnowsze zmiany repozytorium w bieżącym katalogu.",
+    "pulled_repository": "Repozytorium zostało pobrane, a najnowsze zatwierdzenie to {commit}.",
+    "git_auth_required": "To repozytorium wymaga uwierzytelnienia, proszę podać swój osobisty token dostępu.",
+    "steam_workshop": "Warsztat Steam",
+    "steam_workshop_finished": "Element warsztatu został pobrany.",
+    "steam_workshop_finished_but_with_errors": "Zakończono z następującymi błędami:",
+    "steam_workshop_n_more": "I nie ma więcej przedmiotów... | I {n} więcej przedmiotów... | I {n} więcej przedmiotów...",
+    "steam_workshop_state": {
+      "waiting": "oczekuję",
+      "downloading": "pobieranie",
+      "extracting": "wypakowuję",
+      "parsing": "parsowanie",
+      "writing": "zapisywanie {files} plików"
+    },
+    "file_contents": "Zawartość pliku",
+    "save_file": "Zapisz plik",
+    "return_to_file_manager": "Powrót do menedżera plików",
+    "file_saved": "Dane zostaly zapisane"
+  },
+  "databases": {
+    "title": "Bazy danych",
+    "using_databases": "Używanie baz danych {count} / {limit}",
+    "create_new": "Utwórz nową bazę danych",
+    "delete_database": "Usuń bazę danych",
+    "delete_database_notice": "Czy na pewno chcesz usunąć bazę danych {name}? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+    "host_footer": "To powinno być hostem bazy danych.",
+    "name_footer": "To powinna być nazwa bazy danych, którą chcesz użyć.",
+    "connections_from_footer": "Powinno to odzwierciedlać adres IP, z którego połączenia są dozwolone. Używa standardowej adnotacji MySQL. Jeśli nie jesteś pewien, zostaw jako %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Osiągnąłeś już limit dozwolonych baz danych dla tego serwera.",
+      "duplicate": "Istnieje już baza danych utworzona przy użyciu nazwy dla tego serwera.",
+      "no_suitable_host": "Nie znaleziono hosta bazy danych, który spełnia wymagania dla tego serwera."
+    }
+  },
+  "subusers": {
+    "title": "Zarządzanie użytkownikami",
+    "add_new_subuser": "Dodaj nowego podużytkownika",
+    "update_subuser": "Edytuj podużytkownika",
+    "delete_subuser": "Usuń podużytkownika",
+    "delete_subuser_notice": "Spowoduje to natychmiastowe usunięcie {name} ({email}) z tego serwera i cofnięcie wszystkich uprawnień.",
+    "configure_permissions": "Konfiguruj uprawnienia",
+    "subuser_added": "Pomyślnie dodano użytkownika jako podużytkownika dla tego serwera. Wysłaliśmy mu wiadomość e-mail z instrukcjami jak zakończyć konfigurację konta.",
+    "cant_add_owner": "Nie można dodać właściciela serwera jako podużytkownika dla tego serwera.",
+    "subuser_already_exists": "Użytkownik z tym adresem e-mail jest już przypisany jako podużytkownik dla tego serwera."
+  },
+  "allocations": {
+    "available_allocations": "Dostępne alokacje",
+    "help_title": "Pomoc alokacji",
+    "help_description": "Lista po lewej stronie zawiera wszystkie dostępne adresy IP i porty, które są otwarte dla Twojego serwera do połączenia przychodzącego.",
+    "primary": "Podstawowe",
+    "make_primary": "Ustaw jako podstawowe"
+  },
+  "startup": {
+    "startup_command": "Komenda startowa",
+    "input_rules": "Reguły wejściowe:",
+    "variable_saved": "Zmienna startowa zapisana pomyślnie.",
+    "variable_not_editable_admin": "Ta zmienna nie jest edytowalna przez użytkownika, ale ponieważ jesteś administratorem, możesz ją zaktualizować w obszarze administracyjnym tego serwera.",
+    "variable_not_editable": "Ta zmienna nie jest edytowalna przez użytkownika."
+  },
+  "backups": {
+    "all_results": "Wszystkie kopie zapasowe",
+    "create_new": "Utwórz nową kopię zapasową",
+    "create_warning": "Tworzenie nowej kopii zapasowej zatrzyma serwer, jeśli jest już uruchomiony",
+    "created": "Kopia zapasowa {name} jest teraz tworzona",
+    "cant_delete_locked": "Musisz odblokować kopię zapasową przed próbą jej usunięcia.",
+    "delete_backup": "Usuń kopię zapasową",
+    "delete_backup_notice": "Czy na pewno chcesz usunąć bazę danych {name}? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte."
+  },
+  "schedules": {
+    "name": "Harmonogram",
+    "create_new": "Utwórz harmonogram",
+    "create_task": "Utwórz zadanie",
+    "edit_schedule": "Edytuj harmonogram",
+    "edit_task": "Edytuj zadanie",
+    "delete_schedule": "Usuń harmonogram",
+    "delete_task": "Usuń zadanie",
+    "delete_notice": "Proszę potwierdź, że chcesz usunąć harmonogram \"{name}\" powtarzając nazwę poniżej. Jest to nieodwracalne działanie, którego nie można cofnąć.",
+    "delete_task_notice": "Czy na pewno chcesz usunąć to zadanie? To jest nieodwracalne.",
+    "enabled_footer": "Czy harmonogram jest włączony, czy nie.",
+    "last_run_at": "Ostatnio uruchomione: ",
+    "next_run_at": "Następne uruchomienie: ",
+    "next_run_at_time": "Następne uruchomienie o {time}",
+    "invalid_cron": "Użyj prawidłowego wyrażenia cron, aby wyświetlić opis i czas następnego uruchomienia.",
+    "runs_description": "Uruchomiono {description}",
+    "pause_for_seconds": "Wstrzymaj na {seconds} sekund",
+    "states": {
+      "active": "Aktywne",
+      "disabled": "Wyłączone",
+      "processing": "Przetwarzanie"
+    },
+    "actions": {
+      "power": "Wyślij akcję zasilania",
+      "command": "Wyślij polecenie",
+      "backup": "Utwórz kopię zapasową"
+    },
+    "power_actions": {
+      "start": "Uruchom serwer",
+      "restart": "Restart serwera",
+      "stop": "Zatrzymaj serwer",
+      "kill": "Wymuś zatrzymanie serwera"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Przełącz wsparcie dostępu OP",
+    "update_server": "Aktualizacja serwera",
+    "health_monitor": "Monitor zdrowia",
+    "install_different_edition": "Zainstaluj inną edycję",
+    "reinstall_server": "Zainstaluj ponownie serwer",
+    "support": {
+      "enable_access_alert": "Wsparcie dostępu OP zostało włączone dla tego serwera.",
+      "disable_access_alert": "Wsparcie dostępu OP zostało wyłączone dla tego serwera."
+    },
+    "updater": {
+      "description": "Spowoduje to aktualizację serwera. Może to zająć chwilę i zablokować Twój serwer podczas aktualizacji. UWAGA: Wszelkie zmiany podstawowych plików gry mogą zostać nadpisane przez aktualizację.",
+      "no_script": "To jajko nie ma dostępnego skryptu aktualizacji.",
+      "beta": "Użyj gałęzi beta"
+    },
+    "monitor": {
+      "description": "Monitoruje Twój serwer i automatycznie uruchamia go ponownie, jeśli zostanie wykryty brak reakcji po 15 sekundach. UWAGA: Niektóre gry mogą nie obsługiwać tego i nic nie zrobią.",
+      "toggled": "Monitor zdrowia został pomyślnie przełączony."
+    },
+    "install_edition": {
+      "description": "Spowoduje to zainstalowanie na serwerze innej edycji Minecraft.",
+      "edition_footer": "Edycja serwera.",
+      "version_footer": "Wersja edycji.",
+      "format_footer": "Wszystkie pliki serwera zostaną USUNIĘTE (niektóre edycje mogą nie działać z istniejącymi plikami)"
+    }
+  },
+  "mods": {
+    "states": {
+      "install": "Zainstaluj",
+      "installing": "Instalowanie",
+      "uninstalling": "Deinstalacja",
+      "uninstall": "Odinstaluj"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Skanuj",
+    "show_non_high_severity": "Czy chcesz pokazać wyniki inne niż dotkliwe?",
+    "reliability_warning": "To narzędzie zakłada, że masz wiedzę na temat Lua i jak funkcjonują tylne drzwi. Stwierdzone wyniki nie są gwarantowane jako rzeczywiste tylne drzwi, a zatem wymagają ręcznej weryfikacji.",
+    "levels": {
+      "low": "Niski",
+      "medium": "Średni",
+      "high": "Wysoki",
+      "known_backdoor": "Znane tylne drzwi"
+    },
+    "detection": "Wykrywanie",
+    "description": "Opis",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "Skodowany SteamID",
+        "description": "Używane często do twardych zezwoleń tylko dla konkretnej osoby lub tylko do uznania własnej pracy."
+      },
+      "arbitrary_code_execution": {
+        "title": "Arbitralne wykonanie kodu",
+        "description": "Używane często do uruchamiania złośliwego kodu lub uruchamiania DRM."
+      },
+      "external_networking": {
+        "title": "Sieć zewnętrzna",
+        "description": "Używane do otrzymywania informacji ze źródła zewnętrznego, takich jak najnowsza wersja lub być może tylne drzwi do uruchomienia kodu."
+      },
+      "set_usergroup": {
+        "title": "Ustaw grupę",
+        "description": "Służy do ustawiania grupy użytkowników gracza w grze na określoną rangę."
+      },
+      "_g_access": {
+        "title": "Dostęp _G",
+        "description": "Może być użyty do uzyskania dowolnej zmiennej globalnej, często używanej do ukrywania funkcji, którą jest użyta."
+      },
+      "getfenv": {
+        "title": "Użycie getfenv",
+        "description": "Może być potencjalnie użyty do zdobycia _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Ustawienie metadanych."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Używane do tworzenia ciągu z bajtów, często używanego obok ukrytego kodu."
+      },
+      "console_command": {
+        "title": "Polecenie konsoli",
+        "description": "Uruchamia polecenie konsoli jako klient lub serwer."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX w ciągu",
+        "description": "Często używane w tylnych drzwiach do ustawiania rangi lub innych rzeczy z ULX."
+      },
+      "ip_tracking": {
+        "title": "Śledzenie IP",
+        "description": "Pozwala na otrzymywanie adresu IP z serwera lub klienta."
+      },
+      "massive_indentation": {
+        "title": "Masowe wcięcie",
+        "description": "Możliwa próba ukrycia tylnych drzwi."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Może być użyty do wysłania złośliwego kodu do klienta."
+      },
+      "backdoor": {
+        "title": "Tylne drzwi",
+        "description": "Potwierdzono znane tylne drzwi."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Synchronizuj zawartość FastDL",
+    "sync_button": "Synchronizuj FastDL",
+    "note": "Spowoduje to synchronizację całej zawartości FastDL z serwerem gry, kompresuj ją i prześlij na nasz serwer internetowy. Wszystko wewnątrz folderu garrysmod/, garrysmod/addons/ i garrysmod/gamemodes/ zawierające treści do pobrania zostaną zsynchronizowane.",
+    "click_button": "Kliknij ten przycisk:",
+    "enable_fastdl": "Aby włączyć FastDL dla serwera po synchronizacji, musisz dodać {code} do swojego pliku {file}.",
+    "sync_started": "FastDL jest teraz synchronizowany. Zostaniesz powiadomiony o zakończeniu synchronizacji."
+  },
+  "modpacks": {
+    "install_modpack": "Instalowanie paczki modów",
+    "install_warning": "Zamierzasz zainstalować {modpack}, jest to operacja, która może nadpisywać istniejące pliki i nie może być cofnięta.",
+    "format_footer": "Zaznaczenie opcji formatu oznacza, że wszystkie istniejące pliki zostaną usunięte przed zainstalowaniem paczki modów."
+  },
+  "plugins": {
+    "plugin_installed": "Wtyczka {name} została pomyślnie zainstalowana.",
+    "premium": "Niedostępne (premium)"
+  },
+  "minecraft": {
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snapshots)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "account": {
+    "update_identity": "Actualizar Identidad",
+    "updated_identity": "¡La identidad ha sido actualizada!",
+    "update_email": "Actualizar dirección de email",
+    "updated_email": "¡La dirección de email ha sido actualizada!",
+    "update_password": "Actualizar Contraseña",
+    "updated_password": "¡La contraseña ha sido actualizada!",
+    "quick_login": "Inicio de sesión rápido",
+    "quick_login_description": "Inicio de sesión rápido le permite iniciar sesión rápidamente en el panel y SFTP usando su cuenta de facturación.",
+    "enable_quick_login": "Activar inicio de sesión rápido",
+    "disable_quick_login": "Desactivar inicio de sesión rápido",
+    "failed_linking_sso": "Error al vincular la cuenta externa. Inténtalo de nuevo más tarde.",
+    "password_requirements": "Las contraseñas deben contener al menos una mayúscula, minúsculas y caracteres numéricos y deben tener al menos 8 caracteres de longitud.",
+    "invalid_confirmation_password": "La contraseña proporcionada para tu cuenta no es válida.",
+    "invalid_totp": "El token de Segundo Factor proporcionado no es válido.",
+    "totp_already_in_use": "Usted ya tiene el Segundo Factor habilitado.",
+    "navbar_position": {
+      "left": "Izquierda",
+      "top": "Superior"
+    },
+    "2fa_must_be_enabled": "El administrador del panel ha requerido que habilite el Segundo Factor para su cuenta antes de poder usar el panel."
+  },
+  "security": {
+    "active_sessions": "Sesiones activas",
+    "sessions_disabled": "Tu host no ha habilitado la capacidad de administrar las sesiones de la cuenta a través de esta interfaz.",
+    "credentials_list": "Lista de credenciales",
+    "2fa": "Autenticación de 2 Factores",
+    "2fa_modal_header": "Configurar Segundo Factor en su cuenta",
+    "2fa_secret": "Código secreto",
+    "2fa_notice": "Utilice la aplicación 2FA de su teléfono para tomar una foto del código QR a la izquierda, o introduzca manualmente el código debajo del mismo. Una vez que lo haya hecho, genere un token e introdúzcalo a continuación.",
+    "2fa_enabled": "La autenticación de 2-Factor está habilitada en esta cuenta y será requerida para iniciar sesión en el panel. Si desea desactivar 2FA, simplemente introduzca un token válido a continuación y envíe el formulario.",
+    "2fa_disabled": "¡La autenticación de 2-Factor está deshabilitada en su cuenta! Debe habilitar 2FA para agregar un nivel extra de protección en su cuenta.",
+    "enable_2fa": "Habilitar autenticación de 2-Factor",
+    "disable_2fa": "Desactivar autenticación de 2-Factor",
+    "create_credentials": "Crear una clave API",
+    "memo_description": "Establezca una descripción fácil de entender para esta clave API para ayudarle a identificarla más adelante.",
+    "allowed_ips_description": "Si desea limitar esta clave API a direcciones IP específicas introdúzcalas arriba, una por línea. Se permite notación CIDR para cada dirección IP. Deje en blanco para permitir cualquier dirección IP.",
+    "api_key_generated": "Se ha generado una nueva clave API de cliente para tu cuenta."
+  },
+  "support": {
+    "your_servers": "Tus Servidores",
+    "enable_access": "Activar Acceso OP de Soporte",
+    "disable_access": "Desactivar Acceso OP de Soporte",
+    "enable_access_submit": "El acceso de Soporte OP ha sido habilitado para su servidor.",
+    "disable_access_submit": "El acceso de Soporte OP ha sido habilitado para su servidor."
+  }
+}

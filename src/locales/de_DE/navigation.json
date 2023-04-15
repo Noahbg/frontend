@@ -1,0 +1,75 @@
+{
+  "404": {
+    "title": "Nicht gefunden",
+    "description": "Diese Seite konnte nicht gefunden werden."
+  },
+  "login": {
+    "index": {
+      "title": "Anmelden",
+      "description": "Melden Sie sich beim Panel an."
+    },
+    "reset_password": {
+      "title": "Passwort zurücksetzen",
+      "description": "Setzen Sie Ihr Passwort zurück.",
+      "token": {
+        "title": "Passwort zurücksetzen"
+      }
+    }
+  },
+  "index": {
+    "title": "Meine Server"
+  },
+  "account": {
+    "title": "Mein Konto",
+    "settings": {
+      "title": "Kontoeinstellungen"
+    },
+    "security": {
+      "title": "Sicherheitskontrollen",
+      "description": "Kontrollieren Sie aktive Sitzungen und 2-Faktor-Authentifizierung."
+    }
+  },
+  "server": {
+    "title": "Mein Server",
+    "system": {
+      "title": "System",
+      "index": {
+        "title": "Konsole",
+        "description": "Steuern Sie Ihren Server in Echtzeit."
+      },
+      "details": {
+        "description": "Siehe Details zu deinem Gameserver."
+      },
+      "sftp": {
+        "title": "SFTP Details",
+        "description": "Anmeldeinformationen für SFTP-Verbindungen."
+      }
+    },
+    "management": {
+      "title": "Verwaltung",
+      "files": {
+        "index": {
+          "title": "Dateimanager",
+          "description": "Verwalten Sie alle Ihre Dateien direkt im Internet."
+        },
+        "new": {
+          "title": "Neue Datei",
+          "description": "Neue Datei erstellen."
+        },
+        "edit": {
+          "title": "Datei bearbeiten",
+          "description": "Änderungen an einer Datei vornehmen."
+        }
+      },
+      "databases": {
+        "title": "Datenbanken",
+        "description": "Alle Datenbanken für diesen Server."
+      },
+      "subusers": {
+        "index": {
+          "title": "Unterbenutzer"
+        }
+      }
+    }
+  }
+}

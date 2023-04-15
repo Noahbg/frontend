@@ -1,0 +1,40 @@
+{
+  "hello": "Bună ziua!",
+  "whoops": "Ups!",
+  "regards": "Toate cele bune,",
+  "all_rights_reserved": "Toate drepturile rezervate.",
+  "trouble_clicking_action": "Dacă întâmpinați dificultăți în a face clic pe butonul \"{actionText}\", copiați și lipiți URL-ul de mai jos în browserul dumneavoastră:",
+  "greeting": "Bună ziua, {name}!",
+  "visit_panel": "Vizitați panoul",
+  "account": {
+    "subject": {
+      "created": "Cont creat",
+      "migrated": "Cont migrat",
+      "reset_password": "Resetați parola"
+    },
+    "email_reason": {
+      "created": "Primești acest e-mail deoarece ți s-a creat un cont în panoul nostru de control.",
+      "migrated": "Primiți acest e-mail deoarece contul dvs. a fost migrat către un nou panou de control.",
+      "reset_password": "Primești acest e-mail deoarece am primit o cerere de resetare a parolei pentru contul tău."
+    },
+    "user_email": "Email: {email}",
+    "updating_account": "Informațiile dvs. pot fi modificate în panoul de control după configurarea contului.",
+    "setup_your_account": "Configurarea contului dvs",
+    "reset_password": "Resetează parola",
+    "reset_password_requested_by_someone_else": "Dacă nu ai solicitat resetarea parolei, nu este necesară nicio altă acțiune."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Adăugat la server",
+      "removed_from_server": "Eliminat de pe server",
+      "installed": "Server instalat"
+    },
+    "added_as_subuser": "Ați fost adăugat ca subutilizator pentru următorul server, ceea ce vă permite un anumit control asupra serverului.",
+    "new_account_notice": "Dacă nu aveți încă un cont, verificați dacă ați primit un alt e-mail de la noi. Dacă nu îl găsiți, puteți reseta parola panoului de control aici: {url}",
+    "removed_as_subuser": "Ați fost eliminat ca subutilizator de pe următorul server.",
+    "ready_to_be_used": "Serverul dvs. a finalizat instalarea și este acum gata de utilizare.",
+    "server_name": "Numele serverului: {server}",
+    "visit_server": "Vizitați serverul",
+    "login_and_begin_using": "Conectați-vă și începeți să utilizați"
+  }
+}

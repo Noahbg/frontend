@@ -1,0 +1,48 @@
+{
+  "account": {
+    "update_identity": "Uppdatera identitet",
+    "updated_identity": "Identiteten har uppdaterats!",
+    "update_email": "Uppdatera e-postadress",
+    "updated_email": "E-postadressen har uppdaterats!",
+    "update_password": "Uppdatera lösenordet",
+    "updated_password": "Lösenordet har uppdaterats!",
+    "quick_login": "Snabb inloggning",
+    "quick_login_description": "Snabbinloggning gör att du snabbt kan logga in på panelen och SFTP med ditt fakturakonto.",
+    "enable_quick_login": "Aktivera snabb inloggning",
+    "disable_quick_login": "Inaktivera snabb inloggning",
+    "failed_linking_sso": "Kopplingen av det externa kontot misslyckades. Försök igen senare.",
+    "password_requirements": "Lösenorden måste innehålla minst en stor bokstav, en liten bokstav och ett numeriskt tecken och vara minst 8 tecken långa.",
+    "invalid_confirmation_password": "Lösenordet för ditt konto var ogiltigt.",
+    "invalid_totp": "Den angivna 2FA-token var ogiltig.",
+    "totp_already_in_use": "Du har redan aktiverat 2FA.",
+    "navbar_position": {
+      "left": "Vänster",
+      "top": "Topp"
+    },
+    "2fa_must_be_enabled": "Paneladministratören har krävt att du aktiverar 2FA för ditt konto innan du kan använda panelen."
+  },
+  "security": {
+    "active_sessions": "Aktiva sessioner",
+    "sessions_disabled": "Din värd har inte aktiverat möjligheten att hantera kontosessioner via det här gränssnittet.",
+    "credentials_list": "Förteckning över referenser",
+    "2fa": "2-faktors autentisering",
+    "2fa_modal_header": "Konfigurera 2FA på ditt konto",
+    "2fa_secret": "Hemlig kod",
+    "2fa_notice": "Använd 2FA-applikationen på din telefon för att ta en bild av QR-koden till vänster eller skriv in koden manuellt under den. När du har gjort det genererar du en token och skriver in den nedan.",
+    "2fa_enabled": "2-faktorsautentisering är aktiverad på det här kontot och kommer att krävas för att logga in på panelen. Om du vill inaktivera 2FA anger du bara en giltig token nedan och skickar in formuläret.",
+    "2fa_disabled": "2-faktorsautentisering är inaktiverad på ditt konto! Du bör aktivera 2FA för att lägga till en extra skyddsnivå på ditt konto.",
+    "enable_2fa": "Aktivera autentisering med två faktorer",
+    "disable_2fa": "Inaktivera 2-faktorsautentisering",
+    "create_credentials": "Skapa en API-nyckel",
+    "memo_description": "Ange en lättförståelig beskrivning för API-nyckeln så att du kan identifiera den senare.",
+    "allowed_ips_description": "Om du vill begränsa API-nyckeln till specifika IP-adresser anger du dem ovan, en per rad. CIDR-notering är tillåten för varje IP-adress. Lämna tomt om du vill tillåta alla IP-adresser.",
+    "api_key_generated": "En ny API-nyckel har genererats för ditt konto."
+  },
+  "support": {
+    "your_servers": "Dina servrar",
+    "enable_access": "Aktivera tillgång för supportrepresentant",
+    "disable_access": "Inaktivera tillgång för supportrepresentant",
+    "enable_access_submit": "Tillgång för supportrepresentanter har aktiverats för din server.",
+    "disable_access_submit": "Tillgång för supportrepresentanter har aktiverats för din server."
+  }
+}

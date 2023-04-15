@@ -1,0 +1,299 @@
+{
+  "index": {
+    "instance_overview": "Instantie Overzicht",
+    "current_version": "Welkom bij WISP Panel! U gebruikt momenteel versie {version}.",
+    "license_information": "Licentie Informatie"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Paneel Instellingen",
+      "company_name_footer": "Dit is de naam die wordt gebruikt in het hele panel en in e-mails die naar klanten worden gestuurd.",
+      "random_database_deployment_footer": "Als dit is ingeschakeld, kunnen alle spelservers hun databases implementeren op elke database host in plaats van alleen de toegewezen host voor het knooppunt.",
+      "require_2fa": {
+        "not_required": "Niet vereist",
+        "admin_only": "Alleen Admin",
+        "all_users": "Alle Gebruikers"
+      },
+      "require_2fa_footer": "Indien ingeschakeld, zal voor elke account die in de geselecteerde groep valt, 2-staps authenticatie ingeschakeld moeten zijn om het paneel te kunnen gebruiken.",
+      "default_language_footer": "De standaard taal om te gebruiken bij het renderen van UI componenten."
+    },
+    "branding": {
+      "recommended_size": "Aanbevolen maat:",
+      "formats": "Formaten:",
+      "login_screen_logo": "Logo inlogscherm",
+      "login_screen_logo_recommended_size": "300 x 100px (max 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg, en svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (max 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Paneel Logo",
+      "panel_logo_recommended_size": "230 x 50px (max 250KB)",
+      "panel_logo_recommended_formats": "png, jpg, en svg"
+    },
+    "embed": {
+      "embed_settings": "Embed Instellingen",
+      "site_name_footer": "De naam van de site die moet worden weergegeven op embeds.",
+      "title_footer": "De titel die moet worden weergegeven op embeds.",
+      "description_footer": "Korte beschrijving die word weergegeven op embeds.",
+      "image_footer": "De URL van de afbeelding die zal worden weergegeven op embeds."
+    },
+    "js_injector": {
+      "title": "JavaScript injector",
+      "minification_notice": "De JS kan worden geminified om snelle laadsnelheden voor iedereen te hebben. Bewaar een lokale kopie van uw JS als u van plan bent deze in de toekomst te bewerken."
+    },
+    "css_injector": {
+      "title": "CSS injector",
+      "minification_notice": "De CSS kan worden geminified om snelle laadsnelheden voor iedereen te hebben. Bewaar een lokale kopie van uw CSS als u van plan bent deze in de toekomst aan te passen."
+    },
+    "whmcs": {
+      "sso_integration": "WHMCS SSO Integratie",
+      "whmcs_notice": "Bekijk aub de gids over hoe de credentials te verzamelen die nodig zijn om WHMCS SSO te configureren voor uw panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Activeert de WHMCS Single-Sign-On integratie, zodat gebruikers kunnen inloggen op uw WISP Panel met hun WHMCS account. Vereist om alle andere velden te kunnen configureren",
+      "button_text_footer": "De tekst van de inlogknop die op de inlogpagina wordt getoond.",
+      "url_footer": "De URL waar uw whmcs-installatie beschikbaar is. bijv. https://mywhmcs.com/",
+      "client_id_footer": "De WHMCS SSO API Klant ID",
+      "client_secret_footer": "Het WHMCS SSO klantgeheim",
+      "api_id_footer": "De WHMCS API Identifier",
+      "api_secret_footer": "Het WHMCS API Geheim"
+    },
+    "refresh_page_to_apply_changes": "Voorlopig zult u de website moeten vernieuwen om de aangepaste wijzigingen toe te passen."
+  },
+  "migrator": {
+    "migrate": "Migreren",
+    "notify_users": "Gebruikers op de hoogte brengen",
+    "notified_users": "Alle gebruikers zullen binnenkort een e-mail ontvangen. U krijgt bericht als het klaar is.",
+    "step_1": "Stap 1 - Gegevens migreren",
+    "step_2": "Stap 2 - Gebruikers op de hoogte brengen",
+    "step_3": "Stap 3 - Afwerking",
+    "panel_url_footer": "Dit is de url naar het paneel van waaruit u gegevens wilt migreren. Voor 0.7.x, moet het panel v0.7.16 of nieuwer zijn. Voor 1.x, moet het panel v1.1.2 of nieuwer zijn. Anders zal deze migrator niet werken.",
+    "api_key_footer": "Dit is nodig om de informatie van het paneel te krijgen voor de migratie. De sleutel moet rechten hebben voor alles wat je wilt migreren.",
+    "locations_node_and_game_data": "Locaties, Node, Toewijzingen, Databanken en Spelservergegevens",
+    "locations_node_and_game_data_footer": "Dit zal alle spelservers met de nodes en hun locaties verplaatsen. OPMERKING: Dit vereist dat alle onderstaande opties ingeschakeld zijn, en database hosts zullen geen wachtwoord geconfigureerd hebben.",
+    "nests_and_eggs": "Nesten en eieren",
+    "nests_and_eggs_footer": "Dit zal alle nesten en eieren verplaatsen en bestaande overschrijven als ze elkaar overlappen.",
+    "users_footer": "Dit zal alle actieve gebruikers met toegang tot ten minste één server verplaatsen. Wachtwoorden zullen niet automatisch worden gemigreerd (tenzij u handmatig contact met ons opneemt) en vereist het opnieuw versturen van een e-mail voor het aanmaken van een account naar elke gebruiker.",
+    "after_migration": "Nadat de migratie is uitgevoerd, dient u op het volgende te letten:",
+    "db_hosts_reset": "Alle databasewachtwoorden van hosts moeten opnieuw worden ingesteld (omdat die niet kunnen worden gesynchroniseerd vanwege Pterodactyl API beperkingen)",
+    "migrated_nodes_cpu": "CPU van gemigreerde nodes is ingesteld op 800% (met 100% overall toewijzing)",
+    "spare_allocations_ignored": "Eventuele reservetoewijzingen van gemigreerde nodes werden genegeerd tijdens de migratie",
+    "move_to_installing_daemon": "Daarna kunt u overgaan tot het instellen van de WISP Daemon op uw node.",
+    "states": {
+      "in_progress": "Bezig",
+      "notified_users": "Geen gebruikers meer om op te hoogte te stellen",
+      "manual": "Handmatig",
+      "failed": "Mislukt"
+    }
+  },
+  "announcements": {
+    "title": "Aankondigingen",
+    "create_announcement": "Aankondiging maken",
+    "edit_announcement": "Aankondiging bewerken",
+    "delete_announcement": "Verwijder aankondiging",
+    "delete_notice": "Het verwijderen van deze aankondiging is onomkeerbaar - klik nogmaals op verwijderen om de verwijdering te bevestigen.",
+    "enabled_footer": "Of de aankondiging onmiddellijk zichtbaar is voor alle gebruikers.",
+    "resend": "Opnieuw verzenden",
+    "announcement_resent": "De aankondiging is met succes opnieuw verzonden naar de gebruikers op het paneel.",
+    "cant_resend_disabled": "Een uitgeschakelde aankondiging kan niet opnieuw worden verzonden - schakel de aankondiging eerst in."
+  },
+  "database_hosts": {
+    "title": "Databasehost",
+    "create_host": "Database host aanmaken",
+    "edit_host": "Database host bewerken",
+    "delete_host": "Database host verwijderen",
+    "delete_notice": "Weet u zeker dat u de {name} database host wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd.",
+    "host_details": "Gastheer Details",
+    "user_details": "Details gebruiker",
+    "databases": "Databases",
+    "name_footer": "Een korte identificatiecode die wordt gebruikt om deze locatie te onderscheiden van andere. Moet tussen 1 en 60 karakters zijn, bijvoorbeeld, us.nyc.lvl3.",
+    "port_footer": "De poort waar MySQL op draait voor deze host.",
+    "username_footer": "De gebruikersnaam van een account die voldoende rechten heeft om nieuwe gebruikers en databases aan te maken op het systeem.",
+    "password_footer": "Het wachtwoord voor de gedefinieerde rekening.",
+    "node_footer": "Servers op het geselecteerde knooppunt zullen deze host als optie kunnen kiezen bij het creëren van een database"
+  },
+  "application_api": {
+    "title": "API-aanmeldingen voor toepassingen",
+    "delete_api_key": "API-sleutel voor toepassing verwijderen",
+    "delete_notice": "Bevestig dat u de \"{name}\" applicatie API sleutel wilt verwijderen door de naam in de onderstaande invoer te herhalen. Dit is een onomkeerbare actie die niet ongedaan kan worden gemaakt.",
+    "options": {
+      "none": "Geen",
+      "read": "Lees",
+      "read_write": "Lees"
+    }
+  },
+  "locations": {
+    "title": "Locaties",
+    "create_location": "Creëer locatie",
+    "delete_location": "Locatie verwijderen",
+    "delete_notice": "Weet u zeker dat u de \"{short}\" locatie wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd.",
+    "location_has_nodes": "U moet alle nodes binnen de locatie verwijderen/verplaatsen voordat u deze verwijdert.",
+    "location_details": "Plaats Details",
+    "nodes": "Nodes",
+    "short_footer": "Een korte identificatiecode om deze locatie van andere te onderscheiden. Moet tussen 1 en 60 karakters zijn, bijvoorbeeld \"us.nyc.lvl3\".",
+    "long_footer": "Een langere beschrijving van deze locatie. Moet minder dan 255 tekens bevatten."
+  },
+  "nodes": {
+    "title": "Nodes",
+    "not_alive": "Fout bij het verbinden met node! Controleer de browser console voor meer details.",
+    "cant_delete_attached_servers": "U moet alle servers op dit knooppunt verwijderen voordat u het knooppunt verwijdert.",
+    "delete_node": "Knooppunt verwijderen",
+    "delete_notice": "Weet u zeker dat u de \"{name}\" node wilt verwijderen? Het verwijderen van een node is een onomkeerbare actie en zal deze node onmiddellijk uit het paneel verwijderen.",
+    "about": {
+      "daemon_version": "Daemon versie",
+      "system_information": "Systeem Informatie",
+      "cpu_cores": "CPU-cores"
+    },
+    "settings": {
+      "general_configuration": "Algemene configuratie",
+      "allow_automatic_allocation": "Automatische toewijzing toestaan",
+      "max_web_upload": "Maximale Web Upload Bestandsgrootte",
+      "daemon_port": "Daemon poort",
+      "sftp_port": "SFTP-poort",
+      "fastdl_port": "FastDL-poort",
+      "display_fqdn_footer": "Geef de domeinnaam op (bv. node.example.com) die aan de gebruikers zal getoond worden in plaats van *.daemon.panel.gg. Als u een domein gebruikt, moet u ook het DNS-record instellen om het naar het knooppunt te laten wijzen, anders zal dit niet werken zoals verwacht.",
+      "automatic_allocation_footer": "Staat toe dat dit knooppunt gebruikt wordt bij het automatisch kiezen van een geschikt knooppunt voor server deployment met behulp van de API.",
+      "maintenance_mode_footer": "Als de node gemarkeerd is als 'In onderhoud' kunnen gebruikers geen toegang krijgen tot servers die op deze node staan.",
+      "cpu_footer": "Voer de totale hoeveelheid cpu in die op dit knooppunt beschikbaar is voor servertoewijzing. U kunt ook een percentage opgeven dat de hoeveelheid cpu boven de ingestelde limiet bepaalt om toe te staan. 1 core = 100%.",
+      "memory_footer": "Voer de totale hoeveelheid geheugen in die op dit knooppunt beschikbaar is voor toewijzing aan servers. U kunt ook een percentage opgeven waarmee meer dan het gedefinieerde geheugen kan worden toegewezen.",
+      "disk_footer": "Voer de totale hoeveelheid schijfruimte in die op dit knooppunt beschikbaar is voor servertoewijzing. U kunt ook een percentage opgeven dat zal bepalen hoeveel schijfruimte boven de ingestelde limiet moet worden toegestaan.",
+      "max_web_upload_footer": "Voer de maximumgrootte in van bestanden die kunnen worden geüpload via de webgebaseerde bestandsbeheerder."
+    },
+    "allocations": {
+      "title": "Node toewijzingen",
+      "create_new": "Nieuw maken",
+      "cant_delete_in_use": "U kunt geen toewijzing verwijderen die aan een server is gekoppeld.",
+      "delete_ip": "IP verwijderen",
+      "delete_ip_allocations": "Verwijder alle toewijzingen voor IP's"
+    }
+  },
+  "servers": {
+    "title": "Servers",
+    "delete_server": "Server verwijderen",
+    "delete_server_notice": "Weet u zeker dat u de \"{name}\" server wilt verwijderen? Het verwijderen van een server is een onomkeerbare actie en zal deze server onmiddellijk verwijderen uit het paneel en de daemon.",
+    "force_footer": "Gevaarlijk: Het geforceerd verwijderen van een server zal de server uit het paneel verwijderen, zelfs als de daemon een fout meldt. Dit kan bestanden laten bungelen op uw daemon als deze een fout rapporteert.",
+    "cant_delete_unmigrated_nodes_server": "U kunt geen server verwijderen op een node die geen geconfigureerde FQDN heeft - gebruik force delete om verder te gaan.",
+    "new": {
+      "core_details": "Kerngegevens",
+      "node_footer": "Het knooppunt waarop deze server zal worden uitgerold.",
+      "primary_allocation_footer": "De hoofdtoewijzing die aan deze server zal worden toegewezen.",
+      "secondary_allocations_footer": "Extra toewijzingen om aan deze server toe te wijzen bij het aanmaken.",
+      "database_limit_footer": "Het totaal aantal databases dat een gebruiker mag aanmaken voor deze server. Laat leeg om onbeperkt toe te staan.",
+      "allocation_limit_footer": "Het totaal aantal toewijzingen dat een gebruiker mag aanmaken voor deze server. Laat leeg om onbeperkt toe te staan.",
+      "backup_megabytes_limit_footer": "Het totale aantal megabytes dat de server kan gebruiken voor zijn back-ups.",
+      "cpu_footer": "Als u het CPU-gebruik niet wilt beperken, stelt u de waarde in op 0. Om een waarde te bepalen, neemt u het aantal fysieke kernen en vermenigvuldigt u dit met 100. Bijvoorbeeld, op een quad core systeem (4 * 100 = 400) is er 400\nbeschikbaar. Om een server te beperken tot het gebruik van de helft van een enkele core, stel je de waarde in op 50. Om een server toe te staan tot twee fysieke cores te gebruiken, stel je de waarde in op 200.",
+      "memory_footer": "Geheugen limiet in MB. Als u de geheugenlimiet op een server wilt uitschakelen, voert u gewoon 0 in het geheugenveld in.",
+      "swap_footer": "Swap space limiet in MB. Als u de swap ruimte op een server wilt uitschakelen, voert u eenvoudig 0 in het swap veld in.",
+      "disk_footer": "Schijfruimte limiet in MB. Als u de beperking van de schijfruimte op een server wilt uitschakelen, voert u in het veld schijfruimte gewoon 0 in.",
+      "io_footer": "Blok IO moet worden ingesteld op een waarde tussen 10-1000.",
+      "skip_scripts_footer": "Als aan de geselecteerde Egg een installatiescript is gekoppeld, zal dit script tijdens de installatie worden uitgevoerd. Indien u deze stap wilt overslaan, kunt u dit vakje aanvinken."
+    },
+    "about": {
+      "server_owner": "Server Eigenaar",
+      "server_node": "Server Node"
+    },
+    "details": {
+      "server_details": "Server Details"
+    },
+    "build_configuration": {
+      "resource_limits": "Beperking van de middelen",
+      "feature_limits": "Eigenschap Grenzen",
+      "allocation_management": "Beheer van de toewijzingen"
+    },
+    "startup": {
+      "command_modification": "Commando Wijziging",
+      "service_configuration": "Dienst Configuratie",
+      "access_in_startup": "Toegang in opstart: "
+    },
+    "databases": {
+      "notice": "Database wachtwoorden kunnen bekeken worden bij het bezoeken van deze server op de front-end.",
+      "active_databases": "Actieve Databanken",
+      "create_database": "Database aanmaken"
+    },
+    "advanced": {
+      "reinstall_server": "Server opnieuw installeren",
+      "reinstall_server_note": "Dit zal de server opnieuw installeren met het toegewezen service script.\nGevaar! Dit kan gegevens overschrijven.",
+      "reinstall_started": "Het herinstallatieproces is gestart.",
+      "install_status": "Installeer status",
+      "install_status_note": "Als u de installatiestatus wilt wijzigen van gedeïnstalleerd in geïnstalleerd, of vice versa, kunt u dat doen met de knop hieronder.",
+      "install_toggled": "De installatiestatus is omgeschakeld.",
+      "rebuild_container": "Containers herbouwen",
+      "rebuild_container_note": "Dit zal een heropbouw van de server container triggeren wanneer hij de volgende keer opstart. Dit is handig als je het configuratiebestand van de server handmatig hebt gewijzigd, of als er iets niet goed is gegaan.",
+      "rebuild_requested": "Rebuild verzoek is naar de daemon gestuurd, en de server zal zichzelf herbouwen bij de volgende start.",
+      "suspend_server": "Server opschorten",
+      "suspend_server_note": "Dit zal de server opschorten, alle lopende processen stoppen, en onmiddellijk de gebruiker blokkeren zodat hij geen toegang meer heeft tot zijn bestanden of op een andere manier de server kan beheren via het paneel of de API.",
+      "suspend_toggled": "De opschortingsstatus is omgeschakeld.",
+      "updating_status": "Status bijwerken",
+      "updating_status_note": "Als u de actualiseringsstatus wilt wijzigen, kunt u dat doen met de knop hieronder.",
+      "updating_toggled": "De update status is veranderd.",
+      "move_server": "Server verplaatsen naar een ander knooppunt",
+      "moving_status": "Verhuisstatus",
+      "moving_status_note": "Als u de verhuisstatus wilt wijzigen, kunt u dat doen met de knop hieronder.\n",
+      "moving_toggled": "De verhuisstatus is omgeschakeld.",
+      "reset_mod_statuses": "Reset mod installatie statussen",
+      "reset_mod_statuses_note": "Zal de installatiestatus van alle mods resetten als het afluistert, in het geval dat de server mod installaties volledig geblokkeerd heeft en ze al een lange tijd vastzitten.",
+      "reset_mod_triggered": "Alle server mod installatie statussen zijn gereset.",
+      "toggle_backup_status": "Schakel back-up status",
+      "install_marked_as_failed": "Kan de installatiestatus van de server niet veranderen omdat de installatie mislukt is. Installeer de server alstublieft opnieuw."
+    }
+  },
+  "users": {
+    "title": "Gebruikers",
+    "identity": "Identiteit",
+    "external_id_footer": "Leeg laten om geen externe identifier aan deze gebruiker toe te kennen. De externe ID moet uniek zijn voor deze gebruiker en mag niet in gebruik zijn bij andere gebruikers.",
+    "password": "Wachtwoord",
+    "password_optional": "Het verstrekken van een gebruikerswachtwoord is optioneel. Nieuwe gebruikers krijgen een e-mail waarin hen wordt gevraagd een wachtwoord voor hun account aan te maken. Als hier een wachtwoord wordt gegeven, moet u een andere methode vinden om het aan de gebruiker te geven.",
+    "root_admin_footer": "Door dit in te stellen krijgt een gebruiker volledige administratieve toegang.",
+    "support_op_footer": "Door dit in te stellen krijgt een gebruiker beperkte administratieve toegang om op te treden als een support agent.",
+    "support_op_bypass_footer": "Door dit in te stellen hoeven gebruikers geen expliciete toestemming te geven voor toegang tot hun servers via het tabblad Ondersteuning.",
+    "ignore_exceptions": "Negeer uitzonderingen bij het intrekken van sleutels.",
+    "ignore_exceptions_footer": "Indien aangevinkt, worden alle fouten genegeerd die ontstaan bij het intrekken van sleutels op verschillende nodes. Dit selectievakje dient indien mogelijk vermeden te worden, aangezien niet-ingetrokken sleutels nog tot 24 uur actief kunnen zijn nadat deze account gewijzigd is. Als de accountrechten onmiddellijk ingetrokken moeten worden en er knooppuntproblemen zijn, dan dient dit vakje aangevinkt te worden en vervolgens dienen alle nodes die niet geüpdatet zijn opnieuw opgestart te worden om alle opgeslagen sleutels te verwijderen.",
+    "user_has_no_2fa_configured": "De gebruiker heeft geen 2FA geconfigureerd om het te kunnen gebruiken.",
+    "delete_user": "Gebruiker verwijderen",
+    "delete_notice": "Weet u zeker dat u de \"{email}\" gebruiker wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd.",
+    "cant_delete_yourself": "Je kunt jezelf niet wissen.",
+    "cant_delete_user_with_servers": "U kunt een gebruiker niet verwijderen zolang hij servers bezit."
+  },
+  "nests": {
+    "title": "Nesten",
+    "eggs": "Eieren",
+    "details": "Nest details",
+    "create_nest": "Nest maken",
+    "delete_nest": "Verwijder Nest",
+    "delete_notice": "Weet u zeker dat u het \"{name}\" nest wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd.",
+    "id_footer": "Een unieke ID die wordt gebruikt voor de identificatie van dit nest intern en via de API.",
+    "uuid_footer": "Een UUID die aan alle servers die deze optie gebruiken wordt toegekend voor identificatiedoeleinden.",
+    "name_footer": "Dit moet een beschrijvende categorienaam zijn die alle eieren in het nest omvat.",
+    "identifier_footer": "Korte ID die specifieke functies kan activeren (werkende ids: srcds, minecraft).",
+    "nest_has_servers": "U kunt een nest niet verwijderen als er servers onder draaien.",
+    "import_egg": "Import Ei",
+    "egg": {
+      "daemon_restart_required_after_changes": "Elke verandering in de bestaande ei-configuratie vereist momenteel dat de daemons daarna opnieuw worden gestart met `wisp restart`.",
+      "configuration": "Configuratie",
+      "process_management": "Procesbeheer",
+      "delete_egg": "Ei verwijderen",
+      "delete_notice": "Weet u zeker dat u het \"{name}\" ei wilt verwijderen? Er is geen weg terug, alle data zal onmiddellijk worden verwijderd.",
+      "egg_has_servers": "U kunt geen ei verwijderen dat servers heeft die eronder draaien.",
+      "copy_alert": "Alle velden zijn verplicht, tenzij u een aparte optie selecteert in het keuzemenu 'Instellingen kopiëren van'. In dat geval kunt u velden leeg laten om de waarden van die optie te gebruiken.",
+      "update_egg": "Update Ei",
+      "import_update_notice": "Het importeren van een nieuw egg bestand zal alle bestaande instellingen overschrijven. Als u uw bestaande instellingen wilt behouden, moet u het nieuwe ei apart importeren.",
+      "install_script": "Script installeren",
+      "update_script": "Script bijwerken",
+      "variables": {
+        "create_variable": "Opstartvariabele maken",
+        "variable_created": "De opstartvariabele is met succes aangemaakt.",
+        "variable_updated": "De \"{name}\" startup variabele is succesvol bijgewerkt.",
+        "variable_deleted": "De \"{name}\" startup variabele is succesvol verwijderd.",
+        "env_variable_reserved": "De {name} omgevingsvariabele is een gereserveerde variabelenaam."
+      },
+      "thumbnail_title": "Ei Thumbnail",
+      "thumbnail_recommended_size": "2:1 beeldverhouding (max 500KB)",
+      "thumbnail_formats": "png, jpg en svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Mod Details",
+    "mod_configuration": "Mod Configuratie",
+    "delete_mod": "Delete Mod",
+    "delete_notice": "Weet u zeker dat u de \"{name}\" mod wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd."
+  }
+}

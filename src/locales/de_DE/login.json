@@ -1,0 +1,22 @@
+{
+  "sign_in": "Eintragen",
+  "or": "oder",
+  "sso": "Anmeldung mit SSO",
+  "struggling_to_login": "Schwierigkeiten bei der Anmeldung?",
+  "reset_password": "Passwort zurücksetzen",
+  "back": "Zurück zur Anmeldung",
+  "password_reset_email_sent": "Anweisungen zum Zurücksetzen des Kennworts wurden an Ihre E-Mail gesendet, sofern ein Konto damit verbunden ist.",
+  "passwords": {
+    "throttled": "Sie wurden aufgrund zu vieler Passwortänderungsversuche vorübergehend gedrosselt. Bitte versuchen Sie es später noch einmal.",
+    "token": "Ungültiges Token in Verbindung mit der Passwortanforderung. Bitte versuchen Sie, einen neuen Link zum Zurücksetzen des Passworts anzufordern.",
+    "user": "Das Passwort für einen ungültigen Benutzer kann nicht zurückgesetzt werden.",
+    "confirmation": "Das angegebene Passwort und die Passwortbestätigung stimmen nicht überein."
+  },
+  "two_factor_token": "Zwei-Faktoren-Token",
+  "invalid_user": "Die angegebenen Anmeldedaten stimmen nicht mit denen überein, die uns vorliegen. Wenn Sie sich nicht sicher sind, ob Ihr Passwort richtig ist, versuchen Sie es zurückzusetzen.",
+  "sso_down": "Die Server konnten nicht kontaktiert werden, um das Konto zu verifizieren. Bitte versuchen Sie es später noch einmal.",
+  "sso_failed": "Bei der Verifizierung des Kontos ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal.",
+  "sso_invalid": "Die vorherige Sitzung ist abgelaufen, bitte versuchen Sie es erneut.",
+  "sso_non_existing_account": "Es konnte kein zugehöriges Konto im Panel gefunden werden. Bitte verwenden Sie die normale Anmeldung und aktivieren Sie die Schnellanmeldung in den Kontoeinstellungen.",
+  "sso_disabled_for_account": "Bei diesem Konto ist die Schnellanmeldung deaktiviert. Bitte verwenden Sie stattdessen die normale Anmeldung."
+}

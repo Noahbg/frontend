@@ -1,0 +1,407 @@
+{
+  "404": {
+    "title": "Ikke fundet",
+    "description": "Kunne ikke finde den side, du ledte efter."
+  },
+  "login": {
+    "index": {
+      "title": "Log ind",
+      "description": "Log ind på panelet."
+    },
+    "totp": {
+      "title": "Indtast 2FA TOTP-kode",
+      "description": "Indtast 2FA TOTP-koden for at logge ind."
+    },
+    "key": {
+      "title": "Sikkerhedsnøgle",
+      "description": "Tryk på sikkerhedsnøglen for at logge ind."
+    },
+    "reset_password": {
+      "title": "Nulstil adgangskode",
+      "description": "Nulstil din kontos adgangskode.",
+      "token": {
+        "title": "Nulstil adgangskode",
+        "description": "Afslut nulstilling af adgangskoden til din konto."
+      }
+    }
+  },
+  "index": {
+    "title": "Mine servere",
+    "description": "Servere du har adgang til."
+  },
+  "account": {
+    "title": "Min Konto",
+    "settings": {
+      "title": "Konto Indstillinger",
+      "details": {
+        "title": "Detaljer",
+        "description": "Administrer dine kontooplysninger."
+      },
+      "2fa": {
+        "title": "2-faktor-autentificering",
+        "description": "Kontroller 2-faktor godkendelse og sikkerhedsnøgler for din konto."
+      }
+    },
+    "security": {
+      "title": "Sikkerhedskontrol",
+      "description": "Kontrollér aktive sessioner og 2-faktor godkendelse."
+    }
+  },
+  "server": {
+    "title": "Min Server",
+    "system": {
+      "title": "System",
+      "index": {
+        "title": "Konsol",
+        "description": "Styr din server i realtid."
+      },
+      "details": {
+        "title": "Serveroplysninger",
+        "description": "Se detaljer om din spilserver."
+      },
+      "sftp": {
+        "title": "SFTP-oplysninger",
+        "description": "Kontooplysninger for SFTP-forbindelser."
+      },
+      "audit_logs": {
+        "title": "Revisionslog",
+        "description": "Se alt der sker på din server."
+      }
+    },
+    "management": {
+      "title": "Administration",
+      "files": {
+        "index": {
+          "title": "Filhåndtering",
+          "description": "Administrer alle dine filer direkte fra nettet."
+        },
+        "new": {
+          "title": "Ny fil",
+          "description": "Opret en ny fil."
+        },
+        "edit": {
+          "title": "Redigér Fil",
+          "description": "Lav ændringer på en fil."
+        }
+      },
+      "databases": {
+        "title": "Databaser",
+        "description": "Alle databaser tilgængelige for denne server."
+      },
+      "backups": {
+        "title": "Sikkerhedskopier",
+        "description": "Håndtér og implementér serversikkerhedskopier her."
+      },
+      "subusers": {
+        "index": {
+          "title": "Underbrugere",
+          "description": "Kontroller, hvem der kan få adgang til din server."
+        },
+        "new": {
+          "title": "Ny Underbruger",
+          "description": "Tilføj en ny bruger med tilladelser til din server."
+        },
+        "edit": {
+          "title": "Rediger Underbruger",
+          "description": "Ændre en brugers adgang til serveren."
+        }
+      },
+      "allocations": {
+        "title": "Allokeringer",
+        "description": "Kontroller IP'er og porte tilgængelige på denne server."
+      }
+    },
+    "configuration": {
+      "title": "Konfiguration",
+      "startup": {
+        "title": "Startup Parametre",
+        "description": "Kontrollér serverens startup argumenter."
+      },
+      "schedules": {
+        "index": {
+          "title": "Tidsplaner",
+          "description": "Administrer alle serverens tidsplaner på ét sted."
+        },
+        "manage": {
+          "title": "Administrer Tidsplan",
+          "description": "Administrer opgaverne og gennemførelsestiden for denne tidsplan."
+        }
+      },
+      "advanced": {
+        "title": "Avanceret",
+        "description": "Her kan du administrere ekstra indstillinger for din server."
+      }
+    },
+    "tools": {
+      "title": "Værktøjer",
+      "subdomains": {
+        "title": "Underdomæne Manager",
+        "description": "Administrer de underdomæner, der bruges til at oprette forbindelse til din server her."
+      },
+      "modpacks": {
+        "title": "Modpack Manager",
+        "description": "Nem måde at installere mod pakker."
+      },
+      "plugins": {
+        "title": "Plugin manager",
+        "description": "Nem måde at installere plugins."
+      },
+      "mods": {
+        "title": "Mod Manager",
+        "description": "Nem måde at installere addons."
+      },
+      "backdoor_scanner": {
+        "title": "Backdoor Scanner",
+        "description": "Find kode, der muligvis kan udnyttes i dine installerede addons."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Automatisk FastDL Manager til din server."
+      }
+    },
+    "administrate": {
+      "title": "Administrer"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "administration": {
+      "title": "Administration",
+      "index": {
+        "title": "Oversigt",
+        "description": "Et hurtigt blik på din panelstatus."
+      },
+      "settings": {
+        "title": "Indstillinger",
+        "general": {
+          "title": "Generel",
+          "description": "Konfigurer WISP til din smag."
+        },
+        "branding": {
+          "title": "Produktmærkning",
+          "description": "Indstil branding for panelet."
+        },
+        "embed": {
+          "title": "Indlejr",
+          "description": "Indstil OpenGraph indlejrede værdier for platforme som Discord eller Twitter."
+        },
+        "js_injector": {
+          "title": "JS Injektor",
+          "description": "Tilføj ekstra JavaScript til dit WISP panel."
+        },
+        "css_injector": {
+          "title": "CSS-injektor",
+          "description": "Tilføj ekstra CSS til dit WISP panel."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Indstil WHMCS Single-Sign-On integration."
+        }
+      },
+      "migrator": {
+        "title": "Migrator",
+        "description": "Migrer data fra din eksisterende Pterodactyl instans til WISP."
+      },
+      "announcements": {
+        "title": "Annonceringer",
+        "description": "Udsend beskeder til alle dine brugere."
+      },
+      "application_api": {
+        "index": {
+          "title": "Applikation API-nøgle",
+          "description": "Kontrollér adgangsoplysninger til (legacy) API."
+        },
+        "new": {
+          "title": "Ny applikations-API",
+          "description": "Opret nye adgangsoplysninger til den (gamle) API."
+        },
+        "manage": {
+          "title": "Administrer Applikation API",
+          "description": "Administrer adgangsoplysninger til (legacy) API."
+        }
+      }
+    },
+    "management": {
+      "title": "Administration",
+      "database_hosts": {
+        "index": {
+          "title": "Database Værter",
+          "description": "Database værter som servere kan have databaser oprettet på."
+        },
+        "manage": {
+          "title": "Administrer Databasevært",
+          "description": "Visning af tilknyttede databaser og detaljer for denne database vært."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Lokationer",
+          "description": "Alle lokationer, som noder kan tildeles for at gøre det lettere at kategorisere dem."
+        },
+        "manage": {
+          "title": "Administrér Lokation",
+          "description": "Visning af tilknyttede noder og detaljer for denne lokation."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Noder",
+          "description": "Alle noder, der er tilgængelige til at udrulle servere på i dette panel."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "Et hurtigt overblik over din node."
+          },
+          "settings": {
+            "title": "Indstillinger",
+            "description": "Konfigurer indstillingerne for din node."
+          },
+          "allocations": {
+            "title": "Allokeringer",
+            "description": "Kontroller allokeringer, der er tilgængelige for servere på denne node."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Liste over servere, der er installeret på denne node."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Servere",
+          "description": "Alle servere tilgængelige på systemet."
+        },
+        "new": {
+          "title": "Ny server",
+          "description": "Tilføj en ny server til panelet."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "Et hurtigt overblik over din node."
+          },
+          "details": {
+            "title": "Detaljer",
+            "description": "Rediger detaljer for denne server, herunder ejer og container."
+          },
+          "build_configuration": {
+            "title": "Opbyg Konfiguration",
+            "description": "Kontroller allokationer og systemressourcer for denne server."
+          },
+          "startup": {
+            "title": "Opstart",
+            "description": "Kontroller opstart kommando samt variabler."
+          },
+          "databases": {
+            "title": "Databaser",
+            "description": "Administrer databaser for denne server."
+          },
+          "advanced": {
+            "title": "Avanceret",
+            "description": "Yderligere handlinger til at kontrollere denne server."
+          },
+          "go_to_server": {
+            "title": "Gå Til Server"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Brugere",
+          "description": "Alle registrerede brugere på systemet."
+        },
+        "new": {
+          "title": "Ny bruger",
+          "description": "Opret en ny bruger på systemet."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "Administrer en eksisterende bruger på systemet."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Liste over servere, der ejes af denne bruger."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Service Administration",
+      "nests": {
+        "index": {
+          "title": "Nests",
+          "description": "Alle nests, der i øjeblikket er tilgængelige på dette system."
+        },
+        "manage": {
+          "title": "Administrer Nest",
+          "description": "Administrer en eksisterende nest på systemet."
+        },
+        "egg": {
+          "title": "Egg Administration",
+          "new": {
+            "title": "Nyt Egg",
+            "description": "Opret et nyt Egg til tildeling til servere."
+          },
+          "configuration": {
+            "title": "Konfiguration",
+            "description": "Konfigurer et eksisterende egg på systemet."
+          },
+          "variables": {
+            "title": "Variabler",
+            "description": "Indstil miljøvariablerne for dette egg."
+          },
+          "scripts": {
+            "title": "Scripts",
+            "description": "Konfigurer installér/update scriptet for dette egg."
+          },
+          "thumbnail": {
+            "title": "Miniaturebillede",
+            "description": "Indstil miniaturebilledet for dette egg."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Mods",
+          "description": "Alle servicemods tilgængelige på systemet."
+        },
+        "new": {
+          "title": "Ny Mod",
+          "description": "Opret en ny mod på systemet."
+        },
+        "manage": {
+          "title": "Administrer Mod",
+          "description": "Administrer en eksisterende service mod på systemet."
+        }
+      },
+      "domains": {
+        "index": {
+          "title": "Domæner",
+          "description": "Alle domæner, der er tilgængelige på systemet."
+        },
+        "new": {
+          "title": "Nyt domæne",
+          "description": "Opret et nyt domæne på systemet."
+        },
+        "manage": {
+          "configuration": {
+            "title": "Konfiguration af domæne",
+            "description": "Konfigurer domænet."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Se alle de servere, der er knyttet til dette domæne."
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Vend tilbage til den forrige side",
+    "go_home": "Gå Hjem",
+    "404": "Den ønskede side kunne ikke findes.",
+    "429": "Du er i øjeblikket under hastighedsbegrænsning, prøv igen om et par minutter."
+  }
+}

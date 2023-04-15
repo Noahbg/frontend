@@ -1,0 +1,363 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Nepřemístěno",
+      "description": "Uzel serveru ještě není nastaven z migrace."
+    },
+    "invalid_license": {
+      "title": "Neplatná licence",
+      "description": "K uzlu serveru není připojen platný licenční klíč - obraťte se na vlastníka panelu."
+    },
+    "moving": {
+      "title": "Stěhování serveru",
+      "description": "Server je právě přesouván do nového uzlu."
+    },
+    "suspended": {
+      "title": "Server pozastaven",
+      "description": "Server je momentálně pozastaven a nelze k němu přistupovat, dokud nebude pozastaven."
+    },
+    "install_failed": {
+      "title": "Instalace se nezdařila",
+      "description": "Instalace serveru se nezdařila. Kontaktujte podporu."
+    },
+    "deploying_backup": {
+      "title": "Nasazení zálohování",
+      "description": "Server nasazuje zálohu."
+    },
+    "installing": {
+      "title": "Instalace serveru",
+      "description": "Server se právě instaluje."
+    },
+    "updating": {
+      "title": "Aktualizace serveru",
+      "description": "Server právě dokončuje proces aktualizace."
+    },
+    "backup_creating": {
+      "title": "Probíhající zálohování",
+      "description": "Server právě provádí zálohu."
+    }
+  },
+  "console": {
+    "type_a_command": "Zadejte příkaz...",
+    "console_popup": "Otevření vyskakovacího okna konzoly",
+    "upload_logs": "Nahrávání protokolů",
+    "eula_acceptance": "Přijetí smlouvy EULA",
+    "eula_notice": "Stisknutím tlačítka \"Souhlasím\" níže vyjadřujete svůj souhlas s licencí EULA společnosti Mojang."
+  },
+  "power": {
+    "start": "Spustit",
+    "restart": "Restartovat",
+    "stop": "Zastavit",
+    "kill": "Kill"
+  },
+  "logs": {
+    "upload_logs": "Nahrávání protokolů",
+    "upload_logs_description": "Chcete nahrát své protokoly, abyste je mohli sdílet?",
+    "upload_complete": "Vaše protokoly byly nahrány na adresu: {url}",
+    "upload_failed": "Při pokusu o nahrání protokolů serveru se něco pokazilo. Zkuste to později."
+  },
+  "details": {
+    "server_name": "Název serveru",
+    "server_limits": "Omezení serveru",
+    "server_info": "Informace o serveru",
+    "update_server_name": "Aktualizace názvu serveru",
+    "name_description": "Název serveru viditelný na panelu. Tím se nezmění skutečný název hostitele serveru, pouze způsob jeho identifikace v panelu.",
+    "updated": "Údaje o vašem serveru byly aktualizovány!"
+  },
+  "sftp": {
+    "sftp_details": "Podrobnosti o SFTP",
+    "alert_note": "Heslo SFTP je heslo, které se používá k přihlášení do panelu. Ujistěte se, že je váš klient nastaven tak, aby pro připojení používal SFTP, a nikoli FTP nebo FTPS, mezi těmito protokoly je rozdíl."
+  },
+  "audit_logs": {
+    "no_audits": "Žádné protokoly o auditu",
+    "no_audits_description": "Zdá se, že nemáte žádné protokoly auditu. Proveďte na serveru nějaké akce, které vygenerují a zobrazí přehled toho, co se na serveru děje.",
+    "changes": {
+      "hidden_value": "Změna {key} na novou skrytou hodnotu",
+      "from_to": "Změna {key} z {old} na {new}."
+    },
+    "device": {
+      "city": "Město",
+      "country": "Země",
+      "user_agent": "Uživatelský agent"
+    }
+  },
+  "files": {
+    "new_file": "Nový soubor",
+    "new_folder": "Nová složka",
+    "upload": "Nahrát",
+    "rename_or_move": "Přejmenování/přesun",
+    "copy": "Kopírovat",
+    "compress": "Komprese",
+    "decompress": "Dekomprese",
+    "download": "Stáhnout",
+    "delete_files": "Odstranění souborů",
+    "delete_following": "Opravdu chcete odstranit následující soubory? Odstranění souborů je nevratná operace, kterou nelze vrátit zpět, pokud jste si neudělali zálohu.",
+    "upload_unavailable": "Odesílání souborů je momentálně nedostupné, zkuste to později nebo zkuste použít SFTP.",
+    "upload_too_large": "Soubor {name} nelze nahrát, protože je příliš velký, použijte prosím místo něj SFTP.",
+    "search": "Vyhledávání",
+    "search_results": "Výsledky hledání pro {query}",
+    "too_many_results": "Pro hledaný výraz jsme našli příliš mnoho výsledků. Abyste mohli zobrazit všechny výsledky, upřesněte je prosím.",
+    "git_clone": "Klonování",
+    "get_access_token_here": "Získejte svůj token zde",
+    "cloned_repository": "Úložiště {repository} bylo naklonováno do {path}.",
+    "git_pull": "Pull",
+    "git_pull_description": "Stáhne nejnovější změny úložiště v aktuálním adresáři.",
+    "pulled_repository": "Úložiště bylo staženo a poslední revize je {commit}.",
+    "git_auth_required": "Toto úložiště vyžaduje ověření, zadejte prosím svůj osobní přístupový token.",
+    "steam_workshop": "Steam Workshop",
+    "steam_workshop_finished": "Položka workshopu byla stažena.",
+    "steam_workshop_finished_but_with_errors": "Dokončeno s následujícími chybami:",
+    "steam_workshop_n_more": "A žádné další položky... | A {n} další položka... | A {n} další položky...",
+    "steam_workshop_state": {
+      "waiting": "čekání",
+      "downloading": "stahování",
+      "extracting": "extrakce",
+      "parsing": "parsování",
+      "writing": "zápis {files} souborů"
+    },
+    "file_contents": "Obsah souboru",
+    "save_file": "Uložit soubor",
+    "return_to_file_manager": "Návrat do Správce souborů",
+    "file_saved": "Soubor byl uložen"
+  },
+  "databases": {
+    "title": "Databáze",
+    "using_databases": "Využito {count} z {limit} databází",
+    "create_new": "Vytvoření nové databáze",
+    "delete_database": "Odstranění databáze",
+    "delete_database_notice": "Jste si jisti, že chcete odstranit databázi {name} ? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "host_footer": "Toto by měl být hostitel, na kterém má být databáze nasazena.",
+    "name_footer": "Mělo by se jednat o název databáze, který chcete použít.",
+    "connections_from_footer": "Měla by odrážet IP adresu, ze které jsou povolena připojení. Používá standardní zápis MySQL. Pokud si nejste jisti, ponechte hodnotu %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Již jste dosáhli kvóty povolených databází pro tento server.",
+      "duplicate": "Pro tento server je již vytvořena databáze s vaším zadaným názvem.",
+      "no_suitable_host": "Nebyl nalezen žádný hostitel databáze, který by splňoval požadavky pro tento server."
+    }
+  },
+  "subusers": {
+    "title": "Správa uživatelů",
+    "add_new_subuser": "Přidání nového dílčího uživatele",
+    "update_subuser": "Aktualizace dílčího uživatele",
+    "delete_subuser": "Odstranění dílčího uživatele",
+    "delete_subuser_notice": "Tím se okamžitě odstraní {name} ({email}) z tohoto serveru a zruší se všechna oprávnění.",
+    "configure_permissions": "Konfigurace oprávnění",
+    "subuser_added": "Uživatel byl úspěšně přidán jako dílčí uživatel tohoto serveru. Odeslali jsme mu e-mail s pokyny, jak dokončit nastavení jeho účtu.",
+    "cant_add_owner": "Vlastníka serveru nelze přidat jako dílčího uživatele tohoto serveru.",
+    "subuser_already_exists": "Uživatel s touto e-mailovou adresou je již přiřazen jako dílčí uživatel tohoto serveru."
+  },
+  "allocations": {
+    "available_allocations": "Dostupné příděly",
+    "help_title": "Nápověda k přidělování",
+    "help_description": "V seznamu vlevo jsou uvedeny všechny dostupné IP adresy a porty, které může server používat pro příchozí připojení.",
+    "primary": "Primární",
+    "make_primary": "Make Primary"
+  },
+  "startup": {
+    "startup_command": "Příkaz pro spuštění",
+    "input_rules": "Vstupní pravidla:",
+    "variable_saved": "Spouštěcí proměnná byla úspěšně uložena.",
+    "variable_not_editable_admin": "Tuto proměnnou nelze uživatelsky upravovat - protože jste však správce, můžete ji aktualizovat v oblasti pro správu tohoto serveru.",
+    "variable_not_editable": "Tuto proměnnou nelze uživatelsky upravovat."
+  },
+  "backups": {
+    "all_results": "Všechny zálohy",
+    "create_new": "Vytvoření nové zálohy",
+    "create_warning": "Vytvoření nové zálohy zastaví server, pokud je již spuštěn.",
+    "created": "Záloha {name} je nyní vytvářena",
+    "creation_would_exceed_limit": "Vytváření této zálohy by překročilo limit zálohování serveru.",
+    "cant_delete_locked": "Před pokusem o odstranění zálohy ji musíte odemknout.",
+    "delete_backup": "Odstranění zálohy",
+    "delete_backup_notice": "Jste si jisti, že chcete odstranit zálohu {name} ? Není cesty zpět, všechna data budou okamžitě odstraněna."
+  },
+  "schedules": {
+    "name": "Rozvrhy",
+    "create_new": "Vytvořit plán",
+    "create_task": "Vytvořit úkol",
+    "edit_schedule": "Upravit plán",
+    "edit_task": "Upravit úkol",
+    "delete_schedule": "Odstranění plánu",
+    "delete_task": "Odstranění úlohy",
+    "delete_notice": "Potvrďte prosím, že chcete odstranit plán \"{name}\" zopakováním názvu v níže uvedeném zadání. Jedná se o nevratnou akci, kterou nelze vrátit zpět.",
+    "delete_task_notice": "Opravdu chcete tuto úlohu odstranit? Jedná se o nevratnou akci.",
+    "enabled_footer": "Zda je plán povolen, nebo ne.",
+    "last_run_at": "Poslední spuštění na: ",
+    "next_run_at": "Příští běh na: ",
+    "next_run_at_time": "Další spuštění na {time}",
+    "invalid_cron": "Pro zobrazení popisu a příštího času spuštění použijte platný výraz cronu.",
+    "runs_description": "Běží {description}",
+    "pause_for_seconds": "Pauza po dobu {seconds} sekund",
+    "chain_interval_too_long": "Maximální doba intervalu pro zřetězené úlohy je 15 minut.",
+    "states": {
+      "active": "Aktivní",
+      "disabled": "Vypnuto",
+      "processing": "Zpracování"
+    },
+    "actions": {
+      "power": "Odeslání akce napájení",
+      "command": "Odeslat příkaz",
+      "backup": "Vytvoření zálohy"
+    },
+    "power_actions": {
+      "start": "Spuštění serveru",
+      "restart": "Restartovat server",
+      "stop": "Zastavení serveru",
+      "kill": "Násilné zastavení serveru"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Přepínání přístupu k podpoře OP",
+    "update_server": "Aktualizační server",
+    "health_monitor": "Monitor zdraví",
+    "install_different_edition": "Instalace jiné edice",
+    "reinstall_server": "Přeinstalování serveru",
+    "support": {
+      "enable_access_alert": "Pro tento server byla povolena podpora OP Access.",
+      "disable_access_alert": "Podpora OP Přístup byl pro tento server zakázán."
+    },
+    "updater": {
+      "description": "Tím se aktualizuje server. Může to chvíli trvat a během aktualizace se server zablokuje. POZNÁMKA: Jakékoli úpravy základních souborů hry mohou být aktualizací přepsány.",
+      "no_script": "Toto vejce nemá k dispozici žádný aktualizační skript.",
+      "beta": "Použít beta větev"
+    },
+    "monitor": {
+      "description": "Monitoruje server a automaticky jej restartuje, pokud zjistí, že po dobu 15 sekund nereaguje. POZNÁMKA: Některé hry tuto funkci nemusí podporovat a neudělají nic.",
+      "toggled": "Monitor stavu byl úspěšně přepnut."
+    },
+    "install_edition": {
+      "description": "Tím se na server nainstaluje jiná edice Minecraftu podle vašeho výběru.",
+      "edition_footer": "Edice pro server.",
+      "version_footer": "Verze edice.",
+      "format_footer": "Všechny soubory serveru budou ODSTRANĚNY (některé edice nemusí pracovat s existujícími soubory)."
+    }
+  },
+  "subdomains": {
+    "title": "Subdomény",
+    "create_new": "Vytvořit novou subdoménu",
+    "name_footer": "Individuální název subdomény.",
+    "domain_footer": "Doména, na které bude subdoména vytvořena.",
+    "allocation_footer": "Přidělení, na které bude subdoména směřovat.",
+    "delete_subdomain": "Odstranit subdoménu",
+    "delete_subdomain_notice": "Jste si jisti, že chcete odstranit subdoménu {name}? Všechna připojení používající tuto subdoménu již nebudou fungovat."
+  },
+  "mods": {
+    "mod_installed": "Mód {name} byl úspěšně nainstalován.",
+    "mod_uninstalled": "Mód {name} byl úspěšně odinstalován.",
+    "states": {
+      "install": "Instalace",
+      "installing": "Instalace stránek",
+      "uninstalling": "Odinstalování stránky",
+      "uninstall": "Odinstalujte stránku"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Skenování",
+    "show_non_high_severity": "Chcete zobrazit výsledky s jinou než vysokou závažností?",
+    "reliability_warning": "Tento nástroj předpokládá, že máte znalosti jazyka Lua a fungování zadních vrátek. U nalezených výsledků není zaručeno, že se jedná o skutečné backdoory, a proto vyžadují ruční ověření.",
+    "levels": {
+      "low": "Nízká",
+      "medium": "Střední",
+      "high": "Vysoká",
+      "known_backdoor": "Známá zadní vrátka"
+    },
+    "detection": "Detekce",
+    "description": "Popis",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "Hardcoded SteamID",
+        "description": "Často se používá k pevnému zakódování oprávnění pouze pro určitou osobu nebo pouze pro připsání vlastní práce."
+      },
+      "arbitrary_code_execution": {
+        "title": "Spuštění libovolného kódu",
+        "description": "Často se používá ke spuštění škodlivého kódu nebo ke spuštění DRM."
+      },
+      "external_networking": {
+        "title": "Externí sítě",
+        "description": "Slouží k získání informací z externího zdroje, například nejnovější verze nebo případně zadních vrátek ke spuštění kódu."
+      },
+      "set_usergroup": {
+        "title": "Nastavení skupiny uživatelů",
+        "description": "Slouží k nastavení uživatelské skupiny hráče ve hře na určitou hodnost."
+      },
+      "_g_access": {
+        "title": "_G Přístup",
+        "description": "Lze použít k získání libovolné globální proměnné, často se používá ke skrytí volané funkce."
+      },
+      "getfenv": {
+        "title": "getfenv Použití",
+        "description": "Lze potenciálně použít k získání _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Nastavení metatable."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Slouží k vytvoření řetězce z bajtů, často se používá spolu s obfuskovaným kódem."
+      },
+      "console_command": {
+        "title": "Příkaz konzoly",
+        "description": "Spustí konzolový příkaz buď jako klient, nebo jako server."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX v řetězci",
+        "description": "Často se používá v zadních dveřích k nastavení hodností nebo k jiným činnostem s ULX."
+      },
+      "ip_tracking": {
+        "title": "Sledování IP",
+        "description": "Umožňuje získat IP adresu serveru nebo klienta."
+      },
+      "massive_indentation": {
+        "title": "Hromadná indentace",
+        "description": "Možný pokus o skrytí zadních vrátek."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Může být použit k odeslání škodlivého kódu klientovi."
+      },
+      "backdoor": {
+        "title": "Zadní vrátka",
+        "description": "Potvrzená známá zadní vrátka."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Synchronizace obsahu FastDL",
+    "sync_button": "Synchronizace FastDL",
+    "note": "Tím se synchronizuje veškerý obsah FastDL z herního serveru, zkomprimuje se a nahraje na náš webový server. Synchronizováno bude vše, co se nachází ve složkách garrysmod/, garrysmod/addons/ a garrysmod/gamemodes/, které obsahují obsah ke stažení.",
+    "click_button": "Klikněte na toto tlačítko:",
+    "enable_fastdl": "Chcete-li po synchronizaci povolit FastDL pro svůj server, musíte do souboru {code} přidat {file} .",
+    "sync_started": "FastDL se nyní synchronizuje. Po dokončení budete informováni."
+  },
+  "modpacks": {
+    "install_modpack": "Instalace balíčku Modpack",
+    "install_warning": "Chystáte se nainstalovat {modpack}, jedná se o operaci, která může přepsat existující soubory.",
+    "format_footer": "Zaškrtnutí možnosti formátování znamená, že před instalací modpacku budou odstraněny všechny existující soubory.",
+    "installing": "Modpack se nyní instaluje. Po dokončení budete informováni."
+  },
+  "plugins": {
+    "plugin_installed": "{name} zásuvný modul byl úspěšně nainstalován.",
+    "premium": "Není k dispozici (premium)"
+  },
+  "minecraft": {
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snasphoty)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "quiltmc": "QuiltMC",
+      "quiltmc_snapshots": "QuiltMC (Snapshoty)",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshoty)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "404": {
+    "title": "Hittades ej",
+    "description": "Det gick inte att hitta sidan du letade efter."
+  },
+  "login": {
+    "index": {
+      "title": "Logga in",
+      "description": "Logga in i panelen."
+    },
+    "reset_password": {
+      "title": "Återställ lösenord",
+      "description": "Återställ ditt kontos lösenord.",
+      "token": {
+        "title": "Återställ lösenord",
+        "description": "Slutför återställning av lösenordet för ditt konto."
+      }
+    }
+  },
+  "index": {
+    "title": "Mina servrar"
+  },
+  "account": {
+    "title": "Mitt konto",
+    "settings": {
+      "title": "Kontoinställningar"
+    },
+    "security": {
+      "title": "Säkerhetsinställningar",
+      "description": "Styr aktiva sessioner och 2-faktorsautentisering."
+    }
+  },
+  "server": {
+    "title": "Min server",
+    "system": {
+      "title": "System",
+      "index": {
+        "title": "Konsol",
+        "description": "Hantera din server i realtid."
+      },
+      "details": {
+        "title": "Serverinformation",
+        "description": "Se detaljer om din spelserver."
+      },
+      "sftp": {
+        "title": "SFTP-detaljer",
+        "description": "Kontoinformation för SFTP-anslutningar."
+      },
+      "audit_logs": {
+        "title": "Händelseloggar",
+        "description": "Se allt som händer med din server."
+      }
+    },
+    "management": {
+      "title": "Hantering",
+      "files": {
+        "index": {
+          "title": "Filhanterare",
+          "description": "Hantera alla dina filer direkt från webben."
+        },
+        "new": {
+          "title": "Ny fil",
+          "description": "Skapa en ny fil."
+        },
+        "edit": {
+          "title": "Redigera fil",
+          "description": "Gör ändringar till en fil."
+        }
+      },
+      "databases": {
+        "title": "Databaser",
+        "description": "Alla databaser tillgängliga för denna server."
+      },
+      "backups": {
+        "title": "Säkerhetskopior",
+        "description": "Hantera och återställ serversäkerhetskopior här."
+      },
+      "subusers": {
+        "index": {
+          "title": "Underanvändare",
+          "description": "Kontrollera vem som har åtkomst till din server."
+        },
+        "new": {
+          "title": "Lägg till ny användare",
+          "description": "Lägg till en ny användare med behörighet till din server."
+        },
+        "edit": {
+          "title": "Uppdatera användare",
+          "description": "Ändra en användares åtkomst till servern."
+        }
+      },
+      "allocations": {
+        "title": "Allokeringar",
+        "description": "Styr de IP-adresser och portar som finns tillgängliga för denna server."
+      }
+    },
+    "configuration": {
+      "title": "Konfiguration",
+      "startup": {
+        "title": "Uppstartsinställlningar",
+        "description": "Ändra din servers uppstartsinställningar."
+      },
+      "schedules": {
+        "index": {
+          "title": "Scheman",
+          "description": "Hantera alla scheman för denna server på ett ställe."
+        },
+        "manage": {
+          "title": "Hantera Scheman",
+          "description": "Hantera uppgifter och körtid för detta schema."
+        }
+      },
+      "advanced": {
+        "title": "Avancerat",
+        "description": "Hantera extra alternativ för din server här."
+      }
+    },
+    "tools": {
+      "title": "Verktyg",
+      "modpacks": {
+        "title": "Modpack-hanterare",
+        "description": "Enkelt sätt att installera modpacks."
+      },
+      "plugins": {
+        "title": "Pluginhantering",
+        "description": "Enkelt sätt att installera plugins."
+      },
+      "mods": {
+        "title": "Modhanterare",
+        "description": "Enkelt sätt att installera tillägg."
+      },
+      "backdoor_scanner": {
+        "title": "Skanner för bakdörrar",
+        "description": "Hitta eventuellt exploaterbar kod i dina installerade tillägg."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Automatisk FastDL-Hanterare för din server."
+      }
+    },
+    "administrate": {
+      "title": "Administrera"
+    }
+  },
+  "admin": {
+    "title": "Administratör",
+    "administration": {
+      "title": "Administration",
+      "index": {
+        "title": "Översikt",
+        "description": "En snabb blick på panelens status."
+      },
+      "settings": {
+        "title": "Inställningar",
+        "general": {
+          "title": "Allmänt",
+          "description": "Konfigurera WISP efter dina önskemål."
+        },
+        "branding": {
+          "title": "Varumärke",
+          "description": "Konfigurera varumärket för panelen."
+        },
+        "embed": {
+          "title": "Inbäddning",
+          "description": "Konfigurera OpenGraph's inbyggda värden för plattformar som Discord eller Twitter."
+        },
+        "js_injector": {
+          "title": "JS-injektor",
+          "description": "Lägg till extra JavaScript på din WISP-panel."
+        },
+        "css_injector": {
+          "title": "CSS-injektor",
+          "description": "Lägg till extra CSS till din WISP-panel."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Konfigurera WHMCS Single-Sign-On integrering."
+        }
+      },
+      "migrator": {
+        "title": "Migration",
+        "description": "Migrera data från din befintliga Pterodactyl instans till WISP."
+      },
+      "announcements": {
+        "title": "Nyheter",
+        "description": "Sänd meddelanden till alla dina användare."
+      },
+      "application_api": {
+        "index": {
+          "title": "Applikations API",
+          "description": "Kontrollera åtkomstuppgifter till (legacy) APIn."
+        },
+        "new": {
+          "title": "Nya Applikations APIn",
+          "description": "Skapa nya autentiseringsuppgifter till (legacy) APIn."
+        },
+        "manage": {
+          "title": "Hantera Applikations API",
+          "description": "Hantera autentiseringsuppgifter till (legacy) APIn."
+        }
+      }
+    },
+    "management": {
+      "title": "Hantering",
+      "database_hosts": {
+        "index": {
+          "title": "Databasvärdar",
+          "description": "Databasvärdar som servrar kan få databaser skapade på."
+        },
+        "manage": {
+          "title": "Hantera databasvärd",
+          "description": "Visar tillhörande databaser och detaljer för denna databasvärd."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Platser",
+          "description": "Alla platser som noder kan tilldelas för enklare kategorisering."
+        },
+        "manage": {
+          "title": "Hantera plats",
+          "description": "Visar associerade noder och detaljer för den här platsen."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Noder",
+          "description": "Alla noder tillgängliga för att distribuera servrar på i denna panel."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "En snabb överblick över din nod."
+          },
+          "settings": {
+            "title": "Inställningar",
+            "description": "Konfigurera dina nodinställningar."
+          },
+          "allocations": {
+            "title": "Allokeringar",
+            "description": "Hantera allokeringar tillgängliga för servrar på den här noden."
+          },
+          "servers": {
+            "title": "Servrar",
+            "description": "Visa servrar installerade på den här noden."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Servrar",
+          "description": "Alla servrar tillgängliga i systemet."
+        },
+        "new": {
+          "title": "Ny server",
+          "description": "Lägg till en ny server till panelen."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "En snabb överblick över servern."
+          },
+          "details": {
+            "title": "Detaljer",
+            "description": "Redigera detaljer för denna server inklusive ägare och behållare."
+          },
+          "build_configuration": {
+            "title": "Byggkonfiguration",
+            "description": "Styr allokeringar och systemresurser för den här servern."
+          },
+          "startup": {
+            "title": "Uppstart",
+            "description": "Kontrollera startkommando såväl som variabler."
+          },
+          "databases": {
+            "title": "Databaser",
+            "description": "Hantera databaser för denna server."
+          },
+          "advanced": {
+            "title": "Avancerat",
+            "description": "Ytterligare åtgärder för att styra denna server."
+          },
+          "go_to_server": {
+            "title": "Gå till server"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Användare",
+          "description": "Alla registrerade användare i systemet."
+        },
+        "new": {
+          "title": "Ny användare",
+          "description": "Skapa en ny användare i systemet."
+        },
+        "manage": {
+          "about": {
+            "title": "Om",
+            "description": "Hantera en befintlig användare i systemet."
+          },
+          "servers": {
+            "title": "Servrar",
+            "description": "Visa servrar som ägs av den här användaren."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Tjänsthantering",
+      "nests": {
+        "index": {
+          "title": "Bon",
+          "description": "Alla bon som finns tillgängliga på för systemet."
+        },
+        "manage": {
+          "title": "Hantera bon",
+          "description": "Hantera ett befintligt bo i systemet."
+        },
+        "egg": {
+          "title": "Ägghantering",
+          "new": {
+            "title": "Nytt ägg",
+            "description": "Skapa ett nytt ägg för att tilldela servrar."
+          },
+          "configuration": {
+            "title": "Konfiguration",
+            "description": "Konfigurera ett befintligt ägg i systemet."
+          },
+          "variables": {
+            "title": "Variabler",
+            "description": "Konfigurera miljövariablerna för detta ägg."
+          },
+          "scripts": {
+            "title": "Skript",
+            "description": "Konfigurera skriptet install/update för detta ägg."
+          },
+          "thumbnail": {
+            "title": "Miniatyrbild",
+            "description": "Konfigurera miniatyrbilden för detta ägg."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Modifikationer",
+          "description": "Alla servicemodd som finns i systemet."
+        },
+        "new": {
+          "title": "Nytt modd",
+          "description": "Skapa ett nytt modd i systemet."
+        },
+        "manage": {
+          "title": "Hantera modifikation",
+          "description": "Hantera ett befintligt servicemodd i systemet."
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Återgå till föregående sida",
+    "go_home": "Gå till startsidan",
+    "404": "Den begärda resursen kunde inte hittas.",
+    "429": "Du är för närvarande hastighetsbegränsad, försök igen några om några minuter."
+  }
+}

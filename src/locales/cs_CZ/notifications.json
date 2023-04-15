@@ -1,0 +1,46 @@
+{
+  "server": {
+    "backup": {
+      "created": "Dokončeno vytváření zálohy {name}.",
+      "failed_to_create": "Nepodařilo se vytvořit zálohu {name}: {err}",
+      "deployed": "Dokončeno nasazení zálohy {name}.",
+      "failed_to_deploy": "Nepodařilo se nasadit zálohu {name}."
+    },
+    "update": {
+      "updated": "Dokončení aktualizace.",
+      "failed": "Nepodařilo se aktualizovat server."
+    },
+    "installed": "Dokončená instalace.",
+    "version": {
+      "installed": "Dokončena instalace verze {name}.",
+      "failed": "Nepodařilo se nainstalovat verzi {name}."
+    },
+    "modpack": {
+      "installed": "Dokončena instalace modpacku {name}.",
+      "failed": "Nepodařilo se nainstalovat modpack {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL byl synchronizován.",
+      "failed": "Neúspěšná synchronizace FastDL."
+    },
+    "move": {
+      "moved": "Dokončeno stěhování.",
+      "db_migration_failed": "Migrace databáze se nezdařila {name}.",
+      "failed": "Neúspěšný přenos serveru.",
+      "failed_to_delete_archive": "Nepodařilo se odstranit archiv přenosu serveru pro {name}.",
+      "failed_to_delete_created_server": "Nepodařilo se odstranit vytvořený server na {name}.",
+      "failed_to_update_allocation": "Nepodařilo se uvolnit starou alokaci na {name}.",
+      "failed_final_stage": "Neúspěšná závěrečná fáze přenosu serveru (ujistěte se, že starý server byl odstraněn z {name} a dbs přesunut hostitele, pokud se to nepodařilo)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrátor",
+      "finished_migrating_data": "Byla dokončena migrace z {fqdn}.",
+      "exceeded_limits": "Selhala migrace pro {fqdn}: {message} Kontaktujte nás pro ruční přesun.",
+      "aborted_migration": "Přerušená migrace pro {fqdn}: {message}",
+      "data_mismatch": "Selhala migrace pro {fqdn} z důvodu neshody dat: {message}",
+      "failed_due_to_internal_error": "Selhala migrace pro {fqdn}: Něco se vnitřně pokazilo, prosím kontaktujte nás prostřednictvím podpory."
+    }
+  }
+}

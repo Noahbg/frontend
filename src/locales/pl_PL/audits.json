@@ -1,0 +1,120 @@
+{
+  "server": {
+    "update": {
+      "title": "Serwer zaktualizowany",
+      "message": "{user} zaktualizował dane tego serwera"
+    },
+    "subuser": {
+      "create": {
+        "title": "Utworzony podużytkownik",
+        "message": "{user} utworzył nowego podużytkownika dla {target}"
+      },
+      "update": {
+        "title": "Podużytkownik zaktualizowany",
+        "message": "{user} zaktualizował uprawnienia podużytkownika dla {target}"
+      },
+      "delete": {
+        "title": "Cofnięcie dostępu podużytkownika",
+        "message": "{user} usunął podużytkownika należącego do {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Baza danych została utworzona",
+        "message": "{user} utworzył nową bazę danych o nazwie {name}"
+      },
+      "update": {
+        "title": "Baza danych zaktualizowana",
+        "message": "{user} zregenerował hasło do bazy danych dla {target}"
+      },
+      "delete": {
+        "title": "Baza danych usunięta",
+        "message": "{user} usunął bazę danych {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Wywołanie wykonania harmonogramu",
+        "message": "{user} wywołał harmonogram {target}"
+      },
+      "create": {
+        "title": "Utworzono harmonogram",
+        "message": "{user} tworzy nowy harmonogram o nazwie {name}."
+      },
+      "update": {
+        "title": "Harmonogram zaktualizowany",
+        "message": "{user} zaktualizował harmonogram {target}"
+      },
+      "delete": {
+        "title": "Harmonogram usunięty",
+        "message": "{user} usunął {target} harmonogram i zadania w nim zawarte"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Zmienne startowe zaktualizowane",
+        "message": "{user} zaktualizował zmienne startowe serwera"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Monitor zdrowia włączony",
+        "message": "{user} włączył monitor zdrowia"
+      },
+      "restart": {
+        "title": "Restart serwera",
+        "message": "Restart serwera wywołany przez monitor zdrowia"
+      }
+    },
+    "crash": {
+      "title": "Awaria serwera",
+      "message": "Serwer się zawiesił"
+    },
+    "backup": {
+      "create": {
+        "title": "Utworzona kopia zapasowa",
+        "message": "{user} utworzył kopię zapasową o nazwie {name}"
+      },
+      "update": {
+        "title": "Kopia zapasowa zaktualizowana",
+        "message": "{user} przełączył status zablokowany dla kopii zapasowej {name}"
+      },
+      "deploy": {
+        "title": "Kopia zapasowa umieszczona na serwerze",
+        "message": "{user} umieścił kopię zapasową {name} na serwerze"
+      },
+      "download": {
+        "title": "Pobrana kopia zapasowa",
+        "message": "{user} pobrał kopię zapasową {name}"
+      },
+      "delete": {
+        "title": "Kopia zapasowa usunięta",
+        "message": "{user} usunął kopię zapasową {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Status moda zaktualizowany",
+        "message": "{user} przełącza status instalacji {name} moda"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Zainstalowano paczkę modów",
+        "message": "{user} zainstalował {modpack} paczkę modów"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Wtyczka zainstalowana",
+        "message": "{user} zainstalował plugin {plugin}"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL zsynchronizowany",
+        "message": "{user} synchronizuje zawartość FastDL dla tego serwera"
+      }
+    }
+  }
+}

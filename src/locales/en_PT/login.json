@@ -1,0 +1,22 @@
+{
+  "sign_in": "Sign In",
+  "or": "or",
+  "sso": "Login with SSO",
+  "struggling_to_login": "Strugglin' a Login?",
+  "reset_password": "Reset Password",
+  "back": "Back ta Login",
+  "password_reset_email_sent": "Password reset instructions have been shipped to yer inbox if there be an account associated with it!",
+  "passwords": {
+    "throttled": "You have been temporarily throttled due to too many password change attempts, please try again later.",
+    "token": "Invalid token associated with the password request, please try requesting a new password reset link.",
+    "user": "Can't reset password for an invalid user!",
+    "confirmation": "The provided password and password confirmation ain't a matchin'."
+  },
+  "two_factor_token": "Two-Factor Token",
+  "invalid_user": "The credentials provided do not match them which we have on record! If you're not sure that your password is correct, try resetting it!",
+  "sso_down": "Unable to contact the servers to verify the account, please try again later.",
+  "sso_failed": "Something went wrong when tryin' to verify the account! Please try again later!",
+  "sso_invalid": "The previous session expired, please try again!",
+  "sso_non_existing_account": "Can nah find an associated account on the panel. Please use the normal login and enable quick login from the account settings!",
+  "sso_disabled_for_account": "This account has quick login disabled! Please use the normal login instead!"
+}

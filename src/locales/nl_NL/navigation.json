@@ -1,0 +1,366 @@
+{
+  "404": {
+    "title": "Niet gevonden",
+    "description": "Wij kunnen de pagina die u zoekt niet vinden."
+  },
+  "login": {
+    "index": {
+      "title": "Inloggen",
+      "description": "Log in op het paneel."
+    },
+    "reset_password": {
+      "title": "Wachtwoord Herstellen",
+      "description": "Het wachtwoord van uw account resetten.",
+      "token": {
+        "title": "Wachtwoord Herstellen",
+        "description": "Afronden herstellen van wachtwoord."
+      }
+    }
+  },
+  "index": {
+    "title": "Mijn Servers"
+  },
+  "account": {
+    "title": "Mijn Account",
+    "settings": {
+      "title": "Accountinstellingen"
+    },
+    "security": {
+      "title": "Multifactor authenticatie\n",
+      "description": "Beheer actieve sessies en 2-Factor Authenticatie."
+    }
+  },
+  "server": {
+    "title": "Mijn Servers",
+    "system": {
+      "title": "Systeem",
+      "index": {
+        "title": "Console",
+        "description": "Beheer uw server in realtime."
+      },
+      "details": {
+        "title": "Server Details",
+        "description": "Zie meer informatie over uw spelserver."
+      },
+      "sftp": {
+        "title": "SFTP Details",
+        "description": "Accountgegevens voor SFTP-verbindingen."
+      },
+      "audit_logs": {
+        "title": "Auditlogboeken",
+        "description": "Bekijk alles wat er gebeurt met uw server."
+      }
+    },
+    "management": {
+      "title": "Beheer",
+      "files": {
+        "index": {
+          "title": "Bestandsbeheer",
+          "description": "Beheer alle bestanden direct vanaf het web."
+        },
+        "new": {
+          "title": "Nieuw bestand",
+          "description": "Nieuw bestand aanmaken"
+        },
+        "edit": {
+          "title": "Wijzigen bestand",
+          "description": "Maak wijzigingen aan een bestand."
+        }
+      },
+      "databases": {
+        "title": "Databases",
+        "description": "Alle databases beschikbaar voor deze server."
+      },
+      "backups": {
+        "title": "Back-ups",
+        "description": "Beheer en zet server back-ups hier."
+      },
+      "subusers": {
+        "index": {
+          "title": "Subgebruikers",
+          "description": "Bepaal wie toegang tot uw server heeft"
+        },
+        "new": {
+          "title": "Nieuwe Subgebruiker",
+          "description": "Voeg een nieuwe gebruiker toe met permissies aan uw server."
+        },
+        "edit": {
+          "title": "Subuser bewerken",
+          "description": "Wijzig de toegang van een gebruiker tot de server."
+        }
+      },
+      "allocations": {
+        "title": "Toewijzingen",
+        "description": "Beheer de IP's en poorten die beschikbaar zijn op deze server."
+      }
+    },
+    "configuration": {
+      "title": "Instellingen",
+      "startup": {
+        "title": "Opstart Parameters",
+        "description": "Beheer de opstart parameters van de server."
+      },
+      "schedules": {
+        "index": {
+          "title": "Schemas",
+          "description": "Beheer alle schema's van deze server op één plaats."
+        },
+        "manage": {
+          "title": "Schema Beheren",
+          "description": "Beheer de taken en uitvoeringstijd van dit schema."
+        }
+      },
+      "advanced": {
+        "title": "Geavanceerd",
+        "description": "Beheer hier extra opties voor uw server."
+      }
+    },
+    "tools": {
+      "title": "Tools",
+      "modpacks": {
+        "title": "Modpack Beheer",
+        "description": "Eenvoudige manier om een mod pakket te installeren."
+      },
+      "plugins": {
+        "title": "Plugin Beheer",
+        "description": "Eenvoudige manier om een plugin te installeren."
+      },
+      "mods": {
+        "title": "Mod Beheer",
+        "description": "Makkelijke manier om plugins te installeren."
+      },
+      "backdoor_scanner": {
+        "title": "Achterdeur Scanner",
+        "description": "Zoek mogelijk exploiteerbare code in uw geïnstalleerde add-ons."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Automatische FastDL Manager voor uw server."
+      }
+    },
+    "administrate": {
+      "title": "Administratief"
+    }
+  },
+  "admin": {
+    "title": "Beheerder",
+    "administration": {
+      "title": "Administratie",
+      "index": {
+        "title": "Overzicht",
+        "description": "Een korte blik op de status van je paneel."
+      },
+      "settings": {
+        "title": "Instellingen",
+        "general": {
+          "title": "Algemeen",
+          "description": "Configureer WISP naar uw zin."
+        },
+        "branding": {
+          "title": "Branding",
+          "description": "Configureer branding voor het paneel."
+        },
+        "embed": {
+          "title": "Insluiten",
+          "description": "Configureer OpenGraph-insluitwaarden voor platforms zoals Discord of Twitter."
+        },
+        "js_injector": {
+          "title": "JS Injector",
+          "description": "Voeg extra JavaScript toe aan uw WISP paneel."
+        },
+        "css_injector": {
+          "title": "CSS Injector",
+          "description": "Voeg extra CSS toe aan uw WISP paneel."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Configureer WHMCS Single-Sign-On integratie."
+        }
+      },
+      "migrator": {
+        "title": "Migrator",
+        "description": "Migreer de gegevens van uw bestaande Pterodactyl instantie naar WISP."
+      },
+      "announcements": {
+        "title": "Aankondigingen",
+        "description": "Stuur berichten naar al je gebruikers."
+      },
+      "application_api": {
+        "index": {
+          "title": "Applicatie-API",
+          "description": "Beheer toegangsgegevens tot de (legacy) API."
+        },
+        "new": {
+          "title": "Nieuwe Applicatie API",
+          "description": "Maak een nieuwe toegangsreferentie voor de (verouderde) API."
+        },
+        "manage": {
+          "title": "Beheer Applicatie API",
+          "description": "Beheer toegang referenties naar de (legacy) API."
+        }
+      }
+    },
+    "management": {
+      "title": "Beheren",
+      "database_hosts": {
+        "index": {
+          "title": "Databasehost",
+          "description": "Databasehosts waarop servers databases kunnen maken."
+        },
+        "manage": {
+          "title": "Databasehost beheren",
+          "description": "Geassocieerde databases en details voor deze databasehost bekijken."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Locaties",
+          "description": "Alle locaties waaraan nodes kunnen worden toegewezen voor eenvoudigere categorisering."
+        },
+        "manage": {
+          "title": "Locaties beheren",
+          "description": "Bijbehorende nodes en details voor deze locatie bekijken."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Nodes",
+          "description": "Alle nodes die beschikbaar zijn om servers op te implementeren in dit paneel."
+        },
+        "manage": {
+          "about": {
+            "title": "Over",
+            "description": "Een snel overzicht van uw node."
+          },
+          "settings": {
+            "title": "Instellingen",
+            "description": "Configureer uw node-instellingen.\n\n"
+          },
+          "allocations": {
+            "title": "Toewijzingen",
+            "description": "Beheer toewijzingen die beschikbaar zijn voor servers op dit knooppunt."
+          },
+          "servers": {
+            "title": "Servers",
+            "description": "Lijst van servers geïnstalleerd op deze node."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Servers",
+          "description": "Alle servers beschikbaar op het systeem."
+        },
+        "new": {
+          "title": "Nieuwe Server",
+          "description": "Voeg een nieuwe server toe aan het paneel."
+        },
+        "manage": {
+          "about": {
+            "title": "Over",
+            "description": "Een snel overzicht van de server."
+          },
+          "details": {
+            "title": "Details",
+            "description": "Bewerk details voor deze server, inclusief eigenaar en container."
+          },
+          "build_configuration": {
+            "title": "Configuratie bouwen",
+            "description": "Beheer toewijzingen en systeembronnen voor deze server."
+          },
+          "startup": {
+            "title": "Opstarten",
+            "description": "Beheer opstartcommando en variabelen."
+          },
+          "databases": {
+            "title": "Databases",
+            "description": "Beheer databases voor deze server."
+          },
+          "advanced": {
+            "title": "Geavanceerd",
+            "description": "Aanvullende acties om deze server te beheren."
+          },
+          "go_to_server": {
+            "title": "Ga naar server"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Gebruikers",
+          "description": "Alle geregistreerde gebruikers in het systeem."
+        },
+        "new": {
+          "title": "Nieuwe Gebruiker",
+          "description": "Maak een nieuwe gebruiker aan op het systeem."
+        },
+        "manage": {
+          "about": {
+            "title": "Over",
+            "description": "Beheer een bestaande gebruiker op het systeem."
+          },
+          "servers": {
+            "title": "Servers",
+            "description": "Lijst van servers van deze gebruiker."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Servicemanagement",
+      "nests": {
+        "index": {
+          "title": "Verzameling",
+          "description": "Alle verzamelingen momenteel beschikbaar op dit systeem."
+        },
+        "manage": {
+          "title": "Beheer verzameling",
+          "description": "Beheer een bestaande verzameling op het systeem."
+        },
+        "egg": {
+          "title": "Ei Beheer",
+          "new": {
+            "title": "Nieuw Ei",
+            "description": "Maak een nieuw Ei om toe te wijzen aan servers."
+          },
+          "configuration": {
+            "title": "Instellingen",
+            "description": "Configureer een bestaand ei op het systeem."
+          },
+          "variables": {
+            "title": "Variabelen",
+            "description": "Configureer de omgevingsvariabelen voor dit ei."
+          },
+          "scripts": {
+            "title": "Scripten",
+            "description": "Configureer het installatie/update script voor dit ei."
+          },
+          "thumbnail": {
+            "title": "Thumbnail",
+            "description": "Configureer de thumbnail afbeelding voor dit ei."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Modificaties",
+          "description": "Alle service modificaties beschikbaar op het systeem."
+        },
+        "new": {
+          "title": "Nieuwe Modificatie",
+          "description": "Maak een nieuwe modificatie aan op het systeem."
+        },
+        "manage": {
+          "title": "Beheer Modificatie",
+          "description": "Beheer een bestaande service modificatie op het systeem."
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Terug naar Vorige Pagina",
+    "go_home": "Terug naar de Voorpagina",
+    "404": "De opgevraagde bron kon niet worden gevonden.",
+    "429": "U wordt momenteel beperkt, probeer over een paar minuten opnieuw."
+  }
+}

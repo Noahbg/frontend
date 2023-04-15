@@ -1,0 +1,62 @@
+{
+  "index": {
+    "license_information": "Lizenz-Informationen"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Panel-Einstellungen",
+      "require_2fa": {
+        "not_required": "Nicht erforderlich",
+        "admin_only": "Administratoren vorbehalten",
+        "all_users": "Alle Benutzer"
+      },
+      "require_2fa_footer": "Wenn diese Option aktiviert ist, muss für jedes Konto, das in die ausgewählte Gruppierung fällt, die 2-Faktor-Authentifizierung aktiviert sein, um das Panel nutzen zu können.",
+      "default_language_footer": "Die Standardsprache, die beim Rendern von UI-Komponenten verwendet wird."
+    },
+    "branding": {
+      "recommended_size": "Empfohlene Größe:",
+      "formats": "Formate:",
+      "login_screen_logo": "Logo des Anmeldebildschirms",
+      "login_screen_logo_recommended_size": "300 x 100px (maximal 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg, und svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (maximal 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Panel-Logo",
+      "panel_logo_recommended_size": "230 x 50px (maximal 250KB)",
+      "panel_logo_recommended_formats": "png, jpg, und svg"
+    },
+    "embed": {
+      "embed_settings": "Einstellungen von Einbettungen",
+      "site_name_footer": "Der Name der Website, der bei Einbettungen angezeigt werden soll.",
+      "title_footer": "Der Titel, der bei Einbettungen angezeigt werden soll.",
+      "description_footer": "Kurze Beschreibung, die bei Einbettungen angezeigt werden soll.",
+      "image_footer": "Die Bild-URL, die bei Einbettungen angezeigt wird."
+    },
+    "js_injector": {
+      "title": "JavaScript-Injektor"
+    },
+    "css_injector": {
+      "title": "CSS-Injektor"
+    }
+  },
+  "migrator": {
+    "notify_users": "Benutzer benachrichtigen",
+    "step_1": "Schritt 1 - Daten migrieren",
+    "step_2": "Schritt 2 - Benutzer benachrichtigen",
+    "step_3": "Schritt 3 - Feinschliff",
+    "locations_node_and_game_data": "Standorte, Knoten, Zuweisungen, Datenbanken und Spielserverdaten",
+    "after_migration": "Nach erfolgter Migration ist Folgendes zu beachten:",
+    "states": {
+      "in_progress": "In Bearbeitung",
+      "notified_users": "Keine Benutzer mehr zu benachrichtigen",
+      "failed": "Fehlgeschlagen"
+    }
+  },
+  "announcements": {
+    "title": "Ankündigungen",
+    "create_announcement": "Ankündigung erstellen",
+    "edit_announcement": "Ankündigung bearbeiten",
+    "delete_announcement": "Ankündigung löschen"
+  }
+}

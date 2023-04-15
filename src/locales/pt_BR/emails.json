@@ -1,0 +1,40 @@
+{
+  "hello": "Olá!",
+  "whoops": "Opa!",
+  "regards": "Atenciosamente.",
+  "all_rights_reserved": "Todos os direitos reservados.",
+  "trouble_clicking_action": "Se você está tendo algum problema {actionText}, clique no botão para copiar e colar a URL abaixo em seu navegador:",
+  "greeting": "Olá {name}!",
+  "visit_panel": "Acesse o painel",
+  "account": {
+    "subject": {
+      "created": "Conta criada",
+      "migrated": "Conta migrada",
+      "reset_password": "Redefinir senha"
+    },
+    "email_reason": {
+      "created": "Você está recebendo este e-mail porque uma conta foi criada para você em nosso Painel de Jogos.",
+      "migrated": "Você está recebendo este e-mail porque uma conta foi migrada para um novo Painel de Jogos.",
+      "reset_password": "Você está recebendo este e-mail porque nós recebemos um pedido de redefinição de senha para esta conta."
+    },
+    "user_email": "E-mail: {email}",
+    "updating_account": "Suas informações podem ser alteradas no Painel após a criação da conta.",
+    "setup_your_account": "Crie Sua Conta",
+    "reset_password": "Redefinir senha",
+    "reset_password_requested_by_someone_else": "Se você não solicitou essa redefinição de senha, não é necessário fazer nada."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Adicionado a um servidor",
+      "removed_from_server": "Removido de um servidor",
+      "installed": "Servidor Instalado"
+    },
+    "added_as_subuser": "Você foi adicionado como um sub-usuário para o seguinte servidor, agora você possui alguns controles sobre este servidor.",
+    "new_account_notice": "Se você ainda não possui uma conta, verifique por outro e-mail enviado por nós. Se você não consegue encontrar este e-mail, você pode redefinir sua senha do painel aqui: {url}",
+    "removed_as_subuser": "Você foi removido como um sub-usuário do seguinte servidor.",
+    "ready_to_be_used": "Seu servidor concluiu a instalação e agora está pronto para uso.",
+    "server_name": "Nome do servidor: {server}",
+    "visit_server": "Visitar o servidor",
+    "login_and_begin_using": "Faça login e comece a usar"
+  }
+}

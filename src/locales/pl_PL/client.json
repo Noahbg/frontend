@@ -1,0 +1,48 @@
+{
+  "account": {
+    "update_identity": "Uaktualnij tożsamość",
+    "updated_identity": "Tożsamość została zaktualizowana!",
+    "update_email": "Aktualizacja adresu e-mail",
+    "updated_email": "Adres e-mail został zaktualizowany!",
+    "update_password": "Uaktualnij hasło",
+    "updated_password": "Hasło zostało zaktualizowane!",
+    "quick_login": "Szybkie logowanie",
+    "quick_login_description": "Szybkie logowanie pozwala na szybkie zalogowanie się do panelu i SFTP przy użyciu konta rozliczeniowego.",
+    "enable_quick_login": "Włącz szybkie logowanie",
+    "disable_quick_login": "Wyłączenie szybkiego logowania",
+    "failed_linking_sso": "Nie udało się połączyć z kontem zewnętrznym. Proszę spróbować ponownie później.",
+    "password_requirements": "Hasła muszą zawierać co najmniej jeden znak wielki, mały i numeryczny i muszą mieć długość co najmniej 8 znaków.",
+    "invalid_confirmation_password": "Hasło podane dla Twojego konta było nieprawidłowe.",
+    "invalid_totp": "Podany token 2FA jest nieprawidłowy.",
+    "totp_already_in_use": "Masz już włączoną funkcję 2FA.",
+    "navbar_position": {
+      "left": "Lewa",
+      "top": "Top"
+    },
+    "2fa_must_be_enabled": "Administrator panelu zażądał, abyś włączył 2FA dla swojego konta, zanim będziesz mógł korzystać z panelu."
+  },
+  "security": {
+    "active_sessions": "Aktywne sesje",
+    "sessions_disabled": "Twój host nie włączył możliwości zarządzania sesjami kont poprzez ten interfejs.",
+    "credentials_list": "Lista uwierzytelniająca",
+    "2fa": "Uwierzytelnianie Dwuskładnikowe",
+    "2fa_modal_header": "Skonfiguruj 2FA na swoim koncie",
+    "2fa_secret": "Tajny Kod",
+    "2fa_notice": "Użyj aplikacji 2FA na swoim telefonie, aby zrobić zdjęcie kodu QR po lewej stronie lub ręcznie wprowadź kod znajdujący się pod nim. Gdy już to zrobisz, wygeneruj token i wpisz go poniżej.",
+    "2fa_enabled": "Uwierzytelnianie dwuetapowe jest włączone na tym koncie i będzie wymagane do zalogowania się do panelu. Jeśli chcesz wyłączyć 2FA, po prostu wprowadź poprawny token poniżej i wyślij formularz.",
+    "2fa_disabled": "Uwierzytelnianie dwuetapowe jest wyłączone na twoim koncie! Powinieneś włączyć dwustopniowe uwierzytelnianie aby dodać dodatkowy poziom ochrony na swoim koncie.",
+    "enable_2fa": "Włącz uwierzytelnianie dwuskładnikowe (2-Factor Authentication)",
+    "disable_2fa": "Wyłącz uwierzytelnianie dwuskładnikowe",
+    "create_credentials": "Utwórz klucz API",
+    "memo_description": "Ustaw łatwy do zrozumienia opis dla tego klucza API, aby ułatwić jego późniejszą identyfikację.",
+    "allowed_ips_description": "Jeśli chcesz ograniczyć ten klucz API do określonych adresów IP wpisz je powyżej, po jednym w wierszu. Notacja CIDR jest dozwolona dla każdego adresu IP. Pozostaw puste, aby zezwolić na dowolny adres IP.",
+    "api_key_generated": "Dla Twojego konta został wygenerowany nowy klucz API klienta."
+  },
+  "support": {
+    "your_servers": "Twoje serwery",
+    "enable_access": "Włącz wsparcie PO Dostęp",
+    "disable_access": "Wyłączenie dostępu do PO wsparcia",
+    "enable_access_submit": "Dostęp OP został włączony dla Twojego serwera.",
+    "disable_access_submit": "Dostęp OP został włączony dla Twojego serwera."
+  }
+}

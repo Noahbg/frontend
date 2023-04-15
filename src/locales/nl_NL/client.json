@@ -1,0 +1,48 @@
+{
+  "account": {
+    "update_identity": "Identiteit bijwerken",
+    "updated_identity": "De identiteit is bijgewerkt!",
+    "update_email": "Emailadres bijwerken",
+    "updated_email": "Het e-mail adres is bijgewerkt!",
+    "update_password": "Wachtwoord bijwerken",
+    "updated_password": "Het wachtwoord is bijgewerkt!",
+    "quick_login": "Snel inloggen",
+    "quick_login_description": "Met snel inloggen kunt u snel inloggen op het paneel en SFTP met uw factureringsaccount.",
+    "enable_quick_login": "Snelle aanmelding inschakelen",
+    "disable_quick_login": "Snelle aanmelding uitschakelen",
+    "failed_linking_sso": "Het koppelen van de externe account is mislukt. Probeer het later opnieuw.",
+    "password_requirements": "Wachtwoorden moeten ten minste één hoofdletter, één kleine letter en één numeriek teken bevatten en moeten ten minste 8 tekens lang zijn.",
+    "invalid_confirmation_password": "Het opgegeven wachtwoord voor uw account was ongeldig.",
+    "invalid_totp": "Het opgegeven 2FA token was ongeldig.",
+    "totp_already_in_use": "Je hebt al 2FA ingeschakeld.",
+    "navbar_position": {
+      "left": "Links",
+      "top": "Boven"
+    },
+    "2fa_must_be_enabled": "De beheerder van het paneel heeft u gevraagd om 2FA in te schakelen voor uw account voordat u het paneel kunt gebruiken."
+  },
+  "security": {
+    "active_sessions": "Actieve Sessies",
+    "sessions_disabled": "Uw host heeft de mogelijkheid om accountsessies via deze interface te beheren niet ingeschakeld.",
+    "credentials_list": "Referentielijst",
+    "2fa": "2-Factor Authenticatie",
+    "2fa_modal_header": "Configureer 2FA op uw account",
+    "2fa_secret": "Geheime code",
+    "2fa_notice": "Gebruik de 2FA-applicatie op uw telefoon om een foto te maken van de QR-code links, of voer de code eronder handmatig in. Zodra u dit gedaan heeft, genereert u een token en voert u het hieronder in.",
+    "2fa_enabled": "2-Factor Authenticatie is ingeschakeld op deze account en zal vereist zijn om in te loggen op het paneel. Als u 2FA wilt uitschakelen, voert u hieronder een geldig token in en verzendt u het formulier.",
+    "2fa_disabled": "2-Factor Authentication is uitgeschakeld op uw account! U moet 2FA inschakelen om een extra niveau van bescherming op uw account toe te voegen.",
+    "enable_2fa": "Inschakelen 2-Factor Authenticatie",
+    "disable_2fa": "Schakel 2-Factor Authenticatie uit",
+    "create_credentials": "Maak een API sleutel aan",
+    "memo_description": "Stel een gemakkelijk te begrijpen beschrijving in voor deze API sleutel om u te helpen deze later te identificeren.",
+    "allowed_ips_description": "Als u deze API sleutel wilt beperken tot specifieke IP adressen voer ze dan hierboven in, één per regel. CIDR notatie is toegestaan voor elk IP adres. Laat leeg om elk IP adres toe te staan.",
+    "api_key_generated": "Een nieuwe client API sleutel is gegenereerd voor uw account."
+  },
+  "support": {
+    "your_servers": "Uw servers",
+    "enable_access": "Inschakelen ondersteuning OP toegang",
+    "disable_access": "Uitschakelen Ondersteuning OP Toegang",
+    "enable_access_submit": "Support OP Access is ingeschakeld voor uw server.",
+    "disable_access_submit": "Support OP Access is ingeschakeld voor uw server."
+  }
+}

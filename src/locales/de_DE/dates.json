@@ -1,0 +1,7 @@
+{
+  "formats": {
+    "L": "DD/MM/YYYY",
+    "LT": "h:mm A",
+    "LLLL": "dddd, MMMM D, YYYY h:mm A"
+  }
+}

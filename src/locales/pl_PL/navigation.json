@@ -1,0 +1,366 @@
+{
+  "404": {
+    "title": "Nie znaleziono",
+    "description": "Nie można znaleźć strony, której szukałeś."
+  },
+  "login": {
+    "index": {
+      "title": "Logowanie",
+      "description": "Zaloguj się do panelu."
+    },
+    "reset_password": {
+      "title": "Resetuj hasło",
+      "description": "Zresetuj hasło do konta.",
+      "token": {
+        "title": "Resetuj hasło",
+        "description": "Zakończ resetowanie hasła konta."
+      }
+    }
+  },
+  "index": {
+    "title": "Moje serwery"
+  },
+  "account": {
+    "title": "Moje konto",
+    "settings": {
+      "title": "Ustawienia konta"
+    },
+    "security": {
+      "title": "Kontrola bezpieczeństwa",
+      "description": "Kontroluj aktywne sesje i uwierzytelnianie dwuetapowe."
+    }
+  },
+  "server": {
+    "title": "Mój serwer",
+    "system": {
+      "title": "System",
+      "index": {
+        "title": "Konsola",
+        "description": "Kontroluj swój serwer w czasie rzeczywistym."
+      },
+      "details": {
+        "title": "Szczegóły serwera",
+        "description": "Zobacz szczegóły dotyczące twojego serwera gry."
+      },
+      "sftp": {
+        "title": "Dane SFTP",
+        "description": "Dane konta dla połączeń SFTP."
+      },
+      "audit_logs": {
+        "title": "Dziennik zdarzeń",
+        "description": "Zobacz wszystko co dzieje się z serwerem."
+      }
+    },
+    "management": {
+      "title": "Zarządzanie",
+      "files": {
+        "index": {
+          "title": "Menadżer plików",
+          "description": "Zarządzaj wszystkimi plikami bezpośrednio z strony."
+        },
+        "new": {
+          "title": "Nowy plik",
+          "description": "Utwórz nowy plik."
+        },
+        "edit": {
+          "title": "Edytuj plik",
+          "description": "Dokonaj modyfikacji pliku."
+        }
+      },
+      "databases": {
+        "title": "Bazy danych",
+        "description": "Wszystkie bazy danych dostępne dla tego serwera."
+      },
+      "backups": {
+        "title": "Kopie zapasowe",
+        "description": "Zarządzaj i wdrażaj kopię zapasową serwera tutaj."
+      },
+      "subusers": {
+        "index": {
+          "title": "Podużytkownicy",
+          "description": "Kontroluj, kto ma dostęp do twojego serwera."
+        },
+        "new": {
+          "title": "Nowy podużytkownik",
+          "description": "Dodaj nowego użytkownika z uprawnieniami do twojego serwera."
+        },
+        "edit": {
+          "title": "Edytuj podużytkownika",
+          "description": "Zmodyfikuj dostęp użytkownika do serwera."
+        }
+      },
+      "allocations": {
+        "title": "Alokacje",
+        "description": "Kontroluj adresy IP i porty dostępne na tym serwerze."
+      }
+    },
+    "configuration": {
+      "title": "Konfiguracja",
+      "startup": {
+        "title": "Parametry startowe",
+        "description": "Zmień parametry startowe serwera."
+      },
+      "schedules": {
+        "index": {
+          "title": "Harmonogram",
+          "description": "Zarządzaj harmonogramami tego serwera w jednym miejscu."
+        },
+        "manage": {
+          "title": "Zarządzaj harmonogramem",
+          "description": "Zarządzaj zadaniami i czasem wykonania tego harmonogramu."
+        }
+      },
+      "advanced": {
+        "title": "Zaawansowane",
+        "description": "Zarządzaj dodatkowymi opcjami dla swojego serwera tutaj."
+      }
+    },
+    "tools": {
+      "title": "Narzędzia",
+      "modpacks": {
+        "title": "Menedżer paczek modów",
+        "description": "Łatwy sposób na zainstalowanie paczek modów."
+      },
+      "plugins": {
+        "title": "Menadżer wtyczek",
+        "description": "Łatwy sposób na zainstalowanie pluginów."
+      },
+      "mods": {
+        "title": "Menedżer modów",
+        "description": "Łatwy sposób na instalację dodatków."
+      },
+      "backdoor_scanner": {
+        "title": "Skaner Backdorów",
+        "description": "Znajdź możliwie szkodliwy kod w swoich zainstalowanych dodatkach."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Automatyczny menedżer FastDL dla Twojego serwera."
+      }
+    },
+    "administrate": {
+      "title": "Zarządzaj"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "administration": {
+      "title": "Administracja",
+      "index": {
+        "title": "Podgląd",
+        "description": "Szybki rzut oka na status panelu."
+      },
+      "settings": {
+        "title": "Ustawienia",
+        "general": {
+          "title": "Ogólny",
+          "description": "Skonfiguruj WISP do swoich potrzeb."
+        },
+        "branding": {
+          "title": "Marka",
+          "description": "Skonfiguruj markę dla panelu."
+        },
+        "embed": {
+          "title": "Osadzenie",
+          "description": "Skonfiguruj wartości osadzenia OpenGraph dla platform takich jak Discord czy Twitter."
+        },
+        "js_injector": {
+          "title": "JS Injector",
+          "description": "Dodaj dodatkowy kod JavaScript do swojego panelu WISP."
+        },
+        "css_injector": {
+          "title": "CSS Injector",
+          "description": "Dodaj dodatkowy kod CSS do swojego panelu WISP."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Skonfiguruj integrację pojedynczego logowania WHMCS."
+        }
+      },
+      "migrator": {
+        "title": "Migrator",
+        "description": "Migruj dane z istniejącej instancji Pterodaktyl do WISP."
+      },
+      "announcements": {
+        "title": "Ogłoszenia",
+        "description": "Wyślij wiadomość do wszystkich swoich użytkowników."
+      },
+      "application_api": {
+        "index": {
+          "title": "Aplikacja API",
+          "description": "Kontroluj uprawnienia dostępu do (starego) API."
+        },
+        "new": {
+          "title": "Nowa aplikacja API",
+          "description": "Utwórz nowe dane logowania do (starego) API."
+        },
+        "manage": {
+          "title": "Zarządzaj aplikacjami API",
+          "description": "Zarządzaj dostępem do (starego) API."
+        }
+      }
+    },
+    "management": {
+      "title": "Zarządzanie",
+      "database_hosts": {
+        "index": {
+          "title": "Hosty bazy danych",
+          "description": "Serwery bazy danych, na których mogą być tworzone bazy danych."
+        },
+        "manage": {
+          "title": "Zarządzaj serwerem bazy danych",
+          "description": "Przeglądasz powiązane bazy danych i szczegóły dla tego serwera baz danych."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Lokacje",
+          "description": "Wszystkie lokalizacje, do których węzły mogą zostać przypisane dla łatwiejszej kategoryzacji."
+        },
+        "manage": {
+          "title": "Zarządzaj lokacjami",
+          "description": "Przegląda powiązane serwery i szczegóły dla tej lokalizacji."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Serwery",
+          "description": "Wszystkie serwery dostępne do wdrożenia serwerów w tym panelu."
+        },
+        "manage": {
+          "about": {
+            "title": "Informacje",
+            "description": "Szybki przegląd twojego serwera."
+          },
+          "settings": {
+            "title": "Ustawienia",
+            "description": "Skonfiguruj ustawienia serwera."
+          },
+          "allocations": {
+            "title": "Alokacje",
+            "description": "Kontrolowanie alokacji dostępnych dla serwerów w tym serwerze."
+          },
+          "servers": {
+            "title": "Serwery",
+            "description": "Lista serwerów zainstalowanych na tym serwerze."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Serwery",
+          "description": "Wszystkie serwery dostępne w systemie."
+        },
+        "new": {
+          "title": "Nowy serwer",
+          "description": "Dodaj nowy serwer do panelu."
+        },
+        "manage": {
+          "about": {
+            "title": "Informacje",
+            "description": "Szybki przegląd twojego serwera."
+          },
+          "details": {
+            "title": "Szczegóły",
+            "description": "Edytuj szczegóły dla tego serwera w tym właściciela i kontenera."
+          },
+          "build_configuration": {
+            "title": "Konfiguracja budowania",
+            "description": "Kontroluj przydziały i zasoby systemowe dla tego serwera."
+          },
+          "startup": {
+            "title": "Uruchomienie",
+            "description": "Kontroluj komendę startową oraz zmienne."
+          },
+          "databases": {
+            "title": "Bazy danych",
+            "description": "Zarządzaj bazami danych dla tego serwera."
+          },
+          "advanced": {
+            "title": "Zaawansowane",
+            "description": "Dodatkowe działania do sterowania tym serwerem."
+          },
+          "go_to_server": {
+            "title": "Przejdź do serwera"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Użytkownicy",
+          "description": "Wszyscy zarejestrowani użytkownicy systemu."
+        },
+        "new": {
+          "title": "Nowy użytkownik",
+          "description": "Utwórz nowego użytkownika w systemie."
+        },
+        "manage": {
+          "about": {
+            "title": "Informacje",
+            "description": "Zarządzaj istniejącym użytkownikiem systemu."
+          },
+          "servers": {
+            "title": "Serwery",
+            "description": "Lista serwerów należących do tego użytkownika."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Zarządzanie usługami",
+      "nests": {
+        "index": {
+          "title": "Gniazda",
+          "description": "Wszystkie gniazda obecnie dostępne w tym systemie."
+        },
+        "manage": {
+          "title": "Zarządzaj gniazdem",
+          "description": "Zarządzaj istniejącym gniazdem w systemie."
+        },
+        "egg": {
+          "title": "Zarządzanie jajami",
+          "new": {
+            "title": "Nowe jajko",
+            "description": "Utwórz nowe jajko, aby przypisać je do serwerów."
+          },
+          "configuration": {
+            "title": "Konfiguracja",
+            "description": "Konfiguracja istniejącego jajka w systemie."
+          },
+          "variables": {
+            "title": "Zmienne",
+            "description": "Konfiguruj zmienne środowiskowe dla tego jaja."
+          },
+          "scripts": {
+            "title": "Skrypty",
+            "description": "Skonfiguruj skrypt instalacji/aktualizacji dla tego jaja."
+          },
+          "thumbnail": {
+            "title": "Miniaturka",
+            "description": "Skonfiguruj miniaturkę dla tego jajka."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Modyfikacje",
+          "description": "Wszystkie modyfikacje serwisowe dostępne w systemie."
+        },
+        "new": {
+          "title": "Nowa modyfikacja",
+          "description": "Utwórz nową modyfikację w systemie."
+        },
+        "manage": {
+          "title": "Zarządzaj modyfikacją",
+          "description": "Zarządzaj istniejącą modyfikacją usługi w systemie."
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Wróć do poprzedniej strony",
+    "go_home": "Przejdź do strony głównej",
+    "404": "Żądany zasób nie został odnaleziony.",
+    "429": "Jesteś obecnie ograniczony, spróbuj ponownie za kilka minut."
+  }
+}

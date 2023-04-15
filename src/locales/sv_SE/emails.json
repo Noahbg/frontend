@@ -1,0 +1,40 @@
+{
+  "hello": "Hej!",
+  "whoops": "Hoppsan!",
+  "regards": "Hälsningar",
+  "all_rights_reserved": "Alla rättigheter förbehållna.",
+  "trouble_clicking_action": "Om du har problem med att klicka på knappen \"{actionText}\" kan du kopiera och klistra in länken nedan i din webbläsare:",
+  "greeting": "Hej {name}!",
+  "visit_panel": "Gå till panelen",
+  "account": {
+    "subject": {
+      "created": "Konto skapat",
+      "migrated": "Konto migrerat",
+      "reset_password": "Återställ lösenord"
+    },
+    "email_reason": {
+      "created": "Du får det här e-postmeddelandet eftersom ett konto har skapats åt dig i vår spelpanel.",
+      "migrated": "Du får det här e-postmeddelandet eftersom ditt konto har flyttats till en ny spelpanel.",
+      "reset_password": "Du får det här e-postmeddelandet eftersom vi har fått en begäran om återställning av lösenordet för ditt konto."
+    },
+    "user_email": "E-postadress: {email}",
+    "updating_account": "Din information kan ändras i spelpanelen efter att du har skapat ett konto.",
+    "setup_your_account": "Konfigurera ditt konto",
+    "reset_password": "Återställ lösenord",
+    "reset_password_requested_by_someone_else": "Om du inte har begärt att lösenordet ska återställas behöver du inte vidta några ytterligare åtgärder."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Tillagd till server",
+      "removed_from_server": "Borttagen från server",
+      "installed": "Server installerad"
+    },
+    "added_as_subuser": "Du har lagts till som en underanvändare för följande server, vilket ger dig viss kontroll över servern.",
+    "new_account_notice": "Om du inte har ett konto ännu, kolla efter ett annat e-postmeddelande från oss. Om du inte hittar det kan du återställa lösenordet för spelpanelen här: {url}",
+    "removed_as_subuser": "Du har tagits bort som underanvändare för följande server.",
+    "ready_to_be_used": "Din server har installerats färdigt och är nu redo för dig att använda.",
+    "server_name": "Servernamn: {server}",
+    "visit_server": "Gå till server",
+    "login_and_begin_using": "Logga in och börja använda"
+  }
+}

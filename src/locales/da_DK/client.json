@@ -1,0 +1,55 @@
+{
+  "account": {
+    "update_identity": "Opdatering af identitet",
+    "updated_identity": "Identiteten er blevet opdateret!",
+    "update_email": "Opdater e-mailadresse",
+    "updated_email": "E-mail-adressen er blevet opdateret!",
+    "update_password": "Opdater adgangskode",
+    "updated_password": "Adgangskoden er blevet opdateret!",
+    "quick_login": "Hurtigt login",
+    "quick_login_description": "Hurtig login giver dig mulighed for hurtigt at logge ind på panelet og SFTP ved hjælp af din faktureringskonto.",
+    "enable_quick_login": "Aktiver hurtig login",
+    "disable_quick_login": "Deaktiver hurtig login",
+    "failed_linking_sso": "Det lykkedes ikke at forbinde den eksterne konto. Prøv venligst igen senere.",
+    "password_requirements": "Adgangskoder skal indeholde mindst ét stort og ét lille bogstav samt et numerisk tegn og skal være mindst 8 tegn langt.",
+    "invalid_confirmation_password": "Den adgangskode, du har angivet til din konto, var ugyldig.",
+    "invalid_totp": "Det angivne 2FA-token var ugyldig.",
+    "totp_already_in_use": "Du har allerede aktiveret 2FA.",
+    "navbar_position": {
+      "left": "Venstre",
+      "top": "Top"
+    },
+    "2fa_must_be_enabled": "Paneladministratoren har krævet, at du skal aktivere 2FA for din konto, før du kan bruge panelet."
+  },
+  "security": {
+    "active_sessions": "Aktiver sessioner",
+    "sessions_disabled": "Din vært har ikke aktiveret muligheden for at administrere kontosessioner via denne grænseflade.",
+    "credentials_list": "Liste over legitimationsoplysninger",
+    "2fa": "2-faktor-autentificering",
+    "2fa_modal_header": "Konfigurer 2FA på din konto",
+    "2fa_secret": "Hemmelig kode",
+    "2fa_notice": "Brug 2FA-programmet på din telefon til at tage et billede af QR-koden til venstre, eller indtast manuelt koden under den. Når du har gjort det, skal du generere en token og indtaste den nedenfor.",
+    "2fa_enabled": "2-faktor-autentifikation er aktiveret på denne konto og er påkrævet for at logge ind på panelet. Hvis du ønsker at deaktivere 2FA, skal du blot indtaste et gyldigt token nedenfor og sende formularen.",
+    "2fa_disabled": "2-faktor-autentifikation er deaktiveret på din konto! Du bør aktivere 2FA for at tilføje et ekstra beskyttelsesniveau på din konto.",
+    "enable_2fa": "Aktiver 2-faktor-autentifikation",
+    "disable_2fa": "Deaktiver 2-faktor-autentifikation",
+    "create_credentials": "Opret en API-nøgle",
+    "memo_description": "Angiv en letforståelig beskrivelse for denne API-nøgle, så du kan identificere den senere.",
+    "allowed_ips_description": "Hvis du ønsker at begrænse denne API-nøgle til bestemte IP-adresser, skal du indtaste dem ovenfor, én pr. linje. CIDR-notation er tilladt for hver IP-adresse. Lad det være tomt for at tillade alle IP-adresser.",
+    "api_key_generated": "Der er blevet genereret en ny klient-API-nøgle til din konto."
+  },
+  "security_keys": {
+    "title": "Sikkerhedsnøgler",
+    "create_security_key": "Opret sikkerhedsnøgle",
+    "successfully_added": "Sikkerhedsnøglen er blevet tilføjet med succes.",
+    "delete_key": "Slet sikkerhedsnøgle",
+    "delete_key_notice": "Er du sikker på, at du ønsker at slette sikkerhedsnøglen {name}?"
+  },
+  "support": {
+    "your_servers": "Dine servere",
+    "enable_access": "Aktiver Support OP Access",
+    "disable_access": "Deaktivere Support OP Access",
+    "enable_access_submit": "Support OP Access er blevet aktiveret for din server.",
+    "disable_access_submit": "Support OP Access er blevet aktiveret for din server."
+  }
+}

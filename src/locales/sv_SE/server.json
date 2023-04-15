@@ -1,0 +1,370 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Ej migrerad",
+      "description": "Serverns nod är ännu inte konfigurerad efter migrering."
+    },
+    "invalid_license": {
+      "title": "Ogiltig licensnyckel",
+      "description": "Serverns nod har inte en giltig licensnyckel länkad till den - vänligen kontakta panelägaren."
+    },
+    "moving": {
+      "title": "Servern flyttas",
+      "description": "Servern flyttas till en ny nod."
+    },
+    "suspended": {
+      "title": "Denna server är suspenderad",
+      "description": "Servern är för närvarande suspenderad och kan inte nås förrän den är återaktiverad."
+    },
+    "install_failed": {
+      "title": "Installationen misslyckades",
+      "description": "Installationen misslyckades. Vänligen kontakta support."
+    },
+    "deploying_backup": {
+      "title": "Återskapar från säkerhetskopia",
+      "description": "Servern återskapas från en säkerhetskopia."
+    },
+    "installing": {
+      "title": "Servern installerar",
+      "description": "Servern installeras."
+    },
+    "updating": {
+      "title": "Servern uppdaterar",
+      "description": "Servern slutför för närvarande uppdateringsprocessen."
+    },
+    "backup_creating": {
+      "title": "Säkerhetskopiering pågår",
+      "description": "Servern tar för närvarande en säkerhetskopia."
+    }
+  },
+  "console": {
+    "type_a_command": "Skriv ett kommando...",
+    "console_popup": "Öppna konsol-popup",
+    "upload_logs": "Ladda upp loggar",
+    "eula_acceptance": "Godkännande av EULA",
+    "eula_notice": "Genom att trycka på ”Jag accepterar” nedan anger ni ert samtycke till Mojang's EULA."
+  },
+  "power": {
+    "start": "Starta",
+    "restart": "Starta om",
+    "stop": "Stoppa",
+    "kill": "Tvinga stopp"
+  },
+  "logs": {
+    "upload_logs": "Ladda upp loggar",
+    "upload_logs_description": "Vill du ladda upp dina loggar så att de kan delas?",
+    "upload_complete": "Dina loggar har laddats upp på: {url}",
+    "upload_failed": "Något gick fel vid försök att ladda upp serverloggar. Vänligen försök igen senare."
+  },
+  "details": {
+    "server_name": "Servernamn",
+    "server_limits": "Begränsningar för servern",
+    "server_info": "Serverinformation",
+    "update_server_name": "Ändra servernamn",
+    "name_description": "Servernamn synligt i panelen. Detta ändrar inte själva serverns värdnamn, bara hur den identifieras i panelen.",
+    "updated": "Din servers detaljer har uppdaterats!"
+  },
+  "sftp": {
+    "sftp_details": "SFTP-detaljer",
+    "alert_note": "SFTP-lösenordet är det lösenordet som du använder för att logga in på panelen. Se till att din klient är inställd på att använda SFTP och inte FTP eller FTPS för anslutningar, det finns en skillnad mellan protokollen."
+  },
+  "audit_logs": {
+    "no_audits": "Inga händelseloggar hittades",
+    "no_audits_description": "Verkar som om du inte har några händelseloggar. Utför några åtgärder på din server för att generera och se en översikt över vad som händer med din server här.",
+    "changes": {
+      "hidden_value": "Ändrade {key} till ett nytt dolt värde",
+      "from_to": "Ändrade {key} från {old} till {new}"
+    },
+    "device": {
+      "city": "Stad",
+      "country": "Land",
+      "user_agent": "Webbläsare"
+    }
+  },
+  "files": {
+    "new_file": "Ny fil",
+    "new_folder": "Ny mapp",
+    "upload": "Ladda Upp",
+    "rename_or_move": "Byt namn/Flytta",
+    "copy": "Kopiera",
+    "compress": "Komprimera",
+    "decompress": "Extrahera",
+    "download": "Ladda ner",
+    "delete_files": "Radera filer",
+    "delete_following": "Är du säker på att du vill ta bort följande filer? Att ta bort filer är en oåterkallelig åtgärd som inte kan ångras om du inte har tagit säkerhetskopior.",
+    "upload_unavailable": "Uppladdning av filer är för närvarande inte tillgänglig, försök igen senare eller försök använda SFTP.",
+    "upload_too_large": "Det gick inte att ladda upp filen {name} på grund av att den är för stor, vänligen använd SFTP istället.",
+    "search": "Sök",
+    "search_results": "Sökresultat för {query}",
+    "too_many_results": "Vi hittade för många resultat för söktermen. Var mer specifik för att kunna se alla resultat.",
+    "git_clone": "Klona",
+    "get_access_token_here": "Hämta din token här",
+    "cloned_repository": "{repository} har klonats till {path}.",
+    "git_pull": "Hämta",
+    "git_pull_description": "Hämta de senaste ändringarna av utvecklingskatalogen i den aktuella mappen.",
+    "pulled_repository": "Utvecklingskatalogen hämtades och den senaste ändringen är {commit}.",
+    "git_auth_required": "Denna utvecklingskatalog kräver autentisering, vänligen ange din personliga åtkomsttoken.",
+    "steam_workshop": "Steam Workshop",
+    "steam_workshop_finished": "Workshop-artikeln har hämtats.",
+    "steam_workshop_finished_but_with_errors": "Slutfört med följande fel:",
+    "steam_workshop_n_more": "Och inga fler artiklar... | Och {n} fler artiklar... | Och {n} fler artiklar...",
+    "steam_workshop_state": {
+      "waiting": "väntar",
+      "downloading": "laddar ner",
+      "extracting": "extraherar",
+      "parsing": "tolkar",
+      "writing": "skriver {files} filer"
+    },
+    "file_contents": "Filinnehåll",
+    "save_file": "Spara fil",
+    "return_to_file_manager": "Återvänd till filhanteraren",
+    "file_saved": "Filen har sparats"
+  },
+  "databases": {
+    "title": "Databaser",
+    "using_databases": "Använder {count} av {limit} databaser",
+    "create_new": "Skapa ny databas",
+    "delete_database": "Radera databas",
+    "delete_database_notice": "Är du säker på att du vill ta bort {name} -databasen? Det finns ingen återvändo, all data kommer omedelbart att tas bort.",
+    "host_footer": "Detta bör vara noden som databasen ska skapas på.",
+    "name_footer": "Detta bör vara databasens namn som du vill använda.",
+    "connections_from_footer": "Detta bör återspegla den IP-adress som anslutningar är tillåtna från. Använder standard MySQL notation. Om osäker lämna som %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Du har redan nått kvoten av tillåtna databaser för denna server.",
+      "duplicate": "Det finns redan en databas som skapats med detta namn för den här servern.",
+      "no_suitable_host": "Ingen databasvärd hittades som uppfyller kraven för denna server."
+    }
+  },
+  "subusers": {
+    "title": "Hantera användare",
+    "add_new_subuser": "Lägg till ny användare",
+    "update_subuser": "Uppdatera användare",
+    "delete_subuser": "Ta bort användare",
+    "delete_subuser_notice": "Detta kommer omedelbart att ta bort {name} ({email}) från denna server och återkalla alla behörigheter.",
+    "configure_permissions": "Konfigurera behörigheter",
+    "subuser_added": "Tilläggningen av användaren som underanvändare för den här servern lyckades. Vi har skickat dem ett e-postmeddelande med instruktioner om hur man slutför konfigurationen av kontot.",
+    "cant_add_owner": "Du kan inte lägga till serverägaren som underanvändare för den här servern.",
+    "subuser_already_exists": "En användare med den e-postadressen är redan tilldelad som underanvändare för den här servern."
+  },
+  "allocations": {
+    "available_allocations": "Tillgängliga allokeringar",
+    "help_title": "Hjälp med allokering",
+    "help_description": "Listan till vänster innehåller alla tillgängliga IP-adresser och portar som är tillgängliga för din server att använda för inkommande anslutningar.",
+    "primary": "Primär",
+    "make_primary": "Gör till primär"
+  },
+  "startup": {
+    "startup_command": "Startkommando",
+    "input_rules": "Inmatningsregler:",
+    "variable_saved": "Startvariabeln har sparats.",
+    "variable_not_editable_admin": "Den här variabeln kan inte redigeras av användaren, men eftersom du är administratör kan du uppdatera den i administratörsområdet för den här servern.",
+    "variable_not_editable": "Denna variabel kan inte redigeras av användaren."
+  },
+  "backups": {
+    "all_results": "Alla säkerhetskopior",
+    "create_new": "Skapa ny säkerhetskopia",
+    "create_warning": "När du startar en säkerhetskopia kommer att servern stoppas om den redan körs",
+    "created": "Säkerhetskopian {name} skapas",
+    "already_creating": "En säkerhetskopia skapas redan.",
+    "creation_would_exceed_limit": "Att skapa den här säkerhetskopian skulle överskrida serverns säkerhetskopieringsgräns.",
+    "throttled": "Du kan bara skapa två säkerhetskopior under en tidsperiod på 10 minuter.",
+    "cant_delete_locked": "Du måste låsa upp säkerhetskopian innan du försöker radera den.",
+    "delete_backup": "Ta bort säkerhetskopia",
+    "delete_backup_notice": "Är du säker på att du vill ta bort {name} -databasen? Det finns ingen återvändo, all data kommer omedelbart att tas bort."
+  },
+  "schedules": {
+    "name": "Schemaläggningar",
+    "create_new": "Skapa ett nytt schema",
+    "create_task": "Skapa uppgift",
+    "edit_schedule": "Redigera schema",
+    "edit_task": "Redigera uppgift",
+    "delete_schedule": "Ta bort schema",
+    "delete_task": "Ta bort uppgift",
+    "delete_notice": "Bekräfta att du vill ta bort schemat \"{name}\" genom att upprepa namnet i inmatningen nedan. Detta är en irreversibel åtgärd som inte kan ångras.",
+    "delete_task_notice": "Är du säker du vill ta bort denna aktivitet? Detta går ej att ångra!",
+    "enabled_footer": "Om schemat är aktiverat eller inte.",
+    "last_run_at": "Senast körd den: ",
+    "next_run_at": "Nästa körning den: ",
+    "next_run_at_time": "Nästa körning vid {time}",
+    "invalid_cron": "Använd ett giltigt cron-uttryck för att visa beskrivning och nästa körtid.",
+    "runs_description": "Kör {description}",
+    "pause_for_seconds": "Pausa i {seconds} sekunder",
+    "chain_interval_too_long": "Den maximala intervalltiden för en kedjad uppgift är 15 minuter.",
+    "states": {
+      "active": "Aktiv",
+      "disabled": "Avaktiverad",
+      "processing": "Bearbetar"
+    },
+    "actions": {
+      "power": "Skicka strömåtgärd",
+      "command": "Skicka kommando",
+      "backup": "Skapa en säkerhetskopia"
+    },
+    "power_actions": {
+      "start": "Starta servern",
+      "restart": "Starta om servern",
+      "stop": "Stoppa servern",
+      "kill": "Tvinga stopp av servern"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Växla supporttillgång",
+    "update_server": "Uppdatera server",
+    "health_monitor": "Hälsoövervakning",
+    "install_different_edition": "Installera en annan utgåva",
+    "reinstall_server": "Ominstallera server",
+    "support": {
+      "enable_access_alert": "Tillgång för supportteam har aktiverats för denna server.",
+      "disable_access_alert": "Tillgång för supportteam har avaktiverats för denna server."
+    },
+    "updater": {
+      "description": "Detta kommer att uppdatera servern. Detta kan ta ett tag och kommer att låsa din server medan den uppdateras. OBS: Alla ändringar av spelets basfiler kan skrivas över av uppdateringen.",
+      "no_script": "Detta ägg har ingen uppdateringsskript tillgängligt.",
+      "beta": "Använd beta-grenen"
+    },
+    "monitor": {
+      "description": "Övervakar din server och startar om den automatiskt om den upptäcks inte svarar i 15 sekunder. OBS: Vissa spel kanske inte stöder detta och kommer inte att göra någonting.",
+      "toggled": "Hälsoövervakningens status har ändrats."
+    },
+    "install_edition": {
+      "description": "Detta kommer att installera en annan utgåva av Minecraft för din server.",
+      "edition_footer": "Utgåvan för servern.",
+      "version_footer": "Versionen av utgåvan.",
+      "format_footer": "Alla serverfiler kommer RADERAS (vissa utgåvor kanske inte fungerar med befintliga filer)"
+    },
+    "reinstall": {
+      "description": "Detta kommer att installera om servern, vilket kan leda till att vissa filer skrivs över under processen. Innan du fortsätter, se till att du säkerhetskopierar alla viktiga filer."
+    }
+  },
+  "subdomains": {
+    "title": "Underdomäner",
+    "create_new": "Skapa en ny underdomän",
+    "name_footer": "Underdomänens vanity-namn.",
+    "domain_footer": "Den domän som underdomänen ska skapas på.",
+    "allocation_footer": "Den allokering som underdomänen kommer att peka mot.",
+    "delete_subdomain": "Ta bort underdomän",
+    "delete_subdomain_notice": "Är du säker på att du vill ta bort underdomänen {name}? Alla anslutningar som använder denna underdomän kommer inte längre att fungera."
+  },
+  "mods": {
+    "mod_installed": "{name} mod har installerats.",
+    "mod_uninstalled": "{name} mod har avinstallerats.",
+    "states": {
+      "install": "Installera",
+      "installing": "Installerar",
+      "uninstalling": "Avinstallerar",
+      "uninstall": "Avinstallera"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Skanna",
+    "show_non_high_severity": "Vill du visa resultat med icke-hög allvarlighetsgrad?",
+    "reliability_warning": "Detta verktyg förutsätter att du har kunskap om Lua och hur bakdörrar fungerar. Resultaten som finns är inte garanterade att vara faktiska bakdörrar och därför kräver manuell verifiering.",
+    "levels": {
+      "low": "Låg",
+      "medium": "Medel",
+      "high": "Hög",
+      "known_backdoor": "Känd bakdörr"
+    },
+    "detection": "Identifiering",
+    "description": "Beskrivning",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "Hårdkodat SteamID",
+        "description": "Används ofta för hårdkodade behörigheter för endast en specifik person, eller bara för att kreditera eget verk."
+      },
+      "arbitrary_code_execution": {
+        "title": "Slumpmässig kodkörning",
+        "description": "Används ofta för att köra skadlig kod, eller för att köra en DRM."
+      },
+      "external_networking": {
+        "title": "Externt nätverk",
+        "description": "Används för att få information från extern källa, som senaste versionen eller möjligen en bakdörr att köra kod."
+      },
+      "set_usergroup": {
+        "title": "Ställ in användargrupp",
+        "description": "Används för att ställa in spelarens användargrupp i spelet till en specifik rang."
+      },
+      "_g_access": {
+        "title": "_G Åtkomst",
+        "description": "Kan användas för att få någon global variabel, ofta används för att dölja vilken funktion som blir kallad."
+      },
+      "getfenv": {
+        "title": "getfenv Användning",
+        "description": "Kan potentiellt användas för att få _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Sätter metatable."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Används för att skapa en sträng från bytes, som ofta används tillsammans med obfuskerad kod."
+      },
+      "console_command": {
+        "title": "Konsolkommando",
+        "description": "Kör ett konsolkommando antingen som klient eller server."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX i en sträng",
+        "description": "Används ofta i bakdörrar för att ställa ranger eller göra andra saker med ULX."
+      },
+      "ip_tracking": {
+        "title": "IP-Spårning",
+        "description": "Tillåter att få IP-adress antingen av servern eller en klient."
+      },
+      "massive_indentation": {
+        "title": "Massiv Indentation",
+        "description": "Möjligt försök att dölja en bakdörr."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Kan användas för att skicka skadlig kod till en klient."
+      },
+      "backdoor": {
+        "title": "Bakdörr",
+        "description": "Bekräftad känd bakdörr."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Synkronisera FastDL-innehåll",
+    "sync_button": "Synkronisera FastDL",
+    "note": "Detta kommer att synkronisera allt ditt FastDL-innehåll från spelservern, komprimera det och ladda upp till vår webbserver. Allt i garrysmod/, garrysmod/addons/ och garrysmod/gamemodes/ som innehåller nedladdningsbart innehåll kommer att synkroniseras.",
+    "click_button": "Klicka på denna knapp:",
+    "enable_fastdl": "För att aktivera FastDL för din server efter en synkronisering måste du lägga till {code} i din {file} -fil.",
+    "sync_started": "FastDL synkroniseras nu. Du kommer att meddelas när det är klart."
+  },
+  "modpacks": {
+    "install_modpack": "Installera modpack",
+    "install_warning": "Du håller på att installera {modpack}, detta är en åtgärd som kan skriva över befintliga filer & kan inte ångras.",
+    "format_footer": "Att kryssa i formateringsalternativet innebär att alla befintliga filer kommer att raderas innan du installerar modpacket.",
+    "installing": "Modpacket installeras nu. Du kommer att meddelas när det är klart."
+  },
+  "plugins": {
+    "plugin_installed": "{name} plugin har installerats.",
+    "premium": "Ej tillgänglig (premium)",
+    "download_manually": "Ladda ner manuellt"
+  },
+  "minecraft": {
+    "edition_installing": "Utgåvan installeras nu. Du kommer att meddelas när det är klar.",
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snapshots)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "quiltmc": "QuiltMC",
+      "quiltmc_snapshots": "QuiltMC (Snapshots)",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

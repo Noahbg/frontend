@@ -1,0 +1,407 @@
+{
+  "404": {
+    "title": "Negăsit",
+    "description": "Nu s-a putut găsi pagina pe care o cauți."
+  },
+  "login": {
+    "index": {
+      "title": "Autentificare",
+      "description": "Autentificare în panou."
+    },
+    "totp": {
+      "title": "Introduceți codul 2fa TOTP",
+      "description": "Introduceți codul 2fa TOTP pentru a vă autentifica."
+    },
+    "key": {
+      "title": "Cheie de securitate",
+      "description": "Atingeți cheia de securitate pentru a vă conecta."
+    },
+    "reset_password": {
+      "title": "Resetează parola",
+      "description": "Resetează parola contului tău.",
+      "token": {
+        "title": "Resetează parola",
+        "description": "Finalizați resetarea parolei contului dumneavoastră."
+      }
+    }
+  },
+  "index": {
+    "title": "Serverele mele",
+    "description": "Serverele de joc la care aveți acces."
+  },
+  "account": {
+    "title": "Contul meu",
+    "settings": {
+      "title": "Setările contului",
+      "details": {
+        "title": "Detalii",
+        "description": "Gestionați detaliile contului dumneavoastră."
+      },
+      "2fa": {
+        "title": "Autentificare în doi pași",
+        "description": "Controlați autentificarea în 2 pași și cheile de securitate pentru contul dvs."
+      }
+    },
+    "security": {
+      "title": "Controale de securitate",
+      "description": "Controlați sesiunile active și autentificarea cu 2 pași."
+    }
+  },
+  "server": {
+    "title": "Serverul meu",
+    "system": {
+      "title": "Sistem",
+      "index": {
+        "title": "Consolă",
+        "description": "Controlați-vă serverul în timp real."
+      },
+      "details": {
+        "title": "Detalii despre server",
+        "description": "Vedeți detalii despre serverul de joc."
+      },
+      "sftp": {
+        "title": "Detalii SFTP",
+        "description": "Detalii de cont pentru conexiunile SFTP."
+      },
+      "audit_logs": {
+        "title": "Jurnalele de audit",
+        "description": "Vizualizați tot ceea ce se întâmplă pe serverul dvs."
+      }
+    },
+    "management": {
+      "title": "Gestionare",
+      "files": {
+        "index": {
+          "title": "Manager Fişiere",
+          "description": "Gestionați toate fișierele dvs. direct de pe web."
+        },
+        "new": {
+          "title": "Fișier nou",
+          "description": "Creați un nou fișier."
+        },
+        "edit": {
+          "title": "Editare fișier",
+          "description": "Efectuarea de modificări la un fișier."
+        }
+      },
+      "databases": {
+        "title": "Baze de date",
+        "description": "Toate bazele de date disponibile pentru acest server."
+      },
+      "backups": {
+        "title": "Copii de rezervă",
+        "description": "Gestionați și implementați copiile de rezervă ale serverului aici."
+      },
+      "subusers": {
+        "index": {
+          "title": "Subutilizatori",
+          "description": "Controlați cine poate avea acces la serverul dumneavoastră."
+        },
+        "new": {
+          "title": "Subutilizator nou",
+          "description": "Adăugați un nou utilizator cu permisiuni pe serverul dumneavoastră."
+        },
+        "edit": {
+          "title": "Editare subutilizator",
+          "description": "Modificarea accesului unui utilizator la server."
+        }
+      },
+      "allocations": {
+        "title": "Alocări",
+        "description": "Controlați IP-urile și porturile disponibile pe acest server."
+      }
+    },
+    "configuration": {
+      "title": "Configurare",
+      "startup": {
+        "title": "Parametrii de pornire",
+        "description": "Controlează argumentele de pornire ale serverului."
+      },
+      "schedules": {
+        "index": {
+          "title": "Programe",
+          "description": "Gestionați toate programele acestui server într-un singur loc."
+        },
+        "manage": {
+          "title": "Gestionați programul",
+          "description": "Gestionați sarcinile și timpul de execuție al acestui program."
+        }
+      },
+      "advanced": {
+        "title": "Avansat",
+        "description": "Gestionați opțiunile suplimentare pentru serverul dvs. aici."
+      }
+    },
+    "tools": {
+      "title": "Instrumente",
+      "subdomains": {
+        "title": "Manager de subdomeniu",
+        "description": "Gestionați subdomeniile utilizate pentru a vă conecta la serverul dvs. aici."
+      },
+      "modpacks": {
+        "title": "Manager Modpack",
+        "description": "O modalitate ușoară de a instala pachete de moduri."
+      },
+      "plugins": {
+        "title": "Manager de plugin-uri",
+        "description": "Modalitate ușoară de instalare a plugin-urilor."
+      },
+      "mods": {
+        "title": "Manager de moduri",
+        "description": "Modalitate ușoară de instalare a modurilor."
+      },
+      "backdoor_scanner": {
+        "title": "Scanner de vulnerabilități",
+        "description": "Găsiți codul posibil de exploatat în modurile instalate."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Manager FastDL automat pentru serverul dumneavoastră."
+      }
+    },
+    "administrate": {
+      "title": "Administrare"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "administration": {
+      "title": "Administrație",
+      "index": {
+        "title": "Prezentare generală",
+        "description": "O privire rapidă asupra stării panoului dumneavoastră."
+      },
+      "settings": {
+        "title": "Setări",
+        "general": {
+          "title": "General",
+          "description": "Configurați WISP după bunul dumneavoastră plac."
+        },
+        "branding": {
+          "title": "Marcă",
+          "description": "Configurați imaginea de marcă pentru panou."
+        },
+        "embed": {
+          "title": "Încorporează",
+          "description": "Configurați valorile de încorporare OpenGraph pentru platforme precum Discord sau Twitter."
+        },
+        "js_injector": {
+          "title": "JS Injector",
+          "description": "Adăugați JavaScript suplimentar la panoul WISP."
+        },
+        "css_injector": {
+          "title": "Injector CSS",
+          "description": "Adăugați CSS suplimentar la panoul WISP."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Configurați integrarea WHMCS Single-Sign-On."
+        }
+      },
+      "migrator": {
+        "title": "Migrator",
+        "description": "Migrați datele de la instanța Pterodactyl existentă la WISP."
+      },
+      "announcements": {
+        "title": "Anunțuri",
+        "description": "Difuzați mesaje către toți utilizatorii dvs."
+      },
+      "application_api": {
+        "index": {
+          "title": "Aplicație API",
+          "description": "Controlați acreditările de acces la API (tradițională)."
+        },
+        "new": {
+          "title": "Noua aplicație API",
+          "description": "Creați o nouă credențială de acces la API (veche)."
+        },
+        "manage": {
+          "title": "Gestionați API-ul aplicației",
+          "description": "Gestionați acreditările de acces la API (vechi)."
+        }
+      }
+    },
+    "management": {
+      "title": "Management",
+      "database_hosts": {
+        "index": {
+          "title": "Gazde de baze de date",
+          "description": "Gazde de baze de date pe care serverele pot avea baze de date create."
+        },
+        "manage": {
+          "title": "Gestionați gazda bazei de date",
+          "description": "Vizualizarea bazelor de date asociate și a detaliilor pentru această gazdă a bazei de date."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Locații",
+          "description": "Toate locațiile cărora li se pot atribui noduri pentru o mai ușoară clasificare."
+        },
+        "manage": {
+          "title": "Gestionați locația",
+          "description": "Vizualizarea nodurilor asociate și a detaliilor pentru această locație."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Noduri",
+          "description": "Toate nodurile disponibile pentru implementarea serverelor în acest panou."
+        },
+        "manage": {
+          "about": {
+            "title": "Despre",
+            "description": "O scurtă prezentare generală a nodului dumneavoastră."
+          },
+          "settings": {
+            "title": "Setări",
+            "description": "Configurați setările nodului."
+          },
+          "allocations": {
+            "title": "Alocări",
+            "description": "Alocări de control disponibile pentru serverele din acest nod."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Afișează serverele instalate pe acest nod."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Servere",
+          "description": "Toate serverele disponibile pe sistem."
+        },
+        "new": {
+          "title": "Server nou",
+          "description": "Adăugați un nou server în panou."
+        },
+        "manage": {
+          "about": {
+            "title": "Despre",
+            "description": "O scurtă prezentare generală a serverului."
+          },
+          "details": {
+            "title": "Detalii",
+            "description": "Editați detaliile acestui server, inclusiv proprietarul și containerul."
+          },
+          "build_configuration": {
+            "title": "Configurație de construcție",
+            "description": "Controlul alocărilor și al resurselor de sistem pentru acest server."
+          },
+          "startup": {
+            "title": "Pornire",
+            "description": "Controlați comanda de pornire, precum și variabilele."
+          },
+          "databases": {
+            "title": "Baze de date",
+            "description": "Gestionați bazele de date pentru acest server."
+          },
+          "advanced": {
+            "title": "Avansat",
+            "description": "Acțiuni suplimentare pentru a controla acest server."
+          },
+          "go_to_server": {
+            "title": "Mergeți la server"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Utilizatori",
+          "description": "Toți utilizatorii înregistrați în sistem."
+        },
+        "new": {
+          "title": "Utilizator nou",
+          "description": "Creați un nou utilizator în sistem."
+        },
+        "manage": {
+          "about": {
+            "title": "Despre",
+            "description": "Gestionați un utilizator existent în sistem."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Afișează serverele deținute de acest utilizator."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Managementul de servicii",
+      "nests": {
+        "index": {
+          "title": "Nests",
+          "description": "Toate nesturile disponibile în prezent pe acest sistem."
+        },
+        "manage": {
+          "title": "Gestionați Nest",
+          "description": "Gestionați un nest existent pe sistem."
+        },
+        "egg": {
+          "title": "Managementul egg-ului",
+          "new": {
+            "title": "Egg nou",
+            "description": "Creați un nou Egg pentru a fi atribuit serverelor."
+          },
+          "configuration": {
+            "title": "Configurare",
+            "description": "Configurați un egg existent pe sistem."
+          },
+          "variables": {
+            "title": "Variabile",
+            "description": "Configurați variabilele de mediu pentru acest egg."
+          },
+          "scripts": {
+            "title": "Script-uri",
+            "description": "Configurați scriptul de instalare/actualizare pentru acest egg."
+          },
+          "thumbnail": {
+            "title": "Miniatură",
+            "description": "Configurați imaginea miniaturală pentru acest egg."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Moduri",
+          "description": "Toate modurile de servicii disponibile pe sistem."
+        },
+        "new": {
+          "title": "Mod nou",
+          "description": "Creați un nou mod pe sistem."
+        },
+        "manage": {
+          "title": "Gestionați Mod",
+          "description": "Gestionați un mod de serviciu existent pe sistem."
+        }
+      },
+      "domains": {
+        "index": {
+          "title": "Domenii",
+          "description": "Toate domeniile disponibile pe sistem."
+        },
+        "new": {
+          "title": "Domeniu nou",
+          "description": "Creați un nou domeniu pe sistem."
+        },
+        "manage": {
+          "configuration": {
+            "title": "Configurația domeniului",
+            "description": "Configurați domeniul."
+          },
+          "servers": {
+            "title": "Servere",
+            "description": "Vedeți toate serverele asociate cu acest domeniu."
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Înapoi la pagina anterioară",
+    "go_home": "Du-te acasă",
+    "404": "Resursa solicitată nu a putut fi găsită.",
+    "429": "În acest moment sunteți limitat, încercați din nou câteva minute mai târziu."
+  }
+}

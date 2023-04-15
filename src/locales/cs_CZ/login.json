@@ -1,0 +1,30 @@
+{
+  "sign_in": "Přihlásit se",
+  "or": "nebo",
+  "sso": "Přihlášení pomocí SSO",
+  "struggling_to_login": "Máte potíže s přihlášením?",
+  "reset_password": "Obnovení hesla",
+  "back": "Zpět na přihlášení",
+  "password_reset_email_sent": "Pokyny k obnovení hesla byly zaslány na váš e-mail, pokud je s ním účet spojen.",
+  "passwords": {
+    "throttled": "Byli jste dočasně přiškrceni kvůli příliš mnoha pokusům o změnu hesla, zkuste to prosím později.",
+    "token": "S požadavkem na heslo je spojen neplatný token, zkuste prosím požádat o nový odkaz pro obnovení hesla.",
+    "user": "Nelze obnovit heslo pro neplatného uživatele.",
+    "confirmation": "Zadané heslo a potvrzení hesla se neshodují."
+  },
+  "security_keys": {
+    "insert_and_touch": "Vložte bezpečnostní klíč a dotkněte se ho.",
+    "not_responding": "Pokud bezpečnostní klíč nereaguje, ",
+    "not_responding_click_here": "klikněte zde.",
+    "unknown_key": "Použili jste neznámý bezpečnostní klíč, zkuste to znovu s jiným klíčem nebo použijte TOTP, pokud je nakonfigurován. V opačném případě kontaktujte správce panelu."
+  },
+  "two_factor_token": "Dvoufaktorový token",
+  "use_different_method": "Použijte jinou metodu",
+  "invalid_user": "Poskytnuté pověření neodpovídá pověření, které máme v evidenci. Pokud si nejste jisti, že je vaše heslo správné, zkuste jej obnovit.",
+  "invalid_mfa_session": "Předchozí relace vypršela, zkuste to prosím znovu.",
+  "sso_down": "Nelze se spojit se servery a ověřit účet, zkuste to prosím později.",
+  "sso_failed": "Při pokusu o ověření účtu se něco pokazilo, zkuste to prosím později.",
+  "sso_invalid": "Předchozí relace vypršela, zkuste to prosím znovu.",
+  "sso_non_existing_account": "Na panelu se nepodařilo najít přidružený účet. Použijte prosím běžné přihlášení a povolte rychlé přihlášení v nastavení účtu.",
+  "sso_disabled_for_account": "Tento účet má zakázáno rychlé přihlášení. Místo toho použijte normální přihlášení."
+}

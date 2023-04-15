@@ -1,0 +1,56 @@
+{
+  "account": {
+    "update_identity": "Atualizar Identidade",
+    "updated_identity": "A identidade foi atualizada!",
+    "update_email": "Atualizar endereço de e-mail",
+    "updated_email": "O endereço de e-mail foi atualizado!",
+    "update_password": "Atualizar senha",
+    "updated_password": "A senha foi atualizada!",
+    "quick_login": "Login rápido",
+    "quick_login_description": "O Login Rápido permite que você entre rapidamente no painel e SFTP usando sua conta de faturamento.",
+    "enable_quick_login": "Habilitar Login Rápido",
+    "disable_quick_login": "Desativar Login Rápido",
+    "failed_linking_sso": "Falha ao ligar a conta externa. Por favor, tente novamente mais tarde.",
+    "password_requirements": "As senhas devem conter pelo menos uma letra maiúscula, minúscula e numérica e devem ter pelo menos 8 caracteres de comprimento.",
+    "invalidate_sessions_footer": "Selecionar esta opção forçará todos os outros dispositivos conectados a esta conta a logarem novamente, caso contrário as sessões permanecerão ativas.",
+    "invalid_confirmation_password": "A senha fornecida para a sua conta era inválida.",
+    "invalid_totp": "O Token fornecido é inválido.",
+    "totp_already_in_use": "Você já tem o 2FA ativado.",
+    "navbar_position": {
+      "left": "Esquerda",
+      "top": "Topo"
+    },
+    "2fa_must_be_enabled": "O administrador do painel exigiu que você habilite 2FA para sua conta antes de poder usar o painel."
+  },
+  "security": {
+    "active_sessions": "Sessões Ativas",
+    "sessions_disabled": "Seu host não habilitou a capacidade de gerenciar sessões de conta através desta interface.",
+    "credentials_list": "Lista de Credenciais",
+    "2fa": "Autenticação de 2 fatores",
+    "2fa_modal_header": "Configure o 2FA na sua conta",
+    "2fa_secret": "Código Secreto",
+    "2fa_notice": "Use o aplicativo 2FA no seu telefone para fotografar o código QR à esquerda, ou insira o código manualmente sob ele. Após fazer isso, gere um token e insira-o abaixo.",
+    "2fa_enabled": "A autenticação de 2 fatores está ativada nesta conta e será necessária para acessar o painel. Se você gostaria de desativar o 2FA, simplesmente insira um token válido abaixo e envie o formulário.",
+    "2fa_disabled": "A autenticação de 2 fatores está desativada na sua conta! Ative o 2FA para adicionar um nível extra de proteção à sua conta.",
+    "enable_2fa": "Habilitar Autenticação de 2 Fatores",
+    "disable_2fa": "Desactivar a Autenticação de 2 Factores",
+    "create_credentials": "Criar uma API Key",
+    "memo_description": "Defina uma descrição fácil de entender para esta chave API para ajudá-lo a identificá-la mais tarde.",
+    "allowed_ips_description": "Se você gostaria de limitar essa chave API a endereços IP específicos, digite-os acima, um por linha. A notação CIDR é permitida para cada endereço IP. Deixe em branco para permitir qualquer endereço IP.",
+    "api_key_generated": "Uma nova chave API de cliente foi gerada para a sua conta."
+  },
+  "security_keys": {
+    "title": "Chaves de segurança",
+    "create_security_key": "Criar chave de segurança",
+    "successfully_added": "Chave de segurança foi adicionada com sucesso.",
+    "delete_key": "Deletar chave de segurança",
+    "delete_key_notice": "Tem a certeza de que quer apagar a chave de segurança {name} ?"
+  },
+  "support": {
+    "your_servers": "Seus Servidores",
+    "enable_access": "Habilitar Acesso ao Suporte OP",
+    "disable_access": "Desabilitar Acesso ao Suporte OP",
+    "enable_access_submit": "O OP Access de suporte foi ativado para o seu servidor.",
+    "disable_access_submit": "O OP Access de suporte foi ativado para o seu servidor."
+  }
+}

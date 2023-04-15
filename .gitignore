@@ -4,6 +4,3 @@ dist
 *.local
 .idea
 .env
-
-src/locales/*
-!src/locales/en

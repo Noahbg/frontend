@@ -1,0 +1,42 @@
+{
+  "server": {
+    "backup": {
+      "created": "Zakończono tworzenie kopii zapasowej {name}.",
+      "failed_to_create": "Nie udało się utworzyć kopii zapasowej {name}: {err}",
+      "deployed": "Zakończono rozmieszczanie kopii zapasowej {name}.",
+      "failed_to_deploy": "Nie udało się utworzyć kopii zapasowej {name}."
+    },
+    "update": {
+      "updated": "Zakończono aktualizację.",
+      "failed": "Nie udało się zaktualizować serwera."
+    },
+    "installed": "Zakończono instalację.",
+    "version": {
+      "installed": "Zakończono instalację wersji {name}.",
+      "failed": "Nie udało się zainstalować wersji {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL został zsynchronizowany.",
+      "failed": "Nie udało się zsynchronizować FastDL."
+    },
+    "move": {
+      "moved": "Zakończono przenoszenie.",
+      "db_migration_failed": "Nie powiodła się migracja bazy danych {name}.",
+      "failed": "Nie udało się przenieść serwera.",
+      "failed_to_delete_archive": "Nie powiodło się usuwanie archiwum transferu serwera dla {name}.",
+      "failed_to_delete_created_server": "Nie udało się usunąć utworzonego serwera na {name}.",
+      "failed_to_update_allocation": "Nie udało się zwolnić starego przydziału na {name}.",
+      "failed_final_stage": "Nieudany końcowy etap transferu serwera (upewnij się, że stary serwer został usunięty z {name} i dbs przeniósł host, jeśli nie powiodło się)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrator",
+      "finished_migrating_data": "Zakończono migrację danych z {fqdn}.",
+      "exceeded_limits": "Migracja {fqdn} nie powiodła się: {message} Skontaktuj się z nami w celu ręcznej migracji.",
+      "aborted_migration": "Przerwano migrację dla {fqdn}: {message}",
+      "data_mismatch": "Nieudana migracja dla {fqdn} ze względu na niedopasowanie danych: {message}",
+      "failed_due_to_internal_error": "Migracja {fqdn} nie powiodła się: Coś poszło nie tak, skontaktuj się z nami poprzez panel pomocy."
+    }
+  }
+}

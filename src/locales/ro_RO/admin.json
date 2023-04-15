@@ -1,0 +1,348 @@
+{
+  "index": {
+    "instance_overview": "Prezentare generală a instanței",
+    "current_version": "Bine ați venit la WISP Panel! În prezent, utilizați versiunea {version}.",
+    "license_information": "Informații despre licență"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Setări panou",
+      "company_name_footer": "Acesta este numele care este utilizat în tot panoul și în e-mailurile trimise clienților.",
+      "random_database_deployment_footer": "Dacă această opțiune este activată, toate serverele de joc își pot implementa bazele de date pe orice gazdă de baze de date, în loc de cea atribuită nodului.",
+      "require_2fa": {
+        "not_required": "Nu este necesar",
+        "admin_only": "Numai pentru administratori",
+        "all_users": "Toți utilizatorii"
+      },
+      "require_2fa_footer": "Dacă este activată, orice cont care se încadrează în gruparea selectată va trebui să aibă activată autentificarea cu 2 factori pentru a utiliza panoul.",
+      "default_language_footer": "Limba implicită care trebuie utilizată la redarea interfeței."
+    },
+    "branding": {
+      "recommended_size": "Dimensiunea recomandată:",
+      "formats": "Formate:",
+      "login_screen_logo": "Logo-ul ecranului de conectare",
+      "login_screen_logo_recommended_size": "300 x 100px (max 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg și svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (max 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Logo-ul panoului",
+      "panel_logo_recommended_size": "230 x 50px (max 250KB)",
+      "panel_logo_recommended_formats": "png, jpg și svg"
+    },
+    "embed": {
+      "embed_settings": "Setări de încorporare",
+      "site_name_footer": "Numele site-ului care ar trebui afișat pe elementele încorporate.",
+      "title_footer": "Titlul care ar trebui afișat pe elementele încorporate.",
+      "description_footer": "Scurtă descriere care ar trebui afișată pe elementele încorporate.",
+      "color_footer": "Culoarea hexagonală precedată de # care va fi afișată pe încorporare.",
+      "image_footer": "URL-ul imaginii care va fi afișat în elementele încorporate."
+    },
+    "js_injector": {
+      "title": "Injector JavaScript",
+      "minification_notice": "JS-ul poate fi minificat pentru a avea viteze de încărcare rapide pentru toată lumea. Păstrați o copie locală a JS-ului dvs. dacă intenționați să îl editați în viitor."
+    },
+    "css_injector": {
+      "title": "Injector CSS",
+      "minification_notice": "CSS-ul poate fi minificat pentru a avea viteze de încărcare rapide pentru toată lumea. Păstrați o copie locală a CSS-ului dvs. dacă intenționați să îl modificați în viitor."
+    },
+    "whmcs": {
+      "sso_integration": "Integrare WHMCS SSO",
+      "whmcs_notice": "Vă rugăm să consultați ghidul despre cum să adunați acreditările necesare pentru a configura WHMCS SSO pentru panoul dvs.: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Activează integrarea WHMCS Single-Sign-On, permițând utilizatorilor să se conecteze la panoul WISP cu contul lor WHMCS. Necesar pentru ca toate celelalte câmpuri să fie configurate",
+      "button_text_footer": "Textul butonului de conectare care este afișat pe pagina de conectare.",
+      "url_footer": "URL-ul la care este disponibilă instalarea WHMCS. de exemplu, https://mywhmcs.com/",
+      "client_id_footer": "Cheia API de client secretă pentru WHMCS SSO",
+      "client_secret_footer": "Cheia de client secretă pentru WHMCS SSO",
+      "api_id_footer": "Identificatorul API WHMCS",
+      "api_secret_footer": "Cheia API secretă pentru WHMCS"
+    },
+    "refresh_page_to_apply_changes": "Deocamdată, va trebui să reîmprospătați site-ul web pentru ca modificările personalizate să se aplice."
+  },
+  "migrator": {
+    "notice": "Migrați datele de la o altă instanță Pterodactyl/WISP înainte de a instala daemon-ul. Dacă migrați mai mult de 100 de nest-uri, 100 de egg-uri per nest, 2500 de utilizatori sau 1000 de servere, contactați-ne pentru o migrare manuală, care va migra și parolele de utilizator și parolele bazelor de date.",
+    "migrate": "Migrați",
+    "notify_users": "Notificare utilizatori",
+    "notified_users": "Toți utilizatorii vor primi în curând un e-mail. Veți fi anunțați când se va termina procesul de migrare.",
+    "step_1": "Pasul 1 - Migrarea datelor",
+    "step_2": "Pasul 2 - Notificarea utilizatorilor",
+    "step_3": "Pasul 3 - Finalizare",
+    "panel_url_footer": "Aceasta este adresa URL a panoului din care doriți să migrați datele. Pentru 0.7.x, panoul trebuie să ruleze v0.7.16 sau o versiune mai nouă. Pentru 1.x, panoul trebuie să ruleze v1.1.2 sau o versiune mai nouă. În caz contrar, acest migrator nu va funcționa.",
+    "api_key_footer": "Acest lucru este necesar pentru a obține informațiile panoului pentru migrare. Cheia trebuie să aibă permisiuni pentru tot ceea ce doriți să migrați.",
+    "locations_node_and_game_data": "Locații, noduri, alocări, baze de date și date ale serverului de joc",
+    "locations_node_and_game_data_footer": "Aceasta va muta toate serverele de joc cu nodurile și locațiile acestora. NOTĂ: Acest lucru necesită ca toate opțiunile de mai jos să fie activate, iar gazdele bazei de date nu vor avea parola configurată.",
+    "nests_and_eggs": "Cuiburi și ouă",
+    "nests_and_eggs_footer": "Aceasta va muta toate cuiburile și ouăle, suprascriindu-le pe cele existente, dacă acestea se suprapun.",
+    "users_footer": "Aceasta va muta toți utilizatorii activi care au acces la cel puțin un server. Parolele nu vor fi migrate automat (cu excepția cazului în care ne contactați manual) și va fi necesară retrimiterea e-mailului de creare a contului pentru fiecare utilizator.",
+    "after_migration": "După efectuarea migrării, vă rugăm să rețineți următoarele:",
+    "db_hosts_reset": "Toate parolele tuturor gazdelor bazei de date trebuie să fie setate din nou (deoarece acestea nu pot fi sincronizate din cauza limitărilor API-ului Pterodactyl).",
+    "migrated_nodes_cpu": "CPU-ul nodurilor migrate este setat la 800% (cu 100% supraalocare)",
+    "spare_allocations_ignored": "Orice alocări de rezervă de la nodurile migrate au fost ignorate în timpul migrării",
+    "move_to_installing_daemon": "Apoi puteți trece la configurarea demonului WISP pe nodurile de joc.",
+    "states": {
+      "in_progress": "În curs de desfășurare",
+      "notified_users": "Niciun utilizator nu a mai rămas de notificat",
+      "manual": "Manual",
+      "failed": "A eșuat"
+    }
+  },
+  "announcements": {
+    "title": "Anunțuri",
+    "create_announcement": "Creați un anunț",
+    "edit_announcement": "Editați anunțul",
+    "delete_announcement": "Ștergeți anunțul",
+    "delete_notice": "Ștergerea acestui anunț este ireversibilă - vă rugăm să dați din nou clic pe ștergere pentru a confirma ștergerea.",
+    "enabled_footer": "Dacă anunțul este vizibil instantaneu pentru toți utilizatorii.",
+    "resend": "Trimiteți din nou",
+    "announcement_resent": "Anunțul a fost retrimis cu succes utilizatorilor din panou.",
+    "cant_resend_disabled": "Un anunț dezactivat nu poate fi trimis din nou - activați mai întâi anunțul."
+  },
+  "database_hosts": {
+    "title": "Gazde de baze de date",
+    "create_host": "Creați gazda bazei de date",
+    "edit_host": "Editați gazda bazei de date",
+    "delete_host": "Ștergeți gazda bazei de date",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți gazda bazei de date {name} ? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "force_footer": "Periculos: Ștergerea forțată a unei baze de date gazdă va elimina gazda din panou, chiar dacă gazda bazei de date raportează o eroare. Acest lucru poate lăsa baze de date suspendate pe gazda dvs. dacă aceasta raportează o eroare.",
+    "host_details": "Detalii gazdă",
+    "user_details": "Detalii utilizator",
+    "databases": "Baze de date",
+    "host_has_databases": "Nu se poate șterge un server gazdă de baze de date care are baze de date active legate de el.",
+    "name_footer": "Un scurt identificator utilizat pentru a distinge această locație de altele. Trebuie să aibă între 1 și 60 de caractere, de exemplu, us.nyc.lvl3.",
+    "port_footer": "Portul pe care rulează MySQL pentru această gazdă.",
+    "username_footer": "Numele de utilizator al unui cont care are suficiente permisiuni pentru a crea noi utilizatori și baze de date în sistem.",
+    "password_footer": "Parola pentru contul definit.",
+    "phpmyadmin_url_footer": "URL-ul la care phpMyAdmin este disponibil pentru această gazdă a bazei de date. Lăsând acest câmp gol, nu va fi posibilă deschiderea bazei de date în phpMyAdmin.",
+    "node_footer": "Serverele de pe nodul selectat vor putea alege această gazdă ca opțiune la crearea unei baze de date."
+  },
+  "application_api": {
+    "title": "Credențiale API pentru aplicații",
+    "delete_api_key": "Ștergeți cheia API a aplicației",
+    "delete_notice": "Vă rugăm să confirmați că doriți să ștergeți cheia API a aplicației \"{name}\", repetând numele în rubrica de mai jos. Aceasta este o acțiune ireversibilă care nu poate fi anulată.",
+    "options": {
+      "none": "Nici unul",
+      "read": "Citește",
+      "read_write": "Citește"
+    }
+  },
+  "locations": {
+    "title": "Locații",
+    "create_location": "Creați locația",
+    "delete_location": "Ștergeți locația",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți locația \"{short}\"? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "location_has_nodes": "Înainte de a șterge locația, trebuie să ștergeți/mișcați toate nodurile din cadrul acesteia.",
+    "location_details": "Detalii despre locație",
+    "nodes": "Noduri",
+    "short_footer": "Un scurt identificator utilizat pentru a distinge această locație de altele. Trebuie să aibă între 1 și 60 de caractere, de exemplu, \"us.nyc.lvl3\".",
+    "long_footer": "O descriere mai lungă a acestei locații. Trebuie să aibă mai puțin de 255 de caractere."
+  },
+  "nodes": {
+    "title": "Noduri",
+    "not_alive": "Eroare de conectare la nod! Verificați consola browserului pentru mai multe detalii.",
+    "cant_delete_attached_servers": "Trebuie să ștergeți toate serverele de pe acest nod înainte de a-l șterge.",
+    "delete_node": "Ștergeți nodul",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți nodul \"{name}\"? Ștergerea unui nod este o acțiune ireversibilă și va elimina imediat acest nod din panou.",
+    "about": {
+      "daemon_version": "Versiunea Daemon",
+      "system_information": "Informații de sistem",
+      "cpu_cores": "Nucleele CPU"
+    },
+    "settings": {
+      "general_configuration": "Configurație generală",
+      "allow_automatic_allocation": "Permiteți alocarea automată",
+      "max_web_upload": "Dimensiunea maximă a fișierelor încărcate pe Web",
+      "daemon_port": "Port Daemon",
+      "sftp_port": "Port SFTP",
+      "fastdl_port": "Port FastDL",
+      "display_fqdn_footer": "Vă rugăm să introduceți numele de domeniu (de exemplu, node.example.com) care va fi afișat pentru utilizatori în loc de *.daemon.panel.gg. Dacă folosiți un domeniu, va trebui să configurați și înregistrarea DNS pentru ca acesta să fie îndreptat către nod, altfel nu va funcționa așa cum era de așteptat.",
+      "automatic_allocation_footer": "Permite ca acest nod să fie utilizat atunci când se alege automat un nod adecvat pentru implementarea serverului utilizând API.",
+      "maintenance_mode_footer": "Dacă nodul este marcat ca fiind \"În întreținere\", utilizatorii nu vor putea accesa serverele care se află pe acest nod.",
+      "cpu_footer": "Introduceți cantitatea totală de unități de procesare disponibile pe acest nod pentru alocarea de servere. Puteți, de asemenea, să furnizați un procent care va determina cantitatea de cpu peste limita stabilită care va fi permisă. 1 nucleu = 100%.",
+      "memory_footer": "Introduceți cantitatea totală de memorie disponibilă pe acest nod pentru alocarea către servere. Puteți, de asemenea, să furnizați un procent care poate permite alocarea unei cantități de memorie mai mari decât cea definită.",
+      "disk_footer": "Introduceți cantitatea totală de spațiu pe disc disponibil pe acest nod pentru alocarea de servere. Puteți, de asemenea, să furnizați un procent care va determina cantitatea de spațiu pe disc care trebuie permisă peste limita stabilită.",
+      "max_web_upload_footer": "Introduceți dimensiunea maximă a fișierelor care pot fi încărcate prin intermediul managerului de fișiere bazat pe web."
+    },
+    "allocations": {
+      "title": "Alocări de noduri",
+      "create_new": "Creați un nou",
+      "cant_delete_in_use": "Nu puteți șterge o alocare care este atașată unui server.",
+      "delete_ip": "Ștergeți IP",
+      "delete_ip_allocations": "Ștergeți toate alocările pentru IP-uri",
+      "too_many_ports": "Adăugarea simultană a mai mult de 1000 de porturi într-o singură cerere nu este acceptată.",
+      "invalid_mapping": "Maparea furnizată pentru portul {port} a fost invalidă și nu a putut fi procesată.",
+      "cidr_out_of_range": "Notația CIDR permite doar măști între /25 și /32.",
+      "port_out_of_range": "Porturile dintr-o alocare trebuie să fie mai mari de 1024 și mai mici sau egale cu 65535.",
+      "ip_footer": "IP-ul care va fi legat la containerul serverelor, acesta suportă subnet-uri de până la /25 la un moment dat. (de exemplu, 192.168.0.192/28)",
+      "alias_footer": "Aliasul va fi afișat în locul IP-ului, dacă este specificat, util pentru rețelele care utilizează NAT și care necesită ca alocarea să fie un IP intern pentru a permite utilizatorilor să vadă IP-ul public.",
+      "ports_footer": "Porturile de pe IP-ul specificat care vor fi disponibile pentru alocare. Acest lucru permite utilizarea unor intervale, de exemplu 25565-25570, se vor aloca 5 porturi."
+    },
+    "configuration_not_persisted": "Configurația daemonului a fost actualizată, însă a apărut o eroare la încercarea de a actualiza fișierul de configurare al daemonului. Va trebui să actualizați manual fișierul /var/lib/wisp/daemon/config/wisp.yaml pentru a reflecta noile modificări."
+  },
+  "servers": {
+    "title": "Servere",
+    "copy_uuid": "Copiază UUID",
+    "delete_server": "Ștergeți serverul",
+    "delete_server_notice": "Sunteți sigur că doriți să ștergeți serverul \"{name}\"? Ștergerea unui server este o acțiune ireversibilă și va elimina imediat acest server din panou și din daemon.",
+    "force_footer": "Periculos: Ștergerea forțată a unui server va elimina serverul din panou, chiar dacă daemonul raportează o eroare. Acest lucru poate lăsa fișiere în suspensie pe daemonul dvs. dacă acesta raportează o eroare.",
+    "cant_delete_unmigrated_nodes_server": "Nu puteți șterge un server de pe un nod care nu are un FQDN configurat - utilizați forțarea ștergerii pentru a continua.",
+    "cant_delete_from_offline_node": "Nu se poate șterge serverul dintr-un nod oprit.",
+    "new": {
+      "core_details": "Detalii de bază",
+      "node_footer": "Nodul pe care va fi implementat acest server.",
+      "primary_allocation_footer": "Alocarea principală care va fi atribuită acestui server.",
+      "secondary_allocations_footer": "Alocații suplimentare care se atribuie acestui server la creare.",
+      "database_limit_footer": "Numărul total de baze de date pe care un utilizator are voie să le creeze pentru acest server. Lăsați gol pentru a permite un număr nelimitat.",
+      "allocation_limit_footer": "Numărul total de alocări pe care un utilizator are voie să le creeze pentru acest server. Lăsați gol pentru a permite un număr nelimitat.",
+      "backup_megabytes_limit_footer": "Numărul total de megaocteți pe care serverul îi poate folosi pentru copiile de rezervă.",
+      "cpu_footer": "Dacă nu doriți să limitați utilizarea CPU, setați valoarea la 0. Pentru a determina o valoare, luați numărul de nuclee fizice și înmulțiți-l cu 100. De exemplu, pe un sistem cu patru nuclee (4 * 100 = 400) există 400\ndisponibile. Pentru a limita un server la utilizarea a jumătate dintr-un singur nucleu, setați valoarea la 50. Pentru a permite unui server să utilizeze până la două nuclee fizice, setați valoarea la 200.",
+      "memory_footer": "Limita de memorie în MB. Dacă doriți să dezactivați limitarea memoriei pe un server, introduceți pur și simplu 0 în câmpul de memorie.",
+      "swap_footer": "Limita spațiului de stocare în MB. Dacă doriți să dezactivați spațiul swap pe un server, introduceți pur și simplu 0 în câmpul swap.",
+      "disk_footer": "Limita de spațiu pe disc în MB. Dacă doriți să dezactivați limitarea spațiului pe disc pe un server, introduceți pur și simplu 0 în câmpul disk.",
+      "io_footer": "Blocul IO ar trebui să fie setat la o valoare cuprinsă între 10-1000.",
+      "skip_scripts_footer": "Dacă Egg selectat are atașat un script de instalare, scriptul va fi executat în timpul instalării. Dacă doriți să săriți peste acest pas, bifați această casetă."
+    },
+    "about": {
+      "server_owner": "Proprietarul serverului",
+      "server_node": "Nod de server"
+    },
+    "details": {
+      "server_details": "Detalii server"
+    },
+    "build_configuration": {
+      "resource_limits": "Limitele resurselor",
+      "feature_limits": "Limitele caracteristicilor",
+      "allocation_management": "Gestionarea alocării",
+      "oom_disabled_footer": "Dezactivează OOM Killer pe server. Acest lucru va permite serverului să folosească la maxim RAM-ul și spațiul swap."
+    },
+    "startup": {
+      "command_modification": "Modificarea comenzii",
+      "service_configuration": "Configurarea serviciului",
+      "access_in_startup": "Accesul în pornire: "
+    },
+    "databases": {
+      "notice": "Parolele bazelor de date pot fi vizualizate atunci când se vizitează acest server în partea frontală.",
+      "active_databases": "Baze de date active",
+      "create_database": "Creați o bază de date"
+    },
+    "advanced": {
+      "reinstall_server": "Reinstalați serverul",
+      "reinstall_server_note": "Astfel, serverul va fi reinstalat cu scriptul de service atribuit.\nPericol! Acest lucru ar putea suprascrie datele.",
+      "reinstall_started": "Procesul de reinstalare a fost inițiat.",
+      "install_status": "Stare de instalare",
+      "install_status_note": "Dacă aveți nevoie să schimbați starea de instalare din dezinstalat în instalat sau invers, puteți face acest lucru cu ajutorul butonului de mai jos.",
+      "install_toggled": "Starea de instalare a fost schimbată.",
+      "rebuild_container": "Reconstruirea containerelor",
+      "rebuild_container_note": "Acest lucru va declanșa o reconstrucție a containerului serverului la următoarea pornire a acestuia. Acest lucru este util dacă ați modificat manual fișierul de configurare a serverului sau dacă ceva nu a funcționat corect.",
+      "rebuild_requested": "Cererea de reconstrucție a fost trimisă către daemon, iar serverul se va reconstrui la următoarea pornire.",
+      "suspend_server": "Suspendați serverul",
+      "suspend_server_note": "Acest lucru va suspenda serverul, va opri orice proces în curs de execuție și va bloca imediat accesul utilizatorului la fișierele sale sau la gestionarea serverului prin intermediul panoului sau al API.",
+      "suspend_toggled": "Starea de suspendare a fost comutată.",
+      "updating_status": "Actualizarea stării",
+      "updating_status_note": "Dacă aveți nevoie să schimbați starea de actualizare, puteți face acest lucru cu ajutorul butonului de mai jos.",
+      "updating_toggled": "Starea de actualizare a fost schimbată.",
+      "move_server": "Mutarea serverului pe un alt nod",
+      "moving_status": "Starea de mișcare",
+      "moving_status_note": "Dacă aveți nevoie să schimbați statutul de mutare, puteți face acest lucru cu ajutorul butonului de mai jos.\n",
+      "moving_toggled": "Starea de mișcare a fost schimbată.",
+      "reset_mod_statuses": "Resetarea statusurilor de instalare a modurilor",
+      "reset_mod_statuses_note": "Va reseta starea de instalare a tuturor modurilor dacă se defectează, în cazul în care serverul are instalațiile de moduri blocate complet și acestea au fost blocate pentru o perioadă lungă de timp.",
+      "reset_mod_triggered": "Toate statusurile de instalare a modurilor de pe server au fost resetate.",
+      "toggle_backup_status": "Comutați starea de backup",
+      "install_marked_as_failed": "Nu se poate comuta starea de instalare a serverului din cauza faptului că nu s-a reușit instalarea. Vă rugăm să reinstalați serverul în schimb."
+    },
+    "deployment": {
+      "no_viable_nodes": "Nu a putut fi găsit niciun nod care să satisfacă cerințele specificate pentru deploy-ul automat.",
+      "no_viable_allocations": "Nu a putut fi găsită nicio alocare care să satisfacă cerințele specificate pentru deploy-ul automat."
+    }
+  },
+  "users": {
+    "title": "Utilizatori",
+    "identity": "Identitate",
+    "external_id_footer": "Lăsați gol pentru a nu atribui un identificator extern pentru acest utilizator. Identificatorul extern trebuie să fie unic pentru acest utilizator și să nu fie utilizat de alți utilizatori.",
+    "language_footer": "Lăsați gol pentru a utiliza limba implicită. Limba în care va fi afișat panoul utilizatorului; aceasta poate fi modificată la nivelul utilizatorului și în setările contului.",
+    "password": "Parola",
+    "password_optional": "Furnizarea unei parole de utilizator este opțională. Utilizatorul nou primește un e-mail prin care i se solicită să creeze o parolă pentru contul său. Dacă o parolă este furnizată aici, va trebui să găsiți o altă metodă de a o furniza utilizatorului.",
+    "root_admin_footer": "Setarea acestui parametru oferă unui utilizator acces administrativ complet.",
+    "support_op_footer": "Această setare oferă unui utilizator acces administrativ restricționat pentru a acționa ca agent de asistență.",
+    "support_op_bypass_footer": "Dacă setați acest lucru, utilizatorii nu vor trebui să acorde permisiunea explicită de a accesa serverele lor prin intermediul filei Asistență.",
+    "ignore_exceptions": "Ignoră excepțiile ridicate în timpul revocării cheilor.",
+    "ignore_exceptions_footer": "Dacă se bifează, orice erori apărute în timpul revocării cheilor între noduri vor fi ignorate. Ar trebui să evitați această casetă de selectare, dacă este posibil, deoarece orice chei nerevocate ar putea continua să fie active timp de până la 24 de ore după ce acest cont este modificat. Dacă aveți nevoie să revocați imediat permisiunile contului și vă confruntați cu probleme legate de noduri, ar trebui să bifați această casetă și apoi să reporniți orice nod care nu a reușit să fie actualizat pentru a șterge orice chei stocate.",
+    "disable_2fa": "Dezactivați autentificarea în doi pași",
+    "disable_2fa_notice": "Aceasta este o acțiune periculoasă! Aceasta va dezactiva autentificarea bazată pe TOTP, dacă este activată, și va șterge TOATE cheile de securitate din contul utilizatorului, aceasta fiind o acțiune ireversibilă.",
+    "2fa_disabled": "2FA a fost dezactivat pentru contul acestui utilizator.",
+    "user_has_no_2fa_configured": "Utilizatorul nu are configurată nicio 2FA pentru a o putea utiliza.",
+    "delete_user": "Ștergeți utilizatorul",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți utilizatorul \"{email}\"? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "cant_delete_yourself": "Nu te poți șterge.",
+    "cant_delete_user_with_servers": "Nu puteți șterge un utilizator în timp ce acesta deține servere."
+  },
+  "nests": {
+    "title": "Cuiburi",
+    "eggs": "Ouă",
+    "details": "Detalii despre cuib",
+    "create_nest": "Creați un cuib",
+    "delete_nest": "Ștergeți cuibul",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți cuibul \"{name}\"? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "id_footer": "Un ID unic utilizat pentru identificarea acestui cuib la nivel intern și prin intermediul API.",
+    "uuid_footer": "Un UUID care este atribuit tuturor serverelor care utilizează această opțiune în scopul identificării.",
+    "name_footer": "Acesta ar trebui să fie un nume de categorie descriptiv care să cuprindă toate ouăle din cuib.",
+    "identifier_footer": "ID scurt care poate activa anumite caracteristici specifice (id-uri de lucru: srcds, minecraft).",
+    "nest_has_servers": "Nu puteți șterge un cuib care are servere care rulează sub el.",
+    "import_egg": "Ouă de import",
+    "egg": {
+      "daemon_restart_required_after_changes": "Orice modificare a configurației ouălor existente necesită în prezent repornirea ulterioară a demonilor cu `wisp restart`.",
+      "configuration": "Configurație",
+      "process_management": "Managementul proceselor",
+      "delete_egg": "Ștergeți Oul",
+      "delete_notice": "Sunteți sigur că doriți să ștergeți oul \"{name}\"? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+      "egg_has_servers": "Nu puteți șterge un ou care are servere care rulează sub el.",
+      "egg_is_a_parent": "Acest egg este părintele unuia sau mai multor alte egg-uri. Vă rugăm să ștergeți acele egg-uri înainte de a șterge acest egg.",
+      "must_be_a_child": "Directiva \"Copy Settings From\" pentru acest egg trebuie să fie o opțiune copil pentru nest-ul selectat.",
+      "copy_alert": "Toate câmpurile sunt obligatorii, cu excepția cazului în care selectați o opțiune separată din meniul derulant \"Copy Settings From\" (Copiere setări de la), caz în care câmpurile pot fi lăsate goale pentru a utiliza valorile din opțiunea respectivă.",
+      "invalid_copy": "Egg-ul selectat pentru copierea unui script fie nu există, fie copiază un script de la el însuși.",
+      "update_egg": "Actualizare Ouă",
+      "import_update_notice": "Importul unui nou fișier de ouă va suprascrie orice setări existente. Dacă doriți să păstrați setările existente, ar trebui să importați noul ou separat.",
+      "import_updated": "Egg-ul a fost actualizat dintr-un fișier nou. Va trebui să repornești toate instanțele WISP pentru a aplica schimbări node-urilor.",
+      "import_json_error": "S-a produs o eroare la încercarea de a analiza fișierul JSON: {error}",
+      "import_file_error": "Fișierul JSON furnizat nu este valid.",
+      "import_invalid_json": "Fișierul JSON furnizat nu este într-un format care să poată fi recunoscut.",
+      "install_script": "Instalare Script",
+      "update_script": "Script de actualizare",
+      "variables": {
+        "create_variable": "Creați variabila de pornire",
+        "variable_created": "Variabila de pornire a fost creată cu succes.",
+        "variable_updated": "Variabila de pornire \"{name}\" a fost actualizată cu succes.",
+        "variable_deleted": "Variabila de pornire \"{name}\" a fost ștearsă cu succes.",
+        "env_variable_reserved": "Variabila de mediu {name} este un nume de variabilă rezervat.",
+        "env_not_unique": "Variabila {name} nu este unică.",
+        "bad_validation_rule": "Regula de validare \"{rule}\" nu este o regulă validă."
+      },
+      "thumbnail_title": "Miniatura de ou",
+      "thumbnail_recommended_size": "Raport de aspect 2:1 (max 500KB)",
+      "thumbnail_formats": "png, jpg și svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Detalii Mod",
+    "mod_configuration": "Configurație Mod",
+    "delete_mod": "Șterge Mod",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți modul \"{name}\"? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "mod_has_servers": "Nu se poate modifica ID-ul egg-ului asociat atunci când serverele sunt atașate în prezent la un mod."
+  },
+  "domains": {
+    "domain_details": "Detalii domeniu",
+    "domain_name_footer": "Numele de domeniu pe care serverele de jocuri pot crea subdomenii, permițând utilizatorilor să aleagă un subdomeniu și să îl direcționeze automat către alocările serverului de jocuri. În prezent, suportăm doar subdomeniile pe domeniul rădăcină.",
+    "instructions": "Va trebui să efectuați următoarele acțiuni pentru ca domeniul să funcționeze corect:",
+    "acquire_domain": "Achiziționați sau utilizați un domeniu existent pe care îl aveți.",
+    "setup_nameservers": "Indicați nameserverele domeniului la \"ns1.subdomain-manager.wisp.gg\" și \"ns2.subdomain-manager.wisp.gg\" (rețineți că propagarea poate dura până la 48 de ore).",
+    "update_notice": "Actualizarea numelui de domeniu va actualiza fiecare subdomeniu al fiecărui server la noul domeniu.",
+    "domain_already_in_use": "Domeniul furnizat este deja utilizat pe o altă instanță de panou și nu poate fi reutilizat.",
+    "root_domain_only_supported": "În prezent, suportăm doar domeniul rădăcină.",
+    "nest_identifiers_footer": "O listă de identificatori pentru nest-uri care permit serverelor care rulează în cadrul nest-ului să creeze subdomenii pe domeniu.",
+    "egg_identifiers_footer": "**Aceasta este folosită în principal pentru a permite anumite egg-uri din cadrul unui nest fără a fi nevoie să se permită întregul nest** O listă de identificatori pentru egg-uri care permit serverelor care rulează sub un anumit egg să creeze subdomenii pe domeniu.",
+    "root_record_footer": "Adresa IP pentru o nouă înregistrare DNS tip A către care ar trebui să se îndrepte un domeniu rădăcină. Util pentru configurarea unei redirecționări pentru domeniu.",
+    "delete_domain": "Ștergeți domeniul",
+    "delete_notice": "Sunteți sigur că doriți să ștergeți domeniul \"{name}\"? Nu mai există cale de întoarcere, iar toate serverele asociate cu acest domeniu vor pierde subdomeniile asociate cu acesta."
+  }
+}

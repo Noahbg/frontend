@@ -1,0 +1,48 @@
+{
+  "server": {
+    "backup": {
+      "created": "S-a finalizat crearea backup-ului {name}.",
+      "failed_to_create": "Nu s-a reușit crearea copiei de rezervă {name}: {err}",
+      "deployed": "S-a finalizat implementarea backup-ului {name}.",
+      "failed_to_deploy": "A eșuat implementarea copiei de rezervă {name}."
+    },
+    "update": {
+      "updated": "Actualizare finalizată.",
+      "failed": "Nu s-a reușit actualizarea serverului."
+    },
+    "installed": "Am terminat de instalat.",
+    "version": {
+      "installed": "S-a terminat instalarea versiunii {name}.",
+      "failed": "Nu s-a reușit instalarea versiunii {name}."
+    },
+    "modpack": {
+      "installed": "Am terminat de instalat modpack {name}.",
+      "failed": "Nu s-a reușit instalarea modpack-ului {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL a fost sincronizat.",
+      "failed": "Nu s-a reușit sincronizarea FastDL."
+    },
+    "move": {
+      "moved": "Am terminat de mutat.",
+      "db_migration_failed": "A eșuat migrarea bazei de date {name}.",
+      "failed": "Transfer eșuat pe server.",
+      "failed_to_delete_archive": "A eșuat ștergerea arhivei de transfer a serverului pentru {name}.",
+      "failed_to_delete_created_server": "A eșuat ștergerea serverului creat pe {name}.",
+      "failed_to_update_allocation": "Nu a reușit să elibereze alocarea veche pe {name}.",
+      "failed_final_stage": "A eșuat etapa finală pentru transferul serverului (asigurați-vă că vechiul server a fost șters din {name} și dacă nu a eșuat, dbs a mutat gazda)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Mutare",
+      "finished_migrating_data": "S-a terminat migrarea datelor de la {fqdn}.",
+      "exceeded_limits": "Migrație eșuată pentru {fqdn}: {message} Contactați-ne pentru o migrare manuală.",
+      "aborted_migration": "Migrație întreruptă pentru {fqdn}: {message}",
+      "data_mismatch": "Migrație eșuată pentru {fqdn} din cauza nepotrivirii datelor: {message}",
+      "failed_due_to_internal_error": "Migrarea eșuată pentru {fqdn}: Ceva nu a mers bine pe plan intern, vă rugăm să ne contactați printr-un tichet.",
+      "finished_notifying_users": "S-a încheiat notificarea utilizatorilor pentru {fqdn}.",
+      "failed_notifying_users": "A eșuat notificarea utilizatorilor pentru {fqdn}: ceva a mers greșit."
+    }
+  }
+}

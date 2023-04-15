@@ -1,0 +1,22 @@
+{
+  "sign_in": "Iniciar sesión",
+  "or": "o",
+  "sso": "Iniciar sesión con SSO",
+  "struggling_to_login": "¿Luchando para iniciar sesión?",
+  "reset_password": "Restablecer contraseña",
+  "back": "Volver al inicio de sesión",
+  "password_reset_email_sent": "Las instrucciones para restablecer la contraseña han sido enviadas a tu correo electrónico si hay una cuenta asociada a ella.",
+  "passwords": {
+    "throttled": "Has sido baneado temporalmente debido a demasiados intentos de cambio de contraseña, por favor inténtalo de nuevo más tarde.",
+    "token": "Token no válido asociado con la solicitud de contraseña, por favor intente solicitar un nuevo enlace de restablecimiento de contraseña.",
+    "user": "No se puede restablecer la contraseña de un usuario no válido.",
+    "confirmation": "La contraseña y la confirmación de contraseña proporcionados no coinciden."
+  },
+  "two_factor_token": "Token de dos factores",
+  "invalid_user": "Las credenciales proporcionadas no coinciden con las que tenemos registradas. Si no está seguro de que su contraseña sea correcta, intente restablecerla.",
+  "sso_down": "No se puede contactar con los servidores para verificar la cuenta. Por favor, inténtelo de nuevo más tarde.",
+  "sso_failed": "Algo salió mal al intentar verificar la cuenta. Por favor, inténtalo de nuevo más tarde.",
+  "sso_invalid": "La sesión anterior ha caducado, por favor inténtelo de nuevo.",
+  "sso_non_existing_account": "No se pudo encontrar una cuenta asociada en el panel. Por favor, utilice el inicio de sesión normal y habilite el acceso rápido desde la configuración de la cuenta.",
+  "sso_disabled_for_account": "Esta cuenta ha deshabilitado el inicio de sesión rápido. Por favor, utilice el inicio de sesión normal en su lugar."
+}

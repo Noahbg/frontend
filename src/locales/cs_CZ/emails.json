@@ -1,0 +1,40 @@
+{
+  "hello": "Zdravíme!",
+  "whoops": "Jejda!",
+  "regards": "S pozdravem",
+  "all_rights_reserved": "Všechna práva vyhrazena.",
+  "trouble_clicking_action": "Pokud se vám nedaří kliknout na tlačítko \"{actionText}\", zkopírujte a vložte do prohlížeče níže uvedenou adresu URL:",
+  "greeting": "Dobrý den, {name}!",
+  "visit_panel": "Navštívit panel",
+  "account": {
+    "subject": {
+      "created": "Účet vytvořen",
+      "migrated": "Účet migrován",
+      "reset_password": "Resetovat heslo"
+    },
+    "email_reason": {
+      "created": "Tento e-mail jste obdrželi, protože pro vás byl vytvořen účet na našem herním panelu.",
+      "migrated": "Tento e-mail jste obdrželi, protože váš účet byl převeden na nový herní panel.",
+      "reset_password": "Tento e-mail jste obdrželi, protože jsme obdrželi žádost o obnovení hesla k vašemu účtu."
+    },
+    "user_email": "E-mail: {email}",
+    "updating_account": "Své údaje můžete změnit v herním panelu po nastavení účtu.",
+    "setup_your_account": "Nastavte svůj účet",
+    "reset_password": "Resetovat heslo",
+    "reset_password_requested_by_someone_else": "Pokud jste o obnovení hesla nežádali, není vyžadována žádná další akce."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Přidáno na server",
+      "removed_from_server": "Odstraněno ze serveru",
+      "installed": "Server nainstalován"
+    },
+    "added_as_subuser": "Byli jste přidáni jako dílčí uživatel pro následující server, což vám umožňuje určitou kontrolu nad serverem.",
+    "new_account_notice": "Pokud ještě nemáte účet, zkontrolujte, zda od nás nedostanete další e-mail. Pokud ho nenajdete, můžete si heslo k hernímu panelu obnovit zde: {url}",
+    "removed_as_subuser": "Byl jste odebrán jako dílčí uživatel pro následující server.",
+    "ready_to_be_used": "Váš server byl nainstalován a nyní je připraven k použití.",
+    "server_name": "Název serveru: {server}",
+    "visit_server": "Navštívit server",
+    "login_and_begin_using": "Přihlásit se a začít používat"
+  }
+}

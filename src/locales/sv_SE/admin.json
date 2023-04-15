@@ -1,0 +1,299 @@
+{
+  "index": {
+    "instance_overview": "Översikt över instanser",
+    "current_version": "Välkommen till WISP Panelen! Du kör för närvarande på version {version}.",
+    "license_information": "Licensinformation"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Panelinställningar",
+      "company_name_footer": "Detta är det namn som används i panelen och i e-postmeddelanden som skickas till användare.",
+      "random_database_deployment_footer": "Om detta är aktiverat kan alla spelservrar distribuera sina databaser på vilken databasvärd som helst i stället för bara den som tilldelats noden.",
+      "require_2fa": {
+        "not_required": "Inte nödvändigt",
+        "admin_only": "Endast administratör",
+        "all_users": "Alla användare"
+      },
+      "require_2fa_footer": "Om den är aktiverad måste alla konton som ingår i den valda grupperingen ha aktiverad 2-faktorsautentisering för att kunna använda panelen.",
+      "default_language_footer": "Det standardspråk som ska användas när gränssnittskomponenter visas."
+    },
+    "branding": {
+      "recommended_size": "Rekommenderad storlek:",
+      "formats": "Format:",
+      "login_screen_logo": "Logotyp för inloggningsskärmen",
+      "login_screen_logo_recommended_size": "300 x 100px (max 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg och svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (max 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Panelens logotyp",
+      "panel_logo_recommended_size": "230 x 50px (max 250KB)",
+      "panel_logo_recommended_formats": "png, jpg och svg"
+    },
+    "embed": {
+      "embed_settings": "Inställningar för inbäddning",
+      "site_name_footer": "Namnet på webbplatsen som ska visas på inbäddningar.",
+      "title_footer": "Den titel som ska visas på inbäddningar.",
+      "description_footer": "Kort beskrivning som ska visas på inbäddningar.",
+      "image_footer": "Den URL till bilden som visas på inbäddningar."
+    },
+    "js_injector": {
+      "title": "JavaScript-injektor",
+      "minification_notice": "JS kan minskas för att alla ska kunna ladda snabbt. Behåll en lokal kopia av din JS om du planerar att redigera den i framtiden."
+    },
+    "css_injector": {
+      "title": "CSS-injektor",
+      "minification_notice": "CSS kan minskas för att alla ska kunna ladda snabbt. Behåll en lokal kopia av din CSS om du planerar att redigera den i framtiden."
+    },
+    "whmcs": {
+      "sso_integration": "Integrering av WHMCS SSO",
+      "whmcs_notice": "Titta på guiden om hur du samlar in de autentiseringsuppgifter som krävs för att konfigurera WHMCS SSO för din panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Aktiverar WHMCS Single-Sign-On-integrationen så att användare kan logga in på din WISP-panel med sitt WHMCS-konto. Krävs för att alla andra fält ska kunna konfigureras.",
+      "button_text_footer": "Texten för inloggningsknappen som visas på inloggningssidan.",
+      "url_footer": "Den URL som din whmcs-installation finns tillgänglig på, t.ex. https://mywhmcs.com/.",
+      "client_id_footer": "Klient-ID för WHMCS SSO API",
+      "client_secret_footer": "WHMCS SSO-klientens hemlighet",
+      "api_id_footer": "WHMCS API-identifierare",
+      "api_secret_footer": "WHMCS API Secret"
+    },
+    "refresh_page_to_apply_changes": "För tillfället måste du uppdatera webbplatsen för att de anpassade ändringarna ska gälla."
+  },
+  "migrator": {
+    "migrate": "Migrera",
+    "notify_users": "Meddela användarna",
+    "notified_users": "Alla användare kommer snart att få ett e-postmeddelande. Du kommer att få ett meddelande när det är klart.",
+    "step_1": "Steg 1 - Migrera data",
+    "step_2": "Steg 2 - Meddela användarna",
+    "step_3": "Steg 3 - Slutbehandling",
+    "panel_url_footer": "Detta är webbadressen till den panel från vilken du vill migrera data. För 0.7.x ska panelen ha v0.7.16 eller senare. För 1.x bör panelen ha v1.1.2 eller senare. I annat fall fungerar inte denna migrator.",
+    "api_key_footer": "Detta krävs för att få panelens information för migreringen. Nyckeln ska ha behörighet till allt du vill migrera.",
+    "locations_node_and_game_data": "Platser, noder, tilldelningar, databaser och spelserverdata",
+    "locations_node_and_game_data_footer": "Detta kommer att flytta alla spelservrar med noderna och deras platser. OBS: Detta kräver att alla alternativ nedan är aktiverade, och databasvärdarna kommer inte att ha lösenord konfigurerade.",
+    "nests_and_eggs": "Bo och ägg",
+    "nests_and_eggs_footer": "Detta kommer att flytta alla bon och ägg och överskriva befintliga bon om de överlappar varandra.",
+    "users_footer": "Detta kommer att flytta alla aktiva användare med tillgång till minst en server. Lösenorden kommer inte att migreras automatiskt (om du inte kontaktar oss manuellt) och det kommer att krävas att du skickar ett nytt e-postmeddelande om skapandet av kontot till varje användare.",
+    "after_migration": "När migreringen är klar ska du notera följande:",
+    "db_hosts_reset": "Alla lösenord för databasvärdar måste ställas in igen (eftersom de inte kan synkroniseras på grund av Pterodactyls API-begränsningar).",
+    "migrated_nodes_cpu": "De migrerade nodernas CPU är inställd på 800 % (med 100 % överallokering).",
+    "spare_allocations_ignored": "Eventuella reservallokeringar från migrerade noder ignorerades under migreringen.",
+    "move_to_installing_daemon": "Därefter kan du gå över till att konfigurera WISP Daemonen på dina spelnoder.",
+    "states": {
+      "in_progress": "Pågår",
+      "notified_users": "Inga användare kvar att notifiera",
+      "manual": "Manuell",
+      "failed": "Misslyckad"
+    }
+  },
+  "announcements": {
+    "title": "Nyheter",
+    "create_announcement": "Skapa en nyhet",
+    "edit_announcement": "Redigera nyhet",
+    "delete_announcement": "Radera nyhet",
+    "delete_notice": "Om du raderar det här nyhet går det ej att ångra - klicka på radera igen för att bekräfta raderingen.",
+    "enabled_footer": "Om nyheten är synligt för alla användare omedelbart.",
+    "resend": "Skicka igen",
+    "announcement_resent": "Nyheten har skickats ut till användarna i panelen.",
+    "cant_resend_disabled": "En inaktiverad nyhet kan inte skickas på nytt - aktivera nyheten först."
+  },
+  "database_hosts": {
+    "title": "Databasvärdar",
+    "create_host": "Skapa databasvärd",
+    "edit_host": "Redigera databasvärd",
+    "delete_host": "Ta bort databasvärd",
+    "delete_notice": "Är du säker på att du vill ta bort databasvärden {name}? Det finns ingen återvändo, alla data kommer omedelbart att tas bort.",
+    "host_details": "Uppgifter om värden",
+    "user_details": "Användaruppgifter",
+    "databases": "Databaser",
+    "name_footer": "En kort identifiering som används för att skilja denna plats från andra. Måste vara mellan 1 och 60 tecken, till exempel us.nyc.lvl3.",
+    "port_footer": "Port som MySQL körs på för den här värden.",
+    "username_footer": "Användarnamnet på ett konto som har tillräckliga behörigheter för att skapa nya användare och databaser i systemet.",
+    "password_footer": "Lösenordet för det definierade kontot.",
+    "node_footer": "Servrar på den valda noden kommer att kunna välja denna värd som ett alternativ när en databas skapas."
+  },
+  "application_api": {
+    "title": "Uppgifter för applikationsAPIn",
+    "delete_api_key": "Ta bort API-nyckel för applikationsAPIn",
+    "delete_notice": "Bekräfta att du vill ta bort \"{name}\" API-nyckeln för applikationen genom att upprepa namnet i inmatningen nedan. Detta är en oåterkallelig åtgärd som inte kan ångras.",
+    "options": {
+      "none": "Ingen",
+      "read": "Läs",
+      "read_write": "Läs & Skriv"
+    }
+  },
+  "locations": {
+    "title": "Platser",
+    "create_location": "Skapa en plats",
+    "delete_location": "Ta bort plats",
+    "delete_notice": "Är du säker på att du vill ta bort platsen \"{short}\"? Det finns ingen återvändo, all data kommer omedelbart att tas bort.",
+    "location_has_nodes": "Du måste ta bort/flytta alla noder i platsen innan du tar bort den.",
+    "location_details": "Detaljer om platsen",
+    "nodes": "Noder",
+    "short_footer": "En kort beteckning som används för att särskilja denna plats från andra. Måste vara mellan 1 och 60 tecken, till exempel \"us.nyc.lvl3\".",
+    "long_footer": "En längre beskrivning av denna plats. Måste vara mindre än 255 tecken."
+  },
+  "nodes": {
+    "title": "Noder",
+    "not_alive": "Fel vid anslutning till noden! Kontrollera webbläsarkonsolen för mer information.",
+    "cant_delete_attached_servers": "Du måste ta bort alla servrar på den här noden innan du tar bort den.",
+    "delete_node": "Ta bort nod",
+    "delete_notice": "Är du säker på att du vill ta bort noden \"{name}\"? Att ta bort en nod är en oåterkallelig åtgärd som omedelbart tar bort noden från panelen.",
+    "about": {
+      "daemon_version": "Version av daemon",
+      "system_information": "Systeminformation",
+      "cpu_cores": "CPU-kärnor"
+    },
+    "settings": {
+      "general_configuration": "Allmän konfiguration",
+      "allow_automatic_allocation": "Tillåt automatisk tilldelning",
+      "max_web_upload": "Maximal filstorlek för uppladdning på webben",
+      "daemon_port": "Daemon-port",
+      "sftp_port": "SFTP-port",
+      "fastdl_port": "FastDL-port",
+      "display_fqdn_footer": "Ange det domännamn (t.ex. node.example.com) som kommer att visas för användarna i stället för *.daemon.panel.gg. Om du använder en domän måste du också konfigurera DNS-posten för den så att den pekar på noden, annars fungerar det inte som förväntat.",
+      "automatic_allocation_footer": "Gör det möjligt att använda den här noden när en lämplig nod för serverutplacering väljs automatiskt med hjälp av API:et.",
+      "maintenance_mode_footer": "Om noden är markerad som \"Under underhåll\" kan användarna inte komma åt servrar som finns på den här noden.",
+      "cpu_footer": "Ange den totala mängden cpu som är tillgänglig på den här noden för serverallokering. Du kan också ange en procentsats som avgör hur mycket cpu som ska tillåtas över den fastställda gränsen. 1 kärna = 100 %.",
+      "memory_footer": "Ange den totala mängden minne som finns tillgängligt på den här noden för allokering till servrar. Du kan också ange en procentsats som gör det möjligt att tilldela mer än det definierade minnet.",
+      "disk_footer": "Ange den totala mängden diskutrymme som finns tillgängligt på den här noden för serverallokering. Du kan också ange en procentsats som bestämmer hur mycket diskutrymme som ska tillåtas över den fastställda gränsen.",
+      "max_web_upload_footer": "Ange den maximala storleken på filer som kan laddas upp via den webbaserade filhanteraren."
+    },
+    "allocations": {
+      "title": "Tilldelning av noder",
+      "create_new": "Skapa en ny",
+      "cant_delete_in_use": "Du kan inte ta bort en tilldelning som är kopplad till en server.",
+      "delete_ip": "Ta bort IP",
+      "delete_ip_allocations": "Ta bort alla tilldelningar för IP:er"
+    }
+  },
+  "servers": {
+    "title": "Servrar",
+    "delete_server": "Ta bort server",
+    "delete_server_notice": "Är du säker på att du vill ta bort servern \"{name}\"? Att ta bort en server är en oåterkallelig åtgärd som omedelbart tar bort den här servern från panelen och daemon.",
+    "force_footer": "Farligt: Om en server tas bort med tvång kommer servern att tas bort från panelen även om daemonerna rapporterar ett fel. Detta kan lämna hängande filer på din daemon om den rapporterar ett fel.",
+    "cant_delete_unmigrated_nodes_server": "Du kan inte ta bort en server på en nod som inte har något konfigurerat FQDN - använd force delete för att fortsätta.",
+    "new": {
+      "core_details": "Detaljer om kärnan",
+      "node_footer": "Den nod som servern ska distribueras till.",
+      "primary_allocation_footer": "Den huvudallokering som kommer att tilldelas den här servern.",
+      "secondary_allocations_footer": "Ytterligare tilldelningar som ska tilldelas den här servern när den skapas.",
+      "database_limit_footer": "Det totala antalet databaser som en användare får skapa för den här servern. Lämna tomt om du vill tillåta obegränsat antal.",
+      "allocation_limit_footer": "Det totala antalet tilldelningar som en användare får skapa för den här servern. Lämna tomt om du vill tillåta obegränsat antal.",
+      "backup_megabytes_limit_footer": "Det totala antalet megabyte som servern kan använda för sina säkerhetskopior.",
+      "cpu_footer": "Om du inte vill begränsa CPU-användningen ställer du in värdet på 0. För att fastställa ett värde tar du antalet fysiska kärnor och multiplicerar det med 100. På ett fyrkärnigt system (4 * 100 = 400) finns det till exempel 400\nvailable. Om du vill begränsa en server till att använda hälften av en enda kärna, ställer du in värdet på 50. Om du vill tillåta en server att använda upp till två fysiska kärnor ställer du in värdet på 200.",
+      "memory_footer": "Minnesgräns i MB. Om du vill inaktivera minnesbegränsningen på en server anger du bara 0 i fältet för minne.",
+      "swap_footer": "Begränsning av växlingsutrymme i MB. Om du vill inaktivera växlingsutrymme på en server anger du helt enkelt 0 i fältet för växlingsutrymme.",
+      "disk_footer": "Begränsning av diskutrymme i MB. Om du vill inaktivera begränsningen av diskutrymme på en server anger du bara 0 i fältet disk.",
+      "io_footer": "Block IO bör ställas in på ett värde mellan 10-1000.",
+      "skip_scripts_footer": "Om det valda ägget har ett installationsskript bifogat kommer skriptet att köras under installationen. Om du vill hoppa över detta steg markerar du den här rutan."
+    },
+    "about": {
+      "server_owner": "Serverägare",
+      "server_node": "Serverknutpunkt"
+    },
+    "details": {
+      "server_details": "Detaljer om servern"
+    },
+    "build_configuration": {
+      "resource_limits": "Resursbegränsningar",
+      "feature_limits": "Gränser för funktioner",
+      "allocation_management": "Förvaltning av tilldelningar"
+    },
+    "startup": {
+      "command_modification": "Ändring av kommandot",
+      "service_configuration": "Konfigurering av tjänster",
+      "access_in_startup": "Tillgång i startfasen: "
+    },
+    "databases": {
+      "notice": "Databasens lösenord kan visas när du besöker den här servern via användargränssnittet.",
+      "active_databases": "Aktiva databaser",
+      "create_database": "Skapa en databas"
+    },
+    "advanced": {
+      "reinstall_server": "Ominstallera servern",
+      "reinstall_server_note": "Detta gör att servern installeras på nytt med det tilldelade installationsskriptet.\nVarning! Detta kan skriva över data.",
+      "reinstall_started": "Ominstallationsprocessen har påbörjats.",
+      "install_status": "Installationsstatus",
+      "install_status_note": "Om du vill ändra installationsstatusen från avinstallerad till installerad, eller vice versa, kan du göra det med knappen nedan.",
+      "install_toggled": "Installationsstatusen har ändrats.",
+      "rebuild_container": "Återbygg behållare",
+      "rebuild_container_note": "Detta kommer att leda till att serverbehållaren byggs om när den startas nästa gång. Detta är användbart om du har ändrat serverkonfigurationsfilen manuellt eller om något bara inte fungerade korrekt.",
+      "rebuild_requested": "Begäran om återuppbyggnad har skickats till daemon och servern kommer att återuppbygga sig själv vid nästa start.",
+      "suspend_server": "Suspendera server",
+      "suspend_server_note": "Detta suspenderar servern, stoppar alla pågående processer och blockerar omedelbart användaren från att komma åt sina filer eller på annat sätt hantera servern via panelen eller APIn.",
+      "suspend_toggled": "Statusen för suspendringen har ändrats.",
+      "updating_status": "Uppdateringsstatus",
+      "updating_status_note": "Om du vill ändra uppdateringsstatusen kan du göra det med knappen nedan.",
+      "updating_toggled": "Uppdateringsstatusen har ändrats.",
+      "move_server": "Flytta servern till en annan nod",
+      "moving_status": "Flyttstatus",
+      "moving_status_note": "Om du vill ändra flyttstatusen kan du göra det med knappen nedan.\n",
+      "moving_toggled": "Flyttstatusen har ändrats.",
+      "reset_mod_statuses": "Återställ mod-installationsstatus",
+      "reset_mod_statuses_note": "Återställer alla moddars installationsstatus om det blir fel, om servern har modinstallationer låsta helt och hållet och de har suttit fast under en längre tid.",
+      "reset_mod_triggered": "Alla statusar för installation av servermods har återställts.",
+      "toggle_backup_status": "Växla status för säkerhetskopiering",
+      "install_marked_as_failed": "Det går inte att växla serverns installationsstatus på grund av att den inte lyckades installera. Installera om servern istället."
+    }
+  },
+  "users": {
+    "title": "Användare",
+    "identity": "Identitet",
+    "external_id_footer": "Lämna tomt om du inte vill tilldela en extern identifierare för den här användaren. Det externa ID:t ska vara unikt för den här användaren och får inte användas av andra användare.",
+    "password": "Lösenord",
+    "password_optional": "Det är frivilligt att ange ett användarlösenord. Nya användare får ett e-postmeddelande där de uppmanas att skapa ett lösenord för sitt konto. Om ett lösenord anges här måste du hitta en annan metod för att ge användaren ett lösenord.",
+    "root_admin_footer": "Om du ställer in detta ger du en användare full administrativ åtkomst.",
+    "support_op_footer": "Om du ställer in detta ger du en användare begränsad administrativ åtkomst för att agera som supportagent.",
+    "support_op_bypass_footer": "Genom att ställa in detta kan du undvika att användare måste ge uttryckligt tillstånd för att få tillgång till sina servrar via fliken Hjälp.",
+    "ignore_exceptions": "Ignorera undantag som uppstår när nycklar återkallas.",
+    "ignore_exceptions_footer": "Om den är markerad ignoreras eventuella fel som uppstår när nycklar återkallas mellan noder. Du bör undvika den här kryssrutan om det är möjligt eftersom nycklar som inte återkallats kan fortsätta att vara aktiva i upp till 24 timmar efter att det här kontot har ändrats. Om du behöver återkalla behörigheter för konton omedelbart och har problem med noder bör du markera den här rutan och sedan starta om alla noder som inte kunde uppdateras för att rensa bort alla lagrade nycklar.",
+    "user_has_no_2fa_configured": "Användaren har ingen 2FA-konfiguration för att kunna använda den.",
+    "delete_user": "Ta bort användare",
+    "delete_notice": "Är du säker på att du vill ta bort användaren \"{email}\"? Det finns ingen återvändo, all data kommer omedelbart att tas bort.",
+    "cant_delete_yourself": "Du kan inte radera dig själv.",
+    "cant_delete_user_with_servers": "Du kan inte radera en användare medan den äger servrar."
+  },
+  "nests": {
+    "title": "Bo",
+    "eggs": "Ägg",
+    "details": "Detaljer om boet",
+    "create_nest": "Skapa ett bo",
+    "delete_nest": "Ta bort boet",
+    "delete_notice": "Är du säker på att du vill ta bort \"{name}\"? Det finns ingen återvändo, alla data kommer omedelbart att tas bort.",
+    "id_footer": "Ett unikt ID som används för att identifiera boet internt och via API.",
+    "uuid_footer": "Ett UUID som alla servrar som använder det här alternativet tilldelas i identifieringssyfte.",
+    "name_footer": "Detta bör vara ett beskrivande kategorinamn som omfattar alla ägg i boet.",
+    "identifier_footer": "Kort ID som kan aktivera specifika funktioner (fungerande ID: srcds, minecraft).",
+    "nest_has_servers": "Du kan inte ta bort ett bo som har servrar som körs under det.",
+    "import_egg": "Importera ägg",
+    "egg": {
+      "daemon_restart_required_after_changes": "Alla ändringar i den befintliga äggkonfigurationen kräver för närvarande att demonerna startas om efteråt med `wisp restart`.",
+      "configuration": "Konfiguration",
+      "process_management": "Processhantering",
+      "delete_egg": "Radera ägg",
+      "delete_notice": "Är du säker på att du vill ta bort ägget \"{name}\"? Det finns ingen återvändo, alla data kommer omedelbart att tas bort.",
+      "egg_has_servers": "Du kan inte radera ett ägg som har servrar som körs under det.",
+      "copy_alert": "Alla fält är obligatoriska om du inte väljer ett separat alternativ i rullgardinsmenyn \"Kopiera inställningar från\", i så fall kan fälten lämnas tomma för att använda värdena från det alternativet.",
+      "update_egg": "Uppdatera ägget",
+      "import_update_notice": "Om du importerar en ny äggfil skrivs alla befintliga inställningar över. Om du vill behålla dina befintliga inställningar bör du importera det nya ägget separat.",
+      "install_script": "Installera skript",
+      "update_script": "Uppdatera skriptet",
+      "variables": {
+        "create_variable": "Skapa en startvariabel",
+        "variable_created": "Startvariabeln har skapats framgångsrikt.",
+        "variable_updated": "Startvariabeln \"{name}\" har uppdaterats framgångsrikt.",
+        "variable_deleted": "Startvariabeln \"{name}\" har tagits bort.",
+        "env_variable_reserved": "Miljövariabeln {name} är ett reserverat variabelnamn."
+      },
+      "thumbnail_title": "Miniatyrbild av ägget",
+      "thumbnail_recommended_size": "2:1 bildförhållande (max 500KB)",
+      "thumbnail_formats": "png, jpg och svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Detaljer om moduleringen",
+    "mod_configuration": "Mod-konfiguration",
+    "delete_mod": "Ta bort Mod",
+    "delete_notice": "Är du säker på att du vill ta bort modet \"{name}\"? Det finns ingen återvändo, alla data kommer omedelbart att tas bort."
+  }
+}

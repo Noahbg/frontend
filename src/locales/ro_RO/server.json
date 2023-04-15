@@ -1,0 +1,370 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Nu este migrat",
+      "description": "Nodul serverului nu este încă configurat în urma migrării."
+    },
+    "invalid_license": {
+      "title": "Licență invalidă",
+      "description": "Nodul serverului nu are o cheie de licență validă asociată - vă rugăm să contactați proprietarul panoului."
+    },
+    "moving": {
+      "title": "Server în migrare",
+      "description": "Serverul este în curs de mutare pe un nou nod."
+    },
+    "suspended": {
+      "title": "Server suspendat",
+      "description": "Serverul este în prezent suspendat și nu poate fi accesat până când nu mai este suspendat."
+    },
+    "install_failed": {
+      "title": "Instalare eșuată",
+      "description": "Serverul a eșuat în procesul de instalare. Contactați serviciul de asistență."
+    },
+    "deploying_backup": {
+      "title": "Se instalează copia de rezervă",
+      "description": "Serverul instalează o copie de rezervă."
+    },
+    "installing": {
+      "title": "Serverul se instalează",
+      "description": "Serverul este în curs de instalare."
+    },
+    "updating": {
+      "title": "Serverul se actualizează",
+      "description": "Serverul finalizează în prezent procesul de actualizare."
+    },
+    "backup_creating": {
+      "title": "Copie de rezervă în curs de desfășurare",
+      "description": "Serverul efectuează în prezent o copie de rezervă."
+    }
+  },
+  "console": {
+    "type_a_command": "Scrieți o comandă...",
+    "console_popup": "Deschideți fereastra popup a consolei",
+    "upload_logs": "Încărcați jurnale de activități",
+    "eula_acceptance": "Acceptarea EULA",
+    "eula_notice": "Prin apăsarea \"Accept\" de mai jos, indicați ca sunteți de acord cu EULA Mojang."
+  },
+  "power": {
+    "start": "Pornire",
+    "restart": "Repornire",
+    "stop": "Oprire",
+    "kill": "Închidere forțată"
+  },
+  "logs": {
+    "upload_logs": "Încărcați jurnale de activități",
+    "upload_logs_description": "Doriți să încărcați jurnalele de activități pentru a putea fi partajate?",
+    "upload_complete": "Jurnalele dvs. de activități au fost încărcate la: {url}",
+    "upload_failed": "Ceva nu a mers bine în timpul încercării de a încărca jurnalele de activități a serverului. Încercați din nou mai târziu."
+  },
+  "details": {
+    "server_name": "Nume server",
+    "server_limits": "Limitele serverului",
+    "server_info": "Informații despre server",
+    "update_server_name": "Actualizați numele serverului",
+    "name_description": "Numele serverului vizibil în panou. Acest lucru nu schimbă numele real al gazdei serverului, ci doar modul în care este identificat în panou.",
+    "updated": "Detaliile serverului dvs. au fost actualizate!"
+  },
+  "sftp": {
+    "sftp_details": "Detalii SFTP",
+    "alert_note": "Parola SFTP este parola pe care o utilizați pentru a vă conecta la panou. Asigurați-vă că clientul dvs. este setat să utilizeze SFTP și nu FTP sau FTPS pentru conexiuni, deoarece există o diferență între protocoale."
+  },
+  "audit_logs": {
+    "no_audits": "Nu există jurnale de activități",
+    "no_audits_description": "Se pare ca nu aveți jurnale de activități. Faceți câteva acțiuni pe serverul dumneavoastră pentru a genera și vedea un rezumat a ceea ce se întâmplă pe serverul dumneavoastră aici.",
+    "changes": {
+      "hidden_value": "Tasta {key} a fost schimbată la o valoare ascunsă",
+      "from_to": "{key} a fost schimbată din {old} în {new}"
+    },
+    "device": {
+      "city": "Oraș",
+      "country": "Țara",
+      "user_agent": "Utilizator intermediar"
+    }
+  },
+  "files": {
+    "new_file": "Fișier nou",
+    "new_folder": "Dosar nou",
+    "upload": "Încarcă",
+    "rename_or_move": "Redenumire / Mutare",
+    "copy": "Copiați",
+    "compress": "Arhivează",
+    "decompress": "Dezarhivează",
+    "download": "Descarca",
+    "delete_files": "Șterge fișierele",
+    "delete_following": "Sunteți sigur că doriți să ștergeți următoarele fișiere? Ștergerea fișierelor este o operațiune ireversibilă care nu poate fi anulată decât dacă ați făcut backup-uri.",
+    "upload_unavailable": "Încărcarea fișierelor nu este disponibilă în prezent, încercați din nou mai târziu sau încercați să utilizați SFTP.",
+    "upload_too_large": "Nu se poate încărca fișierul {name} deoarece este prea mare, vă rugăm să folosiți SFTP în schimb.",
+    "search": "Caută",
+    "search_results": "Rezultatele căutării {query}",
+    "too_many_results": "Am găsit prea multe rezultate pentru termenul de căutare. Vă rugăm să fiți mai specific pentru a putea vedea toate rezultatele.",
+    "git_clone": "Clonează",
+    "get_access_token_here": "Obțineți token-ul dvs. aici",
+    "cloned_repository": "Depozitul {repository} a fost clonat în {path}.",
+    "git_pull": "Trage",
+    "git_pull_description": "Extrage cele mai recente modificări ale depozitului din directorul curent.",
+    "pulled_repository": "Depozitul a fost tras și ultima actualizare este {commit}.",
+    "git_auth_required": "Acest depozit necesită autentificare, vă rugăm să furnizați token-ul personal de acces.",
+    "steam_workshop": "Atelierul Steam",
+    "steam_workshop_finished": "Elementul atelierului a fost descărcat.",
+    "steam_workshop_finished_but_with_errors": "S-a terminat cu următoarele erori:",
+    "steam_workshop_n_more": "Și nu mai sunt obiecte... | Și {n} mai multe elemente... | Și {n} mai multe articole...",
+    "steam_workshop_state": {
+      "waiting": "în așteptare",
+      "downloading": "se descarcă",
+      "extracting": "se extrage",
+      "parsing": "se analizează",
+      "writing": "se scriu {files} fișiere"
+    },
+    "file_contents": "Conținutul fișierului",
+    "save_file": "Salvează fișierul",
+    "return_to_file_manager": "Reveniți la Managerul de fișiere",
+    "file_saved": "Fișierul a fost salvat"
+  },
+  "databases": {
+    "title": "Baze de date",
+    "using_databases": "Folosind {count} / {limit} baze de date",
+    "create_new": "Creați o nouă bază de date",
+    "delete_database": "Şterge baza de date",
+    "delete_database_notice": "Sunteți sigur că doriți să ștergeți baza de date {name}? Nu există cale de întoarcere, toate datele vor fi eliminate imediat.",
+    "host_footer": "Aceasta ar trebui să fie gazda pe care ar trebui să fie implementată baza de date.",
+    "name_footer": "Acesta ar trebui să fie numele bazei de date pe care doriți să o utilizați.",
+    "connections_from_footer": "Aceasta ar trebui să reflecte adresa IP de la care sunt permise conexiunile. Folosește notația standard MySQL. Dacă nu sunteți sigur, lăsați %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Ați atins deja cota de baze de date permise pentru acest server.",
+      "duplicate": "Există deja o bază de date creată cu acest nume pentru acest server.",
+      "no_suitable_host": "Nu a fost găsită nicio gazdă a bazei de date care să îndeplinească cerințele pentru acest server."
+    }
+  },
+  "subusers": {
+    "title": "Gestionare utilizatori",
+    "add_new_subuser": "Adăugați un nou subutilizator",
+    "update_subuser": "Actualizare subutilizator",
+    "delete_subuser": "Ștergeți subutilizatorul",
+    "delete_subuser_notice": "Acest lucru îl va elimina imediat pe {name} ({email}) de pe acest server și va revoca toate permisiunile.",
+    "configure_permissions": "Configurați permisiunile",
+    "subuser_added": "Utilizatorul a fost adăugat cu succes ca subutilizator pentru acest server. I-am trimis un e-mail cu instrucțiuni despre cum să finalizeze configurarea contului.",
+    "cant_add_owner": "Nu puteți adăuga proprietarul serverului ca subutilizator pentru acest server.",
+    "subuser_already_exists": "Un utilizator cu această adresă de e-mail este deja atribuit ca subutilizator pentru acest server."
+  },
+  "allocations": {
+    "available_allocations": "Alocări disponibile",
+    "help_title": "Ajutor pentru alocare",
+    "help_description": "Lista din stânga include toate IP-urile și porturile disponibile care sunt deschise pentru ca serverul dvs. să le folosească pentru conexiunile primite.",
+    "primary": "Principal",
+    "make_primary": "Setare ca principal"
+  },
+  "startup": {
+    "startup_command": "Comandă de pornire",
+    "input_rules": "Reguli de introducere:",
+    "variable_saved": "Variabila de pornire a fost salvată cu succes.",
+    "variable_not_editable_admin": "Această variabilă nu poate fi editată de utilizator - deși, deoarece sunteți administrator, o puteți actualiza în zona de administrare a acestui server.",
+    "variable_not_editable": "Această variabilă nu poate fi modificată de către utilizator."
+  },
+  "backups": {
+    "all_results": "Toate copiile de rezervă",
+    "create_new": "Creați o nouă copie de rezervă",
+    "create_warning": "Crearea unei noi copii de rezervă va opri serverul dacă acesta funcționează deja",
+    "created": "Copia de rezervă {name} este acum în curs de creare",
+    "already_creating": "Este deja creată o copie de rezervă.",
+    "creation_would_exceed_limit": "Crearea acestei copii de rezervă ar depăși limita de copii de rezervă a serverului.",
+    "throttled": "Puteți crea doar 2 copii de siguranță pe o perioadă de 10 minute.",
+    "cant_delete_locked": "Trebuie să deblocați copia de rezervă înainte de a încerca să o ștergeți.",
+    "delete_backup": "Ștergeți copia de rezervă",
+    "delete_backup_notice": "Sunteți sigur că doriți să ștergeți copia de rezervă {name}? Nu există cale de întoarcere, toate datele vor fi eliminate imediat."
+  },
+  "schedules": {
+    "name": "Programe",
+    "create_new": "Creați programul",
+    "create_task": "Creați o sarcină",
+    "edit_schedule": "Editați programul",
+    "edit_task": "Editare sarcină",
+    "delete_schedule": "Ștergeți programul",
+    "delete_task": "Șterge sarcina",
+    "delete_notice": "Vă rugăm să confirmați că doriți să ștergeți programul \"{name}\" repetând numele în rubrica de mai jos. Aceasta este o acțiune ireversibilă care nu poate fi anulată.",
+    "delete_task_notice": "Sunteți sigur că doriți să ștergeți această sarcină? Aceasta este o acțiune ireversibilă.",
+    "enabled_footer": "Dacă programul este activat sau nu.",
+    "last_run_at": "Ultima rulare la: ",
+    "next_run_at": "Urmează să ruleze la: ",
+    "next_run_at_time": "Următoarea rulare la {time}",
+    "invalid_cron": "Utilizați o expresie cron validă pentru a vizualiza descrierea și următorul timp de execuție.",
+    "runs_description": "Se execută {description}",
+    "pause_for_seconds": "Pauză pentru {seconds} secunde",
+    "chain_interval_too_long": "Durata maximă a intervalului pentru o sarcină înlănțuită este de 15 minute.",
+    "states": {
+      "active": "Activ",
+      "disabled": "Dezactivat",
+      "processing": "În curs de procesare"
+    },
+    "actions": {
+      "power": "Trimite acțiune de putere",
+      "command": "Trimiteți comanda",
+      "backup": "Creează o copie de rezervă"
+    },
+    "power_actions": {
+      "start": "Porniți serverul",
+      "restart": "Reporniți serverul",
+      "stop": "Opriți serverul",
+      "kill": "Opriți forțat serverul"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Comută accesul Suport OP",
+    "update_server": "Actualizează serverul",
+    "health_monitor": "Monitorul de sănătate",
+    "install_different_edition": "Instalați o ediție diferită",
+    "reinstall_server": "Reinstalați serverul",
+    "support": {
+      "enable_access_alert": "Asistența OP a fost activată pentru acest server.",
+      "disable_access_alert": "Asistența OP a fost dezactivată pentru acest server."
+    },
+    "updater": {
+      "description": "Acest lucru va actualiza serverul. Acest lucru poate dura ceva timp și va bloca serverul în timp ce se actualizează. NOTĂ: Orice modificare a fișierelor de bază ale jocului ar putea fi suprascrisă de actualizare.",
+      "no_script": "Acest egg nu are un script de actualizare disponibil.",
+      "beta": "Utilizați ramura beta"
+    },
+    "monitor": {
+      "description": "Monitorizează serverul dvs. și îl repornește automat dacă este detectat că nu răspunde timp de 15 secunde. NOTĂ: Este posibil ca unele jocuri să nu suporte acest lucru și să nu facă nimic.",
+      "toggled": "Monitorul de sănătate a fost comutat cu succes."
+    },
+    "install_edition": {
+      "description": "Acest lucru va instala pe server o ediție diferită de Minecraft la alegere.",
+      "edition_footer": "Ediția pentru server.",
+      "version_footer": "Versiunea ediției.",
+      "format_footer": "Toate fișierele serverului vor fi ȘTERSE (este posibil ca unele ediții să nu funcționeze cu fișierele existente)"
+    },
+    "reinstall": {
+      "description": "Astfel, serverul va fi reinstalat în starea inițială în care l-ați primit. Pericol! Acest lucru va suprascrie TOATE datele serverului, așa că asigurați-vă că ați făcut o copie de rezervă a tuturor fișierelor importante."
+    }
+  },
+  "subdomains": {
+    "title": "Subdomenii",
+    "create_new": "Creați un nou subdomeniu",
+    "name_footer": "Numele de vanitate al subdomeniului.",
+    "domain_footer": "Domeniul pe care va fi creat subdomeniul.",
+    "allocation_footer": "Alocarea spre care se va îndrepta subdomeniul.",
+    "delete_subdomain": "Ștergeți subdomeniul",
+    "delete_subdomain_notice": "Sunteți sigur că doriți să ștergeți subdomeniul {name}? Toate conexiunile care utilizează acest subdomeniu nu vor mai funcționa."
+  },
+  "mods": {
+    "mod_installed": "Modul {name} a fost instalat cu succes.",
+    "mod_uninstalled": "Modul {name} a fost dezinstalat cu succes.",
+    "states": {
+      "install": "Instalează",
+      "installing": "Se instalează",
+      "uninstalling": "Se dezinstalează",
+      "uninstall": "Dezinstalare"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Scanează",
+    "show_non_high_severity": "Doriți să afișați rezultate care nu sunt de gravitate ridicată?",
+    "reliability_warning": "Acest instrument presupune că aveți cunoștințe despre Lua și despre cum funcționează backdoor-urile. Rezultatele găsite nu sunt garantate ca fiind backdoor-uri reale și, prin urmare, necesită o verificare manuală.",
+    "levels": {
+      "low": "Scăzut",
+      "medium": "Mediu",
+      "high": "Ridicat",
+      "known_backdoor": "Backdoor cunoscut"
+    },
+    "detection": "Detecție",
+    "description": "Descriere",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "SteamID codificat",
+        "description": "Utilizat adesea pentru a codifica permisiuni doar pentru o anumită persoană sau doar pentru a acorda credite pentru munca proprie."
+      },
+      "arbitrary_code_execution": {
+        "title": "Execuție arbitrară de cod",
+        "description": "Folosit adesea pentru a rula coduri malițioase sau pentru a rula un DRM."
+      },
+      "external_networking": {
+        "title": "Rețele externe",
+        "description": "Folosit pentru a obține informații din surse externe, cum ar fi cea mai recentă versiune sau, eventual, un backdoor pentru a rula codul."
+      },
+      "set_usergroup": {
+        "title": "Setați Grupul de utilizatori",
+        "description": "Folosit pentru a seta grupul de utilizatori al jucătorului în joc la un anumit rang."
+      },
+      "_g_access": {
+        "title": "_G Acces",
+        "description": "Poate fi utilizată pentru a obține orice variabilă globală, adesea utilizată pentru a ascunde ce funcție este apelată."
+      },
+      "getfenv": {
+        "title": "Utilizarea getfenv",
+        "description": "Poate fi potențial utilizat pentru a obține _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Setare metatable."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Utilizat pentru a crea un șir de caractere din octeți, adesea utilizat împreună cu codul ofuscat."
+      },
+      "console_command": {
+        "title": "Comandă Consolă",
+        "description": "Rulează comanda de consolă fie ca client, fie ca server."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX într-un șir de caractere",
+        "description": "Adesea utilizat în backdoors pentru a seta ranguri sau pentru a face alte lucruri cu ULX."
+      },
+      "ip_tracking": {
+        "title": "Urmărire IP",
+        "description": "Permite obținerea adresei IP fie a serverului, fie a unui client."
+      },
+      "massive_indentation": {
+        "title": "Indentarea masivă",
+        "description": "Posibilă încercare de a ascunde un backdoor."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Poate fi folosit pentru a trimite coduri malițioase unui client."
+      },
+      "backdoor": {
+        "title": "Backdoor",
+        "description": "Confirmat backdoor cunoscut."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Sincronizare conţinut FastDL",
+    "sync_button": "Sincronizare FastDL",
+    "note": "Aceasta va sincroniza tot conținutul FastDL de pe serverul de joc, îl va comprima și îl va încărca pe serverul nostru web. Tot ceea ce se află în dosarele garrysmod/, garrysmod/addons/ și garrysmod/gamemodes/ care conține conținut descărcabil va fi sincronizat.",
+    "click_button": "Faceți clic pe acest buton:",
+    "enable_fastdl": "Pentru a activa FastDL pentru serverul dvs. după o sincronizare, trebuie să adăugați {code} în fișierul {file}.",
+    "sync_started": "FastDL se sincronizează acum. Veți fi anunțat când se termină."
+  },
+  "modpacks": {
+    "install_modpack": "Instalați Modpack",
+    "install_warning": "Sunteți pe cale să instalați {modpack}, aceasta este o operațiune care poate suprascrie fișierele existente și nu poate fi anulată.",
+    "format_footer": "Dacă bifați opțiunea de formatare înseamnă că toate fișierele existente vor fi șterse înainte de instalarea modpack-ului.",
+    "installing": "Modpack-ul se instalează acum. Veți fi anunțat când se va termina."
+  },
+  "plugins": {
+    "plugin_installed": "{name} a fost instalat cu succes.",
+    "premium": "Nu este disponibil (premium)",
+    "download_manually": "Descarcă manual"
+  },
+  "minecraft": {
+    "edition_installing": "Ediția se instalează acum, veți fi anunțat când se va termina.",
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snapshot-uri)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "quiltmc": "QuiltMC",
+      "quiltmc_snapshots": "QuiltMC (Snapshots)",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

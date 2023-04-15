@@ -1,0 +1,40 @@
+{
+  "hello": "Bonjour !",
+  "whoops": "Oups !",
+  "regards": "Cordialement",
+  "all_rights_reserved": "Tous droits réservés.",
+  "trouble_clicking_action": "Si vous avez des difficultés à cliquer sur le bouton \"{actionText}\", copiez et collez l'URL ci-dessous dans votre navigateur :",
+  "greeting": "Bonjour, {name}!",
+  "visit_panel": "Visiter le pannel",
+  "account": {
+    "subject": {
+      "created": "Compte créé",
+      "migrated": "Compte migré",
+      "reset_password": "Réinitialiser le mot de passe"
+    },
+    "email_reason": {
+      "created": "Vous recevez cet e-mail car un compte a été créé pour vous sur notre panneau de jeu.",
+      "migrated": "Vous recevez cet e-mail car votre compte a été migré vers un nouveau panneau de jeu.",
+      "reset_password": "Vous recevez cet e-mail car nous avons reçu une demande de réinitialisation du mot de passe de votre compte."
+    },
+    "user_email": "Email : {email}",
+    "updating_account": "Vos informations peuvent être modifiées dans le panneau de jeu après la création du compte.",
+    "setup_your_account": "Configurer votre compte",
+    "reset_password": "Réinitialiser le mot de passe",
+    "reset_password_requested_by_someone_else": "Si vous n'avez pas demandé de réinitialisation du mot de passe, aucune action supplémentaire n'est requise."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Ajouté au serveur",
+      "removed_from_server": "Supprimé du serveur",
+      "installed": "Serveur installé"
+    },
+    "added_as_subuser": "Vous avez été ajouté en tant que sous-utilisateur pour le serveur suivant, ce qui vous permet de contrôler le serveur.",
+    "new_account_notice": "Si vous n'avez pas encore de compte, recherchez un autre e-mail de notre part. Si vous ne le trouvez pas, vous pouvez réinitialiser le mot de passe de votre panneau de jeu ici : {url}",
+    "removed_as_subuser": "Vous avez été supprimé en tant que sous-utilisateur pour le serveur suivant.",
+    "ready_to_be_used": "Votre serveur a terminé son installation et est maintenant prêt à être utilisé.",
+    "server_name": "Nom du serveur : {server}",
+    "visit_server": "Visiter le serveur",
+    "login_and_begin_using": "Connectez-vous et commencez à utiliser"
+  }
+}

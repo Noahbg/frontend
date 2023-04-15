@@ -1,0 +1,345 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Niet gemigreerd",
+      "description": "Het knooppunt van de server is nog niet ingesteld na de migratie."
+    },
+    "invalid_license": {
+      "title": "Ongeldige vergunning",
+      "description": "Aan de node van de server is geen geldige licentiesleutel gekoppeld - neem contact op met de eigenaar van het paneel."
+    },
+    "moving": {
+      "title": "Server verhuizing",
+      "description": "Server wordt momenteel verplaatst naar een nieuw knooppunt."
+    },
+    "suspended": {
+      "title": "Server opgeschort",
+      "description": "De server is momenteel geschorst en kan niet worden benaderd totdat hij weer wordt geschorst."
+    },
+    "install_failed": {
+      "title": "Installatie mislukt",
+      "description": "Server is mislukt tijdens het installatieproces. Neem contact op met ondersteuning."
+    },
+    "deploying_backup": {
+      "title": "Back-up implementeren",
+      "description": "Server is een backup aan het implementeren."
+    },
+    "installing": {
+      "title": "Server Installeren",
+      "description": "Server is aan het installeren."
+    },
+    "updating": {
+      "title": "Server bijwerken",
+      "description": "Server is bezig met update proces."
+    },
+    "backup_creating": {
+      "title": "Back-up in uitvoering",
+      "description": "De server maakt momenteel een back-up."
+    }
+  },
+  "console": {
+    "type_a_command": "Type een commando...",
+    "console_popup": "Open console popup",
+    "upload_logs": "Logboeken uploaden",
+    "eula_acceptance": "EULA Aanvaarding",
+    "eula_notice": "Door hieronder op 'Ik accepteer' te drukken, geeft u aan dat u akkoord gaat met de EULA van Mojang."
+  },
+  "power": {
+    "start": "Start",
+    "restart": "Herstart",
+    "stop": "Stop",
+    "kill": "Kill"
+  },
+  "logs": {
+    "upload_logs": "Logboeken uploaden",
+    "upload_logs_description": "Wil je je logs uploaden zodat ze gedeeld kunnen worden?",
+    "upload_complete": "Uw logs zijn geupload naar: {url}",
+    "upload_failed": "Er ging iets mis tijdens het uploaden van de server logs. Probeer het later nog eens."
+  },
+  "details": {
+    "server_name": "Naam server",
+    "server_limits": "Server Grenzen",
+    "server_info": "Server Info",
+    "update_server_name": "Servernaam bijwerken",
+    "name_description": "Naam van de server zichtbaar in het paneel. Dit verandert de eigenlijke hostnaam van de server niet, alleen hoe hij in het paneel wordt geïdentificeerd.",
+    "updated": "De gegevens van uw server zijn bijgewerkt!"
+  },
+  "sftp": {
+    "sftp_details": "SFTP Details",
+    "alert_note": "Het SFTP wachtwoord is het wachtwoord dat u gebruikt om in te loggen op het paneel. Zorg ervoor dat uw client is ingesteld om SFTP te gebruiken en niet FTP of FTPS voor verbindingen, er is een verschil tussen de protocollen."
+  },
+  "audit_logs": {
+    "no_audits": "Geen Audit Logs",
+    "no_audits_description": "Het lijkt erop dat je geen audit logs hebt. Voer enkele acties uit op uw server om een overzicht te genereren en te zien van wat er hier met uw server gebeurt.",
+    "changes": {
+      "hidden_value": "Veranderde {key} naar een nieuwe verborgen waarde",
+      "from_to": "{key} gewijzigd van {old} in {new}"
+    },
+    "device": {
+      "city": "Stad",
+      "country": "Land",
+      "user_agent": "Gebruiker Agent"
+    }
+  },
+  "files": {
+    "new_file": "Nieuw bestand",
+    "new_folder": "Nieuwe map",
+    "upload": "Upload",
+    "rename_or_move": "Hernoemen/Verplaatsen",
+    "copy": "Kopiëren",
+    "compress": "Comprimeer",
+    "decompress": "Decompress",
+    "download": "Download",
+    "delete_files": "Bestanden verwijderen",
+    "delete_following": "Weet u zeker dat u de volgende bestanden wilt verwijderen? Het verwijderen van bestanden is een onomkeerbare operatie die niet ongedaan kan worden gemaakt, tenzij u back-ups hebt gemaakt.",
+    "upload_unavailable": "Het uploaden van bestanden is momenteel niet mogelijk, probeer het later nog eens of gebruik SFTP.",
+    "upload_too_large": "Kan het bestand {name} niet uploaden omdat het te groot is, gebruik in plaats daarvan SFTP.",
+    "search": "Zoeken op",
+    "search_results": "Zoekresultaten voor {query}",
+    "too_many_results": "We hebben te veel resultaten gevonden voor de zoekterm. Gelieve specifieker te zijn om alle resultaten te kunnen zien.",
+    "git_clone": "Kloon",
+    "get_access_token_here": "Haal uw penning hier",
+    "cloned_repository": "Het archief {repository} is gekloond in {path}.",
+    "git_pull": "Trek",
+    "git_pull_description": "Haalt de laatste wijzigingen van het archief op in de huidige map.",
+    "pulled_repository": "De repository is opgehaald en de laatste commit is {commit}.",
+    "git_auth_required": "Deze opslagplaats vereist verificatie, geef uw persoonlijke toegangstoken.",
+    "steam_workshop": "Stoom Werkplaats",
+    "steam_workshop_finished": "Het item van de workshop is gedownload.",
+    "steam_workshop_finished_but_with_errors": "Beëindigd met de volgende fouten:",
+    "steam_workshop_n_more": "En geen items meer... | En {n} meer item... | En {n} meer items...",
+    "steam_workshop_state": {
+      "waiting": "wachtend",
+      "downloading": "downloaden",
+      "extracting": "uitpakken",
+      "parsing": "parsing",
+      "writing": "schrijven van {files} bestanden"
+    },
+    "file_contents": "Bestand Inhoud",
+    "save_file": "Bestand opslaan",
+    "return_to_file_manager": "Terug naar Bestandsbeheer",
+    "file_saved": "Het bestand werd opgeslagen"
+  },
+  "databases": {
+    "title": "Databanken",
+    "using_databases": "Gebruik van {count} / {limit} databases",
+    "create_new": "Nieuwe database aanmaken",
+    "delete_database": "Database verwijderen",
+    "delete_database_notice": "Weet u zeker dat u de {name} database wilt verwijderen? Er is geen weg terug, alle gegevens zullen onmiddellijk worden verwijderd.",
+    "host_footer": "Dit moet de host zijn waar de database op moet worden uitgerold.",
+    "name_footer": "Dit moet de databasenaam zijn die u wilt gebruiken.",
+    "connections_from_footer": "Dit moet het IP adres weergeven vanwaar verbindingen zijn toegestaan. Gebruikt standaard MySQL notatie. Indien onzeker laat als %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "U hebt het quotum van toegestane databases voor deze server al bereikt.",
+      "duplicate": "Er is al een database aangemaakt met uw opgegeven naam voor deze server.",
+      "no_suitable_host": "Er is geen database host gevonden die voldoet aan de eisen voor deze server."
+    }
+  },
+  "subusers": {
+    "title": "Gebruikers beheren",
+    "add_new_subuser": "Nieuwe subgebruiker toevoegen",
+    "update_subuser": "Subgebruiker bijwerken",
+    "delete_subuser": "Subgebruiker verwijderen",
+    "delete_subuser_notice": "Dit zal onmiddellijk {name} ({email}) van deze server verwijderen en alle permissies intrekken.",
+    "configure_permissions": "Configureer rechten",
+    "subuser_added": "De gebruiker is succesvol toegevoegd aan deze server als subgebruiker. We hebben hem een e-mail verstuurd met de instructies over hoe hij zijn instellingen van zijn account kan voltooien.",
+    "cant_add_owner": "U kunt niet de servereigenaar toevoegen als een subgebruiker voor deze server.",
+    "subuser_already_exists": "Een gebruiker met dit e-mailadres is al toegewezen als subgebruiker voor deze server."
+  },
+  "allocations": {
+    "available_allocations": "Beschikbare toewijzingen",
+    "help_title": "Hulp voor toewijzingen",
+    "help_description": "De lijst aan de linkerkant bevat alle beschikbare IP's en poorten die open zijn voor uw server om te gebruiken voor inkomende verbindingen.",
+    "primary": "Primair",
+    "make_primary": "Maak primair"
+  },
+  "startup": {
+    "startup_command": "Opstartopdracht",
+    "input_rules": "Invoer regels:",
+    "variable_saved": "Opstartvariabel succesvol opgeslagen."
+  },
+  "backups": {
+    "all_results": "Alle back-ups",
+    "create_new": "Nieuwe back-up maken",
+    "create_warning": "Het maken van een nieuwe back-up zal de server stoppen als deze nu draait",
+    "created": "Back-up {name} wordt nu aangemaakt",
+    "cant_delete_locked": "U moet de back-up ontgrendelen voordat u probeert deze te verwijderen.",
+    "delete_backup": "Verwijder back-up",
+    "delete_backup_notice": "Weet u het zeker dat u de {name} back-up wilt verwijderen? Er is geen mogelijkheid terug, alle gegevens worden onmiddellijk verwijderd."
+  },
+  "schedules": {
+    "name": "Schemas",
+    "create_new": "Maak schema",
+    "create_task": "Maak taak",
+    "edit_schedule": "Schema bewerken",
+    "edit_task": "Taak bewerken",
+    "delete_schedule": "Verwijder schema",
+    "delete_task": "Verwijder taak",
+    "delete_notice": "Bevestig dat u de \"{name}\" schema wilt verwijderen door de naam in onderstaande invoerveld te typen. Dit is een onomkeerbare actie die niet ongedaan kan worden gemaakt.",
+    "delete_task_notice": "Weet u het zeker dat u deze taak wilt verwijderen? Dit is onomkeerbaar.",
+    "enabled_footer": "Of de schema is ingeschakeld of niet.",
+    "last_run_at": "Laatst uitgevoerd op: ",
+    "next_run_at": "Volgende uitvoering op: ",
+    "next_run_at_time": "Volgende uitvoering is op {time}",
+    "invalid_cron": "Gebruik een geldige cron expressie om de omschrijving en volgende uitvoering te zien.",
+    "runs_description": "Voert {description} uit",
+    "pause_for_seconds": "Pauzeer voor {seconds} secondes",
+    "states": {
+      "active": "Actief",
+      "disabled": "Uitgeschakeld",
+      "processing": "Verwerken"
+    },
+    "actions": {
+      "power": "Verzend actie",
+      "command": "Verstuur opdracht",
+      "backup": "Maak een back-up"
+    },
+    "power_actions": {
+      "start": "Start de server",
+      "restart": "Herstart de server",
+      "stop": "Stop de server",
+      "kill": "De server forceren om te stoppen"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Toegang tot Support OP in-/uitschakelen",
+    "update_server": "Server bijwerken",
+    "health_monitor": "Gezondheidsmonitor",
+    "install_different_edition": "Installeer andere editie",
+    "reinstall_server": "Server opnieuw installeren",
+    "support": {
+      "enable_access_alert": "Ondersteuning OP Access is ingeschakeld voor deze server.",
+      "disable_access_alert": "Ondersteuning OP Access is uitgeschakeld voor deze server."
+    },
+    "updater": {
+      "description": "Dit zal de server updaten. Dit kan een tijdje duren en zal de server vergrendelen tijdens het updaten. OPMERKING: Elke wijziging van de basisbestanden van het spel kan worden overschreven door de update.",
+      "no_script": "Deze egg heeft geen update script beschikbaar.",
+      "beta": "Gebruik de bèta branch"
+    },
+    "monitor": {
+      "description": "Bewaakt uw server en start deze automatisch opnieuw op als wordt gedetecteerd dat deze gedurende 15 seconden niet reageert. OPMERKING: Sommige games ondersteunen dit mogelijk niet en zullen niets doen.",
+      "toggled": "De gezondheidsmonitor is succesvol in-/uitgeschakeld."
+    },
+    "install_edition": {
+      "description": "Dit zal een andere versie van Minecraft installeren dan de gekozen versie op de server.",
+      "edition_footer": "De editie van de server.",
+      "version_footer": "De versie van de editie.",
+      "format_footer": "Alle server bestanden zullen worden verwijderd (sommige edities werken mogelijk niet met de bestaande bestanden)"
+    }
+  },
+  "mods": {
+    "states": {
+      "install": "Installeren",
+      "installing": "Installeren",
+      "uninstalling": "Verwijderen",
+      "uninstall": "Verwijder"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Scannen",
+    "show_non_high_severity": "Wilt u niet-ernstige resultaten weergeven?",
+    "reliability_warning": "Deze tool gaat ervan uit dat je kennis hebt van Lua en hoe backdoors werken. De gevonden resultaten zijn niet gegarandeerd echte achterdeurtjes en vereist dus handmatige verificatie.",
+    "levels": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "known_backdoor": "Bekende achterdeur"
+    },
+    "detection": "Detectie",
+    "description": "Omschrijving",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "Hardcoded SteamID",
+        "description": "Wordt vaak gebruikt voor hardcode-machtigingen, alleen voor een specifieke persoon, of alleen voor het toekennen van eigen werk."
+      },
+      "arbitrary_code_execution": {
+        "title": "Uitvoering van willekeurige code",
+        "description": "Wordt vaak gebruikt om kwaadaardige code uit te voeren of om een ​​DRM uit te voeren."
+      },
+      "external_networking": {
+        "title": "Extern netwerk",
+        "description": "Wordt gebruikt om informatie van een externe bron te krijgen, zoals de nieuwste versie of mogelijk een achterdeur om code uit te voeren."
+      },
+      "set_usergroup": {
+        "title": "Gebruikersgroep instellen",
+        "description": "Wordt gebruikt om de gebruikersgroep van de speler in het spel op een specifieke rang te zetten."
+      },
+      "_g_access": {
+        "title": "_G toegang",
+        "description": "Kan worden gebruikt om elke globale variabele te krijgen, vaak gebruikt om te verbergen welke functie wordt aangeroepen."
+      },
+      "getfenv": {
+        "title": "getfenv Gebruik",
+        "description": "Kan mogelijk worden gebruikt om _G te krijgen"
+      },
+      "setmetatable": {
+        "title": "setmetable",
+        "description": "Metatabel instellen."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Gebruikt om een ​​string te maken van bytes, vaak gebruikt in combinatie met versluierde code."
+      },
+      "console_command": {
+        "title": "Console opdracht",
+        "description": "Voert de consoleopdracht uit als client of server."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX in een string",
+        "description": "Vaak gebruikt in achterdeuren om rangen te bepalen of andere dingen mee te doen met ULX."
+      },
+      "ip_tracking": {
+        "title": "IP-tracking",
+        "description": "Maakt het mogelijk om het IP-adres van de server of een client te krijgen."
+      },
+      "massive_indentation": {
+        "title": "Enorme inspringing",
+        "description": "Mogelijke poging om een ​​achterdeur te verbergen."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Kan worden gebruikt om kwaadaardige code naar een klant te sturen."
+      },
+      "backdoor": {
+        "title": "Achterdeur",
+        "description": "Bevestigde achterdeur."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "FastDL inhoud synchroniseren",
+    "sync_button": "FastDL synchroniseren",
+    "note": "Hiermee wordt al je FastDL-inhoud van de gameserver gesynchroniseerd, gecomprimeerd en naar onze webserver geüpload. Alles in de map garrysmod/, garrysmod/addons/ en garrysmod/gamemodes/ dat downloadbare inhoud bevat, wordt gesynchroniseerd.",
+    "click_button": "Klik op de knop:",
+    "enable_fastdl": "Om FastDL voor uw server in te schakelen na synchronisatie, moet je {code} toevoegen aan je {file} bestand.",
+    "sync_started": "FastDL is nu aan het synchroniseren. U krijgt een melding wanneer het klaar is."
+  },
+  "modpacks": {
+    "install_modpack": "Installeer modpack",
+    "install_warning": "U staat op het punt om {modpack} te installeren, deze bewerking kan mogelijk bestaande bestanden overschrijven en dit kan niet ongedaan gemaakt worden.",
+    "format_footer": "Als u de formaatoptie aanvinkt, worden alle bestaande bestanden verwijderd voordat de modpack wordt geïnstalleerd."
+  },
+  "plugins": {
+    "plugin_installed": "De plugin {name} is succesvol geïnstalleerd.",
+    "premium": "Niet beschikbaar (premium)"
+  },
+  "minecraft": {
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (Snapshots)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (Snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

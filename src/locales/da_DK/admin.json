@@ -1,0 +1,344 @@
+{
+  "index": {
+    "instance_overview": "Instans Oversigt",
+    "current_version": "Velkommen til WISP Panel! Du kører i øjeblikket på version {version}.",
+    "license_information": "Lisensinformation"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Panelindstillinger",
+      "company_name_footer": "Dette er det navn, der bruges i hele panelet og i e-mails, der sendes til kunderne.",
+      "random_database_deployment_footer": "Hvis dette er aktiveret, kan alle spilservere installere deres databaser på en hvilken som helst databasevært i stedet for kun på den tilknyttede vært for noden.",
+      "require_2fa": {
+        "not_required": "Ikke påkrævet",
+        "admin_only": "Kun for administratorer",
+        "all_users": "Alle brugere"
+      },
+      "require_2fa_footer": "Hvis aktiveret, skal alle konti i den valgte gruppering have aktiveret 2-faktor-godkendelse for at kunne bruge panelet.",
+      "default_language_footer": "Standardsproget, der skal bruges ved gengivelse af brugergrænsefladekomponenter."
+    },
+    "branding": {
+      "recommended_size": "Anbefalet størrelse:",
+      "formats": "Formater:",
+      "login_screen_logo": "Logo på login-skærmen",
+      "login_screen_logo_recommended_size": "300 x 100px (maks. 250 KB)",
+      "login_screen_logo_recommended_formats": "png, jpg og svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (maks. 250 KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Panel-logo",
+      "panel_logo_recommended_size": "230 x 50px (maks. 250 KB)",
+      "panel_logo_recommended_formats": "png, jpg og svg"
+    },
+    "embed": {
+      "embed_settings": "Indstillinger for indlejring",
+      "site_name_footer": "Det navn på webstedet, der skal vises på indlejringer.",
+      "title_footer": "Den titel, der skal vises på indlejringer.",
+      "description_footer": "Kort beskrivelse, der skal vises på indlejringer.",
+      "image_footer": "Det billed-URL, der skal vises på indlejringer."
+    },
+    "js_injector": {
+      "title": "JavaScript-injektor",
+      "minification_notice": "JS kan blive minificeret for at sikre hurtige indlæsningshastigheder for alle. Opbevar en lokal kopi af din JS, hvis du planlægger at redigere den i fremtiden."
+    },
+    "css_injector": {
+      "title": "CSS-injektor",
+      "minification_notice": "CSS'en kan blive minificeret for at sikre hurtige indlæsningshastigheder for alle. Opbevar en lokal kopi af din CSS, hvis du planlægger at redigere den i fremtiden."
+    },
+    "whmcs": {
+      "sso_integration": "WHMCS SSO-integration",
+      "whmcs_notice": "Se venligst guiden om, hvordan du indsamler de legitimationsoplysninger, der er nødvendige for at konfigurere WHMCS SSO for dit panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Aktiverer WHMCS Single-Sign-On-integrationen, så brugerne kan logge ind på dit WISP-panel med deres WHMCS-konto. Er påkrævet for at alle andre felter kan konfigureres",
+      "button_text_footer": "Den tekst til login-knappen, der vises på login-siden.",
+      "url_footer": "Den URL-adresse, som din whmcs-installation er tilgængelig på. f.eks. https://mywhmcs.com/",
+      "client_id_footer": "WHMCS SSO API Client ID",
+      "client_secret_footer": "WHMCS SSO-klient hemmelig",
+      "api_id_footer": "WHMCS API-identifikator",
+      "api_secret_footer": "WHMCS API hemmelig"
+    },
+    "refresh_page_to_apply_changes": "Indtil videre skal du opdatere webstedet for at få de tilpassede ændringer til at gælde."
+  },
+  "migrator": {
+    "migrate": "Migrér",
+    "notify_users": "Underret brugere",
+    "notified_users": "Alle brugere vil snart modtage en e-mail. Du vil få besked, når den er færdig.",
+    "step_1": "Trin 1 - Overfør data",
+    "step_2": "Trin 2 - Underretter brugerne",
+    "step_3": "Trin 3 - Sidste hånd på arbejdet",
+    "panel_url_footer": "Dette er webadressen til det panel, hvorfra du vil overføre data. For 0.7.x skal panelet køre v0.7.16 eller nyere. For 1.x skal panelet køre v1.1.2 eller nyere. Ellers vil denne migrator ikke fungere.",
+    "api_key_footer": "Dette er nødvendigt for at få panelets oplysninger til overflytningen. Nøglen skal have tilladelser til alt det, du vil migrere.",
+    "locations_node_and_game_data": "Lokationer, noder, tildelinger, databaser og spilserverdata",
+    "locations_node_and_game_data_footer": "Dette vil flytte alle spilservere med noder og deres placering. BEMÆRK: Dette kræver, at alle nedenstående indstillinger er aktiveret, og at databaseværter ikke har konfigureret password.",
+    "nests_and_eggs": "Nests og Eggs",
+    "nests_and_eggs_footer": "Dette vil flytte alle nests og eggs og overskrive eksisterende nests og eggs, hvis de overlapper hinanden.",
+    "users_footer": "Dette vil flytte alle aktive brugere med adgang til mindst én server. Adgangskoder vil ikke blive migreret automatisk (medmindre du kontakter os manuelt), og det vil kræve, at du sender en ny e-mail om oprettelse af konto til hver enkelt bruger.",
+    "after_migration": "Når overflytningen er gennemført, skal du være opmærksom på følgende:",
+    "db_hosts_reset": "Alle databaseværternes adgangskoder skal indstilles igen (da de ikke kan synkroniseres på grund af Pterodactyl API-begrænsninger)",
+    "migrated_nodes_cpu": "De migrerede noders CPU er indstillet til 800 % (med 100 % overallokering)",
+    "spare_allocations_ignored": "Eventuelle ekstra tildelinger fra migrerede noder blev ignoreret under migreringen",
+    "move_to_installing_daemon": "Derefter kan du gå videre til at opsætte WISP-dæmonen på dine spilnoder.",
+    "states": {
+      "in_progress": "Igangværende",
+      "notified_users": "Ingen brugere tilbage at underrette",
+      "manual": "Manuelt",
+      "failed": "Mislykkedes"
+    }
+  },
+  "announcements": {
+    "title": "Meddelelser",
+    "create_announcement": "Opret meddelelse",
+    "edit_announcement": "Rediger meddelelse",
+    "delete_announcement": "Slet meddelelse",
+    "delete_notice": "Sletning af denne meddelelse er uigenkaldelig - klik venligst på slet igen for at bekræfte sletningen.",
+    "enabled_footer": "Om meddelelsen er synlig med det samme for alle brugere.",
+    "resend": "Genudsend",
+    "announcement_resent": "Meddelelsen er blevet sendt videre til brugerne i panelet.",
+    "cant_resend_disabled": "En deaktiveret meddelelse kan ikke sendes igen - aktiver først meddelelsen."
+  },
+  "database_hosts": {
+    "title": "Database Værter",
+    "create_host": "Opret databasevært",
+    "edit_host": "Rediger databasevært",
+    "delete_host": "Slet databasevært",
+    "delete_notice": "Er du sikker på, at du ønsker at slette {name} databaseværten? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "host_details": "Værtsoplysninger",
+    "user_details": "Brugeroplysninger",
+    "databases": "Databaser",
+    "host_has_databases": "Kan ikke slette en databaseværtsserver, der har aktive databaser knyttet til den.",
+    "name_footer": "En kort identifikator, der bruges til at adskille denne placering fra andre. Skal være mellem 1 og 60 tegn, f.eks. us.nyc.lvl3.",
+    "port_footer": "Den port, som MySQL kører på for denne vært.",
+    "username_footer": "Brugernavnet på en konto, der har tilstrækkelige tilladelser til at oprette nye brugere og databaser på systemet.",
+    "password_footer": "Adgangskoden til den definerede konto.",
+    "phpmyadmin_url_footer": "URL'en, hvor phpMyAdmin er tilgængelig for denne databasevært. Hvis du lader dette stå tomt, skjules muligheden for at åbne databasen i phpMyAdmin.",
+    "node_footer": "Servere på den node, der er valgt, vil kunne vælge denne vært som en mulighed, når der oprettes en database"
+  },
+  "application_api": {
+    "title": "API-oplysninger til applikationer",
+    "delete_api_key": "Slet Application API Key",
+    "delete_notice": "Bekræft venligst, at du ønsker at slette \"{name}\" API-applikationsnøglen ved at gentage navnet i indtastningen nedenfor. Dette er en irreversibel handling, som ikke kan fortrydes.",
+    "options": {
+      "none": "Ingen",
+      "read": "Læs",
+      "read_write": "Læs & Skriv"
+    }
+  },
+  "locations": {
+    "title": "Lokationer",
+    "create_location": "Opret Lokation",
+    "delete_location": "Slet Lokation",
+    "delete_notice": "Er du sikker på, at du ønsker at slette lokationen \"{short}\"? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "location_has_nodes": "Du skal slette/flytte alle noder på lokationen, før du sletter den.",
+    "location_details": "Lokationsdetaljer",
+    "nodes": "Noder",
+    "short_footer": "En kort identifikator, der bruges til at adskille denne lokation fra andre. Skal være mellem 1 og 60 tegn, f.eks. \"us.nyc.lvl3\".",
+    "long_footer": "En længere beskrivelse af denne lokation. Skal være på mindre end 255 tegn."
+  },
+  "nodes": {
+    "title": "Noder",
+    "not_alive": "Fejl ved tilslutning til node! Tjek browserkonsollen for at få flere oplysninger.",
+    "cant_delete_attached_servers": "Du skal slette alle servere på denne node, før du sletter den.",
+    "delete_node": "Slet Node",
+    "delete_notice": "Er du sikker på, at du ønsker at slette noden \"{name}\"? Det er en uigenkaldelig handling at slette en node, og den fjerner straks denne node fra panelet.",
+    "about": {
+      "daemon_version": "Daemon-version",
+      "system_information": "Systemoplysninger",
+      "cpu_cores": "CPU-kerner"
+    },
+    "settings": {
+      "general_configuration": "Generel konfiguration",
+      "allow_automatic_allocation": "Tillad automatisk tildeling",
+      "max_web_upload": "Maksimal filstørrelse for web-upload",
+      "daemon_port": "Daemon-port",
+      "sftp_port": "SFTP-port",
+      "fastdl_port": "FastDL-port",
+      "display_fqdn_footer": "Indtast det domænenavn (f.eks. node.example.com), der skal vises for brugerne i stedet for *.daemon.panel.gg. Hvis du bruger et domæne, skal du også konfigurere DNS-rekordet for at få det til at pege på noden, ellers vil det ikke fungere som forventet.",
+      "automatic_allocation_footer": "Gør det muligt at bruge denne node, når der automatisk vælges en passende node til serverimplementering ved hjælp af API'en.",
+      "maintenance_mode_footer": "Hvis noden er markeret som \"Under vedligeholdelse\", kan brugerne ikke få adgang til de servere, der er på denne node.",
+      "cpu_footer": "Indtast den samlede mængde cpu, der er tilgængelig på denne node til servertildeling. Du kan også angive en procentdel, der bestemmer, hvor meget cpu der skal tillades over den fastsatte grænse. 1 kerne = 100 %.",
+      "memory_footer": "Angiv den samlede mængde hukommelse, der er tilgængelig på denne node til tildeling af servere. Du kan også angive en procentdel, der kan tillade tildeling af mere end den definerede hukommelse.",
+      "disk_footer": "Indtast den samlede mængde diskplads, der er tilgængelig på denne node til serverallokering. Du kan også angive en procentdel, der bestemmer, hvor meget diskplads der skal tillades over den fastsatte grænse.",
+      "max_web_upload_footer": "Indtast den maksimale størrelse af filer, der kan uploades via den webbaserede filhåndtering."
+    },
+    "allocations": {
+      "title": "Node Allokationer",
+      "create_new": "Opret Ny",
+      "cant_delete_in_use": "Du kan ikke slette en tildeling, der er tilknyttet en server.",
+      "delete_ip": "Slet IP",
+      "delete_ip_allocations": "Slet alle tildelinger for IP'er",
+      "too_many_ports": "Tilføjelse af mere end 1000 porte i et enkelt område på en gang understøttes ikke.",
+      "invalid_mapping": "Den angivne mapping for port {port} var ugyldig og kunne ikke behandles.",
+      "cidr_out_of_range": "CIDR-notationen tillader kun masker mellem /25 og /32.",
+      "port_out_of_range": "Ports i en allokering skal være større end 1024 og mindre end eller lig med 65535.",
+      "ip_footer": "IP som vil være bundet til servercontaineren, dette understøtter subnets op til /25 ad gangen. (f.eks. 192.168.0.192/28)",
+      "alias_footer": "Aliasset vises i stedet for IP'en, hvis dette er angivet, hvilket er nyttigt for netværk, der bruger NAT, som kræver, at tildelingen skal være en intern IP for at brugerne kan se den offentlige IP.",
+      "ports_footer": "De porte på den angivne IP-adresse, som vil være tilgængelige for tildeling. Dette understøtter brug af intervaller, f.eks. 25565-25570, vil tildele 5 porte."
+    },
+    "configuration_not_persisted": "Daemon-konfigurationen er blevet opdateret, men der opstod en fejl under forsøg på at opdatere daemonens konfigurationsfil. Du bliver nødt til manuelt at opdatere filen /var/lib/wisp/daemon/config/wisp.yaml for at afspejle de nye ændringer."
+  },
+  "servers": {
+    "title": "Servere",
+    "copy_uuid": "Kopier UUID",
+    "delete_server": "Slet Server",
+    "delete_server_notice": "Er du sikker på, at du ønsker at slette serveren \"{name}\"? Det er en uigenkaldelig handling at slette en server, og den fjerner straks denne server fra panelet og daemonen.",
+    "force_footer": "Farlig: Hvis du tvinger en server til at blive slettet, fjernes serveren fra panelet, selv om dæmonen rapporterer en fejl. Dette kan efterlade hængende filer på din daemon, hvis den rapporterer en fejl.",
+    "cant_delete_unmigrated_nodes_server": "Du kan ikke slette en server på en node, som ikke har et konfigureret FQDN - brug force delete for at fortsætte.",
+    "new": {
+      "core_details": "Kerne Detaljer",
+      "node_footer": "Den node, som denne server skal installeres på.",
+      "primary_allocation_footer": "Den primære allokation, der vil blive tildelt denne server.",
+      "secondary_allocations_footer": "Yderligere tildelinger, der skal tildeles denne server ved oprettelsen.",
+      "database_limit_footer": "Det samlede antal databaser, som en bruger kan oprette for denne server. Lad det være tomt for at tillade et ubegrænset antal.",
+      "allocation_limit_footer": "Det samlede antal tildelinger, som en bruger har tilladelse til at oprette for denne server. Lad det være tomt for at tillade ubegrænset.",
+      "backup_megabytes_limit_footer": "Det samlede antal megabytes, som serveren kan bruge til sine sikkerhedskopier.",
+      "cpu_footer": "Hvis du ikke ønsker at begrænse CPU-forbruget, skal du indstille værdien til 0. Du kan bestemme en værdi ved at tage antallet af fysiske kerner og gange det med 100. På et system med fire kerner (4 * 100 = 400) er der f.eks. 400\ntilgængeligt. Hvis du vil begrænse en server til at bruge halvdelen af en enkelt kerne, skal du indstille værdien til 50. Hvis du vil give en server mulighed for at bruge op til to fysiske kerner, skal du sætte værdien til 200.",
+      "memory_footer": "Grænse for hukommelse i MB. Hvis du vil deaktivere hukommelsesbegrænsning på en server, skal du blot indtaste 0 i hukommelses feltet.",
+      "swap_footer": "Grænse for swap-plads i MB. Hvis du ønsker at deaktivere swap-plads på en server, skal du blot indtaste 0 i swap-feltet.",
+      "disk_footer": "Grænse for diskplads i MB. Hvis du vil deaktivere begrænsningen af diskplads på en server, skal du blot indtaste 0 i disk-feltet.",
+      "io_footer": "Block IO bør indstilles til en værdi mellem 10-1000.",
+      "skip_scripts_footer": "Hvis det valgte egg har et installationsskript knyttet til det, kører scriptet under installationen. Hvis du ønsker at springe dette trin over, skal du markere dette felt."
+    },
+    "about": {
+      "server_owner": "Server Ejer",
+      "server_node": "Server Node"
+    },
+    "details": {
+      "server_details": "Serveroplysninger"
+    },
+    "build_configuration": {
+      "resource_limits": "Ressourcebegrænsninger",
+      "feature_limits": "Funktion Begrænsning",
+      "allocation_management": "Allokation Administration",
+      "oom_disabled_footer": "Deaktiverer OOM Killer på serveren. Dette vil tillade serveren at flyde på den maksimale ram og swap plads."
+    },
+    "startup": {
+      "command_modification": "Kommando Ændring",
+      "service_configuration": "Service Konfiguration",
+      "access_in_startup": "Adgang i opstart: "
+    },
+    "databases": {
+      "notice": "Databaseadgangskoder kan ses, når du besøger denne server i front-end'en.",
+      "active_databases": "Aktive databaser",
+      "create_database": "Opret database"
+    },
+    "advanced": {
+      "reinstall_server": "Geninstaller serveren",
+      "reinstall_server_note": "Dette geninstallerer serveren med det tildelte servicescript.\nFare! Dette kan overskrive data.",
+      "reinstall_started": "Geninstallationsprocessen er blevet startet.",
+      "install_status": "Status for installation",
+      "install_status_note": "Hvis du har brug for at ændre installationsstatus fra afinstalleret til installeret eller omvendt, kan du gøre det ved at klikke på knappen nedenfor.",
+      "install_toggled": "Installationsstatus er blevet skiftet.",
+      "rebuild_container": "Genopbyg Containere",
+      "rebuild_container_note": "Dette vil udløse en genopbygning af servercontaineren, næste gang den starter. Dette er nyttigt, hvis du har ændret serverkonfigurationsfilen manuelt, eller hvis noget bare ikke fungerede korrekt.",
+      "rebuild_requested": "Der er blevet sendt en anmodning om genopbygning til daemonen, og serveren genopbygger sig selv ved næste start.",
+      "suspend_server": "Suspender server",
+      "suspend_server_note": "Dette suspenderer serveren, stopper alle kørende processer og blokerer straks brugeren fra at kunne få adgang til sine filer eller på anden måde administrere serveren via panelet eller API'et.",
+      "suspend_toggled": "Suspensionsstatus er blevet skiftet.",
+      "updating_status": "Opdatering af status",
+      "updating_status_note": "Hvis du har brug for at ændre opdateringsstatus, kan du gøre det ved at klikke på knappen nedenfor.",
+      "updating_toggled": "Opdateringsstatus er blevet skiftet.",
+      "move_server": "Flyt serveren til en anden node",
+      "moving_status": "Status for flytning",
+      "moving_status_note": "Hvis du har brug for at ændre flyttestatus, kan du gøre det ved at klikke på knappen nedenfor.\n",
+      "moving_toggled": "Status for flytning er blevet skiftet.",
+      "reset_mod_statuses": "Nulstil mod-installationsstatus",
+      "reset_mod_statuses_note": "Nulstiller alle mods' installationstilstand, hvis den fejler, hvis serveren har mod-installationer låst fuldstændigt og de har siddet fast i lang tid.",
+      "reset_mod_triggered": "Alle status for installation af servermods er blevet nulstillet.",
+      "toggle_backup_status": "Skift backup-status",
+      "install_marked_as_failed": "Kan ikke skifte serverens installationsstatus, fordi den ikke kan installeres. Geninstaller venligst serveren i stedet."
+    },
+    "deployment": {
+      "no_viable_nodes": "Der blev ikke fundet nogen nodes, der opfylder kravene til automatisk oprettelse.",
+      "no_viable_allocations": "Der blev ikke fundet tildelinger, der opfylder kravene til automatisk implementering."
+    }
+  },
+  "users": {
+    "title": "Brugere",
+    "identity": "Identitet",
+    "external_id_footer": "Lad den være tom for ikke at tildele en ekstern identifikator til denne bruger. Det eksterne ID skal være unikt for denne bruger og må ikke anvendes af andre brugere.",
+    "language_footer": "Lad være tomt for at bruge standardsproget. Det sprog, brugerens panel vil blive vist på, kan også ændres i brugerens ende i kontoindstillingerne.",
+    "password": "Adgangskode",
+    "password_optional": "Det er valgfrit at angive en brugeradgangskode. En ny bruger får en e-mail med en opfordring til at oprette en adgangskode til sin konto. Hvis der angives en adgangskode her, skal du finde en anden metode til at give brugeren en adgangskode.",
+    "root_admin_footer": "Hvis du indstiller dette, får brugeren fuld administrativ adgang.",
+    "support_op_footer": "Ved at indstille dette giver du en bruger begrænset administrativ adgang til at fungere som supportagent.",
+    "support_op_bypass_footer": "Hvis du indstiller dette, undgår du, at brugerne skal give udtrykkelig tilladelse til at få adgang til deres servere via fanen Support.",
+    "ignore_exceptions": "Ignorer undtagelser, der opstår, mens nøgler tilbagekaldes.",
+    "ignore_exceptions_footer": "Hvis dette afkrydses, ignoreres eventuelle fejl, der opstår, når nøgler tilbagekaldes på tværs af noder. Du bør undgå denne afkrydsningsboks, hvis det er muligt, da nøgler, der ikke er tilbagekaldt, fortsat kan være aktive i op til 24 timer, efter at denne konto er blevet ændret. Hvis du har brug for at tilbagekalde kontotilladelser med det samme og har problemer med node problemer, bør du markere dette felt og derefter genstarte alle noder, der ikke blev opdateret, for at rydde eventuelle gemte nøgler.",
+    "disable_2fa": "Deaktiver 2-faktor-godkendelse",
+    "disable_2fa_notice": "Dette er en farlig handling! Dette vil deaktivere TOTP-baseret godkendelse, hvis det er aktiveret, og også slette ALLE sikkerhedsnøgler fra brugerens konto. Dette er en irreversibel handling.",
+    "2fa_disabled": "2FA er blevet deaktiveret for denne brugers konto.",
+    "user_has_no_2fa_configured": "Brugeren har ikke konfigureret 2FA til at kunne bruge den.",
+    "delete_user": "Slet bruger",
+    "delete_notice": "Er du sikker på, at du ønsker at slette brugeren \"{email}\"? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "cant_delete_yourself": "Du kan ikke slette dig selv.",
+    "cant_delete_user_with_servers": "Du kan ikke slette en bruger, mens vedkommende ejer servere."
+  },
+  "nests": {
+    "title": "Nests",
+    "eggs": "Eggs",
+    "details": "Nest Detaljer",
+    "create_nest": "Opret Nest",
+    "delete_nest": "Slet Nest",
+    "delete_notice": "Er du sikker på, at du ønsker at slette \"{name}\" nest? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "id_footer": "Et unikt ID, der bruges til at identificere denne nest internt og via API'en.",
+    "uuid_footer": "Et UUID, som alle servere, der bruger denne indstilling, tildeles til identifikationsformål.",
+    "name_footer": "Dette skal være et beskrivende kategorinavn, der omfatter alle Eggs i Nesten.",
+    "identifier_footer": "Kort ID, der kan aktivere specifikke funktioner (arbejds-id'er: srcds, minecraft).",
+    "nest_has_servers": "Du kan ikke slette en nest, som har servere, der kører under den.",
+    "import_egg": "Importer Egg",
+    "egg": {
+      "daemon_restart_required_after_changes": "Enhver ændring af den eksisterende egg-konfiguration kræver i øjeblikket, at WISP-servicet genstartes efterfølgende med `wisp restart`.",
+      "configuration": "Konfiguration",
+      "process_management": "Processtyring",
+      "delete_egg": "Slet Egg",
+      "delete_notice": "Er du sikker på, at du ønsker at slette \"{name}\" Egg? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+      "egg_has_servers": "Du kan ikke slette et egg, som har servere, der kører under det.",
+      "egg_is_a_parent": "Dette egg er tilknyttet til et eller flere andre egg. Slet venligst disse egg, før du sletter dette egg.",
+      "must_be_a_child": "Direktivet \"Kopiér Indstillinger Fra\" for dette egg skal være et underordnet valg for den valgte nest.",
+      "copy_alert": "Alle felter er obligatoriske, medmindre du vælger en separat indstilling i rullelisten \"Kopier indstillinger fra\", i hvilket tilfælde felter kan være tomme for at bruge værdierne fra den pågældende indstilling.",
+      "invalid_copy": "Det egg, der er valgt til at kopiere et script fra, findes enten ikke, eller det kopierer et script fra sig selv.",
+      "update_egg": "Opdater Egg",
+      "import_update_notice": "Hvis du importerer en ny egg fil, overskrives alle eksisterende indstillinger. Hvis du ønsker at beholde dine eksisterende indstillinger, skal du importere det nye egg separat.",
+      "import_updated": "Egg'et er blevet opdateret fra den nye fil. Du skal genstarte dine WISP-daemon for at anvende ændringerne på noderne.",
+      "import_json_error": "Der opstod en fejl under forsøget på at analysere JSON-filen: {error}",
+      "import_file_error": "Den angivne JSON-fil var ikke gyldig.",
+      "import_invalid_json": "Den leverede JSON-fil er ikke i et format, der kan genkendes.",
+      "install_script": "Installer script",
+      "update_script": "Opdater Script",
+      "variables": {
+        "create_variable": "Opret opstartsvariabel",
+        "variable_created": "Startvariablen er blevet oprettet med succes.",
+        "variable_updated": "Opstartsvariablen \"{name}\" er blevet opdateret med succes.",
+        "variable_deleted": "Det er lykkedes at slette startvariablen \"{name}\".",
+        "env_variable_reserved": "Miljøvariablen {name} er et reserveret variabelnavn.",
+        "env_not_unique": "Miljøvariablen {name} er ikke entydig.",
+        "bad_validation_rule": "Valideringsreglen \"{rule}\" er ikke en gyldig regel."
+      },
+      "thumbnail_title": "Miniaturebillede af egg",
+      "thumbnail_recommended_size": "2:1 formatforhold (maks. 500 KB)",
+      "thumbnail_formats": "png, jpg og svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Mod detaljer",
+    "mod_configuration": "Mod-konfiguration",
+    "delete_mod": "Slet Mod",
+    "delete_notice": "Er du sikker på, at du ønsker at slette \"{name}\" mod? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "mod_has_servers": "Kan ikke ændre det tilknyttede egg-id, når servere er knyttet til en mod i øjeblikket."
+  },
+  "domains": {
+    "domain_details": "Domæne Detaljer",
+    "domain_name_footer": "Det domænenavn, som spilservere kan oprette underdomæner på, så brugerne kan vælge et underdomæne og pege det automatisk til deres spilservers allokeringer. I øjeblikket understøtter vi kun underdomæner på roddomænet.",
+    "instructions": "Du skal udføre følgende handlinger for at få domænet til at fungere korrekt:",
+    "acquire_domain": "Køb eller brug et eksisterende domæne, som du har.",
+    "setup_nameservers": "Peg domænets navneservere på \"ns1.subdomain-manager.wisp.gg\" og \"ns2.subdomain-manager.wisp.gg\" (bemærk, at det kan tage op til 48 timer at sprede sig).",
+    "update_notice": "Opdatering af domænenavnet vil opdatere hver enkelt servers underdomæne til det nye domæne.",
+    "domain_already_in_use": "Det angivne domæne er allerede i brug på en anden panel instans og kan ikke genbruges.",
+    "root_domain_only_supported": "I øjeblikket understøtter vi kun rootdomænet.",
+    "nest_identifiers_footer": "En liste over nest-id'er, som gør det muligt for servere, der kører under nestet, at oprette underdomæner på domænet.",
+    "egg_identifiers_footer": "**Dette bruges primært til at tillade specifikke egg under en nest uden at skulle tillade hele nest** En liste over egg identifikatorer, som tillader servere, der kører under det specifikke egg, at oprette underdomæner på domænet.",
+    "root_record_footer": "IP-adressen for en ny A DNS-post, som et domæne skal pege på. Nyttig til at konfigurere en omdirigering for domænet.",
+    "delete_domain": "Slet domæne",
+    "delete_notice": "Er du sikker på, at du ønsker at slette domænet \"{name}\"? Der er ingen vej tilbage, og alle servere, der er tilknyttet dette domæne, vil miste de underdomæner, der er tilknyttet det."
+  }
+}

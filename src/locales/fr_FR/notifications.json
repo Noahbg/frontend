@@ -1,0 +1,48 @@
+{
+  "server": {
+    "backup": {
+      "created": "La création de la sauvegarde {name} est terminé.",
+      "failed_to_create": "Échec de la création de la sauvegarde {name}: {err}",
+      "deployed": "Le déploiement de la sauvegarde {name} est terminé.",
+      "failed_to_deploy": "Échec du déploiement de la sauvegarde {name}."
+    },
+    "update": {
+      "updated": "Mise à jour terminée.",
+      "failed": "Échec de la mise à jour du serveur."
+    },
+    "installed": "Installation terminée.",
+    "version": {
+      "installed": "Fin de l'installation de la version {name}.",
+      "failed": "Échec de l'installation de la version {name}."
+    },
+    "modpack": {
+      "installed": "Fin de l'installation du modpack {name}.",
+      "failed": "Échec de l'installation du modpack {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL a été synchronisé.",
+      "failed": "Échec de la synchronisation de FastDL."
+    },
+    "move": {
+      "moved": "J'ai fini de déménager.",
+      "db_migration_failed": "Échec de la migration de la base de données {name}.",
+      "failed": "Échec du transfert du serveur.",
+      "failed_to_delete_archive": "Échec de la suppression de l'archive de transfert du serveur pour {name}.",
+      "failed_to_delete_created_server": "Échec de la suppression du serveur créé sur {name}.",
+      "failed_to_update_allocation": "Échec de la libération d'une ancienne allocation sur {name}.",
+      "failed_final_stage": "Echec de l'étape finale pour le transfert du serveur (vérifiez que l'ancien serveur a été supprimé de {name} et que les dbs ont été déplacés vers l'hôte si ce n'est pas le cas)."
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrateur",
+      "finished_migrating_data": "La migration des données depuis {fqdn} est terminée.",
+      "exceeded_limits": "La migration pour {fqdn} à échoué avec le code erreur suivant : {message} Contactez nous pour une migration manuelle.",
+      "aborted_migration": "La migration pour {fqdn} a été stoppé : {message}",
+      "data_mismatch": "Échec de la migration pour {fqdn} en raison de l'incompatibilité des données : {message}",
+      "failed_due_to_internal_error": "Migration échouée pour {fqdn}: Quelque chose s'est mal passé en interne, veuillez nous contacter via un ticket de support.",
+      "finished_notifying_users": "Fin de la notification aux utilisateurs pour {fqdn}.",
+      "failed_notifying_users": "Impossible de notifier les utilisateurs pour {fqdn}: Quelque chose a mal tourné en interne."
+    }
+  }
+}

@@ -1,0 +1,363 @@
+{
+  "errors": {
+    "not_migrated": {
+      "title": "Ikke migreret",
+      "description": "Serverens node er endnu ikke konfigureret efter migreringen."
+    },
+    "invalid_license": {
+      "title": "Ugyldigt licens",
+      "description": "Serverens node har ikke en gyldig licensnøgle knyttet til den - kontakt venligst panelets ejer."
+    },
+    "moving": {
+      "title": "Server Flytning",
+      "description": "Serveren er ved at blive flyttet til en ny node."
+    },
+    "suspended": {
+      "title": "Server suspenderet",
+      "description": "Serveren er i øjeblikket suspenderet og kan ikke tilgås, før den er ophævet."
+    },
+    "install_failed": {
+      "title": "Installation mislykkedes",
+      "description": "Serveren mislykkedes i installationsprocessen. Kontakt support."
+    },
+    "deploying_backup": {
+      "title": "Implementerer Sikkerhedskopi",
+      "description": "Serveren udruller en sikkerhedskopi."
+    },
+    "installing": {
+      "title": "Serveren Installerer",
+      "description": "Serveren er ved at blive installeret."
+    },
+    "updating": {
+      "title": "Serveren Opdaterer",
+      "description": "Serveren er ved at afslutte opdateringsprocessen."
+    },
+    "backup_creating": {
+      "title": "Backup i gang",
+      "description": "Serveren tager i øjeblikket en backup."
+    }
+  },
+  "console": {
+    "type_a_command": "Indtast en kommando...",
+    "console_popup": "Åbn popup-konsol",
+    "upload_logs": "Upload logs",
+    "eula_acceptance": "Accept af EULA",
+    "eula_notice": "Ved at trykke på \"Jeg accepterer\" nedenfor angiver du, at du accepterer Mojangs EULA."
+  },
+  "power": {
+    "start": "Start",
+    "restart": "Genstart",
+    "stop": "Stop",
+    "kill": "Dræb"
+  },
+  "logs": {
+    "upload_logs": "Upload logs",
+    "upload_logs_description": "Vil du gerne uploade dine logfiler, så de kan blive delt?",
+    "upload_complete": "Dine logs er blevet uploadet til: {url}",
+    "upload_failed": "Noget gik galt, i forsøget at uploade serverlogs. Prøv igen senere."
+  },
+  "details": {
+    "server_name": "Server Navn",
+    "server_limits": "Servergrænser",
+    "server_info": "Serveroplysninger",
+    "update_server_name": "Opdater servernavn",
+    "name_description": "Servernavn, der er synligt i panelet. Dette ændrer ikke det faktiske server hostnavn, men kun hvordan det identificeres i panelet.",
+    "updated": "Din servers oplysninger er blevet opdateret!"
+  },
+  "sftp": {
+    "sftp_details": "SFTP-oplysninger",
+    "alert_note": "SFTP-adgangskoden er den adgangskode, som du bruger til at logge ind på panelet. Sørg for, at din klient er indstillet til at bruge SFTP og ikke FTP eller FTPS til forbindelser, da der er forskel på protokollerne."
+  },
+  "audit_logs": {
+    "no_audits": "Ingen Revisions Logs",
+    "no_audits_description": "Det ser ud til, at du ikke har nogen revisionslogfiler. Udfør nogle handlinger på din server for at generere og se et overblik over, hvad der sker på din server her.",
+    "changes": {
+      "hidden_value": "Ændret {key} til en ny skjult værdi",
+      "from_to": "Ændret {key} fra {old} til {new}"
+    },
+    "device": {
+      "city": "By",
+      "country": "Land",
+      "user_agent": "Brugeragent"
+    }
+  },
+  "files": {
+    "new_file": "Ny fil",
+    "new_folder": "Ny mappe",
+    "upload": "Upload",
+    "rename_or_move": "Omdøb/flyt",
+    "copy": "Kopier",
+    "compress": "Komprimér",
+    "decompress": "Dekomprimere",
+    "download": "Download",
+    "delete_files": "Slet filer",
+    "delete_following": "Er du sikker på, at du ønsker at slette følgende filer? Sletning af filer er en uigenkaldelig handling, som ikke kan gøres om, medmindre du har taget sikkerhedskopier.",
+    "upload_unavailable": "Upload af filer er i øjeblikket ikke tilgængelig, prøv igen senere eller prøv at bruge SFTP.",
+    "upload_too_large": "Det er ikke muligt at uploade filen {name} , fordi den er for stor, brug venligst SFTP i stedet.",
+    "search": "Søg",
+    "search_results": "Søgeresultater for {query}",
+    "too_many_results": "Vi fandt for mange resultater for søgeordet. Vær venligst mere specifik for at kunne se alle resultaterne.",
+    "git_clone": "Klon",
+    "get_access_token_here": "Få dit token her",
+    "cloned_repository": "Arkivet {repository} er blevet klonet ind i {path}.",
+    "git_pull": "Træk",
+    "git_pull_description": "Henter de seneste ændringer i arkivet i den aktuelle mappe.",
+    "pulled_repository": "Arkivet blev trukket, og den seneste commit er {commit}.",
+    "git_auth_required": "Dette arkiv kræver godkendelse, angiv venligst dit personlige adgangstoken.",
+    "steam_workshop": "Steam-værksted",
+    "steam_workshop_finished": "Værkstedsemnet er blevet downloadet.",
+    "steam_workshop_finished_but_with_errors": "Afsluttet med følgende fejl:",
+    "steam_workshop_n_more": "Og ikke flere genstande... | Og {n} flere emner... | Og {n} flere emner...",
+    "steam_workshop_state": {
+      "waiting": "venter",
+      "downloading": "downloader",
+      "extracting": "udvinding",
+      "parsing": "parser",
+      "writing": "skrivner {files} filer"
+    },
+    "file_contents": "Filindhold",
+    "save_file": "Gem fil",
+    "return_to_file_manager": "Tilbage til Filhåndtering",
+    "file_saved": "Filen blev gemt"
+  },
+  "databases": {
+    "title": "Databaser",
+    "using_databases": "Bruger {count} / {limit} databaser",
+    "create_new": "Opret ny database",
+    "delete_database": "Slet database",
+    "delete_database_notice": "Er du sikker på, at du ønsker at slette databasen {name} ? Der er ingen vej tilbage, alle data vil straks blive fjernet.",
+    "host_footer": "Dette skal være den vært, som databasen skal implementeres på.",
+    "name_footer": "Dette skal være det databasenavn, du vil bruge.",
+    "connections_from_footer": "Dette skal afspejle den IP-adresse, som forbindelser er tilladt fra. Bruger standard MySQL-notation. Hvis du er usikker, skal du angive %.",
+    "phpmyadmin": "PHPMyAdmin",
+    "exceptions": {
+      "too_many": "Du har allerede nået kvoten af tilladte databaser for denne server.",
+      "duplicate": "Der er allerede oprettet en database med det angivet navn på denne server.",
+      "no_suitable_host": "Der blev ikke fundet nogen databasevært, der opfylder kravene til denne server."
+    }
+  },
+  "subusers": {
+    "title": "Administrer brugere",
+    "add_new_subuser": "Tilføj ny underbruger",
+    "update_subuser": "Opdater underbruger",
+    "delete_subuser": "Slet underbruger",
+    "delete_subuser_notice": "Dette vil straks fjerne {name} ({email}) fra denne server og tilbagekalde alle tilladelser.",
+    "configure_permissions": "Konfigurere tilladelser",
+    "subuser_added": "Brugeren er blevet tilføjet som underbruger til denne server med succes. Vi har sendt dem en e-mail med instruktioner om, hvordan de kan afslutte oprettelsen af deres konto.",
+    "cant_add_owner": "Du kan ikke tilføje serverejeren som en underbruger til denne server.",
+    "subuser_already_exists": "En bruger med den pågældende e-mailadresse er allerede tildelt som underbruger for denne server."
+  },
+  "allocations": {
+    "available_allocations": "Tilgængelige tildelinger",
+    "help_title": "Hjælp til allokering",
+    "help_description": "Listen til venstre indeholder alle tilgængelige IP'er og porte, der er åbne for din server til at bruge til indgående forbindelser.",
+    "primary": "Primær",
+    "make_primary": "Lav Primær"
+  },
+  "startup": {
+    "startup_command": "Opstart Kommando",
+    "input_rules": "Indtastningsregler:",
+    "variable_saved": "Opstartsvariabel gemt med succes.",
+    "variable_not_editable_admin": "Denne variabel er ikke brugerredigerbar - men da du er administrator, kan du opdatere den inden for admin-området for denne server.",
+    "variable_not_editable": "Denne variabel er ikke brugerredigerbar."
+  },
+  "backups": {
+    "all_results": "Alle sikkerhedskopier",
+    "create_new": "Opret ny sikkerhedskopi",
+    "create_warning": "Hvis du opretter en ny sikkerhedskopi, stopper serveren, hvis den allerede kører",
+    "created": "Backup {name} er nu ved at blive oprettet",
+    "creation_would_exceed_limit": "Oprettelse af denne sikkerhedskopi ville overskride serverens sikkerhedskopieringsgrænse.",
+    "cant_delete_locked": "Du skal låse sikkerhedskopien op, før du forsøger at slette den.",
+    "delete_backup": "Slet sikkerhedskopi",
+    "delete_backup_notice": "Er du sikker på, at du ønsker at slette {name} sikkerhedskopien? Der er ingen vej tilbage, alle data vil straks blive fjernet."
+  },
+  "schedules": {
+    "name": "Tidsplaner",
+    "create_new": "Opret tidsplan",
+    "create_task": "Opret opgave",
+    "edit_schedule": "Rediger tidsplan",
+    "edit_task": "Rediger opgave",
+    "delete_schedule": "Slet tidsplan",
+    "delete_task": "Slet opgave",
+    "delete_notice": "Bekræft venligst, at du vil slette skemaet \"{name}\" ved at gentage navnet i indtastningen nedenfor. Dette er en uigenkaldelig handling, som ikke kan fortrydes.",
+    "delete_task_notice": "Er du sikker på, at du vil slette denne opgave? Dette er en uigenkaldelig handling.",
+    "enabled_footer": "Om tidsplanen er aktiveret eller ej.",
+    "last_run_at": "Sidst kørt: ",
+    "next_run_at": "Næste kørsel: ",
+    "next_run_at_time": "Næste kørsel ved {time}",
+    "invalid_cron": "Brug et gyldigt cron-udtryk for at få vist beskrivelse og næste køretidspunkt.",
+    "runs_description": "Kører {description}",
+    "pause_for_seconds": "Pause i {seconds} sekunder",
+    "chain_interval_too_long": "Den maksimale intervaltid for en kædeopgave er 15 minutter.",
+    "states": {
+      "active": "Aktiv",
+      "disabled": "Slået fra",
+      "processing": "Behandler"
+    },
+    "actions": {
+      "power": "Send strømhandling",
+      "command": "Send kommando",
+      "backup": "Opret en sikkerhedskopi"
+    },
+    "power_actions": {
+      "start": "Start serveren",
+      "restart": "Genstart serveren",
+      "stop": "Stop serveren",
+      "kill": "Stop serveren med magt"
+    }
+  },
+  "advanced": {
+    "toggle_support_access": "Skift Support OP Adgang",
+    "update_server": "Opdatering af server",
+    "health_monitor": "Health Monitor",
+    "install_different_edition": "Installer en anden udgave",
+    "reinstall_server": "Geninstaller serveren",
+    "support": {
+      "enable_access_alert": "Support OP Adgang er blevet aktiveret for denne server.",
+      "disable_access_alert": "Support OP Adgang er blevet deaktiveret for denne server."
+    },
+    "updater": {
+      "description": "Dette vil opdatere serveren. Dette kan tage et stykke tid og vil låse din server, mens den opdateres. BEMÆRK: Eventuelle ændringer i spillets grundfiler kan blive overskrevet af opdateringen.",
+      "no_script": "Dette egg har ikke noget opdateringsskript til rådighed.",
+      "beta": "Brug beta-branchen"
+    },
+    "monitor": {
+      "description": "Overvåger din server og genstarter den automatisk, hvis den ikke reagerer i 15 sekunder. BEMÆRK: Nogle spil understøtter muligvis ikke dette og vil ikke gøre noget.",
+      "toggled": "Det er lykkedes at skifte Health Monitor."
+    },
+    "install_edition": {
+      "description": "Dette vil installere en anden udgave af Minecraft efter eget valg på serveren.",
+      "edition_footer": "Udgaven for serveren.",
+      "version_footer": "Version af udgaven.",
+      "format_footer": "Alle serverfiler slettes (nogle udgaver fungerer muligvis ikke med eksisterende filer)"
+    }
+  },
+  "subdomains": {
+    "title": "Underdomæner",
+    "create_new": "Opret nyt underdomæne",
+    "name_footer": "Underdomænets forfængelighedsnavn.",
+    "domain_footer": "Det domæne, som underdomænet oprettes på.",
+    "allocation_footer": "Den tildeling, som underdomænet peger på.",
+    "delete_subdomain": "Slet underdomæne",
+    "delete_subdomain_notice": "Er du sikker på, at du vil slette {name} underdomænet? Alle forbindelser, der bruger dette underdomæne, vil ikke længere fungere."
+  },
+  "mods": {
+    "mod_installed": "{name} mod er blevet installeret med succes.",
+    "mod_uninstalled": "{name} mod er blevet afinstalleret med succes.",
+    "states": {
+      "install": "Installer",
+      "installing": "Installerer",
+      "uninstalling": "Afinstallerer",
+      "uninstall": "Afinstaller"
+    }
+  },
+  "backdoor_scanner": {
+    "scan": "Scan",
+    "show_non_high_severity": "Ønsker du at vise resultater, der ikke har en høj alvorlighed?",
+    "reliability_warning": "Dette værktøj forudsætter, at du har kendskab til Lua og til, hvordan bagdøre fungerer. De fundne resultater er ikke garanteret at være faktiske bagdøre og kræver derfor manuel verifikation.",
+    "levels": {
+      "low": "Lav",
+      "medium": "Medium",
+      "high": "Høj",
+      "known_backdoor": "Kendt bagdør"
+    },
+    "detection": "Detektion",
+    "description": "Beskrivelse",
+    "detections": {
+      "hardcoded_steamid": {
+        "title": "Hardkodet SteamID",
+        "description": "Bruges ofte til hardcoding af tilladelser kun for bestemte personer eller blot til at kreditere eget arbejde."
+      },
+      "arbitrary_code_execution": {
+        "title": "Eksekvering af vilkårlig kode",
+        "description": "Bruges ofte til at køre skadelig kode eller til at køre en DRM."
+      },
+      "external_networking": {
+        "title": "Eksternt netværkssamarbejde",
+        "description": "Bruges til at få oplysninger fra en ekstern kilde, f.eks. den seneste version eller muligvis en bagdør til at køre kode."
+      },
+      "set_usergroup": {
+        "title": "Indstil brugergruppe",
+        "description": "Bruges til at indstille spillerens brugergruppe i spillet til en bestemt rang."
+      },
+      "_g_access": {
+        "title": "_G Adgang",
+        "description": "Kan bruges til at hente en hvilken som helst global variabel, og bruges ofte til at skjule, hvilken funktion der bliver kaldt."
+      },
+      "getfenv": {
+        "title": "getfenv Anvendelse",
+        "description": "Kan potentielt bruges til at få _G"
+      },
+      "setmetatable": {
+        "title": "setmetatable",
+        "description": "Indstilling af metatable."
+      },
+      "string_char": {
+        "title": "string.char",
+        "description": "Bruges til at oprette en streng fra bytes, ofte brugt sammen med obfusket kode."
+      },
+      "console_command": {
+        "title": "Konsolkommando",
+        "description": "Kører konsolkommando enten som klient eller server."
+      },
+      "ulx_in_a_string": {
+        "title": "ULX i en streng",
+        "description": "Bruges ofte i bagdøre til at indstille ranks eller gøre andre ting med ULX."
+      },
+      "ip_tracking": {
+        "title": "IP-sporing",
+        "description": "Gør det muligt at få fat i IP-adressen på enten serveren eller en klient."
+      },
+      "massive_indentation": {
+        "title": "Massiv indrykning",
+        "description": "Muligt forsøg på at skjule en bagdør."
+      },
+      "sendlua": {
+        "title": "SendLua",
+        "description": "Kan bruges til at sende skadelig kode til en klient."
+      },
+      "backdoor": {
+        "title": "Bagdør",
+        "description": "Bekræftet kendt bagdør."
+      }
+    }
+  },
+  "fastdl": {
+    "sync": "Synkronisering af FastDL-indhold",
+    "sync_button": "Synkroniser FastDL",
+    "note": "Dette vil synkronisere alt dit FastDL-indhold fra spilserveren, komprimere det og uploade det til vores webserver. Alt i mapperne garrysmod/, garrysmod/addons/ og garrysmod/gamemodes/, der indeholder indhold, der kan downloades, vil blive synkroniseret.",
+    "click_button": "Klik på denne knap:",
+    "enable_fastdl": "Hvis du vil aktivere FastDL for din server efter en synkronisering, skal du tilføje {code} i din {file} -fil.",
+    "sync_started": "FastDL er nu synkroniseret. Du vil få besked, når den er færdig."
+  },
+  "modpacks": {
+    "install_modpack": "Installer Modpack",
+    "install_warning": "Du er ved at installere {modpack}, dette er en operation, som kan overskrive eksisterende filer",
+    "format_footer": "Hvis du markerer formatindstillingen, betyder det, at alle eksisterende filer slettes, før modpakken installeres.",
+    "installing": "Modpakken er nu ved at blive installeret. Du vil få besked, når den er færdig."
+  },
+  "plugins": {
+    "plugin_installed": "{name} plugin er blevet installeret med succes.",
+    "premium": "Ikke tilgængelig (premium)"
+  },
+  "minecraft": {
+    "editions": {
+      "bungeecord": "Bungeecord",
+      "craftbukkit": "CraftBukkit",
+      "fabric": "Fabric",
+      "fabric_snapshots": "Fabric (snapshots)",
+      "forge": "Forge",
+      "paper": "Paper",
+      "purpur": "Purpur",
+      "spigot": "Spigot",
+      "spongevanilla": "SpongeVanilla",
+      "tuinity": "Tuinity",
+      "quiltmc": "QuiltMC",
+      "quiltmc_snapshots": "QuiltMC (Snapshots)",
+      "vanilla": "Vanilla",
+      "vanilla_snapshots": "Vanilla (snapshots)",
+      "velocity": "Velocity",
+      "waterfall": "Waterfall"
+    }
+  }
+}

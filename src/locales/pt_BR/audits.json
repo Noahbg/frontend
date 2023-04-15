@@ -1,0 +1,136 @@
+{
+  "server": {
+    "update": {
+      "title": "Servidor Atualizado",
+      "message": "{user} atualizou os detalhes deste servidor"
+    },
+    "subuser": {
+      "create": {
+        "title": "Sub-usuário criado",
+        "message": "{user} criou um sub-usuário para {target}"
+      },
+      "update": {
+        "title": "Sub-usuário atualizado",
+        "message": "{user} Atualizou as permissões de sub-usuário para {target}"
+      },
+      "delete": {
+        "title": "Acesso de sub-usuário revogado",
+        "message": "{user} eliminou um sub-usuário pertencente a {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Database criada",
+        "message": "{user} criou uma database chamada {name}"
+      },
+      "update": {
+        "title": "Database atualizada",
+        "message": "{user} Regenerou a senha da Database para {target}"
+      },
+      "delete": {
+        "title": "Database eliminada",
+        "message": "{user} apagou a {target} database"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Execução do agendamento acionada",
+        "message": "{user} acionou a programação de {target}"
+      },
+      "create": {
+        "title": "Agendamento criado",
+        "message": "{user} criou um novo agendamento chamado {name}"
+      },
+      "update": {
+        "title": "Agendamento atualizado",
+        "message": "{user} atualizou o {target} agendamento"
+      },
+      "delete": {
+        "title": "Agendamento excluído",
+        "message": "{user} apagou o agendamento {target} e as tarefas que o continham"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Variáveis de inicialização atualizadas",
+        "message": "{user} atualizou as variáveis de inicialização do servidor"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Monitor de saúde alternado",
+        "message": "{user} alternou o monitor de saúde"
+      },
+      "restart": {
+        "title": "Reiniciar o servidor",
+        "message": "Reinício do servidor iniciado pelo monitor de saúde"
+      }
+    },
+    "crash": {
+      "title": "Erro do servidor",
+      "message": "O servidor deixou de funcionar"
+    },
+    "backup": {
+      "create": {
+        "title": "Backup criado",
+        "message": "{user} criou um backup chamado {name}"
+      },
+      "update": {
+        "title": "Backup atualizado",
+        "message": "{user} alternou o estado bloqueado para backup {name}"
+      },
+      "deploy": {
+        "title": "Backup instalado no servidor",
+        "message": "{user} implantado backup de {name} no servidor"
+      },
+      "download": {
+        "title": "Backup baixado",
+        "message": "{user} baixou o {name} backup"
+      },
+      "delete": {
+        "title": "Backup excluído",
+        "message": "{user} excluiu o backup {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Status do mod atualizado",
+        "message": "{user} alternou o estado de instalação do {name} mod"
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Subdomínio criado",
+        "message": "{user} criou o subdomínio {subdomain}"
+      },
+      "delete": {
+        "title": "Subdomínio deletado",
+        "message": "{user} deletou o subdomínio {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack instalado",
+        "message": "{user} instalou o modpack {modpack}"
+      }
+    },
+    "version": {
+      "update": {
+        "title": "Versão instalada",
+        "message": "{user} atualizou a versão para {edition} - {version}"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin instalado",
+        "message": "{user} instalou o plugin {plugin} "
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "Sincronizado com FastDL",
+        "message": "{user} sincronizou o conteúdo do FastDL para este servidor"
+      }
+    }
+  }
+}

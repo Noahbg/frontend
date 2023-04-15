@@ -1,0 +1,335 @@
+{
+  "index": {
+    "instance_overview": "Vista general de la instancia",
+    "current_version": "¡Bienvenido al Panel WISP! Actualmente se está ejecutando la versión {version}.",
+    "license_information": "Información de licencia"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Configuración del panel",
+      "company_name_footer": "Este es el nombre que se utiliza en todo el panel y en los correos electrónicos enviados a los clientes.",
+      "random_database_deployment_footer": "Si esto está habilitado, todos los servidores de juegos pueden desplegar sus bases de datos en cualquier host de base de datos en lugar de sólo el asignado para el nodo.",
+      "require_2fa": {
+        "not_required": "No requerido",
+        "admin_only": "Sólo Admin",
+        "all_users": "Todos los Usuarios"
+      },
+      "require_2fa_footer": "Si está habilitado, cualquier cuenta que se encuentre en el grupo seleccionado deberá tener habilitada la autenticación de 2 factores para usar el Panel.",
+      "default_language_footer": "El idioma por defecto a usar al procesar componentes de la interfaz de usuario."
+    },
+    "branding": {
+      "recommended_size": "Tamaño recomendado:",
+      "formats": "Formatos:",
+      "login_screen_logo": "Logo de Inicio de sesión",
+      "login_screen_logo_recommended_size": "300 x 100px (máx. 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg, y svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (máx. 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Logo de Panel",
+      "panel_logo_recommended_size": "230 x 50px (máx. 250KB)",
+      "panel_logo_recommended_formats": "png, jpg, y svg"
+    },
+    "embed": {
+      "embed_settings": "Ajustes de incrustación",
+      "site_name_footer": "El nombre del sitio que debe mostrarse en las incrustaciones.",
+      "title_footer": "El título que debe mostrarse en las incrustaciones.",
+      "description_footer": "Breve descripción que debe mostrarse en las incrustaciones.",
+      "image_footer": "La URL de la imagen que se mostrará en las incrustaciones."
+    },
+    "js_injector": {
+      "title": "Inyector de JavaScript",
+      "minification_notice": "El JS puede minimizarse para tener velocidades de carga rápidas para todos. Guarde una copia local de su JS si planea editarlo en el futuro."
+    },
+    "css_injector": {
+      "title": "Inyector de CSS",
+      "minification_notice": "El CSS puede minimizarse para tener velocidades de carga rápidas para todos. Guarde una copia local de su CSS si planea editarlo en el futuro."
+    },
+    "whmcs": {
+      "sso_integration": "Integración WHMCS SSO",
+      "whmcs_notice": "Por favor, consulte la guía sobre cómo reunir las credenciales necesarias para configurar WHMCS SSO para su panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Activa la integración de WHMCS Single-Sign-On, permitiendo a los usuarios iniciar sesión en su Panel WISP con su cuenta WHMCS. Requerido para que todos los demás campos sean configurados",
+      "button_text_footer": "El texto del botón de inicio de sesión que se muestra en la página de inicio de sesión.",
+      "url_footer": "La URL en la que está disponible la instalación de whmcs. ej. https://mywhmcs.com/",
+      "client_id_footer": "El ID de cliente de la API WHMCS SSO",
+      "client_secret_footer": "El secreto de cliente de WHMCS SSO",
+      "api_id_footer": "El identificador API de WHMCS",
+      "api_secret_footer": "El secreto API de WHMCS"
+    },
+    "refresh_page_to_apply_changes": "Por ahora, tendrás que actualizar el sitio web para que se apliquen los cambios personalizados."
+  },
+  "migrator": {
+    "migrate": "Migrar",
+    "notify_users": "Notificar usuarios",
+    "notified_users": "Todos los usuarios recibirán un correo electrónico pronto. Se le notificará cuando haya terminado.",
+    "step_1": "Paso 1 - Migrar datos",
+    "step_2": "Paso 2 - Notificar usuarios",
+    "step_3": "Paso 3 - Finalizando Toques",
+    "panel_url_footer": "Esta es la url del panel desde el cual desea migrar datos. Para 0.7.x, el panel debe estar ejecutando v0.7.16 o posterior. Para 1.x, el panel debe estar ejecutando v1.1.2 o posterior. De lo contrario, este migrador no funcionará.",
+    "api_key_footer": "Esto es necesario para obtener la información del panel para la migración. La clave debe tener permisos para cualquier cosa que desee migrar.",
+    "locations_node_and_game_data": "Ubicaciones, nodos, asignaciones, bases de datos y datos del servidor de juegos",
+    "locations_node_and_game_data_footer": "Esto moverá todos los servidores del juego con los nodos y sus ubicaciones. NOTA: Esto requiere todas las opciones de abajo habilitadas, y los hosts de base de datos no tendrán una contraseña configurada.",
+    "nests_and_eggs": "Nidos y Huevos",
+    "nests_and_eggs_footer": "Esto moverá todos los nidos y huevos sobreescribiendo los ya existentes si se superponen.",
+    "users_footer": "Esto moverá a todos los usuarios activos con acceso a al menos un servidor. Las contraseñas no se migrarán automáticamente (a menos que usted se ponga en contacto con nosotros) y requerirá reenviar el correo electrónico de creación de cuenta a cada usuario.",
+    "after_migration": "Una vez finalizada la migración, tenga en cuenta lo siguiente:",
+    "db_hosts_reset": "Todas las contraseñas de los hosts de base de datos deben ser configuradas de nuevo (ya que no pueden ser sincronizadas debido a las limitaciones de la API de Pterodactyl)",
+    "migrated_nodes_cpu": "La CPU de los nodos se establece en 800% (con una sobreasignación del 100%)",
+    "spare_allocations_ignored": "Las asignaciones de reserva de nodos migrados fueron ignoradas durante la migración",
+    "move_to_installing_daemon": "Luego puedes continuar configurando el Agente WISP en tus nodos de juego.",
+    "states": {
+      "in_progress": "En curso",
+      "notified_users": "No quedan usuarios por notificar",
+      "manual": "Manual",
+      "failed": "Fallido"
+    }
+  },
+  "announcements": {
+    "title": "Anuncios",
+    "create_announcement": "Crear anuncio",
+    "edit_announcement": "Editar anuncio",
+    "delete_announcement": "Eliminar anuncio",
+    "delete_notice": "La eliminación de este anuncio es irreversible; haga clic en eliminar nuevamente para confirmar la eliminación.",
+    "enabled_footer": "Si el anuncio es visible instantáneamente para todos los usuarios.",
+    "resend": "Reenviar",
+    "announcement_resent": "El anuncio se ha reenviado con éxito a los usuarios del panel.",
+    "cant_resend_disabled": "Un anuncio desactivado no puede ser reenviado - habilite el anuncio primero."
+  },
+  "database_hosts": {
+    "title": "Hosts de Base de Datos",
+    "create_host": "Crear host de base de datos",
+    "edit_host": "Editar host de base de datos",
+    "delete_host": "Eliminar host de base de datos",
+    "delete_notice": "¿Está seguro de que desea eliminar el host de la base de datos {name}? No hay marcha atrás, todos los datos se eliminarán inmediatamente.",
+    "host_details": "Detalles del host",
+    "user_details": "Detalles del Usuario",
+    "databases": "Bases de datos",
+    "host_has_databases": "No se puede eliminar un servidor anfitrión de bases de datos que tiene bases de datos activas vinculadas a él.",
+    "name_footer": "Un identificador corto utilizado para distinguir esta ubicación. Debe tener entre 1 y 60 caracteres, por ejemplo, \"us.nyc.lvl3.",
+    "port_footer": "El puerto en el que MySQL está corriendo para este host.",
+    "username_footer": "El nombre de usuario de una cuenta que tiene permisos suficientes para crear nuevos usuarios y bases de datos en el sistema.",
+    "password_footer": "La contraseña para la cuenta definida.",
+    "phpmyadmin_url_footer": "La URL en la que phpMyAdmin está disponible para este host de base de datos. Si se deja en blanco, se ocultará la posibilidad de abrir la base de datos en phpMyAdmin.",
+    "node_footer": "Los servidores en el nodo seleccionado podrán elegir este host como opción al crear una base de datos"
+  },
+  "application_api": {
+    "title": "Credenciales de la API de aplicación",
+    "delete_api_key": "Eliminar clave API de aplicación",
+    "delete_notice": "Por favor, confirme que desea eliminar la clave de API de aplicación \"{name}\" repitiendo el nombre en la entrada de abajo. Esta es una acción irreverible que no se puede deshacer.",
+    "options": {
+      "none": "Ninguna",
+      "read": "Lectura",
+      "read_write": "Lectura y Escritura"
+    }
+  },
+  "locations": {
+    "title": "Ubicaciones",
+    "create_location": "Crear Ubicación",
+    "delete_location": "Eliminar Ubicación",
+    "delete_notice": "¿Está seguro de que desea eliminar la ubicación \"{short}\"? No hay marcha atrás, todos los datos se eliminarán inmediatamente.",
+    "location_has_nodes": "Debe eliminar/mover todos los nodos dentro de la ubicación antes de eliminarlo.",
+    "location_details": "Detalles de Ubicación",
+    "nodes": "Nodos",
+    "short_footer": "Un identificador corto utilizado para distinguir esta ubicación. Debe tener entre 1 y 60 caracteres, por ejemplo, \"us.nyc.lvl3\".",
+    "long_footer": "Una descripción más larga de esta ubicación. Debe tener menos de 255 caracteres."
+  },
+  "nodes": {
+    "title": "Nodos",
+    "not_alive": "¡Error al conectarse al nodo! Comprueba la consola del navegador para más detalles.",
+    "cant_delete_attached_servers": "Debe eliminar todos los servidores en este nodo antes de eliminarlo.",
+    "delete_node": "Eliminar Nodo",
+    "delete_notice": "¿Está seguro que desea eliminar el nodo \"{name}\"? La eliminación de un nodo es una acción irreversible y eliminará inmediatamente este nodo del panel.",
+    "about": {
+      "daemon_version": "Versión del Agente",
+      "system_information": "Información del Sistema",
+      "cpu_cores": "Núcleos de CPU"
+    },
+    "settings": {
+      "general_configuration": "Configuración General",
+      "allow_automatic_allocation": "Permitir asignación automática",
+      "max_web_upload": "Tamaño máximo de archivo de subida web",
+      "daemon_port": "Puerto del Agente",
+      "sftp_port": "Puerto SFTP",
+      "fastdl_port": "Puerto FastDL",
+      "display_fqdn_footer": "Introduzca el nombre de dominio (por ejemplo, node.example.com) que se mostrará para los usuarios en lugar de *.daemon.panel.gg. Si estás utilizando un dominio, también necesita configurar el registro DNS para que apunte al nodo o esto no funcionará como se espera.",
+      "automatic_allocation_footer": "Permite que este nodo se utilice cuando se escoja automáticamente un nodo adecuado para el despliegue del servidor usando la API.",
+      "maintenance_mode_footer": "Si el nodo está marcado como 'En mantenimiento', los usuarios no podrán acceder a servidores que estén en este nodo.",
+      "cpu_footer": "Introduzca la cantidad total de cpu disponible en este nodo para la asignación del servidor. También puede proporcionar un porcentaje que determinará la cantidad de cpu sobre el límite establecido a permitir. 1 núcleo = 100%.",
+      "memory_footer": "Introduzca la cantidad total de memoria disponible en este nodo para su asignación a servidores. También puede proporcionar un porcentaje que puede permitir la asignación de más de la memoria definida.",
+      "disk_footer": "Introduzca la cantidad total de espacio disponible en este nodo para la asignación del servidor. También puede proporcionar un porcentaje que determinará la cantidad de espacio en disco sobre el límite establecido a permitir.",
+      "max_web_upload_footer": "Introduzca el tamaño máximo de los archivos que se pueden subir a través del gestor de archivos basado en la web."
+    },
+    "allocations": {
+      "title": "Asignaciones de nodo",
+      "create_new": "Crear Nuevo",
+      "cant_delete_in_use": "No puedes eliminar una asignación que está asignada a un servidor.",
+      "delete_ip": "Eliminar IP",
+      "delete_ip_allocations": "Eliminar todas las asignaciones de las IPs",
+      "too_many_ports": "No se admite añadir más de 1000 puertos en un solo rango a la vez.",
+      "invalid_mapping": "El mapeo proporcionado para el puerto {port} no es válido y no pudo ser procesado.",
+      "cidr_out_of_range": "La notación CIDR sólo permite máscaras entre /25 y /32.",
+      "port_out_of_range": "Los puertos de una asignación deben ser mayores de 1024 y menores o iguales a 65535."
+    },
+    "configuration_not_persisted": "Se ha actualizado la configuración del demonio, pero se ha producido un error al intentar actualizar el archivo de configuración del demonio. Deberá actualizar manualmente el archivo /var/lib/wisp/daemon/config/wisp.yaml para reflejar los nuevos cambios."
+  },
+  "servers": {
+    "title": "Servidores",
+    "delete_server": "Eliminar Servidor",
+    "delete_server_notice": "¿Está seguro de que desea eliminar el servidor \"{name}\"? Eliminar un servidor es una acción irreversible e inmediatamente eliminará este servidor del panel y del Agente.",
+    "force_footer": "Peligroso: Forzar la eliminación de un servidor eliminará el servidor del panel incluso si el Agente reporta un error. Esto puede dejar archivos sueltos en su Agente.",
+    "cant_delete_unmigrated_nodes_server": "No puede eliminar un servidor en un nodo que no tiene configurado FQDN - use la eliminación forzada para continuar.",
+    "new": {
+      "core_details": "Detalles del Núcleo",
+      "node_footer": "El nodo en el que se desplegará este servidor.",
+      "primary_allocation_footer": "La asignación principal que será asignada a este servidor.",
+      "secondary_allocations_footer": "Asignaciones adicionales para asignar a este servidor en la creación.",
+      "database_limit_footer": "El número total de bases de datos que un usuario puede crear para este servidor. Dejar en blanco para permitir ilimitado.",
+      "allocation_limit_footer": "El número total de asignaciones que un usuario puede crear para este servidor. Dejar en blanco para permitir ilimitado.",
+      "backup_megabytes_limit_footer": "El número total de megabytes que el servidor puede utilizar para sus copias de seguridad.",
+      "cpu_footer": "Si no desea limitar el uso de la CPU, establezca el valor en 0. Para determinar un valor, tome la cantidad de núcleos físicos y multiplíquela por 100. Por ejemplo, en un sistema de cuatro núcleos (4 * 100 = 400) hay 400% disponible. Para limitar un servidor a usar la mitad de un solo núcleo, establecería el valor en 50. Para permitir que un servidor use hasta dos núcleos físicos, establezca el valor en 200.",
+      "memory_footer": "Límite de memoria en MB. Si desea desactivar la limitación de memoria en un servidor, simplemente introduzca 0 en el campo de memoria.",
+      "swap_footer": "Límite de SWAP en MB. Si desea desactivar el SWAP en un servidor, simplemente introduzca 0 en el campo de intercambio.",
+      "disk_footer": "Límite de espacio en disco en MB. Si desea desactivar la limitación de espacio en disco en un servidor, simplemente introduzca 0 en el campo de disco.",
+      "io_footer": "Bloque IO debe establecerse a un valor entre 10-1000.",
+      "skip_scripts_footer": "Si el Huevo seleccionado tiene un script de instalación adjunto, el script se ejecutará durante la instalación. Si desea saltarse este paso, marque esta casilla."
+    },
+    "about": {
+      "server_owner": "Propietario del Servidor",
+      "server_node": "Nodo Servidor"
+    },
+    "details": {
+      "server_details": "Detalles del Servidor"
+    },
+    "build_configuration": {
+      "resource_limits": "Límites de Recursos",
+      "feature_limits": "Límites de Funciones",
+      "allocation_management": "Administración de adjudicaciones",
+      "oom_disabled_footer": "Desactiva el OOM Killer en el servidor. Esto permitirá que el servidor alcance el máximo de ram y espacio SWAP."
+    },
+    "startup": {
+      "command_modification": "Modificación de Comando",
+      "service_configuration": "Configuración del Servicio",
+      "access_in_startup": "Acceso en el inicio: "
+    },
+    "databases": {
+      "notice": "Las contraseñas de la base de datos se pueden ver cuando se visita este servidor en el front-end.",
+      "active_databases": "Bases de datos activas",
+      "create_database": "Crear Base de Datos"
+    },
+    "advanced": {
+      "reinstall_server": "Reinstalar Servidor",
+      "reinstall_server_note": "Esto reinstalará el servidor con el script de servicio asignado.\n¡Peligro! Esto podría sobrescribir los datos.",
+      "reinstall_started": "El proceso de reinstalación ha sido iniciado.",
+      "install_status": "Estado de Instalación",
+      "install_status_note": "Si necesita cambiar el estado de instalación de desinstalado a instalado, o viceversa, puede hacerlo con el botón de abajo.",
+      "install_toggled": "El estado de instalación ha sido cambiado.",
+      "rebuild_container": "Reconstruir contenedor",
+      "rebuild_container_note": "Esto desencadenará una reconstrucción del contenedor del servidor cuando se inicie la próxima vez. Esto es útil si ha modificado el archivo de configuración del servidor manualmente, o algo que simplemente no funcionaba correctamente.",
+      "rebuild_requested": "La solicitud de reconstrucción ha sido enviada al agente, y el servidor se reconstruirá a sí mismo en el siguiente inicio.",
+      "suspend_server": "Suspender Servidor",
+      "suspend_server_note": "Esto suspenderá el servidor, detendrá cualquier proceso en ejecución, y bloquea inmediatamente que el usuario pueda acceder a sus archivos o administrar de otro modo el servidor a través del panel o API.",
+      "suspend_toggled": "El estado de suspensión ha sido cambiado.",
+      "updating_status": "Actualizando Estado",
+      "updating_status_note": "Si necesita cambiar el estado de actualización, puede hacerlo con el botón de abajo.",
+      "updating_toggled": "El estado de actualización ha sido cambiado.",
+      "move_server": "Mover servidor a otro nodo",
+      "moving_status": "Estado Movimiento",
+      "moving_status_note": "Si necesitas cambiar el estado de movimiento, puedes hacerlo con el botón de abajo.\n",
+      "moving_toggled": "El estado de movimiento ha sido cambiado.",
+      "reset_mod_statuses": "Restablecer el estado de instalación de mod",
+      "reset_mod_statuses_note": "Reiniciará el estado de instalación de todos los mods si falla, en caso de que el servidor tenga instalaciones de mods bloqueadas por completo y se han atascado durante mucho tiempo.",
+      "reset_mod_triggered": "Todos los estados de instalación de mod del servidor han sido restablecidos.",
+      "toggle_backup_status": "Cambiar estado de respaldo",
+      "install_marked_as_failed": "No se puede cambiar el estado de instalación del servidor debido a que no se pudo instalar. Por favor, reinstale el servidor en su lugar."
+    },
+    "deployment": {
+      "no_viable_nodes": "No se ha podido encontrar ningún nodo que cumpla los requisitos especificados para el despliegue automático.",
+      "no_viable_allocations": "No se han encontrado asignaciones que cumplan los requisitos para el despliegue automático."
+    }
+  },
+  "users": {
+    "title": "Usuarios",
+    "identity": "Identidad",
+    "external_id_footer": "Dejar en blanco para no asignar un identificador externo para este usuario. El ID externo debe ser único para este usuario y no estar en uso por ningún otro usuario.",
+    "language_footer": "Dejar vacío para utilizar el idioma por defecto. El idioma en el que se mostrará el panel del usuario, esto es cambiable por parte del usuario en la configuración de la cuenta también.",
+    "password": "Contraseña",
+    "password_optional": "Proporcionar una contraseña de usuario es opcional. Un nuevo usuario obtiene un correo electrónico solicitándole que cree una contraseña para su cuenta. Si se proporciona una contraseña aquí deberá encontrar un método diferente para proporcionarla al usuario.",
+    "root_admin_footer": "Configurar esto da acceso administrativo completo al usuario.",
+    "support_op_footer": "Configurar esto da a un usuario acceso administrativo restringido para actuar como agente de soporte.",
+    "support_op_bypass_footer": "Configurar esto evitará que los usuarios tengan que dar permiso explícito para acceder a sus servidores a través de la pestaña Soporte.",
+    "ignore_exceptions": "Ignorar excepciones levantadas al revocar claves.",
+    "ignore_exceptions_footer": "Si está marcado, cualquier error arrojado al revocar claves entre nodos será ignorado. Deberías evitar esta casilla de verificación si es posible, ya que cualquier clave no revocada podría continuar estando activa hasta 24 horas después de que se cambie esta cuenta. Si necesita revocar los permisos de la cuenta inmediatamente y se enfrentan a problemas de nodo, debería marcar esta casilla y luego reiniciar cualquier nodo que no se haya actualizado para borrar cualquier clave almacenada.",
+    "user_has_no_2fa_configured": "El usuario no tiene Segundo Factor configurado para poder utilizarlo.",
+    "delete_user": "Eliminar Usuario",
+    "delete_notice": "¿Está seguro que desea eliminar el usuario \"{email}\"? No hay vuelta atrás, todos los datos se eliminarán inmediatamente.",
+    "cant_delete_yourself": "No puedes eliminarte a ti mismo.",
+    "cant_delete_user_with_servers": "No se puede eliminar un usuario mientras tenga servidores."
+  },
+  "nests": {
+    "title": "Nidos",
+    "eggs": "Huevos",
+    "details": "Detalles del Nido",
+    "create_nest": "Crear Nido",
+    "delete_nest": "Eliminar Nido",
+    "delete_notice": "¿Está seguro de que desea eliminar el nido \"{name}\"? No hay marcha atrás, todos los datos se eliminarán inmediatamente.",
+    "id_footer": "Una identificación única usada para identificar este nido internamente y a través de la API.",
+    "uuid_footer": "Un UUID que todos los servidores que utilizan esta opción son asignados con fines de identificación.",
+    "name_footer": "Este debería ser un nombre de categoría descriptivo que englobe todos los huevos dentro del nido.",
+    "identifier_footer": "ID corto que puede habilitar características específicas (id de funcionamiento: srcds, minecraft).",
+    "nest_has_servers": "No puede eliminar un nido que tenga servidores ejecutándose bajo él.",
+    "import_egg": "Importar Huevo",
+    "egg": {
+      "daemon_restart_required_after_changes": "Cualquier cambio en la configuración existente del huevo requiere reiniciar los Agentes después con `wisp restart`.",
+      "configuration": "Configuración",
+      "process_management": "Gestión de procesos",
+      "delete_egg": "Eliminar Huevo",
+      "delete_notice": "¿Está seguro de que desea eliminar el huevo \"{name}\"? No hay marcha atrás, todos los datos se eliminarán inmediatamente.",
+      "egg_has_servers": "No puede eliminar un huevo que tenga servidores ejecutándose bajo él.",
+      "egg_is_a_parent": "Este huevo es padre de uno o más huevos. Por favor, elimine esos huevos antes de eliminar este huevo.",
+      "must_be_a_child": "La directiva \"Copiar configuración desde\" para este huevo debe ser una opción hija del nido seleccionado.",
+      "copy_alert": "Todos los campos son requeridos a menos que seleccione una opción separada de la lista desplegable 'Copiar ajustes de', en cuyo caso los campos pueden dejarse en blanco para usar los valores de esa opción.",
+      "invalid_copy": "El huevo seleccionado para copiar un script no existe, o está copiando un script de sí mismo.",
+      "update_egg": "Actualizar Huevo",
+      "import_update_notice": "La importación de un nuevo archivo de huevo sobrescribirá cualquier configuración existente. Si desea mantener la configuración existente, debe importar el nuevo huevo por separado.",
+      "import_json_error": "Se ha producido un error al intentar analizar el archivo JSON: {error}",
+      "import_file_error": "El archivo JSON proporcionado no es válido.",
+      "import_invalid_json": "El archivo JSON proporcionado no está en un formato que pueda ser reconocido.",
+      "install_script": "Script de Instalación",
+      "update_script": "Script de Actualización",
+      "variables": {
+        "create_variable": "Crear una variable de inicio",
+        "variable_created": "La variable de inicio se ha creado correctamente.",
+        "variable_updated": "La variable de inicio \"{name}\" se ha actualizado correctamente.",
+        "variable_deleted": "La variable de inicio \"{name}\" se ha eliminado correctamente.",
+        "env_variable_reserved": "La variable de entorno {name} es un nombre de variable reservado.",
+        "env_not_unique": "La variable de entorno {name} no es única.",
+        "bad_validation_rule": "La regla de validación \"{rule}\" no es una regla válida."
+      },
+      "thumbnail_title": "Miniatura de huevo",
+      "thumbnail_recommended_size": "2:1 relación de aspecto (máx. 500KB)",
+      "thumbnail_formats": "png, jpg y svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Detalles del Mod",
+    "mod_configuration": "Configuración del Mod",
+    "delete_mod": "Eliminar Mod",
+    "delete_notice": "¿Está seguro de que desea eliminar el mod \"{name}\"? No hay marcha atrás, todos los datos se eliminarán inmediatamente.",
+    "mod_has_servers": "No se puede modificar el ID del huevo asociado cuando los servidores están actualmente unidos a un mod."
+  },
+  "domains": {
+    "domain_details": "Detalles del Dominio",
+    "domain_name_footer": "El nombre de dominio en el que los servidores de juegos pueden crear subdominios, permitiendo a los usuarios elegir un subdominio y apuntarlo a las asignaciones de su servidor de juegos automáticamente. Actualmente, solo admitimos subdominios en el dominio raíz.",
+    "instructions": "Para que el dominio funcione correctamente, deberá realizar las siguientes acciones:",
+    "acquire_domain": "Compre o utilice un dominio existente que tenga.",
+    "setup_nameservers": "Apunte los servidores de nombres del dominio a \"ns1.subdomain-manager.wisp.gg\" y \"ns2.subdomain-manager.wisp.gg\" (tenga en cuenta que esto puede tardar hasta 48 horas en propagarse).",
+    "update_notice": "La actualización del nombre de dominio actualizará todos los subdominios del servidor al nuevo dominio.",
+    "domain_already_in_use": "El dominio proporcionado ya está en uso en otra instancia del panel y no puede ser reutilizado.",
+    "root_domain_only_supported": "Actualmente, sólo admitimos el dominio raíz.",
+    "nest_identifiers_footer": "Una lista de identificadores de nido que permiten a los servidores que funcionan bajo el nido crear subdominios en el dominio.",
+    "egg_identifiers_footer": "**Se utiliza principalmente para permitir huevos específicos bajo un nido sin tener que permitir todo el nido** Una lista de identificadores de huevos que permiten a los servidores que funcionan bajo el huevo específico crear subdominios en el dominio.",
+    "delete_domain": "Eliminar Dominio",
+    "delete_notice": "¿Estás seguro de que quieres eliminar el dominio \"{name}\"? No hay vuelta atrás, y todos los servidores asociados a este dominio perderán los subdominios asociados a él."
+  }
+}

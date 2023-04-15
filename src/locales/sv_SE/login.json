@@ -1,0 +1,22 @@
+{
+  "sign_in": "Logga in",
+  "or": "eller",
+  "sso": "Logga in med SSO",
+  "struggling_to_login": "Har du problem med att logga in?",
+  "reset_password": "Återställ lösenordet",
+  "back": "Tillbaka till inloggning",
+  "password_reset_email_sent": "Instruktioner för återställning av lösenordet har skickats till din e-post om det finns ett konto som är kopplat till den.",
+  "passwords": {
+    "throttled": "Du har blivit tillfälligt stoppad på grund av för många försök att ändra lösenordet, försök igen senare.",
+    "token": "Ogiltig token associerad med begäran om lösenord, försök att begära en ny länk för återställning av lösenordet.",
+    "user": "Det går inte att återställa lösenordet för en ogiltig användare.",
+    "confirmation": "Det angivna lösenordet och bekräftelsen av lösenordet stämmer inte överens."
+  },
+  "two_factor_token": "Tvåfaktortoken",
+  "invalid_user": "De uppgifterna som lämnats in stämmer inte överens med de som vi har i våra register. Om du inte är säker på att ditt lösenord är korrekt kan du försöka återställa det.",
+  "sso_down": "Det går inte att kontakta servrarna för att verifiera kontot, försök igen senare.",
+  "sso_failed": "Något gick fel när du försökte verifiera kontot, försök igen senare.",
+  "sso_invalid": "Den föregående sessionen har gått ut, försök igen.",
+  "sso_non_existing_account": "Jag hittade inget associerat konto på panelen. Använd normal inloggning och aktivera snabbinloggning i kontoinställningarna.",
+  "sso_disabled_for_account": "Det här kontot har snabbinloggning inaktiverad. Använd den normala inloggningen i stället."
+}

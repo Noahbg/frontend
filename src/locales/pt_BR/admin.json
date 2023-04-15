@@ -1,0 +1,346 @@
+{
+  "index": {
+    "instance_overview": "Visão Geral da Instância",
+    "current_version": "Bem-vindo ao Painel WISP! Atualmente, você está executando a versão {version}.",
+    "license_information": "Informação da Licença"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Configurações do Painel",
+      "company_name_footer": "Este é o nome utilizado em todo o painel e nos e-mails enviados aos clientes.",
+      "random_database_deployment_footer": "Se isso estiver habilitado, todos os servidores de jogos podem implantar seus bancos de dados em qualquer host de banco de dados, em vez de apenas o designado para o Node.",
+      "require_2fa": {
+        "not_required": "Opcional",
+        "admin_only": "Apenas Admin",
+        "all_users": "Todos os usuários"
+      },
+      "require_2fa_footer": "Se ativado, qualquer conta que esteja no agrupamento selecionado será obrigada a ter a autenticação de 2 fatores ativada para usar o painel.",
+      "default_language_footer": "O idioma padrão a ser usado na renderização dos componentes da IU."
+    },
+    "branding": {
+      "recommended_size": "Tamanho recomendado:",
+      "formats": "Formatos:",
+      "login_screen_logo": "Logotipo da Tela de Login",
+      "login_screen_logo_recommended_size": "300 x 100px (máximo 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg, e svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (máx. 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Logotipo do Painel",
+      "panel_logo_recommended_size": "230 x 50px (máx. 250KB)",
+      "panel_logo_recommended_formats": "png, jpg, e svg"
+    },
+    "embed": {
+      "embed_settings": "Configurações de Embed",
+      "site_name_footer": "O nome do site que deve ser exibido nos Embeds.",
+      "title_footer": "O título que deve ser exibido nos Embeds.",
+      "description_footer": "Breve descrição que deve ser exibida nos Embeds.",
+      "image_footer": "A URL da imagem que será exibida nos embedimentos."
+    },
+    "js_injector": {
+      "title": "JavaScript Injector",
+      "minification_notice": "O JS pode ser minimizado para ter velocidades de carregamento rápidas para todos. Guarde uma cópia local do seu JS se planeja editá-lo no futuro."
+    },
+    "css_injector": {
+      "title": "CSS Injector",
+      "minification_notice": "O CSS pode ser minimizado para ter velocidades de carregamento rápidas para todos. Guarde uma cópia local do seu CSS se planeja editá-lo no futuro."
+    },
+    "whmcs": {
+      "sso_integration": "Integração WHMCS SSO",
+      "whmcs_notice": "Consulte o guia sobre como reunir as credenciais necessárias para configurar WHMCS SSO para o seu painel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Permite a integração do WHMCS Single-Sign-On, permitindo aos usuários entrar no seu Painel WISP com a sua conta WHMCS. Necessário para que todos os outros campos sejam configurados",
+      "button_text_footer": "O texto do botão de login mostrado na página de login.",
+      "url_footer": "O URL da sua instalação whmcs está disponível em, por exemplo, https://mywhmcs.com/",
+      "client_id_footer": "O WHMCS SSO API Client ID",
+      "client_secret_footer": "O Secret Client WHMCS SSO",
+      "api_id_footer": "O Identificador de API WHMCS",
+      "api_secret_footer": "O segredo da API WHMCS"
+    },
+    "refresh_page_to_apply_changes": "Por enquanto, você terá de atualizar o site para que as alterações personalizadas sejam aplicadas."
+  },
+  "migrator": {
+    "notice": "Migre seus dados de outra instância Pterodactyl/WISP antes de instalar o daemon. Se você estiver migrando mais de 100 Nests, 100 Eggs por Nest, 2500 usuários ou 1000 servidores entre em contato conosco para uma migração manual, que também migrará senhas de usuários com hash e senhas de Databases.",
+    "migrate": "Migrar",
+    "notify_users": "Notificar usuários",
+    "notified_users": "Todos os usuários receberão um e-mail em breve. Você será notificado quando estiver terminado.",
+    "step_1": "Passo 1 - Migrar dados",
+    "step_2": "Passo 2 - Notificar usuários",
+    "step_3": "Passo 3 - Toques finais",
+    "panel_url_footer": "Esta é a url para o painel a partir do qual você quer migrar dados. Para 0.7.x, o painel deve estar rodando a v0.7.16 ou mais recente. Para 1.x, o painel deve estar rodando a v1.1.2 ou mais recente. Caso contrário, este migrador não irá funcionar.",
+    "api_key_footer": "Isto é necessário para obter as informações do painel para a migração. A chave deve ter permissões para qualquer coisa que você queira migrar.",
+    "locations_node_and_game_data": "Locais, Nodes, Alocações, Databases e Dados dos Servidores de Jogos",
+    "locations_node_and_game_data_footer": "Isto irá mover todos os servidores de jogo com os Nodes e seus Locais. NOTA: Isto requer todas as opções abaixo ativadas, e os hosts das Databases não terão a senha configurada.",
+    "nests_and_eggs": "Nests e Eggs",
+    "nests_and_eggs_footer": "Isto fará com que todos os Nests e Eggs se sobreponham aos existentes.",
+    "users_footer": "Isto irá mover todos os usuários ativos com acesso a pelo menos um servidor. As senhas não serão migradas automaticamente (a menos que você nos contate manualmente) e será necessário reenviar um e-mail de criação de conta para cada usuário.",
+    "after_migration": "Depois de feita a migração, por favor, note o seguinte:",
+    "db_hosts_reset": "Todas as senhas de hosts de Databases precisam ser definidas novamente (já que não podem ser sincronizadas devido às limitações do Pterodactyl API)",
+    "migrated_nodes_cpu": "A CPU dos Nodes migrados será definida para 800% (com 100% de alocação global)",
+    "spare_allocations_ignored": "Quaisquer alocações reservas de Nodes foram ignoradas durante a migração",
+    "move_to_installing_daemon": "Depois você poderá ir para configuração do WISP Daemon nos seus Nodes de jogos.",
+    "states": {
+      "in_progress": "Em andamento",
+      "notified_users": "Não restam Usuários para notificar",
+      "manual": "Manual",
+      "failed": "Falha"
+    }
+  },
+  "announcements": {
+    "title": "Anúncios",
+    "create_announcement": "Criar Anúncio",
+    "edit_announcement": "Editar Anúncio",
+    "delete_announcement": "Excluir Anúncio",
+    "delete_notice": "A exclusão deste anúncio é irreversível - Por favor clique novamente em eliminar para confirmar a eliminação.",
+    "enabled_footer": "Se o anúncio é imediatamente visível para todos os usuários.",
+    "resend": "Enviar novamente",
+    "announcement_resent": "O anúncio foi enviado com sucesso aos usuários do painel.",
+    "cant_resend_disabled": "Um anúncio desativado não pode ser reenviado - ative primeiro o anúncio."
+  },
+  "database_hosts": {
+    "title": "Hosts de Database",
+    "create_host": "Criar Host de Database",
+    "edit_host": "Editar Host de Database",
+    "delete_host": "Eliminar Host de Database",
+    "delete_notice": "Tem a certeza que quer apagar o {name} host de database? Não há volta, todos os dados serão imediatamente removidos.",
+    "force_footer": "Perigoso: Forçar a exclusão de um Host de Database removerá o host do painel mesmo que o seu servidor de banco de dados reporte um erro. Isso pode deixar bancos de dados pendentes em seu host se ele relatar um erro.",
+    "host_details": "Detalhes do Anfitrião",
+    "user_details": "Detalhes do Usuário",
+    "databases": "Bases de dados",
+    "host_has_databases": "Não é possível excluir um servidor do banco de dados que tem bancos de dados ativos vinculados a ele.",
+    "name_footer": "Um pequeno identificador utilizado para distinguir este local dos outros. Deve ter entre 1 e 60 caracteres, por exemplo, us.nyc.lvl3.",
+    "port_footer": "A porta em que o MySQL está rodando para este host.",
+    "username_footer": "O nome de usuário de uma conta com permissões suficientes para criar usuários e bancos de dados no sistema.",
+    "password_footer": "A senha para a conta definida.",
+    "phpmyadmin_url_footer": "O URL em que o phpMyAdmin está disponível para esse Host de Database. Deixar este espaço branco irá ocultar a capacidade de abrir esse banco de dados no phpMyAdmin.",
+    "node_footer": "Os servidores no Node selecionado poderão escolher este host como opção ao criar uma base de dados"
+  },
+  "application_api": {
+    "title": "Credenciais de API",
+    "delete_api_key": "Apagar chave API",
+    "delete_notice": "Por favor, confirme que deseja apagar a chave \"{name}\" da API, repetindo o nome na entrada abaixo. Esta é uma ação irreversível que não pode ser desfeita.",
+    "options": {
+      "none": "Nenhum",
+      "read": "Leia",
+      "read_write": "Ler & Escrever"
+    }
+  },
+  "locations": {
+    "title": "Locais",
+    "create_location": "Criar Local",
+    "delete_location": "Eliminar local",
+    "delete_notice": "Tem a certeza que quer apagar o local \"{short}\"? Não há volta, todos os dados serão imediatamente removidos.",
+    "location_has_nodes": "É necessário eliminar/remover todos os Nodes do local antes de eliminá-lo.",
+    "location_details": "Detalhes da Localização",
+    "nodes": "Nodes",
+    "short_footer": "Um pequeno identificador utilizado para distinguir este local dos outros. Deve ter entre 1 e 60 caracteres, por exemplo, \"us.nyc.lvl3\".",
+    "long_footer": "Uma descrição mais longa deste local. Deve ter menos de 255 caracteres."
+  },
+  "nodes": {
+    "title": "Nodes",
+    "not_alive": "Erro de ligação ao Node! Verifique o console do navegador para obter mais detalhes.",
+    "cant_delete_attached_servers": "Você deve excluir todos os servidores deste Node antes de excluí-lo.",
+    "delete_node": "Eliminar Node",
+    "delete_notice": "Tem a certeza que quer apagar o Node \"{name}\"? Excluir um nó é uma ação irreversível e irá remover imediatamente este Node do painel.",
+    "about": {
+      "daemon_version": "Versão Daemon",
+      "system_information": "Informações do sistema",
+      "cpu_cores": "Núcleos de CPU"
+    },
+    "settings": {
+      "general_configuration": "Configuração Geral",
+      "allow_automatic_allocation": "Permitir Alocação Automática",
+      "max_web_upload": "Tamanho Máximo de Arquivos para Upload",
+      "daemon_port": "Porta do Deamon",
+      "sftp_port": "Porta SFTP",
+      "fastdl_port": "Porta FastDL",
+      "display_fqdn_footer": "Introduza o nome de domínio (por exemplo node.example.com) que será mostrado para os utilizadores em vez de *.daemon.panel.gg. Se você estiver usando um domínio, você também vai precisar configurar o registro DNS para que ele aponte para o Node ou isso não vai funcionar como esperado.",
+      "automatic_allocation_footer": "Permite que este Node seja utilizado quando se escolhe automaticamente um Node adequado para a implantação do servidor utilizando a API.",
+      "maintenance_mode_footer": "Se o Node estiver marcado como 'Em Manutenção' os usuários não poderão acessar os servidores que estão neste Node.",
+      "cpu_footer": "Insira a quantidade total de Processamento disponível neste Node para alocação de servidor. Você também pode fornecer uma porcentagem que determinará a quantidade de CPU acima do limite definido para permitir. 1 núcleo = 100%.",
+      "memory_footer": "Digite a quantidade total de memória disponível neste Node para alocação em servidores. Você também pode fornecer uma porcentagem que pode permitir a alocação de mais do que a memória definida.",
+      "disk_footer": "Insira a quantidade total de espaço em disco disponível neste Node para alocação de servidor. Você também pode fornecer uma porcentagem que determinará a quantidade de espaço em disco sobre o limite definido para permitir.",
+      "max_web_upload_footer": "Insira o tamanho máximo de arquivos que podem ser carregados através do gerenciador de arquivos na web."
+    },
+    "allocations": {
+      "title": "Alocações de Node",
+      "create_new": "Criar Novo",
+      "cant_delete_in_use": "Você não pode eliminar uma alocação anexada a um servidor.",
+      "delete_ip": "Apagar IP",
+      "delete_ip_allocations": "Eliminar todas as atribuições de IP's",
+      "too_many_ports": "Não é possível adicionar mais de 1000 portas por vez.",
+      "invalid_mapping": "O mapeamento fornecido para a porta {port} é inválido e não pôde ser processado.",
+      "cidr_out_of_range": "Notação CIDR permite apenas máscaras entre /25 e /32.",
+      "port_out_of_range": "Portas em uma alocação devem ser superiores a 1024 e inferiores ou iguais a 65535.",
+      "ip_footer": "O IP que será vinculado ao contêiner de servidores, suporta subnets de até /25 de cada vez. (ex. 192.168.0.192/28)",
+      "alias_footer": "O apelido será exibido no lugar do IP se for especificado, útil para redes que usam NAT e que exigem que a alocação seja um IP interno, de modo a permitir que os usuários vejam o IP público.",
+      "ports_footer": "As portas no IP especificado que estarão disponíveis para alocação. Suporta o uso de intervalos, por exemplo, 25565-25570, alocará 5 portas."
+    },
+    "configuration_not_persisted": "A configuração do daemon foi atualizada, porém, houve um erro encontrado ao tentar atualizar o arquivo de configuração do daemon. Você precisará atualizar manualmente o arquivo /var/lib/wisp/daemon/config/wisp.yaml para refletir as novas alterações."
+  },
+  "servers": {
+    "title": "Servidores",
+    "copy_uuid": "Copiar UUID",
+    "delete_server": "Apagar Servidor",
+    "delete_server_notice": "Tem a certeza que quer apagar o servidor \"{name}\"? Excluir um servidor é uma ação irreversível e removerá imediatamente este servidor do painel e do daemon.",
+    "force_footer": "PERIGO: Forçar a exclusão de um servidor irá remover o servidor do painel, mesmo que o daemon comunique um erro. Isto pode deixar arquivos esquecidos no seu daemon se ele relatar um erro.",
+    "cant_delete_unmigrated_nodes_server": "Você não pode excluir um servidor em um Node que não tem FQDN configurado - use force delete para prosseguir.",
+    "new": {
+      "core_details": "Detalhes principais",
+      "node_footer": "O Node para o qual este servidor será implantado.",
+      "primary_allocation_footer": "A alocação principal que será atribuído a este servidor.",
+      "secondary_allocations_footer": "Alocações adicionais a serem atribuídas a este servidor na criação.",
+      "database_limit_footer": "O número total de bancos de dados que um usuário tem permissão para criar neste servidor. Deixe em branco para permitir ilimitado.",
+      "allocation_limit_footer": "O número total de alocações que um usuário tem permissão para criar neste servidor. Deixe em branco para permitir ilimitadas.",
+      "backup_megabytes_limit_footer": "O número total em megabytes que o servidor pode usar para backups.",
+      "cpu_footer": "Se não quiser limitar o uso da CPU, defina o valor como 0. Para determinar um valor, pegue o número de núcleos físicos e multiplique por 100. Por exemplo, em um sistema quad core há 400 visto que, (4 * 100 = 400). Para limitar um servidor a usar metade de um único núcleo, você definiria o valor como 50. Para permitir que um servidor utilize até dois núcleos físicos, defina o valor para 200.",
+      "memory_footer": "Limite de memória RAM em MB. Se você quiser desativar o limite de memória em um servidor, basta digitar 0 no campo de memória.",
+      "swap_footer": "Limite de memória Swap em MB. Se você quiser desativar o espaço de swap em um servidor, simplesmente digite 0 no campo swap.",
+      "disk_footer": "Limite de espaço em disco em MB. Se você quiser desativar o limite de espaço em disco em um servidor, basta digitar 0 no campo disco.",
+      "io_footer": "O bloco IO deve ser definido para um valor entre 10-1000.",
+      "skip_scripts_footer": "Se o Egg selecionado tiver um script de instalação anexado a ele, o script será executado durante a instalação. Se você gostaria de pular este passo, marque esta caixa."
+    },
+    "about": {
+      "server_owner": "Proprietário do Servidor",
+      "server_node": "Node"
+    },
+    "details": {
+      "server_details": "Detalhes do Servidor"
+    },
+    "build_configuration": {
+      "resource_limits": "Limites de Recursos",
+      "feature_limits": "Limites de Recursos",
+      "allocation_management": "Gerenciamento de Alocações",
+      "oom_disabled_footer": "Desativa o OOM Killer no servidor. Isso permitirá que o servidor flutue ao espaço máximo de RAM e Swap."
+    },
+    "startup": {
+      "command_modification": "Modificação do Comando",
+      "service_configuration": "Configuração do serviço",
+      "access_in_startup": "Acesso ao Iniciar: "
+    },
+    "databases": {
+      "notice": "As senhas da base de dados podem ser visualizadas quando se visita este servidor no front-end.",
+      "active_databases": "Bases de dados ativas",
+      "create_database": "Criar banco de dados"
+    },
+    "advanced": {
+      "reinstall_server": "Reinstalar Servidor",
+      "reinstall_server_note": "Isto irá reinstalar o servidor com o script de serviço atribuído.\nPerigo! Isto pode sobrescrever os dados.",
+      "reinstall_started": "O processo de reinstalação já foi iniciado.",
+      "install_status": "Estado da instalação",
+      "install_status_note": "Se você precisar alterar o status de instalação de desinstalado para instalado, ou vice-versa, você pode fazê-lo com o botão abaixo.",
+      "install_toggled": "O status da instalação foi alternado.",
+      "rebuild_container": "Reconstruir contêineres",
+      "rebuild_container_note": "Isto irá desencadear uma reconstrução do contêiner do servidor quando este iniciar novamente. Isto é útil se você modificou o arquivo de configuração do servidor manualmente, ou algo simplesmente não funcionou corretamente.",
+      "rebuild_requested": "O pedido de reconstrução foi enviado para o daemon, e o servidor irá reconstruir-se no próximo início.",
+      "suspend_server": "Suspender Servidor",
+      "suspend_server_note": "Isso irá suspender o servidor, interromper qualquer processo em execução e bloquear imediatamente o usuário de poder acessar seus arquivos. Também impedirá de gerenciar o servidor através do painel ou API.",
+      "suspend_toggled": "O estado de suspensão foi alterado.",
+      "updating_status": "Status de Atualização",
+      "updating_status_note": "Se você precisar alterar o status de atualização, você pode fazê-lo com o botão abaixo.",
+      "updating_toggled": "O status de atualização foi alternado.",
+      "move_server": "Mover servidor para outro Node",
+      "moving_status": "Status da mudança",
+      "moving_status_note": "Se precisar de alterar o estado da mudança, pode fazê-lo com o botão abaixo.\n",
+      "moving_toggled": "O status da mudança foi alternado.",
+      "reset_mod_statuses": "Reiniciar os estados de instalação do mod",
+      "reset_mod_statuses_note": "Irá redefinir o estado de instalação de todos os mods em caso de bug, caso o servidor tenha as instalações do mod bloqueadas completamente e elas tenham ficado presas por um longo tempo.",
+      "reset_mod_triggered": "Todos os estados de instalação do mod de servidor foram reiniciados.",
+      "toggle_backup_status": "Alternar o estado do backup",
+      "install_marked_as_failed": "Não é possível alternar o status de instalação do servidor devido à falha na instalação. Por favor, reinstale o servidor."
+    },
+    "deployment": {
+      "no_viable_nodes": "Nenhum node que satisfaça os requisitos especificados para implementação automática pôde ser encontrado.",
+      "no_viable_allocations": "Nenhuma alocação que satisfaça os requisitos para a implantação automática foi encontrada."
+    }
+  },
+  "users": {
+    "title": "Usuários",
+    "identity": "Identidade",
+    "external_id_footer": "Deixe em branco para não atribuir um identificador externo a este usuário. O identificador externo deve ser único para este usuário e não deve estar em uso por nenhum outro usuário.",
+    "language_footer": "Deixe em branco para usar o idioma padrão. O idioma em que o painel do usuário será exibido, isso também pode ser alterado no por parte do usuário nas configurações da conta.",
+    "password": "Senha",
+    "password_optional": "O fornecimento de uma senha de usuário é opcional. O novo usuário recebe um e-mail solicitando que crie uma senha para sua conta. Se uma senha for fornecida aqui, você precisará encontrar um método diferente de fornecê-la ao usuário.",
+    "root_admin_footer": "Esta configuração dá ao usuário um acesso administrativo completo.",
+    "support_op_footer": "Esta configuração dá a um usuário acesso administrativo restrito para atuar como Operador de Suporte.",
+    "support_op_bypass_footer": "A definição disto irá evitar que os usuários tenham que dar permissão explícita para acessar seus servidores através da guia Suporte.",
+    "ignore_exceptions": "Ignorar as excepções levantadas durante a revogação das chaves.",
+    "ignore_exceptions_footer": "Se for verificado, quaisquer erros durante a revogação de chaves através dos Nodes serão ignorados. Você deve evitar esta caixa de seleção, se possível, pois qualquer chave não-revogada pode continuar ativa por até 24 horas após esta conta ser alterada. Se você precisar revogar as permissões da conta imediatamente e estiver enfrentando problemas nos nós, você deve marcar esta caixa e então reiniciar quaisquer nós que não tenham sido atualizados para limpar quaisquer chaves armazenadas.",
+    "disable_2fa": "Desabilitar autentificação em Dois Fatores",
+    "disable_2fa_notice": "Esta é uma ação perigosa! Isto desabilitará autenticação baseada em TOTP se estiver habilitada, e também excluirá TODAS as chaves de segurança da conta do usuário, esta é uma ação irreversível.",
+    "2fa_disabled": "Autentificação em Dois Fatores está desabilitada para esta conta de usuário.",
+    "user_has_no_2fa_configured": "O usuário não tem Autentificação em Dois Fatores configurados para poder utilizá-lo.",
+    "delete_user": "Excluir usuário",
+    "delete_notice": "Tem a certeza que quer apagar o usuário \"{email}\"? Não há como desfazer, todos os dados serão imediatamente removidos!",
+    "cant_delete_yourself": "Você não pode apagar seu próprio usuário.",
+    "cant_delete_user_with_servers": "Você não pode excluir um usuário enquanto ele possuir servidores."
+  },
+  "nests": {
+    "title": "Nests",
+    "eggs": "Eggs",
+    "details": "Detalhes do Nest",
+    "create_nest": "Criar Nest",
+    "delete_nest": "Excluir Nest",
+    "delete_notice": "Tem a certeza que quer apagar o Nest \"{name}\" ? Não há volta, todos os dados serão imediatamente removidos.",
+    "id_footer": "Uma ID único utilizado para a identificação deste Nest internamente e através do API.",
+    "uuid_footer": "Uma UUID (Identificador Único Universal) que todos os servidores que utilizam esta opção são atribuídos para fins de identificação.",
+    "name_footer": "Este deve ser um nome de categoria descritivo que engloba todos os Eggs no Nest.",
+    "identifier_footer": "Identificação curta que pode permitir características específicas (IDs funcionais: srcds, minecraft).",
+    "nest_has_servers": "Você não pode excluir um Nest que tenha servidores o utilizando.",
+    "import_egg": "Importar Egg",
+    "egg": {
+      "daemon_restart_required_after_changes": "Qualquer alteração na configuração nos Eggs existentes requer que o Daemon seja reiniciado posteriormente com `wisp restart`.",
+      "configuration": "Configuração",
+      "process_management": "Gestão de Processos",
+      "delete_egg": "Eliminar o Egg",
+      "delete_notice": "Tem a certeza que quer apagar o Egg \"{name}\"? Não há volta, todos os dados serão imediatamente removidos.",
+      "egg_has_servers": "Você não pode apagar um Egg que tenha servidores o utilizando.",
+      "egg_is_a_parent": "Este Egg é um pai para um ou mais Eggs. Favor apagar tais Eggs antes de apagar este Egg.",
+      "must_be_a_child": "A diretiva \"Copiar configurações de\" para este Egg deve ser uma opção interna para o Nest selecionado.",
+      "copy_alert": "Todos os campos são obrigatórios, a menos que você selecione uma opção separada da caixa suspensa 'Copiar Configurações de', neste caso os campos podem ser deixados em branco para usar os valores dessa opção.",
+      "invalid_copy": "O Egg selecionado para copiar um script, ou não existe, ou está copiando um script de si mesmo.",
+      "update_egg": "Atualizar o Egg",
+      "import_update_notice": "A importação de um novo arquivo de Egg irá sobrescrever quaisquer configurações existentes. Se você deseja manter as configurações existentes, você deve importar o novo Egg separadamente.",
+      "import_updated": "O Egg foi atualizado a partir do novo arquivo. Terá de reiniciar os seus daemons WISP para aplicar alterações aos Nodes.",
+      "import_json_error": "Houve um erro durante a tentativa de analisar o arquivo JSON: {error}",
+      "import_file_error": "O arquivo JSON fornecido não é válido.",
+      "import_invalid_json": "O arquivo JSON fornecido não se encontra num formato que possa ser reconhecido.",
+      "install_script": "Instalar o Script",
+      "update_script": "Atualizar o script",
+      "variables": {
+        "create_variable": "Criar variável de inicialização",
+        "variable_created": "A variável de inicialização foi criada com sucesso.",
+        "variable_updated": "A variável de inicialização \"{name}\" foi criada com sucesso.",
+        "variable_deleted": "A variável de inicialização \"{name}\" foi apagada com sucesso.",
+        "env_variable_reserved": "A variável do ambiente {name} é um nome de variável reservado.",
+        "env_not_unique": "A variável de ambiente {name} não é única.",
+        "bad_validation_rule": "A regra de validação \"{rule}\" não é uma regra válida."
+      },
+      "thumbnail_title": "Miniatura do Egg",
+      "thumbnail_recommended_size": "Relação de aspecto 2:1 (máximo de 500kB)",
+      "thumbnail_formats": "png, jpg e svg"
+    }
+  },
+  "mods": {
+    "title": "Mods",
+    "mod_details": "Detalhes do Mod",
+    "mod_configuration": "Configuração do Mod",
+    "delete_mod": "Excluir Mod",
+    "delete_notice": "Tem a certeza que quer apagar o mod \"{name}\" ? Não há volta, todos os dados serão imediatamente removidos.",
+    "mod_has_servers": "Não é possível modificar o ID do Egg associado quando os servidores estão atualmente usando um mod."
+  },
+  "domains": {
+    "domain_details": "Detalhes do domínio",
+    "domain_name_footer": "O nome de domínio em que os servidores de jogo podem criar subdomínios, permitindo aos usuários escolher um subdomínio e apontá-lo para as alocações do servidor de jogo deles automaticamente. Atualmente, só suportamos subdomínios no domínio root.",
+    "instructions": "Você precisará fazer as seguintes ações para que o domínio funcione corretamente:",
+    "acquire_domain": "Compra ou use um domínio que você já possui.",
+    "setup_nameservers": "Aponte os nameservers para \"ns1.subdomain-manager.wisp.gg\" e \"ns2.subdomain-manager.wisp.gg\" (note que isto pode levar até 48 horas para propagar).",
+    "update_notice": "Atualizar o nome de domínio irá atualizar o subdomínio de cada servidor individual para o novo domínio.",
+    "domain_already_in_use": "O domínio fornecido já se encontra em uso por outro painel e não pode ser re-utilizado.",
+    "root_domain_only_supported": "Atualmente só suportamos o domínio root.",
+    "nest_identifiers_footer": "Uma lista de identificadores de Nest que permitem servidores rodando sob o Nest criarem subdomínios no domínio.",
+    "egg_identifiers_footer": "**Isso é usado principalmente para permitir Eggs específicos sob um Nest sem ter que permitir o Nest inteiro** Uma lista de identificadores de Eggs que permitem que os servidores rodem sob o Egg específico para criar subdomínios no domínio.",
+    "root_record_footer": "O endereço IP para um novo registro A DNS que um domínio root deve apontar. Útil para a configuração de um redirecionamento para o domínio.",
+    "delete_domain": "Excluir domínio",
+    "delete_notice": "Você tem certeza que deseja excluir o domínio {name}? Não há volta para isso e todos os servidores associados com este domínio perderão os subdomínios associados com ele."
+  }
+}

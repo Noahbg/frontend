@@ -1,0 +1,654 @@
+{
+  "server": {
+    "support": {
+      "title": "Přístup zákaznícké podpory",
+      "description": "Oprávnění související s povolením přístupu zákaznícké podpory k serveru.",
+      "update": {
+        "title": "Aktualizace",
+        "description": "Na kartě Podpora přepněte možnost Přístup k OP Podpora pro tento server."
+      }
+    },
+    "control": {
+      "title": "Ovládání",
+      "description": "Oprávnění, která se týkají stavu napájení serverů nebo konzole.",
+      "console": {
+        "title": "Konzole",
+        "description": "Umožňuje uživateli zobrazit protokoly konzole pro tento server."
+      },
+      "command": {
+        "title": "Spouštění příkazů",
+        "description": "Umožňuje uživateli odesílat příkazy do konzole. Pokud uživatel nemá oprávnění k zastavení nebo restartování, nemůže odeslat příkaz zastavení aplikace."
+      },
+      "start": {
+        "title": "Spustit",
+        "description": "Umožňuje uživateli spustit tento server."
+      },
+      "stop": {
+        "title": "Zastavit",
+        "description": "Umožňuje uživateli zastavit tento server."
+      },
+      "restart": {
+        "title": "Restartovat",
+        "description": "Umožňuje uživateli restartovat tento server."
+      }
+    },
+    "subuser": {
+      "title": "Poduživatel",
+      "description": "Oprávnění, která umožňují uživatelům spravovat ostatní dílčí uživatele přiřazené k serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit a prohlédnout subuživatele přiřazené k tomuto serveru."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli upravovat oprávnění přiřazená jiným dílčím uživatelům."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Umožňuje uživateli vytvářet další dílčí uživatele na tomto serveru."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Umožňuje uživateli odstranit ostatní dílčí uživatele na tomto serveru."
+      }
+    },
+    "allocation": {
+      "title": "Alokace",
+      "description": "Oprávnění, která uživateli umožňují spravovat všechny přidělené IP:Porty k tomuto serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit všechny příděly přiřazené tomuto serveru. Uživatelé s libovolným přístupem k serveru mohou vždy zobrazit výchozí přidělení prostřednictvím stránky Podrobnosti."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli změnit primární přidělení."
+      }
+    },
+    "startup": {
+      "title": "Parametry spuštění",
+      "description": "Oprávnění, která umožňují uživatelům spravovat konfiguraci serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit spouštěcí příkaz a související proměnné pro tento server."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli upravit spouštěcí proměnné tohoto serveru."
+      }
+    },
+    "database": {
+      "title": "Databáze",
+      "description": "Oprávnění, která uživatelům umožňují spravovat MySQL databáze serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit všechny databáze přidružené k tomuto serveru včetně uživatelských jmen a hesel k databázím."
+      },
+      "update": {
+        "title": "Obnovení hesla",
+        "description": "Umožňuje uživateli resetovat hesla databází."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Umožňuje uživateli vytvořit další databáze pro tento server."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Umožňuje uživateli odstranit databáze z tohoto serveru."
+      }
+    },
+    "file": {
+      "title": "Správce souborů",
+      "description": "Oprávnění, která umožňují uživatelům spravovat soubory uložené na serveru prostřednictvím Správce souborů nebo serveru SFTP.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Umožňuje uživateli připojit se k serveru SFTP."
+      },
+      "list": {
+        "title": "Seznam",
+        "description": "Umožňuje uživateli vypsat všechny soubory a složky, ale nedovoluje mu otevřít soubory."
+      },
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit obsah existujících souborů."
+      },
+      "write": {
+        "title": "Psát",
+        "description": "Umožňuje uživateli aktualizovat obsah existujících souborů pro tento server."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Umožňuje uživateli vytvářet nové soubory pro tento server."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Umožňuje uživateli odstranit soubory z tohoto serveru ve správci souborů nebo SFTP."
+      },
+      "archive": {
+        "title": "Archiv",
+        "description": "Umožňuje uživateli komprimovat soubory."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Umožňuje uživateli používat akce git (tj. klonování, stahování)."
+      },
+      "steam_workshop": {
+        "title": "Steam workshop",
+        "description": "Umožňuje uživateli používat stahování z workshopu."
+      }
+    },
+    "schedule": {
+      "title": "Plán",
+      "description": "Oprávnění, která uživateli umožňují vytvářet automatické úlohy, které se na serveru pravidelně spouštějí.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit seznam rozvrhů a jejich detaily."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Umožňuje uživateli upravit plán včetně všech jeho úloh. To uživateli umožní odstranit jednotlivé úkoly, ale nikoli odstranit samotný plán."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Umožňuje uživateli vytvořit nový plán."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Umožňuje uživateli odstranit rozvrhy z tohoto serveru."
+      }
+    },
+    "backup": {
+      "title": "Záloha",
+      "description": "Oprávnění, která uživateli umožňují spravovat zálohy souborů serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit všechny zálohy tohoto serveru."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Umožňuje uživateli uzamknout/odemknout zálohy a zabránit jejich automatickému mazání, aby se uvolnilo místo pro budoucí zálohy."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Umožňuje uživateli vytvářet zálohy pro tento server."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Umožňuje uživateli odstranit zálohu patřící k tomuto serveru."
+      },
+      "deploy": {
+        "title": "Nasazení",
+        "description": "Umožňuje uživateli nasadit zálohu na tento server."
+      },
+      "download": {
+        "title": "Stáhnout",
+        "description": "Umožňuje uživateli stáhnout zálohu patřící tomuto serveru."
+      }
+    },
+    "details": {
+      "title": "Podrobnosti",
+      "description": "Oprávnění, která uživateli umožňují změnit název identifikující server v panelu.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit podrobnosti o tomto serveru."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Umožňuje uživateli změnit název tohoto serveru. Uživatel může změnit pouze název serveru v panelu, nikoli ve hře."
+      }
+    },
+    "audit": {
+      "title": "Záznam akcí",
+      "description": "Oprávnění, která uživateli umožňují kontrolovat všechny akce probíhající na tomto serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit protokoly akcí tohoto serveru. Poznámka: Může obsahovat informace, které mohou být uzamčeny za jinými oprávněními."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Oprávnění, která uživateli umožňují zobrazit odkaz FastDL nebo synchronizovat obsah s FastDL pro tento server.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit stránku FastDL pro tento server."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli synchronizovat obsah FastDL z tohoto serveru."
+      }
+    },
+    "scanner": {
+      "title": "Skener zadních vrátek",
+      "description": "Oprávnění, která uživateli umožňují prohledávat soubory serveru a hledat v nich zadní vrátka.",
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli používat pro tento server nástroj Backdoor Scanner."
+      }
+    },
+    "subdomain": {
+      "title": "Správce subdomén",
+      "description": "Oprávnění používat doménový systém serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Povolení ke čtení domén."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytvoření domény používané k připojení k tomuto serveru."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstraňování domén serveru."
+      }
+    },
+    "mod": {
+      "title": "Správce modů",
+      "description": "Oprávnění, která uživateli umožňují prohlížet a instalovat módy na tomto serveru jedním klepnutím.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit dostupné mody, které lze na tento server nainstalovat jedním kliknutím."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli instalovat na tento server mody jedním kliknutím."
+      }
+    },
+    "modpack": {
+      "title": "Správce modpacků",
+      "description": "Oprávnění, která uživateli umožňují nainstalovat Minecraft Modpacky na tomto serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit, které modpacky jsou k dispozici pro instalaci na tomto serveru."
+      },
+      "update": {
+        "title": "Instalovat",
+        "description": "Umožňuje uživateli nainstalovat modpack na tento server."
+      }
+    },
+    "plugin": {
+      "title": "Správce pluginů",
+      "description": "Oprávnění, která uživateli umožňují nainstalovat Minecraft Pluginy na tomto serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit které pluginy jsou k dispozici pro instalaci na tomto serveru."
+      },
+      "update": {
+        "title": "Instalovat",
+        "description": "Umožňuje uživateli nainstalovat plugin na tomto serveru."
+      }
+    },
+    "updater": {
+      "title": "Aktualizátor služby Steam",
+      "description": "Oprávnění, která uživateli umožňují aktualizovat servery založené na steamcmd.",
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli používat nástroj Steam Updater pro tento server."
+      }
+    },
+    "monitor": {
+      "title": "Monitor zdraví",
+      "description": "Oprávnění, která uživateli umožňují používat nástroj Sledování stavu pro tento server.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit stav monitoru stavu serveru."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli přepínat stav sledování stavu serveru."
+      }
+    },
+    "reinstall": {
+      "title": "Přeinstalovat",
+      "description": "Oprávnění, která uživateli umožňují spustit přeinstalaci tohoto serveru.",
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Umožňuje uživateli přeinstalovat tento server."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licence",
+      "description": "Oprávnění, která umožňují zobrazit informace o licenci instancí WISP.",
+      "read": {
+        "title": "Číst",
+        "description": "Umožňuje uživateli zobrazit informace o licenci na stránce s přehledem."
+      }
+    },
+    "settings": {
+      "title": "Nastavení",
+      "description": "Oprávnění, která umožňují správcům přizpůsobit instanci WISP.",
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Možnost aktualizovat nastavení instance."
+      }
+    },
+    "migrator": {
+      "title": "Migrátor",
+      "description": "Oprávnění k používání migračního systému.",
+      "read": {
+        "title": "Číst",
+        "description": "Oprávnění ke čtení migrátorů."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Oprávnění aktualizovat migrátory."
+      }
+    },
+    "announcement": {
+      "title": "Oznámení",
+      "description": "Povolení používat systém hlášení.",
+      "read": {
+        "title": "Číst",
+        "description": "Povolení ke čtení oznámení."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření oznámení."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Povolení aktualizovat oznámení."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Povolení mazat oznámení."
+      }
+    },
+    "application_api": {
+      "title": "Aplikační rozhraní",
+      "description": "Oprávnění používat systém aplikačního rozhraní.",
+      "read": {
+        "description": "Povolení ke čtení aplikakačních Api.",
+        "title": "Číst"
+      },
+      "create": {
+        "description": "Oprávnění k vytváření aplikakačních Api.",
+        "title": "Vytvořit"
+      },
+      "update": {
+        "description": "Oprávnění k aktualizaci aplikačních Api.",
+        "title": "Aktualizovat"
+      },
+      "delete": {
+        "description": "Oprávnění k odstranění aplikačních Api.",
+        "title": "Odstranit"
+      }
+    },
+    "database_host": {
+      "title": "Hostitel databáze",
+      "description": "Oprávnění používat hostitelský systém databáze.",
+      "read": {
+        "title": "Číst",
+        "description": "Oprávnění ke čtení hostitelů databáze."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření hostitelů databáze."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Oprávnění k aktualizaci hostitelů databáze."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstraňování hostitelů databáze."
+      }
+    },
+    "location": {
+      "title": "Umístění",
+      "description": "Oprávnění k používání systému určování polohy.",
+      "read": {
+        "title": "Číst",
+        "description": "Povolení ke čtení míst."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření míst."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Povolení aktualizovat umístění."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstranění umístění."
+      }
+    },
+    "node": {
+      "description": "Oprávnění používat systém uzlů.",
+      "title": "Uzel",
+      "read": {
+        "title": "Přečtěte si",
+        "description": "Povolení ke čtení uzlů."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Oprávnění k aktualizaci uzlů."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění mazat uzly."
+      }
+    },
+    "node_allocation": {
+      "title": "Přidělování uzlů",
+      "description": "Oprávnění používat systém přidělování uzlů.",
+      "read": {
+        "title": "Přečtěte si",
+        "description": "Oprávnění ke čtení alokací uzlů."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření přidělení uzlů."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Oprávnění aktualizovat přidělení uzlů."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstranění přidělení uzlů."
+      }
+    },
+    "user": {
+      "title": "Uživatel",
+      "description": "Oprávnění používat uživatelský systém.",
+      "read": {
+        "title": "Přečtěte si",
+        "description": "Oprávnění ke čtení uživatelů."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření uživatelů."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Oprávnění aktualizovat uživatele."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstraňování uživatelů."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Povolení k používání systému modů.",
+      "read": {
+        "title": "Přečtěte si",
+        "description": "Povolení ke čtení modů."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření modů."
+      },
+      "update": {
+        "title": "Instalace",
+        "description": "Povolení k aktualizaci modů."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Povolení ke smazání modů."
+      }
+    },
+    "nest": {
+      "title": "Hnízdo",
+      "description": "Povolení používat systém hnízd.",
+      "read": {
+        "title": "Přečtěte si",
+        "description": "Povolení ke čtení hnízd."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Povolení k vytváření hnízd."
+      },
+      "update": {
+        "title": "Aktualizace",
+        "description": "Povolení aktualizovat hnízda."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstranění hnízd."
+      }
+    },
+    "egg": {
+      "title": "Vejce",
+      "description": "Povolení používat systém vajec.",
+      "read": {
+        "title": "Číst",
+        "description": "Povolení ke čtení vajec."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Povolení k vytváření vajec."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Povolení k aktualizaci vajec."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Povolení mazat vejce."
+      }
+    },
+    "egg_variable": {
+      "title": "Variabilita vajec",
+      "description": "Povolení používat systém proměnných vajec.",
+      "read": {
+        "description": "Povolení ke čtení proměnných vajec.",
+        "title": "Číst"
+      },
+      "create": {
+        "description": "Oprávnění k vytváření proměnných vajec.",
+        "title": "Vytvořit"
+      },
+      "update": {
+        "description": "Povolení aktualizovat proměnné vajec.",
+        "title": "Aktualizovat"
+      },
+      "delete": {
+        "description": "Oprávnění mazat proměnné vajec.",
+        "title": "Odstranit"
+      }
+    },
+    "server": {
+      "title": "Server",
+      "description": "Oprávnění používat systém serveru.",
+      "suspend": {
+        "title": "Pozastavit",
+        "description": "Oprávnění pozastavit servery."
+      },
+      "toggle_backup": {
+        "title": "Přepínání zálohování",
+        "description": "Oprávnění přepínat zálohování serverů."
+      },
+      "read": {
+        "title": "Číst",
+        "description": "Povolení ke čtení serverů."
+      },
+      "create": {
+        "description": "Oprávnění k vytváření serverů.",
+        "title": "Vytvořit"
+      },
+      "move": {
+        "title": "Přesun",
+        "description": "Povolení k přesunu serverů."
+      },
+      "reset_mods": {
+        "title": "Obnovení modů",
+        "description": "Oprávnění k resetování modů serverů."
+      },
+      "details_update": {
+        "title": "Aktualizace podrobností",
+        "description": "Oprávnění k podrobnostem aktualizačních serverů."
+      },
+      "toggle_move": {
+        "title": "Přepínání přesunu",
+        "description": "Oprávnění k přepínání serverů pro přesun."
+      },
+      "toggle_update": {
+        "title": "Aktualizace přepínače",
+        "description": "Oprávnění přepínat aktualizační servery."
+      },
+      "toggle_install": {
+        "title": "Přepínání Instalace",
+        "description": "Oprávnění přepínat instalační servery."
+      },
+      "build_update": {
+        "title": "Aktualizace sestavení",
+        "description": "Oprávnění k vytváření aktualizačních serverů."
+      },
+      "rebuild": {
+        "title": "Přestavba",
+        "description": "Povolení k přestavbě serverů."
+      },
+      "reinstall": {
+        "title": "Přeinstalovat",
+        "description": "Oprávnění k přeinstalaci serverů."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstraňování serverů."
+      }
+    },
+    "server_database": {
+      "title": "Databáze serveru",
+      "description": "Oprávnění používat databázový systém serveru.",
+      "read": {
+        "title": "Číst",
+        "description": "Oprávnění ke čtení databází serveru."
+      },
+      "create": {
+        "title": "Vytvořit",
+        "description": "Oprávnění k vytváření databází serveru."
+      },
+      "update": {
+        "title": "Aktualizovat",
+        "description": "Oprávnění k aktualizaci databází serveru."
+      },
+      "delete": {
+        "title": "Odstranit",
+        "description": "Oprávnění k odstraňování databází serveru."
+      }
+    }
+  },
+  "domain": {
+    "title": "Doména",
+    "description": "Oprávnění používat doménový systém serveru.",
+    "read": {
+      "title": "Číst",
+      "description": "Povolení ke čtení domén."
+    },
+    "create": {
+      "title": "Vytvořit",
+      "description": "Oprávnění k vytváření domén."
+    },
+    "update": {
+      "title": "Aktualizovat",
+      "description": "Oprávnění k aktualizaci domén a všech souvisejících domén serveru."
+    },
+    "delete": {
+      "title": "Odstranit",
+      "description": "Oprávnění k odstranění domén a všech souvisejících domén serveru."
+    }
+  }
+}

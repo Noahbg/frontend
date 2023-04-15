@@ -1,0 +1,130 @@
+{
+  "server": {
+    "update": {
+      "title": "Aktualizace serveru",
+      "message": "{user} aktualizoval údaje o tomto serveru"
+    },
+    "subuser": {
+      "create": {
+        "title": "Subuživatel vytvořen",
+        "message": "{user} vytvořil nového dílčího uživatele pro {target}"
+      },
+      "update": {
+        "title": "Subuživatel aktualizován",
+        "message": "{user} aktualizoval oprávnění dílčího uživatele pro {target}"
+      },
+      "delete": {
+        "title": "Přístup subuživatele odebrán",
+        "message": "{user} odstranil dílčího uživatele patřícího do {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Databáze vytvořena",
+        "message": "{user} vytvořil novou databázi s názvem {name}"
+      },
+      "update": {
+        "title": "Databáze aktualizována",
+        "message": "{user} přegeneroval heslo databáze pro {target}"
+      },
+      "delete": {
+        "title": "Databáze odstraněna",
+        "message": "{user} odstranil databázi {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Naplánované akce byly sputěny",
+        "message": "{user} spustil plán {target}"
+      },
+      "create": {
+        "title": "Plán vytvořen",
+        "message": "{user} vytvořil nový plán s názvem {name}"
+      },
+      "update": {
+        "title": "Aktualizace plánu",
+        "message": "{user} aktualizoval plán {target}"
+      },
+      "delete": {
+        "title": "Plán odstraněn",
+        "message": "{user} odstranil plán {target} a úkoly, které obsahoval"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Aktualizace spouštěcích proměnných",
+        "message": "{user} aktualizoval spouštěcí parametry serveru"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Sledování stavu přepnuto",
+        "message": "{user} přepnul řepnutí monitoru stavu"
+      },
+      "restart": {
+        "title": "Restartování serveru",
+        "message": "Restartování serveru spuštěné monitorem stavu"
+      }
+    },
+    "crash": {
+      "title": "Pád serveru",
+      "message": "Server se zhroutil"
+    },
+    "backup": {
+      "create": {
+        "title": "Záloha vytvořena",
+        "message": "{user} vytvořil zálohu s názvem {name}"
+      },
+      "update": {
+        "title": "Záloha aktualizována",
+        "message": "{user} přepnul stav uzamčení pro zálohu {name}"
+      },
+      "deploy": {
+        "title": "Záloha je nasazena na server",
+        "message": "{user} nasadil zálohu {name} na serveru"
+      },
+      "download": {
+        "title": "Záloha stažena",
+        "message": "{user} stáhl zálohu {name}"
+      },
+      "delete": {
+        "title": "Záloha odstraněna",
+        "message": "{user} odstranil zálohu {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Stav modifikace aktualizován",
+        "message": "{user} přepnul stav instalace modifikace {name}"
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Subdoména vytvořena",
+        "message": "{user} vytvořil/a subdoménu {subdomain}"
+      },
+      "delete": {
+        "title": "Subdoména odstraněna",
+        "message": "{user} odstranil/a subdoménu {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack nainstalován",
+        "message": "{user} nainstaloval {modpack} modpack"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin nainstalován",
+        "message": "{user} nainstaloval plugin {plugin}"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL synchronizováno",
+        "message": "{user} synchronizoval obsah FastDL pro tento server"
+      }
+    }
+  }
+}

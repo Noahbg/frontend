@@ -1,0 +1,30 @@
+{
+  "sign_in": "Conectați-vă",
+  "or": "sau",
+  "sso": "Autentificare cu SSO",
+  "struggling_to_login": "Nu reușiți să vă conectați?",
+  "reset_password": "Resetare parolă",
+  "back": "Înapoi la Login",
+  "password_reset_email_sent": "Instrucțiunile de resetare a parolei au fost trimise la adresa dvs. de e-mail, dacă există un cont asociat cu aceasta.",
+  "passwords": {
+    "throttled": "Ați fost blocat temporar din cauza unui număr prea mare de încercări de schimbare a parolei, vă rugăm să încercați din nou mai târziu.",
+    "token": "Token invalid asociat cu cererea de parolă, vă rugăm să încercați să solicitați un nou link de resetare a parolei.",
+    "user": "Nu se poate reseta parola pentru un utilizator invalid.",
+    "confirmation": "Parola furnizată și confirmarea parolei nu se potrivesc."
+  },
+  "security_keys": {
+    "insert_and_touch": "Introduceți cheia de securitate și atingeți-o.",
+    "not_responding": "Dacă cheia de securitate nu răspunde, ",
+    "not_responding_click_here": "apăsați aici.",
+    "unknown_key": "Ați utilizat o cheie de securitate necunoscută, încercați din nou cu o altă cheie sau utilizați TOTP, dacă este configurat. În caz contrar, contactați un administrator al panoului."
+  },
+  "two_factor_token": "Token cu doi factori",
+  "use_different_method": "Utilizați o metodă diferită",
+  "invalid_user": "Legitimațiile furnizate nu corespund cu cele pe care le avem la dosar. Dacă nu sunteți sigur că parola dvs. este corectă, încercați să o resetați.",
+  "invalid_mfa_session": "Sesiunea anterioară a expirat, vă rugăm să încercați din nou.",
+  "sso_down": "Nu am putut contacta serverele pentru a verifica contul, vă rugăm să încercați din nou mai târziu.",
+  "sso_failed": "Ceva nu a mers bine atunci când ați încercat să verificați contul, vă rugăm să încercați din nou mai târziu.",
+  "sso_invalid": "Sesiunea anterioară a expirat, vă rugăm să încercați din nou.",
+  "sso_non_existing_account": "Nu a putut găsi un cont asociat pe panou. Vă rugăm să folosiți autentificarea normală și să activați autentificarea rapidă din setările contului.",
+  "sso_disabled_for_account": "Acest cont are acces rapid dezactivat. Vă rugăm să folosiți în schimb autentificarea normală."
+}

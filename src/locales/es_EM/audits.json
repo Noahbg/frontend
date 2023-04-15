@@ -1,0 +1,130 @@
+{
+  "server": {
+    "update": {
+      "title": "Servidor actualizado",
+      "message": "{user} actualizó los detalles de este servidor"
+    },
+    "subuser": {
+      "create": {
+        "title": "Sub Usuario creado",
+        "message": "{user} creó un nuevo subusuario para {target}"
+      },
+      "update": {
+        "title": "Sub Usuario actualizado",
+        "message": "{user} actualizó los permisos de subusuario para {target}"
+      },
+      "delete": {
+        "title": "Acceso de Sub Usuario revocado",
+        "message": "{user} eliminó un subusuario perteneciente a {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Base de datos creada",
+        "message": "{user} creó una nueva base de datos llamada {name}"
+      },
+      "update": {
+        "title": "Base de datos actualizada",
+        "message": "{user} regeneró la contraseña de la base de datos para {target}"
+      },
+      "delete": {
+        "title": "Base de datos eliminada",
+        "message": "{user} ha eliminado la base de datos {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Ejecución programada activada",
+        "message": "{user} ha activado el programa {target}"
+      },
+      "create": {
+        "title": "Programación creada",
+        "message": "{user} creó una nueva programación llamada {name}"
+      },
+      "update": {
+        "title": "Programación actualizada",
+        "message": "{user} actualizó la programación {target}"
+      },
+      "delete": {
+        "title": "Programación eliminada",
+        "message": "{user} eliminó el programa {target} y las tareas que contenían"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Variables de inicio actualizadas",
+        "message": "{user} actualizó las variables de inicio del servidor"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Monitor de Salud cambiado",
+        "message": "{user} ha activado el monitor de salud"
+      },
+      "restart": {
+        "title": "Reinicio del servidor",
+        "message": "Reinicio del servidor activado por el monitor de estado"
+      }
+    },
+    "crash": {
+      "title": "Fallo del servidor",
+      "message": "El servidor ha fallado"
+    },
+    "backup": {
+      "create": {
+        "title": "Copia de seguridad creada",
+        "message": "{user} creó una copia de seguridad llamada {name}"
+      },
+      "update": {
+        "title": "Copia de seguridad actualizada",
+        "message": "{user} ha cambiado el estado de bloqueo para la copia de seguridad {name}"
+      },
+      "deploy": {
+        "title": "Copia de seguridad desplegada en el servidor",
+        "message": "{user} desplegó la copia de seguridad {name} en el servidor"
+      },
+      "download": {
+        "title": "Copia de Seguridad Descargada",
+        "message": "{user} ha descargado la copia de seguridad {name}"
+      },
+      "delete": {
+        "title": "Copia de seguridad eliminada",
+        "message": "{user} eliminó la copia de seguridad {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Estado del mod actualizado",
+        "message": "{user} ha cambiado el estado de instalación del mod {name}"
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Subdominio creado",
+        "message": "{user} creó el subdominio {subdomain}"
+      },
+      "delete": {
+        "title": "Subdominio eliminado",
+        "message": "{user} eliminó el subdominio {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack instalado",
+        "message": "{user} ha instalado el modpack {modpack}"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin instalado",
+        "message": "{user} instaló el plugin {plugin}"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL sincronizado",
+        "message": "{user} sincronizó el contenido FastDL para este servidor"
+      }
+    }
+  }
+}

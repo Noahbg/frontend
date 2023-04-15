@@ -1,0 +1,42 @@
+{
+  "server": {
+    "backup": {
+      "created": "Klaar met het maken van de backup {name}.",
+      "failed_to_create": "Het maken van de backup is mislukt {name}: {err}",
+      "deployed": "De implementatie van de backup is voltooid {name}.",
+      "failed_to_deploy": "Het implementeren van de backup is mislukt {name}."
+    },
+    "update": {
+      "updated": "Klaar met bijwerken.",
+      "failed": "Mislukt om de server bij te werken."
+    },
+    "installed": "Klaar met installeren.",
+    "version": {
+      "installed": "Installatie van versie voltooid {name}.",
+      "failed": "De installatie van de versie {name}is mislukt."
+    },
+    "fastdl": {
+      "synced": "FastDL is gesynchroniseerd.",
+      "failed": "Mislukte synchronisatie FastDL."
+    },
+    "move": {
+      "moved": "Klaar met verhuizen.",
+      "db_migration_failed": "Mislukte migratie van de database {name}.",
+      "failed": "Mislukte server overdracht.",
+      "failed_to_delete_archive": "Fout bij verwijderen server transfer archief voor {name}.",
+      "failed_to_delete_created_server": "Mislukt verwijderen van aangemaakte server op {name}.",
+      "failed_to_update_allocation": "Oude toewijzing op {name}niet vrijgegeven .",
+      "failed_final_stage": "Mislukt laatste stadium voor server overdracht (controleer of oude server verwijderd is uit {name} en dbs verplaatst host indien niet mislukt)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrator",
+      "finished_migrating_data": "Migratiegegevens van {fqdn} voltooid.",
+      "exceeded_limits": "Mislukte migratie voor {fqdn}: {message}. Contacteer ons voor een handmatige migratie.",
+      "aborted_migration": "Migratie afgebroken voor {fqdn}: {message}",
+      "data_mismatch": "Mislukte migratie voor {fqdn} vanwege verkeerde gegevens: {message}",
+      "failed_due_to_internal_error": "Mislukte migratie voor {fqdn}: Er is intern iets fout gegaan, neem contact met ons op via een support ticket."
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "server": {
+    "update": {
+      "title": "Server bijgewerkt",
+      "message": "{user} de gegevens van deze server bijgewerkt"
+    },
+    "subuser": {
+      "create": {
+        "title": "Subgebruiker aangemaakt",
+        "message": "{user} creëerde een nieuwe subgebruiker voor {target}"
+      },
+      "update": {
+        "title": "Subgebruiker bijgewerkt",
+        "message": "{user} de subuser permissies voor {target}bijgewerkt"
+      },
+      "delete": {
+        "title": "Subgebruikerstoegang ingetrokken",
+        "message": "{user} verwijderde een subgebruiker die behoort tot {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Database aangemaakt",
+        "message": "{user} creëerde een nieuwe database met de naam {name}"
+      },
+      "update": {
+        "title": "Databank bijgewerkt",
+        "message": "{user} hergenereerde het databasewachtwoord voor {target}"
+      },
+      "delete": {
+        "title": "Database verwijderd",
+        "message": "{user} verwijderde de {target} database"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Schema uitvoering getriggerd",
+        "message": "{user} activeerde het {target} schema"
+      },
+      "create": {
+        "title": "Schema gemaakt",
+        "message": "{user} creëerde een nieuw schema met de naam {name}"
+      },
+      "update": {
+        "title": "Tijdschema bijgewerkt",
+        "message": "{user} heeft het {target} schema bijgewerkt"
+      },
+      "delete": {
+        "title": "Schema geschrapt",
+        "message": "{user} verwijderde het {target} schema en de taken die het bevatte"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Opstartvariabelen bijgewerkt",
+        "message": "{user} de opstartvariabelen van de server bijgewerkt"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Gezondheidsmonitor ingeschakeld",
+        "message": "{user} schakelde de gezondheidsmonitor"
+      },
+      "restart": {
+        "title": "Herstart server",
+        "message": "Herstart van de server veroorzaakt door de gezondheidsmonitor"
+      }
+    },
+    "crash": {
+      "title": "Server crash",
+      "message": "De server is gecrasht"
+    },
+    "backup": {
+      "create": {
+        "title": "Backup gemaakt",
+        "message": "{user} creëerde een backup met de naam {name}"
+      },
+      "update": {
+        "title": "Back-up bijgewerkt",
+        "message": "{user} schakelt de vergrendelde status voor back-up {name}"
+      },
+      "deploy": {
+        "title": "Back-up ingezet op server",
+        "message": "{user} ingezette backup {name} naar de server"
+      },
+      "download": {
+        "title": "Back-up gedownload",
+        "message": "{user} heeft de {name} backup gedownload"
+      },
+      "delete": {
+        "title": "Back-up verwijderd",
+        "message": "{user} verwijderde de {name} back-up"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Mod status bijgewerkt",
+        "message": "{user} heeft de installatiestatus van de {name} mod aangezet"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack geïnstalleerd",
+        "message": "{user} installeerde het {modpack} modpack"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin geïnstalleerd",
+        "message": "{user} installeerde de {plugin} plugin"
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL gesynchroniseerd",
+        "message": "{user} synchroniseerde de FastDL inhoud voor deze server"
+      }
+    }
+  }
+}

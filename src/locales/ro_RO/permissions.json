@@ -1,0 +1,654 @@
+{
+  "server": {
+    "support": {
+      "title": "Acces Asistență OP",
+      "description": "Permisiuni care sunt legate de permiterea accesului operatorilor de asistență la acest server.",
+      "update": {
+        "title": "Actualizare",
+        "description": "Activează Asistență OP Acces pentru acest server în fila Support."
+      }
+    },
+    "control": {
+      "title": "Control",
+      "description": "Permisiuni care sunt legate de starea de alimentare a serverelor sau de consolă.",
+      "console": {
+        "title": "Consolă",
+        "description": "Permite utilizatorului să vizualizeze jurnalele consolei pentru acest server."
+      },
+      "command": {
+        "title": "Executați comenzi",
+        "description": "Permite utilizatorului să trimită comenzi către consolă. Dacă utilizatorul nu are permisiuni de oprire sau de repornire, acesta nu poate trimite comanda de oprire a aplicației."
+      },
+      "start": {
+        "title": "Start",
+        "description": "Permite utilizatorului să pornească acest server."
+      },
+      "stop": {
+        "title": "Stop",
+        "description": "Permite utilizatorului să oprească acest server."
+      },
+      "restart": {
+        "title": "Reporniți",
+        "description": "Permite utilizatorului să repornească acest server."
+      }
+    },
+    "subuser": {
+      "title": "Subutilizator",
+      "description": "Permisiuni care permit utilizatorilor să gestioneze alți subutilizatori atribuiți serverului.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să listeze"
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să editeze permisiunile atribuite altor subutilizatori."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permite utilizatorului să creeze subutilizatori suplimentari pe acest server."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permite utilizatorului să elimine alți subutilizatori de pe acest server."
+      }
+    },
+    "allocation": {
+      "title": "Alocarea",
+      "description": "Permisiuni care permit utilizatorului să gestioneze toate IP-urile și porturile alocate acestui server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze toate alocările atribuite acestui server. Utilizatorii cu orice acces la server pot vizualiza întotdeauna alocarea implicită prin intermediul paginii Details (Detalii)."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să modifice alocarea primară."
+      }
+    },
+    "startup": {
+      "title": "Parametrii de pornire",
+      "description": "Permisiuni care permit utilizatorilor să gestioneze configurația serverului.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze comanda de pornire și variabilele asociate pentru acest server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să modifice variabilele de pornire pentru acest server."
+      }
+    },
+    "database": {
+      "title": "Baza de date",
+      "description": "Permisiuni care permit utilizatorilor să administreze bazele de date MySQL pentru server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze toate bazele de date asociate cu acest server, inclusiv numele de utilizator și parolele pentru bazele de date."
+      },
+      "update": {
+        "title": "Resetare parolă",
+        "description": "Permite utilizatorului să reseteze parolele pentru bazele de date."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permite utilizatorului să creeze baze de date suplimentare pentru acest server."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permite utilizatorului să șteargă bazele de date de pe acest server."
+      }
+    },
+    "file": {
+      "title": "Manager de fișiere",
+      "description": "Permisiuni care permit utilizatorilor să gestioneze fișierele stocate pe un server prin intermediul Managerului de fișiere sau al serverului SFTP.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Permite utilizatorului să se conecteze la serverul SFTP."
+      },
+      "list": {
+        "title": "Lista",
+        "description": "Permite utilizatorului să listeze toate fișierele"
+      },
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze conținutul fișierelor existente."
+      },
+      "write": {
+        "title": "Scrieți",
+        "description": "Permite utilizatorului să actualizeze conținutul fișierelor existente pentru acest server."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permite utilizatorului să creeze fișiere noi pentru acest server."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permite utilizatorului să șteargă fișiere de pe acest server în managerul de fișiere sau SFTP."
+      },
+      "archive": {
+        "title": "Arhiva",
+        "description": "Permite utilizatorului să comprime fișiere"
+      },
+      "git": {
+        "title": "Git",
+        "description": "Permite utilizatorului să utilizeze acțiunile git (de exemplu, clonarea, extragerea)."
+      },
+      "steam_workshop": {
+        "title": "Atelier de aburi",
+        "description": "Permite utilizatorului să utilizeze descărcătorul atelierului."
+      }
+    },
+    "schedule": {
+      "title": "Programare",
+      "description": "Permisiuni care permit utilizatorului să creeze sarcini automate care se execută periodic pe server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să listeze programele"
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să editeze un program, inclusiv toate sarcinile din program. Aceasta va permite utilizatorului să elimine sarcini individuale, dar nu va șterge programul în sine."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permite utilizatorului să creeze un nou program."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permite utilizatorului să șteargă programele de pe acest server."
+      }
+    },
+    "backup": {
+      "title": "Backup",
+      "description": "Permisiuni care permit utilizatorului să gestioneze copiile de rezervă ale fișierelor serverelor.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze toate copiile de rezervă pentru acest server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să blocheze/deblocheze copiile de rezervă pentru ca acestea să nu fie șterse automat pentru a face loc pentru copiile de rezervă viitoare."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permite utilizatorului să creeze copii de rezervă pentru acest server."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permite utilizatorului să șteargă o copie de rezervă aparținând acestui server."
+      },
+      "deploy": {
+        "title": "Implementați",
+        "description": "Permite utilizatorului să implementeze o copie de rezervă pe acest server."
+      },
+      "download": {
+        "title": "Descărcați",
+        "description": "Permite utilizatorului să descarce o copie de rezervă aparținând acestui server."
+      }
+    },
+    "details": {
+      "title": "Detalii",
+      "description": "Permisiuni care permit utilizatorului să modifice numele care identifică serverul în panou.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze detaliile acestui server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să modifice acest nume de server. Aceasta permite utilizatorului să schimbe doar numele serverului în panou, nu și în joc."
+      }
+    },
+    "audit": {
+      "title": "Jurnal de audit",
+      "description": "Permisiuni care permit utilizatorului să inspecteze toate acțiunile care au loc pentru acest server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze jurnalele de acțiune ale acestui server. Notă: Aceasta poate conține informații care ar putea fi blocate în spatele altor permisiuni."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Permisiuni care permit utilizatorului să vizualizeze link-ul FastDL sau să sincronizeze conținutul cu FastDL pentru acest server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vadă pagina FastDL pentru acest server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să sincronizeze conținutul FastDL de pe acest server."
+      }
+    },
+    "scanner": {
+      "title": "Backdoor Scanner",
+      "description": "Permisiuni care permit utilizatorului să scaneze fișierele serverului pentru a căuta backdoor-uri.",
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să utilizeze Backdoor Scanner pentru acest server."
+      }
+    },
+    "subdomain": {
+      "title": "Manager de subdomeniu",
+      "description": "Permisiunea de a utiliza sistemul de domenii al serverului.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi domeniile."
+      },
+      "create": {
+        "title": "Creează",
+        "description": "Permisiunea de a crea un domeniu utilizat pentru a se conecta la acest server."
+      },
+      "delete": {
+        "title": "Șterge",
+        "description": "Permisiunea de a șterge domenii de server."
+      }
+    },
+    "mod": {
+      "title": "Mod Manager",
+      "description": "Permisiuni care permit utilizatorului să vizualizeze",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze modurile disponibile cu un singur clic pentru a le instala pe acest server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să instaleze mod-uri cu un singur clic pe acest server."
+      }
+    },
+    "modpack": {
+      "title": "Manager Modpack",
+      "description": "Permisiuni care permit utilizatorului să instaleze Minecraft Modpacks pe acest server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vadă ce modpack-uri sunt disponibile pentru instalare pe acest server."
+      },
+      "update": {
+        "title": "Instalați",
+        "description": "Permite utilizatorului să instaleze un modpack pe acest server."
+      }
+    },
+    "plugin": {
+      "title": "Manager de plugin-uri",
+      "description": "Permisiuni care permit utilizatorului să instaleze pluginuri Minecraft pe acest server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze ce pluginuri sunt disponibile pentru instalare pe acest server."
+      },
+      "update": {
+        "title": "Instalați",
+        "description": "Permite utilizatorului să instaleze un plugin pe acest server."
+      }
+    },
+    "updater": {
+      "title": "Steam Updater",
+      "description": "Permisiuni care permit utilizatorului să actualizeze serverele bazate pe steamcmd.",
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să folosească Steam Updater pentru acest server."
+      }
+    },
+    "monitor": {
+      "title": "Monitor de sănătate",
+      "description": "Permisiuni care permit utilizatorului să utilizeze și să gestioneze Health Monitor pentru acest server.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze starea monitorului de sănătate al serverului."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să comute starea Health Monitor a serverului."
+      }
+    },
+    "reinstall": {
+      "title": "Reinstalați",
+      "description": "Permisiuni care permit utilizatorului să declanșeze o reinstalare pentru acest server.",
+      "update": {
+        "title": "Actualizare",
+        "description": "Permite utilizatorului să reinstaleze acest server."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licență",
+      "description": "Permisiuni care permit vizualizarea informațiilor privind licența instanțelor WISP.",
+      "read": {
+        "title": "Citește",
+        "description": "Permite utilizatorului să vizualizeze informațiile despre licență pe pagina de prezentare generală."
+      }
+    },
+    "settings": {
+      "title": "Setări",
+      "description": "Permisiuni care permit administratorilor să personalizeze instanța WISP.",
+      "update": {
+        "title": "Actualizare",
+        "description": "Posibilitatea de a actualiza setările instanței."
+      }
+    },
+    "migrator": {
+      "title": "Migrator",
+      "description": "Permisiunea de a utiliza sistemul de migrare.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi migranții."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza migranții."
+      }
+    },
+    "announcement": {
+      "title": "Anunț",
+      "description": "permisiunea de a utiliza sistemul de anunțuri.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi anunțurile."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea anunțuri."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza anunțurile."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge anunțurile."
+      }
+    },
+    "application_api": {
+      "title": "Aplicație Api",
+      "description": "Autorizația de a utiliza sistemul de aplicații API.",
+      "read": {
+        "description": "Permisiunea de a citi apis-urile aplicației.",
+        "title": "Citește"
+      },
+      "create": {
+        "description": "Autorizația de a crea aplicații apis.",
+        "title": "Creați"
+      },
+      "update": {
+        "description": "Permisiunea de a actualiza aplicațiile apis.",
+        "title": "Actualizare"
+      },
+      "delete": {
+        "description": "Permisiunea de a șterge apis-urile de aplicație.",
+        "title": "Ștergeți"
+      }
+    },
+    "database_host": {
+      "title": "Gazda bazei de date",
+      "description": "Permisiunea de a utiliza sistemul gazdă al bazei de date.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi gazdele bazei de date."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea gazde de baze de date."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza gazdele bazei de date."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge gazdele bazei de date."
+      }
+    },
+    "location": {
+      "title": "Locație",
+      "description": "Permisiunea de a utiliza sistemul de localizare.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi locațiile."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea locații."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza locațiile."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge locații."
+      }
+    },
+    "node": {
+      "description": "Permisiunea de a utiliza sistemul de noduri.",
+      "title": "Nod",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi noduri."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza nodurile."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge noduri."
+      }
+    },
+    "node_allocation": {
+      "title": "Alocarea nodurilor",
+      "description": "Permisiunea de a utiliza sistemul de alocare a nodurilor.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi alocările de noduri."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea alocări de noduri."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza alocările de noduri."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge alocările de noduri."
+      }
+    },
+    "user": {
+      "title": "Utilizator",
+      "description": "Permisiunea de a utiliza sistemul de utilizator.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi utilizatorii."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea utilizatori."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza utilizatorii."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge utilizatori."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Permisiunea de a utiliza sistemul de mod.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi mods."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea moduri."
+      },
+      "update": {
+        "title": "Instalați",
+        "description": "Permisiunea de a actualiza mods."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge mods."
+      }
+    },
+    "nest": {
+      "title": "Nest",
+      "description": "Permisiunea de a utiliza sistemul de cuiburi.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi cuiburile."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea cuiburi."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza cuiburile."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge cuiburile."
+      }
+    },
+    "egg": {
+      "title": "Ouă",
+      "description": "Permisiunea de a utiliza sistemul de ouă.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi ouă."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea ouă."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza ouăle."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge ouă."
+      }
+    },
+    "egg_variable": {
+      "title": "Variabila ouălor",
+      "description": "Permisiunea de a utiliza sistemul de variabile de tip \"ou\".",
+      "read": {
+        "description": "Permisiunea de a citi variabilele ouălor.",
+        "title": "Citește"
+      },
+      "create": {
+        "description": "Permisiunea de a crea variabile de tip \"ou\".",
+        "title": "Creați"
+      },
+      "update": {
+        "description": "Permisiunea de a actualiza variabilele ouălor.",
+        "title": "Actualizare"
+      },
+      "delete": {
+        "description": "Permisiunea de a șterge variabilele ouălor.",
+        "title": "Ștergeți"
+      }
+    },
+    "server": {
+      "title": "Server",
+      "description": "Permisiunea de a utiliza sistemul serverului.",
+      "suspend": {
+        "title": "Suspendați",
+        "description": "permisiunea de a suspenda serverele."
+      },
+      "toggle_backup": {
+        "title": "Comutați Backup",
+        "description": "Permisiunea de a comuta serverele de backup."
+      },
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi serverele."
+      },
+      "create": {
+        "description": "Permisiunea de a crea servere.",
+        "title": "Creați"
+      },
+      "move": {
+        "title": "Mutarea",
+        "description": "Permisiunea de a muta serverele."
+      },
+      "reset_mods": {
+        "title": "Reset Mods",
+        "description": "Permisiunea de a reseta serverele de mods."
+      },
+      "details_update": {
+        "title": "Actualizare detalii",
+        "description": "Permisiunea de a detalia serverele de actualizare."
+      },
+      "toggle_move": {
+        "title": "Comutarea mișcării",
+        "description": "Permisiunea de a schimba serverele de mutare."
+      },
+      "toggle_update": {
+        "title": "Actualizare Toggle",
+        "description": "Permisiunea de a comuta serverele de actualizare."
+      },
+      "toggle_install": {
+        "title": "Toggle Install",
+        "description": "Permisiunea de a comuta serverele de instalare."
+      },
+      "build_update": {
+        "title": "Actualizarea construcției",
+        "description": "Permisiunea de a construi servere de actualizare."
+      },
+      "rebuild": {
+        "title": "Reconstruiți",
+        "description": "Permisiunea de a reconstrui serverele."
+      },
+      "reinstall": {
+        "title": "Reinstalați",
+        "description": "Permisiunea de a reinstala servere."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge servere."
+      }
+    },
+    "server_database": {
+      "title": "Baza de date a serverului",
+      "description": "Permisiunea de a utiliza sistemul de baze de date al serverului.",
+      "read": {
+        "title": "Citește",
+        "description": "Permisiunea de a citi bazele de date ale serverului."
+      },
+      "create": {
+        "title": "Creați",
+        "description": "Permisiunea de a crea baze de date de server."
+      },
+      "update": {
+        "title": "Actualizare",
+        "description": "Permisiunea de a actualiza bazele de date ale serverului."
+      },
+      "delete": {
+        "title": "Ștergeți",
+        "description": "Permisiunea de a șterge bazele de date ale serverului."
+      }
+    }
+  },
+  "domain": {
+    "title": "Domeniu",
+    "description": "Permisiunea de a utiliza sistemul de domenii al serverului.",
+    "read": {
+      "title": "Citit",
+      "description": "Permisiunea de a citi domeniile."
+    },
+    "create": {
+      "title": "Creează",
+      "description": "Permisiunea de a crea domenii."
+    },
+    "update": {
+      "title": "Actualizare",
+      "description": "Permisiunea de a actualiza domeniile și toate domeniile aferente serverului."
+    },
+    "delete": {
+      "title": "Șterge",
+      "description": "Permisiunea de a șterge domeniile și toate domeniile aferente serverului."
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "hello": "Hej!",
+  "whoops": "Ups!",
+  "regards": "Hilsen",
+  "all_rights_reserved": "Alle rettigheder forbeholdes.",
+  "trouble_clicking_action": "Hvis du har problemer med at klikke på knappen \"{actionText}\", kan du kopiere nedenstående URL-adresse og indsætte den i din browser:",
+  "greeting": "Hej {name}!",
+  "visit_panel": "Besøg Panel",
+  "account": {
+    "subject": {
+      "created": "Oprettet konto",
+      "migrated": "Konto overført",
+      "reset_password": "Nulstil kodeord"
+    },
+    "email_reason": {
+      "created": "Du modtager denne e-mail, fordi der er blevet oprettet en konto til dig på vores spilpanel.",
+      "migrated": "Du modtager denne e-mail, fordi din konto er blevet migreret til et nyt spilpanel.",
+      "reset_password": "Du modtager denne e-mail, fordi vi har modtaget en anmodning om nulstilling af din adgangskode til din konto."
+    },
+    "user_email": "E-mail: {email}",
+    "updating_account": "Dine oplysninger kan ændres i spilpanelet efter oprettelse af kontoen.",
+    "setup_your_account": "Opsæt din konto",
+    "reset_password": "Nulstil adgangskode",
+    "reset_password_requested_by_someone_else": "Hvis du ikke har anmodet om en nulstilling af adgangskoden, skal du ikke foretage dig yderligere."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Tilføjet til server",
+      "removed_from_server": "Fjernet fra serveren",
+      "installed": "Server installeret"
+    },
+    "added_as_subuser": "Du er blevet tilføjet som en underbruger til følgende server, hvilket giver dig en vis kontrol over serveren.",
+    "new_account_notice": "Hvis du ikke har en konto endnu, kan du se efter en ny e-mail fra os. Hvis du ikke kan finde den, kan du nulstille din adgangskode til spilpanelet her: {url}",
+    "removed_as_subuser": "Du er blevet fjernet som underbruger for følgende server.",
+    "ready_to_be_used": "Din server er færdig med at blive installeret og er nu klar til brug.",
+    "server_name": "Servernavn: {server}",
+    "visit_server": "Besøg server",
+    "login_and_begin_using": "Log ind og begynd at bruge"
+  }
+}

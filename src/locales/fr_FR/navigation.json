@@ -1,0 +1,407 @@
+{
+  "404": {
+    "title": "Non trouvé",
+    "description": "Nous ne pouvons trouver la page que vous cherchez."
+  },
+  "login": {
+    "index": {
+      "title": "Connexion",
+      "description": "Se connecter au panel."
+    },
+    "totp": {
+      "title": "Saisissez le code TOTP 2fa",
+      "description": "Entrer le code TOTP 2fa pour vous connecter."
+    },
+    "key": {
+      "title": "Clé de sécurité",
+      "description": "Appuyez sur la clé de sécurité pour vous connecter."
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe",
+      "description": "Réinitialiser le mot de passe de votre compte.",
+      "token": {
+        "title": "Réinitialiser le mot de passe",
+        "description": "Terminez la réinitialisation de votre mot de passe."
+      }
+    }
+  },
+  "index": {
+    "title": "Mes serveurs",
+    "description": "Listes des serveurs auxquels vous avez accès."
+  },
+  "account": {
+    "title": "Mon compte",
+    "settings": {
+      "title": "Paramètres du compte",
+      "details": {
+        "title": "Détails",
+        "description": "Gérez les paramètres de votre compte."
+      },
+      "2fa": {
+        "title": "Authentification à deux facteurs",
+        "description": "Contrôlez l'authentification 2-Factor et les clés de sécurité de votre compte."
+      }
+    },
+    "security": {
+      "title": "Contrôle de sécurité",
+      "description": "Contrôler les sessions actives et l'authentification à deux facteurs."
+    }
+  },
+  "server": {
+    "title": "Mes serveurs",
+    "system": {
+      "title": "Système",
+      "index": {
+        "title": "Console",
+        "description": "Contrôlez votre serveur en temps réel."
+      },
+      "details": {
+        "title": "Détails du serveur",
+        "description": "Voir les détails sur votre serveur de jeu."
+      },
+      "sftp": {
+        "title": "Details SFTP",
+        "description": "Détails du compte pour les connexions SFTP."
+      },
+      "audit_logs": {
+        "title": "Journaux d'audit",
+        "description": "Voir tout ce qui se passe sur votre serveur."
+      }
+    },
+    "management": {
+      "title": "Gestion",
+      "files": {
+        "index": {
+          "title": "Gestionnaire de fichiers",
+          "description": "Gérez tous vos fichiers directement à partir du Web."
+        },
+        "new": {
+          "title": "Nouveau Fichier",
+          "description": "Créer un nouveau fichier."
+        },
+        "edit": {
+          "title": "Éditer le fichier",
+          "description": "Faire des modifications à un fichier."
+        }
+      },
+      "databases": {
+        "title": "Bases de données",
+        "description": "Toutes les bases de données disponibles pour ce serveur."
+      },
+      "backups": {
+        "title": "Sauvegardes",
+        "description": "Gérer et déployer les sauvegardes du serveur ici."
+      },
+      "subusers": {
+        "index": {
+          "title": "Sous-utilisateur",
+          "description": "Contrôlez qui peut accéder à votre serveur."
+        },
+        "new": {
+          "title": "Nouveau sous-utilisateur",
+          "description": "Ajouter un nouvel utilisateur avec les permissions sur votre serveur."
+        },
+        "edit": {
+          "title": "Modifier le sous-utilisateur",
+          "description": "Modifier l'accès d'un utilisateur au serveur."
+        }
+      },
+      "allocations": {
+        "title": "Allocations",
+        "description": "Contrôler les adresses IP et les ports disponibles sur ce serveur."
+      }
+    },
+    "configuration": {
+      "title": "Configuration",
+      "startup": {
+        "title": "Paramètres de démarrage",
+        "description": "Contrôle des arguments du démarrage du serveur."
+      },
+      "schedules": {
+        "index": {
+          "title": "Tâche automatique",
+          "description": "Gerer toutes les tâches planifiées."
+        },
+        "manage": {
+          "title": "Gerer les tâches planifiées",
+          "description": "Gérer les tâches et leurs temps d'éxécutions."
+        }
+      },
+      "advanced": {
+        "title": "Avancé",
+        "description": "Gérez les options supplémentaires pour votre serveur ici."
+      }
+    },
+    "tools": {
+      "title": "Outils",
+      "subdomains": {
+        "title": "Gestionnaire de sous-domaines",
+        "description": "Gérez les sous-domaines utilisés pour se connecter à votre serveur ici."
+      },
+      "modpacks": {
+        "title": "Gestionnaire de Modpack",
+        "description": "Un moyen simple d'installer des Modpack."
+      },
+      "plugins": {
+        "title": "Gestionnaire de Plugins",
+        "description": "Installation facile des plugins."
+      },
+      "mods": {
+        "title": "Gestionnaire de Mods",
+        "description": "Installation facile des addons."
+      },
+      "backdoor_scanner": {
+        "title": "Scanner de backdoors",
+        "description": "Trouvez des backdoors dans les fichiers de vos addons."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Gestion automatique du FastDL pour votre serveur."
+      }
+    },
+    "administrate": {
+      "title": "Administration"
+    }
+  },
+  "admin": {
+    "title": "Admin",
+    "administration": {
+      "title": "Administration",
+      "index": {
+        "title": "Vue d'ensemble",
+        "description": "Vue sur votre Panel."
+      },
+      "settings": {
+        "title": "Réglages",
+        "general": {
+          "title": "Général",
+          "description": "Configurer Wisp comme vous le souhaitez."
+        },
+        "branding": {
+          "title": "Logo",
+          "description": "Configurer votre logo pour votre panel."
+        },
+        "embed": {
+          "title": "Intégration",
+          "description": "Configurez l'intégration d'OpenGraph pour des plateformes comme Discord ou Twitter."
+        },
+        "js_injector": {
+          "title": "Injecteur JS",
+          "description": "Ajoutez du JavaScript supplémentaire à votre panel WISP."
+        },
+        "css_injector": {
+          "title": "Injecteur CSS",
+          "description": "Ajoutez des CSS supplémentaires à votre panel WISP."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Configurer l'intégration de l'authentification unique WHMCS."
+        }
+      },
+      "migrator": {
+        "title": "Migration",
+        "description": "Migrez les données de votre instance Pterodactyl existante vers WISP."
+      },
+      "announcements": {
+        "title": "Annonces",
+        "description": "Diffuser des messages à tous vos utilisateurs."
+      },
+      "application_api": {
+        "index": {
+          "title": "Application API",
+          "description": "Contrôler les identifiants d'accès à l'API."
+        },
+        "new": {
+          "title": "Nouvelle API",
+          "description": "Créer un nouveau droit d'accès à l'API."
+        },
+        "manage": {
+          "title": "Gestion des API",
+          "description": "Contrôler les identifiants d'accès à l'API."
+        }
+      }
+    },
+    "management": {
+      "title": "Gestion",
+      "database_hosts": {
+        "index": {
+          "title": "Hôte base de données",
+          "description": "Hôtes de base de données sur lesquels les serveurs peuvent avoir des bases de données créées."
+        },
+        "manage": {
+          "title": "Gestion des bases de données",
+          "description": "Visualisation des bases de données associées et des détails pour cet hôte de base de données."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Emplacements",
+          "description": "Tous les emplacements auxquels les nœuds peuvent être assignés pour faciliter la catégorisation."
+        },
+        "manage": {
+          "title": "Gérer les emplacements",
+          "description": "Visualisation des bases de données associées et des détails pour cet hôte de base de données."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Nœuds",
+          "description": "Tous les nœuds disponibles pour déployer des serveurs dans ce panneau."
+        },
+        "manage": {
+          "about": {
+            "title": "À propos",
+            "description": "Un aperçu rapide de votre noeud."
+          },
+          "settings": {
+            "title": "Réglages",
+            "description": "Modification des configurations serveur."
+          },
+          "allocations": {
+            "title": "Allocations",
+            "description": "Contrôle des allocations disponibles pour les serveurs sur ce noeud."
+          },
+          "servers": {
+            "title": "Serveurs",
+            "description": "Liste des serveurs installés sur ce noeud."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Serveurs",
+          "description": "Tous les serveurs disponibles sur le système."
+        },
+        "new": {
+          "title": "Nouveau serveur",
+          "description": "Ajouter un nouveau serveur au panneau."
+        },
+        "manage": {
+          "about": {
+            "title": "À propos",
+            "description": "Un aperçu rapide de votre noeud."
+          },
+          "details": {
+            "title": "Détails",
+            "description": "Modifier les détails de ce serveur, y compris le propriétaire et le conteneur."
+          },
+          "build_configuration": {
+            "title": "Configuration Personnalisée",
+            "description": "Contrôler les allocations et les ressources système pour ce serveur."
+          },
+          "startup": {
+            "title": "Démarrage",
+            "description": "Contrôle de la commande de démarrage ainsi que des variables."
+          },
+          "databases": {
+            "title": "Bases de données",
+            "description": "Gérer les bases de données pour ce serveur."
+          },
+          "advanced": {
+            "title": "Avancé",
+            "description": "Actions supplémentaires pour contrôler ce serveur."
+          },
+          "go_to_server": {
+            "title": "Aller au serveur"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Utilisateurs",
+          "description": "Tous les utilisateurs enregistrés sur le système."
+        },
+        "new": {
+          "title": "Nouvel utilisateur",
+          "description": "Créer un nouvel utilisateur sur le système."
+        },
+        "manage": {
+          "about": {
+            "title": "À propos",
+            "description": "Gérer un utilisateur existant sur le système."
+          },
+          "servers": {
+            "title": "Serveurs",
+            "description": "Liste des serveurs appartenant à cet utilisateur."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Gestion des Services",
+      "nests": {
+        "index": {
+          "title": "Nests",
+          "description": "Tous les nests actuellement disponibles sur ce système."
+        },
+        "manage": {
+          "title": "Gestion des nests",
+          "description": "Gérer un nests existant sur le système."
+        },
+        "egg": {
+          "title": "Gestion des eggs",
+          "new": {
+            "title": "Nouvel Egg",
+            "description": "Créez un nouvel egg à assigner aux serveurs."
+          },
+          "configuration": {
+            "title": "Configuration",
+            "description": "Configurer un egg existant sur le système."
+          },
+          "variables": {
+            "title": "Variables",
+            "description": "Configurer les variables d'environnement pour cet egg."
+          },
+          "scripts": {
+            "title": "Scripts",
+            "description": "Configurer le script install/update pour cet egg."
+          },
+          "thumbnail": {
+            "title": "Miniatures",
+            "description": "Configurer la mignature pour cet egg."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Mods",
+          "description": "Tous les mods disponible sur le panel."
+        },
+        "new": {
+          "title": "Nouveau Mod",
+          "description": "Créer un nouveau mod sur le système."
+        },
+        "manage": {
+          "title": "Gestion des mods",
+          "description": "Gérer un mod de service existant sur le système."
+        }
+      },
+      "domains": {
+        "index": {
+          "title": "Domaines",
+          "description": "Tous les domaines disponibles sur le système."
+        },
+        "new": {
+          "title": "Nouveau domaine",
+          "description": "Créez un nouveau domaine sur le système."
+        },
+        "manage": {
+          "configuration": {
+            "title": "Configuration de domaine",
+            "description": "Configurez le domaine."
+          },
+          "servers": {
+            "title": "Serveurs",
+            "description": "Voir tous les serveurs associés à ce domaine."
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Retour à la page précédente",
+    "go_home": "Aller à l'accueil",
+    "404": "La ressource demandée est introuvable.",
+    "429": "Vous êtes actuellement à un taux de rate limité, réessayez deux minutes plus tard."
+  }
+}

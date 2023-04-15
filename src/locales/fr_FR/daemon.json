@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow} Votre conteneur de serveur doit être reconstruit. Cela ne devrait prendre que quelques secondes, mais pourrait prendre quelques minutes. Vous n'avez pas besoin de faire quoi que ce soit d'autre pendant que cela se produit. Votre serveur continuera automatiquement avec le démarrage une fois que ce processus est terminé.",
+    "rebuild_started": "{yellow} Reconstruction du conteneur du serveur...",
+    "rebuild_in_progress": "{yellow} Veuillez patienter pendant que votre serveur est reconstruit.",
+    "rebuild_updating_config": "{yellow} Nouveau conteneur construit, hamsters en rotation...",
+    "rebuild_complete": "{cyan} Processus de reconstruction du serveur terminé. Le serveur démarre maintenant.",
+    "logs_throttled": "{yellow} Votre serveur envoie trop de données trop rapidement ! Détection automatique du spam déclenchée.",
+    "checking_size": "{cyan}Vérification de la taille du répertoire de données du serveur...",
+    "disk_usage": "{yellow}Utilisation du disque : {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Assurer les permissions des fichiers.",
+    "initializing_container": "{yellow}Le conteneur est en cours d'initialisation...",
+    "running_preflight": "{yellow}Exécution du contrôle préalable du serveur.",
+    "starting_container": "{green}Démarrage du conteneur du serveur.",
+    "resource_limits_modified": "{warning}Votre serveur a vu certaines limites de ressources modifiées, vous devrez peut-être redémarrer pour les appliquer.",
+    "aborting_reboot": "{red}Abandon du redémarrage automatique en raison d'une panne dans les 60 dernières secondes.",
+    "crash_detected_rebooting": "{red}Processus de serveur détecté comme entrant dans un état d'écrasement ; redémarrage.",
+    "crash_detected": "{bgRed}---------- Détection d'un processus serveur en état de panne ! ----------",
+    "exit_code": "{red}Code de sortie : {white}{exitCode}",
+    "out_of_memory": "{red}Manque de mémoire : {white}{oomKilled}",
+    "error_response": "{red}Réponse d'erreur : {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Serveur marqué comme {bold}ON",
+      "off": "{cyan}Serveur marqué comme {bold}OFF",
+      "killed": "{cyan}Serveur marqué comme {bold}KILLED",
+      "starting": "{cyan}Serveur marqué comme {bold}DÉMARRAGE",
+      "stopping": "{cyan}Serveur marqué comme {bold}STOPPÉ"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Détection d'un changement de carte en cours, mise en pause du Moniteur de santé...",
+    "map_change_timeout": "{yellow}Le changement de carte prend plus de 3 minutes, en supposant que le Moniteur de santé puisse être repris...",
+    "map_change_finished": "{yellow}Changement de carte terminé, reprise du Moniteur de santé..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Une erreur a été rencontrée lors de la tentative de lecture du fichier journal !",
+    "preflight_file_parse": "A rencontré une erreur lors du traitement de {file} -- cela pourrait entraîner des problèmes de fonctionnement du serveur.\n{message}",
+    "no_egg_configuration": "Aucune configuration d'egg de serveur n'a pu être localisée ; abandon du démarrage.",
+    "no_stop_configuration": "Aucune configuration d'arrêt n'est définie pour cet egg.",
+    "fatal_start_error": "Une erreur fatale a été rencontrée lors du démarrage de ce serveur.",
+    "not_enough_disk_space": "Pas assez d'espace disque ! {current}M / {limit}M",
+    "disk_space_violation": "Le serveur viole les limites d'espace disque, arrêt du processus ! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Nous avons des difficultés à nous connecter à votre serveur, veuillez patienter...",
+      "couldnt_validate_permissions": "Une erreur s'est produite lors de la validation des informations d'identification fournies pour le websocket. Veuillez rafraîchir la page.",
+      "no_permission": "Vous n'avez pas la permission d'accéder à la websocket de ce serveur.",
+      "no_upload_permission": "Vous n'avez pas l'autorisation d'accéder à l'upload websocket pour ce serveur.",
+      "invalid_namespace": "Le websocket du serveur n'a pas été trouvé sur le daemon, veuillez rafraîchir la page."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "Vous n'avez pas accès à cette fonction.",
+      "not_enough_disk_space": "Pas assez d'espace disque ! {current}M / {total} M",
+      "invalid_id": "Réception d'un élément d'atelier non valide.",
+      "internal_server_error": "Un problème est survenu lors de la recherche de l'objet de l'atelier, réessayez plus tard.",
+      "invalid_http_code": "Réception du code HTTP {code} lors de la tentative de récupération de l'élément d'atelier.",
+      "no_results": "Aucun résultat n'a été trouvé pour le poste de l'atelier.",
+      "invalid_json": "Réception d'un JSON invalide lors de la tentative de récupération de l'élément d'atelier.",
+      "failed_getting_collection": "Impossible d'obtenir les éléments de collection de l'élément d'atelier fourni.",
+      "unable_to_resolve_file_size": "Impossible de résoudre la taille du fichier pour l'élément de l'atelier.",
+      "exceeds_download_size_limit": "L'élément dépasse la taille maximale du contenu téléchargeable de {max_content_size} (la taille de l'élément est {item_size}).",
+      "unable_to_resolve_file_name": "Impossible de résoudre le nom de fichier de l'élément d'atelier.",
+      "failed_to_download_workshop_item": "Échec du téléchargement de l'élément d'atelier {title}.",
+      "failed_to_connect_to_steam": "Échec de la connexion aux serveurs de steam pour pouvoir récupérer l'URL de téléchargement pour {title}",
+      "item_does_not_exist": "L'élément {title} ne semble pas exister.",
+      "failed_getting_additional_information": "Échec de l'obtention d'informations supplémentaires pour {title} (l'utilisateur de steam possède-t-il ce jeu ?)",
+      "item_already_exists": "L'élément {title} existe déjà."
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}El contenedor de tu servidor necesita ser reconstruido. Esto solo debería tardar unos segundos, pero podría tardar unos minutos. No necesita hacer nada más mientras esto ocurre. Su servidor continuará automáticamente con el inicio una vez que este proceso se haya completado.",
+    "rebuild_started": "{yellow}Reconstruyendo contenedor del servidor...",
+    "rebuild_in_progress": "{yellow}Por favor, espera mientras tu servidor es reconstruido.",
+    "rebuild_updating_config": "{yellow}Nuevo contenedor construido, rotando hámsteres...",
+    "rebuild_complete": "{cyan}Se ha completado el proceso de reconstrucción del servidor. El servidor está iniciando.",
+    "logs_throttled": "{yellow}¡Tu servidor está enviando demasiados datos demasiado rápido! Se ha activado la detección automática de spam.",
+    "checking_size": "{cyan}Comprobando el tamaño del directorio de datos del servidor...",
+    "disk_usage": "{yellow}Uso del disco: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Garantizando permisos de archivo.",
+    "initializing_container": "{yellow}Contenedor se está inicializando...",
+    "running_preflight": "{yellow}Prevuelo del servidor en ejecución.",
+    "starting_container": "{green}Iniciando contenedor del servidor.",
+    "resource_limits_modified": "{warning}Su servidor ha sufrido modificaciones de algunos límites de recursos, puede que tenga que reiniciar para aplicarlos.",
+    "aborting_reboot": "{red}Abortando el reinicio automático debido a un error en los últimos 60 segundos.",
+    "crash_detected_rebooting": "{red}El proceso del servidor ha entrado en un estado fallido; reiniciando.",
+    "crash_detected": "{bgRed}---------- ¡El proceso del servidor detectado en un estado fallido! ----------",
+    "exit_code": "{red}Código de salida: {white}{exitCode}",
+    "out_of_memory": "{red}Sin memoria: {white}{oomKilled}",
+    "error_response": "{red}Respuesta del error: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Servidor marcado como {bold}ON",
+      "off": "{cyan}Servidor marcado como {bold}APAGADO",
+      "killed": "Servidor {cyan}marcado como {bold}KILLED",
+      "starting": "Servidor {cyan}marcado como {bold}INICIANDO",
+      "stopping": "Servidor {cyan}marcado como {bold}DETENIENDO"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Se ha detectado un cambio de mapa en curso, pausando el Monitoreo de Salud...",
+    "map_change_timeout": "{yellow}El cambio de mapa está tomando más de 3 minutos, asumiendo que se puede reanudar el seguimiento de la salud...",
+    "map_change_finished": "{yellow}Cambio de mapa terminado, reanudando el Monitor de Salud..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "¡Se ha encontrado un error al intentar leer el archivo de log!",
+    "preflight_file_parse": "Se encontró un error al procesar {file} -- esto podría llevar a problemas ejecutando el servidor.\n{message}",
+    "no_egg_configuration": "No se pudo localizar ninguna configuración de huevo de servidor; abortando el arranque.",
+    "no_stop_configuration": "No hay ninguna configuración de parada definida para este huevo.",
+    "fatal_start_error": "Se ha encontrado un error fatal al iniciar este servidor.",
+    "not_enough_disk_space": "¡No hay suficiente espacio en disco! {current}M / {limit}M",
+    "disk_space_violation": "El servidor está violando los límites de espacio en disco, deteniendo el proceso! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Estamos teniendo problemas para conectar con tu servidor, por favor espere...",
+      "couldnt_validate_permissions": "Hubo un error al validar las credenciales proporcionadas para el websocket. Por favor, actualiza la página.",
+      "no_permission": "No tienes permiso para acceder al websocket de este servidor.",
+      "no_upload_permission": "No tienes permiso para acceder al websocket de subida para este servidor.",
+      "invalid_namespace": "El websocket del servidor no se encontró en el agente, por favor actualice la página."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "No tiene acceso a esta función.",
+      "not_enough_disk_space": "¡No hay suficiente espacio en disco! {current}M / {total}M",
+      "invalid_id": "Se ha recibido un artículo de taller no válido.",
+      "internal_server_error": "Algo salió mal al intentar obtener el elemento del taller, inténtalo de nuevo más tarde.",
+      "invalid_http_code": "Código HTTP recibido {code} al intentar obtener el elemento del taller.",
+      "no_results": "No se pudo encontrar ningún resultado para el artículo del taller.",
+      "invalid_json": "Recibido JSON no válido al intentar obtener el elemento del taller.",
+      "failed_getting_collection": "No se pueden obtener los elementos de la colección del elemento del taller proporcionado.",
+      "unable_to_resolve_file_size": "No se puede resolver el tamaño del archivo para el elemento del taller.",
+      "exceeds_download_size_limit": "El artículo excede el tamaño máximo de contenido descargable de {max_content_size} (el tamaño del artículo es {item_size})",
+      "unable_to_resolve_file_name": "No se puede resolver el nombre del archivo para el elemento del taller.",
+      "failed_to_download_workshop_item": "Error al descargar el elemento del taller {title}.",
+      "failed_to_connect_to_steam": "No se pudo conectar a los servidores de Steam para recuperar la URL de descarga de {title}",
+      "item_does_not_exist": "El elemento {title} parece no existir.",
+      "failed_getting_additional_information": "No se pudo obtener información adicional para {title} (¿es el usuario de Steam propietario de este juego?)",
+      "item_already_exists": "El elemento {title} ya existe."
+    }
+  }
+}

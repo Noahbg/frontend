@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Kontejner serveru je třeba přestavět. Mělo by to trvat jen několik sekund, ale může to trvat i několik minut. Během tohoto procesu nemusíte dělat nic jiného. Po dokončení tohoto procesu bude váš server automaticky pokračovat ve spouštění.",
+    "rebuild_started": "{yellow}Přestavba serverového kontejneru...",
+    "rebuild_in_progress": "{yellow}Počkejte prosím, než bude váš server obnoven.",
+    "rebuild_updating_config": "{yellow}Postaven nový kontejner, rotující křečci...",
+    "rebuild_complete": "{cyan}Dokončen proces obnovy serveru. Server se nyní spouští.",
+    "logs_throttled": "{yellow}Váš server odesílá příliš mnoho dat příliš rychle! Spustila se automatická detekce spamu.",
+    "checking_size": "{cyan}Kontrola velikosti datového adresáře serveru...",
+    "disk_usage": "{yellow}Využití disku: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Zajištění oprávnění k souborům.",
+    "initializing_container": "{yellow}Inicializuje se kontejner...",
+    "running_preflight": "{yellow}Spouští se preflight serveru.",
+    "starting_container": "{green}Spouští se kontejner serveru.",
+    "resource_limits_modified": "{warning}Na vašem serveru byly změněny některé limity prostředků, pro jejich použití bude možná nutné restartovat.",
+    "aborting_reboot": "{red}Přerušení automatického restartu z důvodu pádu během posledních 60 sekund.",
+    "crash_detected_rebooting": "{red}Zjištěno, že proces serveru vstoupil do havarovaného stavu; restartuje se.",
+    "crash_detected": "{bgRed}---------- Zjištěný serverový proces ve stavu zhroucení! ----------",
+    "exit_code": "{red}Kód ukončení: {white}{exitCode}",
+    "out_of_memory": "{red}Out of Memory: {white}{oomKilled}",
+    "error_response": "{red}Chybová odpověď: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Server označen jako {bold}ON",
+      "off": "{cyan}Server označen jako {bold}OFF",
+      "killed": "{cyan}Server označen jako {bold}KILLED",
+      "starting": "{cyan}Server označen jako {bold}STARTING",
+      "stopping": "{cyan}Server označen jako {bold}STOPPING"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Zjištěna probíhající změna mapy, pozastavení sledování stavu...",
+    "map_change_timeout": "{yellow}Změna mapy trvá více než 3 minuty, za předpokladu, že lze obnovit sledování stavu...",
+    "map_change_finished": "{yellow}Změna mapy dokončena, obnovení sledování stavu..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Při pokusu o načtení souboru protokolu došlo k chybě!",
+    "preflight_file_parse": "Při zpracování {file} došlo k chybě -- to by mohlo vést k problémům se spuštěním serveru.\n{message}",
+    "no_egg_configuration": "Nepodařilo se najít žádnou konfiguraci serverových vajec; spouštění přerušeno.",
+    "no_stop_configuration": "Pro toto vejce není definována žádná konfigurace zastávky.",
+    "fatal_start_error": "Při spouštění tohoto serveru došlo k fatální chybě.",
+    "not_enough_disk_space": "Nedostatek místa na disku! {current}M / {limit}M",
+    "disk_space_violation": "Server porušuje limity místa na disku, zastavení procesu! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Máme potíže s připojením k vašemu serveru, vyčkejte prosím...",
+      "couldnt_validate_permissions": "Došlo k chybě při ověřování pověření zadaných pro webový soket. Obnovte prosím stránku.",
+      "no_permission": "Nemáte oprávnění k přístupu k webovému soketu tohoto serveru.",
+      "no_upload_permission": "Nemáte oprávnění k přístupu k webovému soketu pro odesílání pro tento server.",
+      "invalid_namespace": "Webový soket serveru nebyl v démonovi nalezen, obnovte prosím stránku."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "K této funkci nemáte přístup.",
+      "not_enough_disk_space": "Nedostatek místa na disku! {current}M / {total} M",
+      "invalid_id": "Obdržel jsem neplatnou dílenskou položku.",
+      "internal_server_error": "Při pokusu o načtení položky dílny se něco pokazilo, zkuste to později.",
+      "invalid_http_code": "Při pokusu o načtení položky dílny byl přijat kód HTTP {code} .",
+      "no_results": "Pro položku dílny se nepodařilo najít žádné výsledky.",
+      "invalid_json": "Při pokusu o načtení položky dílny byl přijat neplatný JSON.",
+      "failed_getting_collection": "Nelze získat položky sbírky ze zadaného dílenského prvku.",
+      "unable_to_resolve_file_size": "Nelze vyřešit velikost souboru pro položku dílny.",
+      "exceeds_download_size_limit": "Položka překračuje maximální velikost stahovaného obsahu {max_content_size} (velikost položky je {item_size}).",
+      "unable_to_resolve_file_name": "Nelze určit název souboru pro položku dílny.",
+      "failed_to_download_workshop_item": "Nepodařilo se stáhnout dílenskou položku {title}.",
+      "failed_to_connect_to_steam": "Nepodařilo se připojit k serverům steam, aby bylo možné načíst adresu URL pro stažení {title}",
+      "item_does_not_exist": "Položka {title} zřejmě neexistuje.",
+      "failed_getting_additional_information": "Nepodařilo se získat další informace pro {title} (vlastní uživatel služby steam tuto hru?)",
+      "item_already_exists": "Položka {title} již existuje."
+    }
+  }
+}

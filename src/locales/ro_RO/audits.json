@@ -1,0 +1,136 @@
+{
+  "server": {
+    "update": {
+      "title": "Server actualizat",
+      "message": "{user} a actualizat detaliile acestui server"
+    },
+    "subuser": {
+      "create": {
+        "title": "Subutilizator creat",
+        "message": "{user} a creat un nou subutilizator pentru {target}"
+      },
+      "update": {
+        "title": "Subutilizator actualizat",
+        "message": "{user} a actualizat permisiunile de subutilizator pentru {target}"
+      },
+      "delete": {
+        "title": "Accesul subutilizatorului a fost revocat",
+        "message": "{user} a șters un subutilizator aparținând lui {target}"
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Baza de date a fost creată",
+        "message": "{user} a creat o nouă bază de date numită {name}"
+      },
+      "update": {
+        "title": "Baza de date a fost actualizată",
+        "message": "{user} a regenerat parola bazei de date pentru {target}"
+      },
+      "delete": {
+        "title": "Baza de date a fost ștearsă",
+        "message": "{user} a șters baza de date {target}"
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Programarea execuției declanșată",
+        "message": "{user} a declanșat programarea {target}"
+      },
+      "create": {
+        "title": "Programarea a fost creată",
+        "message": "{user} a creat o nouă programare numită {name}"
+      },
+      "update": {
+        "title": "Programarea a fost actualizată",
+        "message": "{user} a actualizat programarea {target}"
+      },
+      "delete": {
+        "title": "Programarea a fost eliminată",
+        "message": "{user} a șters programarea {target} și sarcinile care îl conțineau"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Variabile de pornire actualizate",
+        "message": "{user} a actualizat variabilele de pornire ale serverului"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Monitorul de sănătate activat",
+        "message": "{user} a comutat monitorul de sănătate"
+      },
+      "restart": {
+        "title": "Repornirea serverului",
+        "message": "Repornirea serverului declanșată de monitorul de sănătate"
+      }
+    },
+    "crash": {
+      "title": "Eroare server",
+      "message": "Serverul a eșuat"
+    },
+    "backup": {
+      "create": {
+        "title": "Copie de rezervă creată",
+        "message": "{user} a creat o copie de rezervă numită {name}"
+      },
+      "update": {
+        "title": "Copie de rezervă actualizată",
+        "message": "{user} a comutat statutul de blocare pentru backup {name}"
+      },
+      "deploy": {
+        "title": "Copie de rezervă implementată pe server",
+        "message": "{user} a implementat copia de rezervă {name} pe server"
+      },
+      "download": {
+        "title": "Copie de rezervă descărcată",
+        "message": "{user} a descărcat copia de rezervă {name} ."
+      },
+      "delete": {
+        "title": "Copie de rezervă ștearsă",
+        "message": "{user} a șters copia de rezervă {name} ."
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Statutul de mod actualizat",
+        "message": "{user} a activat statusul de instalare al modulului {name} ."
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Subdomeniu creat",
+        "message": "{user} a creat subdomeniul {subdomain}"
+      },
+      "delete": {
+        "title": "Subdomeniu șters",
+        "message": "{user} a șters subdomeniul {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack instalat",
+        "message": "{user} a instalat {modpack} modpack-ul"
+      }
+    },
+    "version": {
+      "update": {
+        "title": "Versiune instalată",
+        "message": "{user} a actualizat versiunea la {edition} - {version}"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin instalat",
+        "message": "{user} a instalat plugin-ul {plugin} ."
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL sincronizat",
+        "message": "{user} a sincronizat conținutul FastDL pentru acest server"
+      }
+    }
+  }
+}

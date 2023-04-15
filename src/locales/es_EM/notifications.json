@@ -1,0 +1,42 @@
+{
+  "server": {
+    "backup": {
+      "created": "Terminó la creación de la copia de seguridad {name}.",
+      "failed_to_create": "Error al crear la copia de seguridad {name}: {err}",
+      "deployed": "Terminó el despliegue de la copia de seguridad {name}.",
+      "failed_to_deploy": "Error al desplegar la copia de seguridad {name}."
+    },
+    "update": {
+      "updated": "Actualización finalizada.",
+      "failed": "Fallo al actualizar el servidor."
+    },
+    "installed": "Instalación finalizada.",
+    "version": {
+      "installed": "Se ha terminado de instalar la versión {name}.",
+      "failed": "Error al instalar la versión {name}."
+    },
+    "fastdl": {
+      "synced": "FastDL ha sido sincronizado.",
+      "failed": "Falló la sincronización FastDL."
+    },
+    "move": {
+      "moved": "Se ha movido correctamente.",
+      "db_migration_failed": "Error al migrar la base de datos {name}.",
+      "failed": "Falló la transferencia del servidor.",
+      "failed_to_delete_archive": "No se pudo eliminar el archivo de transferencia del servidor para {name}.",
+      "failed_to_delete_created_server": "Error al eliminar el servidor creado en {name}.",
+      "failed_to_update_allocation": "No se pudo liberar la asignación anterior en {name}.",
+      "failed_final_stage": "Falló la etapa final para la transferencia del servidor (asegúrese de que el servidor antiguo ha sido eliminado de {name} y de que el host ha sido movido, si no ha fallado)"
+    }
+  },
+  "admin": {
+    "migrator": {
+      "title": "Migrador",
+      "finished_migrating_data": "Ha finalizado la migración de datos desde {fqdn}.",
+      "exceeded_limits": "Migración fallida para {fqdn}: {message} Contáctenos para migrar manualmente.",
+      "aborted_migration": "Migración cancelada para {fqdn}: {message}",
+      "data_mismatch": "Migración fallida de {fqdn} debido a que no coincide con los datos: {message}",
+      "failed_due_to_internal_error": "Migración fallida de {fqdn}: Algo salió mal internamente, por favor contáctenos a través de un ticket."
+    }
+  }
+}

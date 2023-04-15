@@ -1,0 +1,654 @@
+{
+  "server": {
+    "support": {
+      "title": "Tillgång för Supportrepresentant",
+      "description": "Behörigheter som är relaterade till att ge en supportrepresentant tillgång till den här servern.",
+      "update": {
+        "title": "Uppdatera",
+        "description": "Växla tillgång för supportrepresentanter för den här servern under fliken Hjälp."
+      }
+    },
+    "control": {
+      "title": "Kontroll",
+      "description": "Behörigheter som är relaterade till serverns strömtillstånd eller konsol.",
+      "console": {
+        "title": "Konsol",
+        "description": "Tillåter användaren att visa konsolloggarna för den här servern."
+      },
+      "command": {
+        "title": "Kör kommandon",
+        "description": "Gör det möjligt för användaren att skicka kommandon till konsolen. Om användaren inte har behörighet att stoppa eller starta kan de inte skicka programmets stoppkommando."
+      },
+      "start": {
+        "title": "Starta",
+        "description": "Tillåter användaren att starta den här servern."
+      },
+      "stop": {
+        "title": "Stopp",
+        "description": "Gör det möjligt för användaren att stoppa den här servern."
+      },
+      "restart": {
+        "title": "Starta om",
+        "description": "Tillåter användaren att starta om den här servern."
+      }
+    },
+    "subuser": {
+      "title": "Underanvändare",
+      "description": "Behörigheter som gör det möjligt för användare att hantera andra underanvändare som tilldelats servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Gör det möjligt för användaren att visa och inspektera serverns underanvändare."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Tillåter användaren att redigera behörigheter som tilldelats andra underanvändare."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Tillåter användaren att skapa ytterligare underanvändare för servern."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Tillåter användaren att ta bort andra underanvändare för servern."
+      }
+    },
+    "allocation": {
+      "title": "Allokering",
+      "description": "Behörigheter som tillåter användaren att hantera alla allokerade IP-adresser och portar för servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Ger användaren möjlighet att visa alla allokeringar som tilldelats den här servern. Användare som har åtkomst till servern kan alltid se standardallokeringen via sidan Detaljer."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att ändra den primära allokeringen."
+      }
+    },
+    "startup": {
+      "title": "Uppstartsinställlningar",
+      "description": "Behörigheter som gör det möjligt för användare att hantera serverns konfiguration.",
+      "read": {
+        "title": "Läs",
+        "description": "Här kan användaren visa startkommandot och tillhörande variabler för servern."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Tillåter användaren att modifiera startvariabler för servern."
+      }
+    },
+    "database": {
+      "title": "Databas",
+      "description": "Behörigheter som tillåter användare att hantera MySQL-databaser för servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Ger användaren möjlighet att visa alla databaser som är associerade med den här servern, inklusive användarnamn och lösenord för databaserna."
+      },
+      "update": {
+        "title": "Återställning av lösenord",
+        "description": "Gör det möjligt för användaren att återställa lösenord för databaser."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Gör det möjligt för användaren att skapa ytterligare databaser för servern."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Tillåter användaren att ta bort databaser från servern."
+      }
+    },
+    "file": {
+      "title": "Filhanterare",
+      "description": "Behörigheter som gör det möjligt för användare att hantera filer som lagras på en server via filhanteraren eller SFTP-servern.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Tillåter användaren att ansluta till SFTP-servern."
+      },
+      "list": {
+        "title": "Visa",
+        "description": "Gör det möjligt för användaren att visa alla filer."
+      },
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att se innehållet i befintliga filer."
+      },
+      "write": {
+        "title": "Skriv",
+        "description": "Tillåter användaren att uppdatera innehållet i serverns befintliga filer."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Tillåter användaren att skapa nya filer."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Tillåter användaren att ta bort filer från servern i filhanteraren eller SFTP."
+      },
+      "archive": {
+        "title": "Arkiv",
+        "description": "Gör det möjligt för användaren att komprimera filer"
+      },
+      "git": {
+        "title": "Git",
+        "description": "Gör det möjligt för användaren att använda Git-åtgärder (t. ex. kloning, hämtning)."
+      },
+      "steam_workshop": {
+        "title": "Steam Workshop",
+        "description": "Tillåter användaren att använda workshop-nedladdaren."
+      }
+    },
+    "schedule": {
+      "title": "Schemaläggningar",
+      "description": "Behörigheter som gör det möjligt för användaren att skapa automatiska uppgifter som körs regelbundet på servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Gör det möjligt för användaren att lista scheman"
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att redigera ett schema, inklusive alla uppgifter i schemat. Detta gör det möjligt för användaren att ta bort enskilda uppgifter, men inte att ta bort själva schemat."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Gör det möjligt för användaren att skapa ett nytt schema."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Tillåter användaren att ta bort scheman från den här servern."
+      }
+    },
+    "backup": {
+      "title": "Säkerhetskopiering",
+      "description": "Behörigheter som gör det möjligt för användaren att hantera säkerhetskopiering av servrarens filer.",
+      "read": {
+        "title": "Läs",
+        "description": "Ger användaren möjlighet att visa alla säkerhetskopior för den här servern."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Ger användaren möjlighet att låsa upp/låsa in säkerhetskopior för att förhindra att de raderas automatiskt för att göra plats för framtida säkerhetskopior."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Tillåter användaren att skapa säkerhetskopior för den här servern."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Gör det möjligt för användaren att ta bort en säkerhetskopia som tillhör den här servern."
+      },
+      "deploy": {
+        "title": "Distribuera",
+        "description": "Gör det möjligt för användaren att distribuera en säkerhetskopia till den här servern."
+      },
+      "download": {
+        "title": "Ladda ner",
+        "description": "Tillåter användaren att ladda ner en säkerhetskopia som tillhör den här servern."
+      }
+    },
+    "details": {
+      "title": "Detaljer",
+      "description": "Behörigheter som gör det möjligt för användaren att ändra det namn som identifierar servern i panelen.",
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att visa information om den här servern."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att ändra servernamnet. Detta gör det endast möjligt för användaren att ändra namnet på servern i panelen, inte i spelet."
+      }
+    },
+    "audit": {
+      "title": "Granskningslogg",
+      "description": "Behörigheter som gör det möjligt för användaren att inspektera alla åtgärder som pågår för den här servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att visa loggar för åtgärder på den här servern. Observera: Detta kan innehålla information som kan vara låst bakom andra behörigheter."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Behörigheter som tillåter användaren att visa FastDL-länken eller synkronisera innehåll till FastDL för den här servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att se FastDL-sidan för den här servern."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Tillåter användaren att synkronisera FastDL-innehåll från den här servern."
+      }
+    },
+    "scanner": {
+      "title": "Scanner för bakdörrar",
+      "description": "Behörigheter som gör det möjligt för användaren att söka efter bakdörrar i serverns filer.",
+      "update": {
+        "title": "Uppdatera",
+        "description": "Tillåter användaren att använda Backdoor Scanner för den här servern."
+      }
+    },
+    "subdomain": {
+      "title": "Underdomänshanterare",
+      "description": "Behörighet att använda serverdomänssystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att visa domäner."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa en domän för att ansluta till den här servern."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort serverdomäner."
+      }
+    },
+    "mod": {
+      "title": "Mod Manager",
+      "description": "Behörigheter som gör det möjligt för användaren att se",
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att visa tillgängliga modifikationer som kan installeras med ett klick på den här servern."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att installera moddar med ett klick på servern."
+      }
+    },
+    "modpack": {
+      "title": "Modpack-hanterare",
+      "description": "Behörigheter som tillåter användaren att installera Minecraft Modpacks på servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Här kan användaren se vilka modpacks som är tillgängliga för installation på servern."
+      },
+      "update": {
+        "title": "Installera",
+        "description": "Tillåter användaren att installera ett modpack på servern."
+      }
+    },
+    "plugin": {
+      "title": "Plugin-hanterare",
+      "description": "Behörigheter som tillåter användaren att installera Minecraft-plugins på servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Här kan användaren se vilka plugins som är tillgängliga för installation på servern."
+      },
+      "update": {
+        "title": "Installera",
+        "description": "Tillåter användaren att installera ett plugins på servern."
+      }
+    },
+    "updater": {
+      "title": "Steam's Uppdaterare",
+      "description": "Behörigheter som tillåter användaren att uppdatera steamcmd-baserade servrar.",
+      "update": {
+        "title": "Uppdatera",
+        "description": "Tillåter användaren att använda Steam Updater för servern."
+      }
+    },
+    "monitor": {
+      "title": "Hälsoövervakare",
+      "description": "Behörigheter som tillåter användaren att använda och hantera hälsoövervakaren för servern.",
+      "read": {
+        "title": "Läs",
+        "description": "Här kan användaren se statusen för serverns hälsoövervakaren."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att växla serverens status för hälsoövervakaren."
+      }
+    },
+    "reinstall": {
+      "title": "Ominstallera",
+      "description": "Behörigheter som gör det möjligt för användaren att ominstallera servern.",
+      "update": {
+        "title": "Uppdatera",
+        "description": "Gör det möjligt för användaren att ominstallera servern."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licens",
+      "description": "Behörigheter som gör det möjligt att visa licensinformationen för WISP-instansen.",
+      "read": {
+        "title": "Läs",
+        "description": "Tillåter användaren att visa licensinformationen på översiktssidan."
+      }
+    },
+    "settings": {
+      "title": "Inställningar",
+      "description": "Behörigheter som gör det möjligt för administratörer att anpassa WISP-instansen.",
+      "update": {
+        "title": "Uppdatera",
+        "description": "Möjlighet att uppdatera instansens inställningar."
+      }
+    },
+    "migrator": {
+      "title": "Migrator",
+      "description": "Behörighet att använda migratorsystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att se migrationer."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera migratorer."
+      }
+    },
+    "announcement": {
+      "title": "Nyhet",
+      "description": "Behörighet att använda nyhetssystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa nyheter."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa nyheter."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera nyheter."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera nyheter."
+      }
+    },
+    "application_api": {
+      "title": "Applikations API",
+      "description": "Behörighet att använda applikationsapisystemet.",
+      "read": {
+        "description": "Behörighet att läsa program APIn.",
+        "title": "Läs"
+      },
+      "create": {
+        "description": "Behörighet att skapa applikationsapis.",
+        "title": "Skapa"
+      },
+      "update": {
+        "description": "Behörighet att uppdatera applikationsapis.",
+        "title": "Uppdatera"
+      },
+      "delete": {
+        "description": "Behörighet att radera applikationsapis.",
+        "title": "Ta bort"
+      }
+    },
+    "database_host": {
+      "title": "Databasvärd",
+      "description": "Behörighet att använda databasvärdsystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att visa databasvärdar."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa databasvärdar."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera databasvärdar."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort databasvärdar."
+      }
+    },
+    "location": {
+      "title": "Plats",
+      "description": "Behörighet att använda platssystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att visa platser."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa platser."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera platser."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera platser."
+      }
+    },
+    "node": {
+      "description": "Behörighet att använda nodsystemet.",
+      "title": "Nod",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att visa noder."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera noder."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort noder."
+      }
+    },
+    "node_allocation": {
+      "title": "Allokering av noder",
+      "description": "Behörighet att använda systemet för allokering av noder.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa nodallokeringar."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa nodtilldelningar."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera nodallokeringar."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort nodtilldelningar."
+      }
+    },
+    "user": {
+      "title": "Användare",
+      "description": "Behörighet att använda användarsystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa användare."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa användare."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera användare."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera användare."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Behörighet att använda mod-systemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa modifikationer."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa modifikationer."
+      },
+      "update": {
+        "title": "Installera",
+        "description": "Behörighet att uppdatera modifikationer."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera moddar."
+      }
+    },
+    "nest": {
+      "title": "Nest",
+      "description": "Behörighet att använda bo-systemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa bon."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa bon."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera bon."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera bon."
+      }
+    },
+    "egg": {
+      "title": "Ägg",
+      "description": "Behörighet att använda äggsystemet.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa ägg."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa ägg."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera ägg."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att radera ägg."
+      }
+    },
+    "egg_variable": {
+      "title": "Ägg Variabel",
+      "description": "Behörighet att använda systemet med äggvariabler.",
+      "read": {
+        "description": "Behörighet att läsa äggvariabler.",
+        "title": "Läs"
+      },
+      "create": {
+        "description": "Behörighet att skapa äggvariabler.",
+        "title": "Skapa"
+      },
+      "update": {
+        "description": "Behörighet att uppdatera äggvariabler.",
+        "title": "Uppdatera"
+      },
+      "delete": {
+        "description": "Behörighet att radera äggvariabler.",
+        "title": "Ta bort"
+      }
+    },
+    "server": {
+      "title": "Server",
+      "description": "Behörighet att använda serversystemet.",
+      "suspend": {
+        "title": "Suspendera",
+        "description": "Behörighet att suspendera av servrar."
+      },
+      "toggle_backup": {
+        "title": "Växla säkerhetskopieringsstatus",
+        "description": "Behörighet att växla säkerhetskopieringstatus för sservrar."
+      },
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att visa servrar."
+      },
+      "create": {
+        "description": "Behörighet att skapa servrar.",
+        "title": "Skapa"
+      },
+      "move": {
+        "title": "Flytta",
+        "description": "Behörighet att flytta servrar."
+      },
+      "reset_mods": {
+        "title": "Återställning av modifikationer",
+        "description": "Behörighet att återställa servrarmods."
+      },
+      "details_update": {
+        "title": "Uppdatering av detaljer",
+        "description": "Behörighet att uppdatera serverdetaljer."
+      },
+      "toggle_move": {
+        "title": "Växla flyttningsstatus",
+        "description": "Behörighet att växla flyttningsstatus."
+      },
+      "toggle_update": {
+        "title": "Växla uppdateringsstatus",
+        "description": "Behörighet att växla uppdateringsservrar."
+      },
+      "toggle_install": {
+        "title": "Växla till installationsstatus",
+        "description": "Behörighet att växla installationsstatus."
+      },
+      "build_update": {
+        "title": "Byggupdatering",
+        "description": "Behörighet att uppdatera byggkonfigurationen."
+      },
+      "rebuild": {
+        "title": "Bygg om",
+        "description": "Behörighet att bygga om servrar."
+      },
+      "reinstall": {
+        "title": "Ominstallera",
+        "description": "Behörighet att ominstallera servrar."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort servrar."
+      }
+    },
+    "server_database": {
+      "title": "Serverdatabas",
+      "description": "Behörighet att använda serverns databassystem.",
+      "read": {
+        "title": "Läs",
+        "description": "Behörighet att läsa serverns databaser."
+      },
+      "create": {
+        "title": "Skapa",
+        "description": "Behörighet att skapa serverdatabaser."
+      },
+      "update": {
+        "title": "Uppdatera",
+        "description": "Behörighet att uppdatera serverdatabaser."
+      },
+      "delete": {
+        "title": "Ta bort",
+        "description": "Behörighet att ta bort serverdatabaser."
+      }
+    }
+  },
+  "domain": {
+    "title": "Domän",
+    "description": "Behörighet att använda serverdomänsystemet.",
+    "read": {
+      "title": "Läs",
+      "description": "Behörighet att visa domäner."
+    },
+    "create": {
+      "title": "Skapa",
+      "description": "Behörighet att skapa domäner."
+    },
+    "update": {
+      "title": "Uppdatera",
+      "description": "Behörighet att ändra domäner och alla relaterade serverdomäner."
+    },
+    "delete": {
+      "title": "Ta bort",
+      "description": "Behörighet att ta bort domäner och alla relaterade serverdomäner."
+    }
+  }
+}

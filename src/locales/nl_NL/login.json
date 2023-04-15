@@ -1,0 +1,22 @@
+{
+  "sign_in": "Aanmelden",
+  "or": "of",
+  "sso": "Inloggen met SSO",
+  "struggling_to_login": "Moeite met inloggen?",
+  "reset_password": "Reset Wachtwoord",
+  "back": "Terug naar Inloggen",
+  "password_reset_email_sent": "Instructies om uw wachtwoord te resetten zijn naar uw e-mail gestuurd, als er een account aan gekoppeld is.",
+  "passwords": {
+    "throttled": "U bent tijdelijk geblokkeerd vanwege te veel pogingen om uw wachtwoord te wijzigen. Probeer het later nog eens.",
+    "token": "Ongeldig token gekoppeld aan het wachtwoord verzoek, probeer een nieuw wachtwoord reset link aan te vragen.",
+    "user": "Kan het wachtwoord van een ongeldige gebruiker niet resetten.",
+    "confirmation": "Het opgegeven wachtwoord en de wachtwoordbevestiging komen niet overeen."
+  },
+  "two_factor_token": "Twee-factor-penning",
+  "invalid_user": "De ingevoerde gegevens komen niet overeen met de bij ons bekende gegevens. Als u niet zeker weet of uw wachtwoord correct is, probeer het dan opnieuw in te stellen.",
+  "sso_down": "Kan de servers niet contacteren om de rekening te verifiëren, probeer later opnieuw.",
+  "sso_failed": "Er is iets misgegaan bij het verifiëren van de rekening, probeer het later nog eens.",
+  "sso_invalid": "De vorige sessie is verlopen, probeer het opnieuw.",
+  "sso_non_existing_account": "Kon geen gekoppelde account vinden op het paneel. Gebruik de normale login en schakel snel inloggen in via de accountinstellingen.",
+  "sso_disabled_for_account": "Bij dit account is de snelle login uitgeschakeld. Gebruik in plaats daarvan de normale login."
+}

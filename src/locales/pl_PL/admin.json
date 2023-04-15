@@ -1,0 +1,300 @@
+{
+  "index": {
+    "instance_overview": "Przegląd instancji",
+    "current_version": "Witamy w Panelu WISP! Obecnie pracujesz na wersji {version}.",
+    "license_information": "Informacje o licencji"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Ustawienia panelu",
+      "company_name_footer": "Jest to nazwa, która jest używana w całym panelu oraz w mailach wysyłanych do klientów.",
+      "random_database_deployment_footer": "Jeśli ta opcja jest włączona, wszystkie serwery gier mogą umieszczać swoje bazy danych na dowolnym hoście bazodanowym zamiast tylko na tym, który jest przypisany do danego węzła.",
+      "require_2fa": {
+        "not_required": "Niewymagane",
+        "admin_only": "Tylko administrator",
+        "all_users": "Wszyscy użytkownicy"
+      },
+      "require_2fa_footer": "Jeśli jest włączona, każde konto należące do wybranej grupy będzie musiało mieć włączone uwierzytelnianie 2-faktor, aby móc korzystać z Panelu.",
+      "default_language_footer": "Domyślny język używany podczas renderowania komponentów UI."
+    },
+    "branding": {
+      "recommended_size": "Zalecany rozmiar:",
+      "formats": "Formaty:",
+      "login_screen_logo": "Logo ekranu logowania",
+      "login_screen_logo_recommended_size": "300 x 100px (max 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg, i svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (max 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Logo panelu",
+      "panel_logo_recommended_size": "230 x 50px (max 250KB)",
+      "panel_logo_recommended_formats": "png, jpg, i svg"
+    },
+    "embed": {
+      "embed_settings": "Ustawienia osadzania",
+      "site_name_footer": "Nazwa strony, która powinna być wyświetlana w embedach.",
+      "title_footer": "Tytuł, który powinien być wyświetlany na embedach.",
+      "description_footer": "Krótki opis, który powinien być wyświetlany przy embedach.",
+      "image_footer": "Adres URL obrazu, który będzie wyświetlany w embedach."
+    },
+    "js_injector": {
+      "title": "Injector JavaScript",
+      "minification_notice": "JS może zostać zminifikowany, aby uzyskać szybką prędkość ładowania dla wszystkich. Zachowaj lokalną kopię swojego JS, jeśli planujesz go edytować w przyszłości."
+    },
+    "css_injector": {
+      "title": "CSS Injector",
+      "minification_notice": "CSS może zostać zminifikowany, aby uzyskać szybsze ładowanie dla wszystkich. Zachowaj lokalną kopię swojego CSS jeśli planujesz go edytować w przyszłości."
+    },
+    "whmcs": {
+      "sso_integration": "Integracja WHMCS SSO",
+      "whmcs_notice": "Proszę spojrzeć na przewodnik jak zebrać poświadczenia wymagane do skonfigurowania WHMCS SSO dla panelu: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230",
+      "sso_enabled_footer": "Włącza integrację WHMCS Single-Sign-On, umożliwiając użytkownikom logowanie się do panelu WISP za pomocą konta WHMCS. Wymagane, aby wszystkie pozostałe pola były skonfigurowane.",
+      "button_text_footer": "Tekst przycisku logowania, który jest wyświetlany na stronie logowania.",
+      "url_footer": "URL, pod którym dostępna jest Twoja instalacja whmcs. np. https://mywhmcs.com/",
+      "client_id_footer": "Identyfikator klienta WHMCS SSO API",
+      "client_secret_footer": "Sekret klienta WHMCS SSO",
+      "api_id_footer": "Identyfikator API WHMCS",
+      "api_secret_footer": "Sekretne API WHMCS"
+    },
+    "refresh_page_to_apply_changes": "Na razie będziesz musiał odświeżyć stronę, aby zmiany zostały zastosowane."
+  },
+  "migrator": {
+    "migrate": "Migrować",
+    "notify_users": "Powiadom użytkowników",
+    "notified_users": "Wszyscy użytkownicy otrzymają wkrótce wiadomość e-mail. Zostaniesz powiadomiony, gdy wszystko zostanie zakończone.",
+    "step_1": "Krok 1 - Migracja danych",
+    "step_2": "Krok 2 - Powiadomienie użytkowników",
+    "step_3": "Krok 3 - Wykończenie",
+    "panel_url_footer": "To jest adres url do panelu, z którego chcesz migrować dane. Dla wersji 0.7.x, panel powinien być uruchomiony w wersji v0.7.16 lub nowszej. Dla 1.x, panel powinien być uruchomiony w wersji v1.1.2 lub nowszej. W przeciwnym razie migrator nie będzie działał.",
+    "api_key_footer": "Jest to wymagane do uzyskania informacji o panelu dla migracji. Klucz powinien mieć uprawnienia do wszystkiego, co chcesz migrować.",
+    "locations_node_and_game_data": "Lokalizacje, węzły, przydziały, bazy danych i dane serwera gry",
+    "locations_node_and_game_data_footer": "Spowoduje to przeniesienie wszystkich serwerów gry wraz z węzłami i ich lokalizacjami. UWAGA: Wymaga to włączenia wszystkich poniższych opcji, a hosty baz danych nie będą miały skonfigurowanych haseł.",
+    "nests_and_eggs": "Gniazda i jaja",
+    "nests_and_eggs_footer": "Spowoduje to przeniesienie wszystkich gniazd i jaj nadpisując istniejące, jeśli się pokrywają.",
+    "users_footer": "Spowoduje to przeniesienie wszystkich aktywnych użytkowników z dostępem do co najmniej jednego serwera. Hasła nie zostaną automatycznie przeniesione (chyba, że skontaktujesz się z nami ręcznie) i będą wymagały ponownego wysłania e-maila z prośbą o utworzenie konta do każdego użytkownika.",
+    "after_migration": "Po wykonaniu migracji należy zwrócić uwagę na następujące kwestie:",
+    "db_hosts_reset": "Należy ponownie ustawić hasła wszystkich hostów bazy danych (ponieważ nie mogą być one zsynchronizowane z powodu ograniczeń API Pterodactyla)",
+    "migrated_nodes_cpu": "CPU migrowanych węzłów jest ustawiony na 800% (z 100% alokacją ogólną)",
+    "spare_allocations_ignored": "Wszelkie wolne alokacje z migrowanych węzłów były ignorowane podczas migracji.",
+    "move_to_installing_daemon": "Następnie możesz przejść do konfiguracji demona WISP na węzłach gry.",
+    "states": {
+      "in_progress": "W trakcie realizacji",
+      "notified_users": "Brak użytkowników do powiadomienia",
+      "manual": "Instrukcje",
+      "failed": "Niepowodzenie"
+    }
+  },
+  "announcements": {
+    "title": "Ogłoszenia",
+    "create_announcement": "Utwórz ogłoszenie",
+    "edit_announcement": "Edytuj ogłoszenie",
+    "delete_announcement": "Usuń ogłoszenie",
+    "delete_notice": "Usunięcie tego ogłoszenia jest nieodwracalne - proszę kliknąć usuń ponownie, aby potwierdzić usunięcie.",
+    "enabled_footer": "Czy ogłoszenie jest natychmiast widoczne dla wszystkich użytkowników.",
+    "resend": "Wyślij ponownie",
+    "announcement_resent": "Komunikat został pomyślnie wysłany do użytkowników w panelu.",
+    "cant_resend_disabled": "Wyłączone ogłoszenie nie może być wysłane ponownie - najpierw włącz ogłoszenie."
+  },
+  "database_hosts": {
+    "title": "Hosty baz danych",
+    "create_host": "Tworzenie hosta bazy danych",
+    "edit_host": "Edytuj host bazy danych",
+    "delete_host": "Usuń host bazy danych",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć {name} host bazy danych? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+    "host_details": "Szczegóły hosta",
+    "user_details": "Dane użytkownika",
+    "databases": "Bazy danych",
+    "name_footer": "Krótki identyfikator używany do odróżnienia tej lokalizacji od innych. Musi mieć od 1 do 60 znaków, na przykład us.nyc.lvl3.",
+    "port_footer": "Port, na którym działa serwer MySQL dla tego hosta.",
+    "username_footer": "Nazwa użytkownika konta, które ma wystarczające uprawnienia do tworzenia nowych użytkowników i baz danych w systemie.",
+    "password_footer": "Hasło do zdefiniowanego konta.",
+    "node_footer": "Serwery na wybranym węźle będą mogły wybrać tego hosta jako opcję przy tworzeniu bazy danych"
+  },
+  "application_api": {
+    "title": "Dane uwierzytelniające API aplikacji",
+    "delete_api_key": "Usuń klucz API aplikacji",
+    "delete_notice": "Proszę potwierdzić, że chcesz usunąć \"{name}\" klucz API aplikacji poprzez powtórzenie nazwy w poniższym wpisie. Jest to nieodwracalne działanie, którego nie można cofnąć.",
+    "options": {
+      "none": "Brak",
+      "read": "Czytaj",
+      "read_write": "Czytaj i zapisuj"
+    }
+  },
+  "locations": {
+    "title": "Lokalizacje",
+    "create_location": "Utwórz lokalizację",
+    "delete_location": "Usuń lokalizację",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć lokalizację \"{short}\"? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+    "location_has_nodes": "Przed usunięciem lokalizacji należy usunąć/przenieść wszystkie węzły w jej obrębie.",
+    "location_details": "Szczegóły lokalizacji",
+    "nodes": "Węzły",
+    "short_footer": "Krótki identyfikator używany do odróżnienia tej lokalizacji od innych. Musi zawierać od 1 do 60 znaków, na przykład \"us.nyc.lvl3\".",
+    "long_footer": "Dłuższy opis tej lokalizacji. Musi mieć mniej niż 255 znaków."
+  },
+  "nodes": {
+    "title": "Węzły",
+    "not_alive": "Błąd połączenia z węzłem! Sprawdź konsolę przeglądarki, aby uzyskać więcej szczegółów.",
+    "cant_delete_attached_servers": "Musisz usunąć wszystkie serwery na tym węźle przed jego usunięciem.",
+    "delete_node": "Usuń węzeł",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć węzeł \"{name}\"? Usunięcie węzła jest działaniem nieodwracalnym i spowoduje natychmiastowe usunięcie tego węzła z panelu.",
+    "about": {
+      "daemon_version": "Wersja demona",
+      "system_information": "Informacje o systemie",
+      "cpu_cores": "Rdzenie CPU"
+    },
+    "settings": {
+      "general_configuration": "Konfiguracja ogólna",
+      "allow_automatic_allocation": "Pozwól na automatyczną alokację",
+      "max_web_upload": "Maksymalna wielkość przesyłanych plików",
+      "daemon_port": "Port Daemon",
+      "sftp_port": "Port SFTP",
+      "fastdl_port": "Port FastDL",
+      "display_fqdn_footer": "Proszę wpisać nazwę domeny (np. node.example.com), która będzie wyświetlana użytkownikom zamiast *.daemon.panel.gg. Jeśli używasz domeny, będziesz musiał także ustawić rekord DNS dla niej, aby wskazywała na węzeł, w przeciwnym razie nie będzie działać zgodnie z oczekiwaniami.",
+      "automatic_allocation_footer": "Pozwala na użycie tego węzła podczas automatycznego wybierania odpowiedniego węzła do instalacji serwera za pomocą API.",
+      "maintenance_mode_footer": "Jeśli węzeł jest oznaczony jako 'W trakcie konserwacji', użytkownicy nie będą mogli uzyskać dostępu do serwerów znajdujących się na tym węźle.",
+      "cpu_footer": "Podaj całkowitą ilość cpu dostępną na tym węźle do przydziału dla serwera. Możesz również podać wartość procentową, która określi ilość cpu ponad ustalony limit. 1 rdzeń = 100%.",
+      "memory_footer": "Podaj całkowitą ilość pamięci dostępnej na tym węźle do przydziału dla serwerów. Możesz również podać wartość procentową, która pozwoli na przydzielenie więcej niż zdefiniowana pamięć.",
+      "disk_footer": "Podaj całkowitą ilość miejsca na dysku dostępną na tym węźle do przydziału dla serwera. Możesz również podać wartość procentową, która będzie określać ilość miejsca na dysku ponad ustalony limit.",
+      "max_web_upload_footer": "Wprowadź maksymalny rozmiar plików, które mogą być przesyłane za pośrednictwem internetowego menedżera plików."
+    },
+    "allocations": {
+      "title": "Przydziały węzłów",
+      "create_new": "Utwórz nowy",
+      "cant_delete_in_use": "Nie można usunąć przydziału, który jest dołączony do serwera.",
+      "delete_ip": "Usuń IP",
+      "delete_ip_allocations": "Usuń wszystkie przydziały dla adresów IP"
+    }
+  },
+  "servers": {
+    "title": "Serwery",
+    "delete_server": "Usuń serwer",
+    "delete_server_notice": "Czy jesteś pewien, że chcesz usunąć serwer \"{name}\"? Usunięcie serwera jest działaniem nieodwracalnym i spowoduje natychmiastowe usunięcie tego serwera z panelu i demona.",
+    "force_footer": "Niebezpieczne: Wymuszone usunięcie serwera spowoduje usunięcie serwera z panelu, nawet jeśli demon zgłosi błąd. Może to pozostawić pliki na serwerze, jeśli demon zgłosi błąd.",
+    "cant_delete_unmigrated_nodes_server": "Nie można usunąć serwera na węźle, który nie ma skonfigurowanego FQDN - użyj wymuszonego usuwania, aby kontynuować.",
+    "new": {
+      "core_details": "Dane podstawowe",
+      "node_footer": "Węzeł, na którym zostanie zainstalowany ten serwer.",
+      "primary_allocation_footer": "Główna alokacja, która będzie przypisana do tego serwera.",
+      "secondary_allocations_footer": "Dodatkowe alokacje, które mają być przypisane do tego serwera przy jego tworzeniu.",
+      "database_limit_footer": "Całkowita liczba baz danych, które użytkownik może utworzyć na tym serwerze. Pozostaw puste, aby zezwolić na nieograniczoną liczbę.",
+      "allocation_limit_footer": "Całkowita liczba przydziałów, które użytkownik może utworzyć dla tego serwera. Pozostaw puste, aby zezwolić na nieograniczoną liczbę.",
+      "backup_megabytes_limit_footer": "Całkowita liczba megabajtów, którą serwer może wykorzystać na kopie zapasowe.",
+      "cpu_footer": "Jeśli nie chcesz ograniczać użycia CPU, ustaw wartość na 0. Aby określić wartość, weź liczbę fizycznych rdzeni i pomnóż ją przez 100. Na przykład, na systemie czterordzeniowym (4 * 100 = 400) dostępne jest 400\ndostępnych. Aby ograniczyć serwer do korzystania z połowy pojedynczego rdzenia, ustawiamy wartość 50. Aby umożliwić serwerowi wykorzystanie do dwóch fizycznych rdzeni, ustawiamy wartość 200.",
+      "memory_footer": "Limit pamięci w MB. Jeśli chcesz wyłączyć limit pamięci na serwerze, po prostu wpisz 0 w polu pamięci.",
+      "swap_footer": "Zamień limit przestrzeni w MB. Jeśli chcesz wyłączyć miejsce na serwerze, wpisz 0 w pole wymiany.",
+      "disk_footer": "Limit przestrzeni dyskowej w MB. Jeśli chcesz wyłączyć limit miejsca na dysku na serwerze, po prostu wpisz 0 w polu dysk.",
+      "io_footer": "Blok IO powinien być ustawiony na wartość z przedziału 10-1000.",
+      "skip_scripts_footer": "Jeśli do wybranego Jajka dołączony jest skrypt instalacyjny, zostanie on uruchomiony podczas instalacji. Jeśli chcesz pominąć ten krok, zaznacz to pole."
+    },
+    "about": {
+      "server_owner": "Właściciel serwera",
+      "server_node": "Węzeł serwera"
+    },
+    "details": {
+      "server_details": "Szczegóły serwera"
+    },
+    "build_configuration": {
+      "resource_limits": "Limity zasobów",
+      "feature_limits": "Ograniczenia funkcji",
+      "allocation_management": "Zarządzanie przydziałem",
+      "oom_disabled_footer": "Wyłącza Zabójcę OOM na serwerze. Dzięki temu serwer będzie działał z maksymalną ilością pamięci ram i swap."
+    },
+    "startup": {
+      "command_modification": "Modyfikacja polecenia",
+      "service_configuration": "Konfiguracja usługi",
+      "access_in_startup": "Dostęp podczas uruchamiania: "
+    },
+    "databases": {
+      "notice": "Hasła do bazy danych można zobaczyć podczas odwiedzania tego serwera na front-end.",
+      "active_databases": "Aktywne bazy danych",
+      "create_database": "Utwórz bazę danych"
+    },
+    "advanced": {
+      "reinstall_server": "Zainstaluj ponownie serwer",
+      "reinstall_server_note": "Spowoduje to ponowną instalację serwera z przypisanym skryptem serwisowym.\nNiebezpieczeństwo! Może to spowodować nadpisanie danych.",
+      "reinstall_started": "Proces reinstalacji został rozpoczęty.",
+      "install_status": "Status instalacji",
+      "install_status_note": "Jeśli chcesz zmienić status instalacji z niezainstalowanej na zainstalowaną lub odwrotnie, możesz to zrobić za pomocą poniższego przycisku.",
+      "install_toggled": "Status instalacji został przełączony.",
+      "rebuild_container": "Przebuduj pojemniki",
+      "rebuild_container_note": "Spowoduje to przebudowanie kontenera serwera przy następnym uruchomieniu. Jest to przydatne, jeśli zmodyfikowałeś plik konfiguracyjny serwera ręcznie, lub po prostu coś nie zadziałało poprawnie.",
+      "rebuild_requested": "Żądanie odbudowy zostało wysłane do demona, a serwer odbuduje się przy następnym starcie.",
+      "suspend_server": "Zawieś serwer",
+      "suspend_server_note": "Spowoduje to zawieszenie serwera, zatrzymanie wszystkich uruchomionych procesów i natychmiastowe zablokowanie użytkownikowi możliwości dostępu do swoich plików lub innego zarządzania serwerem poprzez panel lub API.",
+      "suspend_toggled": "Status zawieszenia został przełączony.",
+      "updating_status": "Zaaktualizuj status",
+      "updating_status_note": "Jeśli chcesz zmienić status aktualizacji, możesz to zrobić za pomocą poniższego przycisku.",
+      "updating_toggled": "Status aktualizacji został przełączony.",
+      "move_server": "Przenieś serwer na inny węzeł",
+      "moving_status": "Status ruchu",
+      "moving_status_note": "Jeśli chcesz zmienić status ruchu, możesz to zrobić za pomocą poniższego przycisku.\n",
+      "moving_toggled": "Status ruchu został przełączony.",
+      "reset_mod_statuses": "Resetowanie statusów instalacji modów",
+      "reset_mod_statuses_note": "Zresetuje stan instalacji wszystkich modów, jeśli wywala błąd, w przypadku, gdy serwer ma całkowicie zablokowane instalacje modów i utknęły one na długi czas.",
+      "reset_mod_triggered": "Wszystkie statusy instalacji modów serwera zostały zresetowane.",
+      "toggle_backup_status": "Przełączanie stanu kopii zapasowej",
+      "install_marked_as_failed": "Nie można przełączyć statusu instalacji serwera, ponieważ nie udało się go zainstalować. Zamiast tego proszę przeinstalować serwer."
+    }
+  },
+  "users": {
+    "title": "Użytkownicy",
+    "identity": "Tożsamość",
+    "external_id_footer": "Pozostaw puste, aby nie przypisać zewnętrznego identyfikatora dla tego użytkownika. Zewnętrzny identyfikator powinien być unikalny dla tego użytkownika i nie powinien być używany przez innych użytkowników.",
+    "password": "Hasło",
+    "password_optional": "Podanie hasła użytkownika jest opcjonalne. Nowy użytkownik dostaje e-mail z prośbą o utworzenie hasła do swojego konta. Jeśli hasło jest podane tutaj, będziesz musiał znaleźć inną metodę dostarczenia go użytkownikowi.",
+    "root_admin_footer": "Ustawienie tej opcji daje użytkownikowi pełny dostęp administracyjny.",
+    "support_op_footer": "Ustawienie tej opcji daje użytkownikowi ograniczony dostęp administracyjny do działania w charakterze agenta pomocy technicznej.",
+    "support_op_bypass_footer": "Ustawienie tej opcji spowoduje, że użytkownicy nie będą musieli udzielać wyraźnego pozwolenia na dostęp do swoich serwerów poprzez zakładkę Support.",
+    "ignore_exceptions": "Ignorowanie wyjątków zgłaszanych podczas unieważniania kluczy.",
+    "ignore_exceptions_footer": "Jeśli jest zaznaczone, wszelkie błędy wyrzucane podczas unieważniania kluczy w węzłach będą ignorowane. Powinieneś unikać tego pola wyboru, jeśli to możliwe, ponieważ wszelkie nieodwołane klucze mogą być nadal aktywne do 24 godzin po zmianie konta. W przypadku konieczności natychmiastowego odebrania uprawnień i problemów z węzłami, należy zaznaczyć to pole wyboru, a następnie zrestartować węzły, które nie zostały zaktualizowane, aby wyczyścić przechowywane klucze.",
+    "user_has_no_2fa_configured": "Użytkownik nie ma skonfigurowanego 2FA, aby móc z niego korzystać.",
+    "delete_user": "Usuń użytkownika",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć użytkownika \"{email}\"? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+    "cant_delete_yourself": "Nie możesz usunąć samego siebie.",
+    "cant_delete_user_with_servers": "Nie możesz usunąć użytkownika, gdy jest właścicielem serwera."
+  },
+  "nests": {
+    "title": "Gniazda",
+    "eggs": "Jaja",
+    "details": "Szczegóły dotyczące gniazda",
+    "create_nest": "Utwórz gniazdo",
+    "delete_nest": "Usuń gniazdo",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć gniazdo \"{name}\"? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+    "id_footer": "Unikalny identyfikator używany do identyfikacji tego gniazda wewnątrz i poprzez API.",
+    "uuid_footer": "Identyfikator UUID, który jest przypisywany wszystkim serwerom korzystającym z tej opcji w celach identyfikacyjnych.",
+    "name_footer": "Powinna to być opisowa nazwa kategorii, która obejmuje wszystkie jajka w gnieździe.",
+    "identifier_footer": "Krótki identyfikator, który może włączyć określone funkcje (działające identyfikatory: srcds, minecraft).",
+    "nest_has_servers": "Nie możesz usunąć gniazda, pod którym działają serwery.",
+    "import_egg": "Importuj jajko",
+    "egg": {
+      "daemon_restart_required_after_changes": "Wszelkie zmiany w istniejącej konfiguracji jajka wymagają obecnie ponownego uruchomienia demonów za pomocą `wisp restart`.",
+      "configuration": "Konfiguracja",
+      "process_management": "Zarządzanie procesami",
+      "delete_egg": "Usuń jajko",
+      "delete_notice": "Czy jesteś pewien, że chcesz usunąć jajko \"{name}\"? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte.",
+      "egg_has_servers": "Nie można usunąć jajka, pod którym działają serwery.",
+      "copy_alert": "Wszystkie pola są wymagane, chyba że wybrano oddzielną opcję z listy rozwijanej \"Copy Settings From\", w którym to przypadku pola mogą pozostać puste, aby użyć wartości z tej opcji.",
+      "update_egg": "Zaktualizuj jajko",
+      "import_update_notice": "Import nowego pliku jajka nadpisze wszystkie istniejące ustawienia. Jeśli chcesz zachować istniejące ustawienia, powinieneś zaimportować nowe jajko osobno.",
+      "install_script": "Instaluj skrypt",
+      "update_script": "Zaktualizuj skrypt",
+      "variables": {
+        "create_variable": "Utwórz zmienną startową",
+        "variable_created": "Zmienna startowa została pomyślnie utworzona.",
+        "variable_updated": "Zmienna startowa \"{name}\" została pomyślnie zaktualizowana.",
+        "variable_deleted": "Zmienna startowa \"{name}\" została pomyślnie usunięta.",
+        "env_variable_reserved": "Zmienna środowiskowa {name} jest zarezerwowaną nazwą zmiennej."
+      },
+      "thumbnail_title": "Miniaturka jajka",
+      "thumbnail_recommended_size": "Format obrazu 2:1 (maks. 500 KB)",
+      "thumbnail_formats": "png, jpg i svg"
+    }
+  },
+  "mods": {
+    "title": "Mody",
+    "mod_details": "Szczegóły moda",
+    "mod_configuration": "Konfiguracja modów",
+    "delete_mod": "Usuń moda",
+    "delete_notice": "Czy jesteś pewien, że chcesz usunąć moda o nazwie: \"{name}\"? Nie ma odwrotu, wszystkie dane zostaną natychmiast usunięte."
+  }
+}

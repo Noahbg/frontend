@@ -1,0 +1,343 @@
+{
+  "index": {
+    "instance_overview": "Přehled instancí",
+    "current_version": "Vítejte ve WISP Panelu! Aktuální verze je {version}.",
+    "license_information": "Informace o licenci"
+  },
+  "settings": {
+    "general": {
+      "panel_settings": "Nastavení panelu",
+      "company_name_footer": "Tento název se používá v celém panelu a v e-mailech zasílaných klientům.",
+      "random_database_deployment_footer": "Pokud je tato možnost povolena, všechny herní servery mohou nasadit své databáze na libovolného databázového hostitele, nikoli pouze na hostitele přiděleného pro daný uzel.",
+      "require_2fa": {
+        "not_required": "Není požadováno",
+        "admin_only": "Pouze Admin",
+        "all_users": "Všichni uživatelé"
+      },
+      "require_2fa_footer": "Pokud je tato možnost povolena, bude každý účet spadající do vybraného seskupení vyžadovat, aby bylo pro použití panelu povoleno dvoufaktorové ověřování.",
+      "default_language_footer": "Výchozí jazyk, který se použije při vykreslování komponent uživatelského rozhraní."
+    },
+    "branding": {
+      "recommended_size": "Doporučená velikost:",
+      "formats": "Formáty:",
+      "login_screen_logo": "Logo přihlašovací obrazovky",
+      "login_screen_logo_recommended_size": "300 x 100px (max. 250KB)",
+      "login_screen_logo_recommended_formats": "png, jpg a svg",
+      "favicon": "Favicon",
+      "favicon_recommended_size": "32 x 32px (max. 250KB)",
+      "favicon_recommended_formats": "ico",
+      "panel_logo": "Logo panelu",
+      "panel_logo_recommended_size": "230 x 50px (max. 250KB)",
+      "panel_logo_recommended_formats": "png, jpg a svg"
+    },
+    "embed": {
+      "embed_settings": "Nastavení vložení",
+      "site_name_footer": "Název webu, který se má zobrazovat na vložených stránkách.",
+      "title_footer": "Název, který se má zobrazit na vložených stránkách.",
+      "description_footer": "Krátký popis, který by se měl zobrazovat u vložených stránek.",
+      "image_footer": "Adresa URL obrázku, která se bude zobrazovat na vložených stránkách."
+    },
+    "js_injector": {
+      "title": "Vstřikovač JavaScriptu",
+      "minification_notice": "JS se může minifikovat, aby se všem rychleji načítal. Pokud plánujete JS v budoucnu upravovat, uschovejte si jeho lokální kopii."
+    },
+    "css_injector": {
+      "title": "Vstřikovač CSS",
+      "minification_notice": "CSS se může minifikovat, aby se všem rychleji načítalo. Pokud plánujete CSS v budoucnu upravovat, uschovejte si jeho lokální kopii."
+    },
+    "whmcs": {
+      "sso_integration": "Integrace SSO WHMCS",
+      "whmcs_notice": "Podívejte se prosím na návod, jak získat pověření potřebná ke konfiguraci WHMCS SSO pro váš panel: https://www.notion.so/WHMCS-SSO-22cf66a587514dc8a5a287d1f2a8f230.",
+      "sso_enabled_footer": "Povoluje integraci jednotného přihlášení WHMCS, která umožňuje uživatelům přihlásit se do panelu WISP pomocí účtu WHMCS. Vyžaduje se pro konfiguraci všech ostatních polí.",
+      "button_text_footer": "Text přihlašovacího tlačítka, který se zobrazí na přihlašovací stránce.",
+      "url_footer": "Adresa URL, na které je vaše instalace whmcs dostupná. např. https://mywhmcs.com/",
+      "client_id_footer": "ID klienta API SSO služby WHMCS",
+      "client_secret_footer": "Tajemství klienta SSO služby WHMCS",
+      "api_id_footer": "Identifikátor API WHMCS",
+      "api_secret_footer": "Tajemství rozhraní API systému WHMCS"
+    },
+    "refresh_page_to_apply_changes": "Aby se vlastní změny uplatnily, je třeba web prozatím obnovit."
+  },
+  "migrator": {
+    "migrate": "Migrovat",
+    "notify_users": "Upozornit uživatele",
+    "notified_users": "Všichni uživatelé brzy obdrží e-mail. Po dokončení budete informováni.",
+    "step_1": "Krok 1 - Migrace dat",
+    "step_2": "Krok 2 - Upozornění uživatelů",
+    "step_3": "Krok 3 - Dokončovací úpravy",
+    "panel_url_footer": "Toto je url adresa panelu, ze kterého chcete migrovat data. Pro verzi 0.7.x by měl být panel ve verzi 0.7.16 nebo novější. Pro verzi 1.x by měl být panel spuštěn ve verzi v1.1.2 nebo novější. Jinak tento migrátor nebude fungovat.",
+    "api_key_footer": "To je nutné k získání informací o panelu pro migraci. Klíč by měl mít oprávnění ke všemu, co chcete migrovat.",
+    "locations_node_and_game_data": "Umístění, uzly, přidělení, databáze a data herního serveru",
+    "locations_node_and_game_data_footer": "Tím se přesunou všechny herní servery s uzly a jejich umístěními. POZNÁMKA: To vyžaduje, aby byly povoleny všechny níže uvedené možnosti, a hostitelé databáze nebudou mít nakonfigurováno heslo.",
+    "nests_and_eggs": "Hnízda a vejce",
+    "nests_and_eggs_footer": "Tím se přesunou všechna hnízda a vejce, která přepíší stávající hnízda a vejce, pokud se překrývají.",
+    "users_footer": "Tím se přesunou všichni aktivní uživatelé s přístupem alespoň k jednomu serveru. Hesla nebudou automaticky přenesena (pokud nás ručně nekontaktujete) a bude nutné každému uživateli znovu zaslat e-mail o vytvoření účtu.",
+    "after_migration": "Po dokončení migrace si prosím všimněte následujícího:",
+    "db_hosts_reset": "Je třeba znovu nastavit hesla všech hostitelů databází (protože je nelze synchronizovat kvůli omezením rozhraní Pterodactyl API).",
+    "migrated_nodes_cpu": "Procesor migrovaných uzlů je nastaven na 800 % (se 100% přerozdělením).",
+    "spare_allocations_ignored": "Veškeré volné alokace z migrovaných uzlů byly při migraci ignorovány.",
+    "move_to_installing_daemon": "Poté můžete přejít k nastavení démona WISP na herních uzlech.",
+    "states": {
+      "in_progress": "Probíhá",
+      "notified_users": "Nezůstali žádní uživatelé, které by bylo třeba upozornit",
+      "manual": "Manuální",
+      "failed": "Neúspěšný"
+    }
+  },
+  "announcements": {
+    "title": "Oznámení",
+    "create_announcement": "Vytvořit oznámení",
+    "edit_announcement": "Upravit oznámení",
+    "delete_announcement": "Smazat oznámení",
+    "delete_notice": "Smazání tohoto oznámení je nevratné - pro potvrzení smazání klikněte znovu na tlačítko smazat.",
+    "enabled_footer": "Zda je oznámení okamžitě viditelné pro všechny uživatele.",
+    "resend": "Znovu odeslat",
+    "announcement_resent": "Oznámení bylo úspěšně znovu odesláno uživatelům na panelu.",
+    "cant_resend_disabled": "Zakázané oznámení nelze znovu odeslat - nejprve oznámení povolte."
+  },
+  "database_hosts": {
+    "title": "Hostitelé databází",
+    "create_host": "Vytvoření hostitele databáze",
+    "edit_host": "Upravit hostitele databáze",
+    "delete_host": "Odstranění hostitele databáze",
+    "delete_notice": "Jste si jisti, že chcete odstranit hostitele databáze {name} ? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "host_details": "Podrobnosti o hostiteli",
+    "user_details": "Podrobnosti o uživateli",
+    "databases": "Databáze",
+    "host_has_databases": "Nelze odstranit hostitelský databázový server, ke kterému jsou připojeny aktivní databáze.",
+    "name_footer": "Krátký identifikátor sloužící k odlišení tohoto místa od ostatních. Musí mít 1 až 60 znaků, například us.nyc.lvl3.",
+    "port_footer": "Port, na kterém je MySQL spuštěna pro tohoto hostitele.",
+    "username_footer": "Uživatelské jméno účtu, který má dostatečná oprávnění k vytváření nových uživatelů a databází v systému.",
+    "password_footer": "Heslo k definovanému účtu.",
+    "phpmyadmin_url_footer": "URL adresa, na které je phpMyAdmin k dispozici pro tohoto databázového hostitele. Ponecháte-li prázdné, skryjete možnost otevřít databázi v phpMyAdmin.",
+    "node_footer": "Servery v uzlu, který je vybrán, budou moci vybrat tohoto hostitele jako možnost při vytváření databáze."
+  },
+  "application_api": {
+    "title": "Pověření API aplikace",
+    "delete_api_key": "Odstranění klíče API aplikace",
+    "delete_notice": "Potvrďte, že chcete odstranit klíč API aplikace \"{name}\", zopakováním jeho názvu v níže uvedeném zadání. Jedná se o nevratnou akci, kterou nelze vrátit zpět.",
+    "options": {
+      "none": "Žádné",
+      "read": "Přečtěte si",
+      "read_write": "Přečtěte si"
+    }
+  },
+  "locations": {
+    "title": "Lokality",
+    "create_location": "Vytvořit umístění",
+    "delete_location": "Odstranit umístění",
+    "delete_notice": "Jste si jisti, že chcete odstranit umístění \"{short}\"? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "location_has_nodes": "Před odstraněním umístění je nutné odstranit/přesunout všechny uzly v rámci umístění.",
+    "location_details": "Podrobnosti o umístění",
+    "nodes": "Uzly",
+    "short_footer": "Krátký identifikátor sloužící k odlišení tohoto umístění od ostatních. Musí mít 1 až 60 znaků, například \"us.nyc.lvl3\".",
+    "long_footer": "Delší popis této lokality. Musí mít méně než 255 znaků."
+  },
+  "nodes": {
+    "title": "Uzly",
+    "not_alive": "Chyba při připojování k uzlu! Zkontrolujte konzolu prohlížeče pro více informací.",
+    "cant_delete_attached_servers": "Před odstraněním uzlu je nutné odstranit všechny servery v tomto uzlu.",
+    "delete_node": "Odstranit uzel",
+    "delete_notice": "Jste si jisti, že chcete odstranit uzel \"{name}\"? Odstranění uzlu je nevratná akce a okamžitě odstraní tento uzel z panelu.",
+    "about": {
+      "daemon_version": "Verze démona",
+      "system_information": "Systémové informace",
+      "cpu_cores": "Jádra CPU"
+    },
+    "settings": {
+      "general_configuration": "Obecná konfigurace",
+      "allow_automatic_allocation": "Povolit automatické přidělování",
+      "max_web_upload": "Maximální velikost souborů pro nahrávání na web",
+      "daemon_port": "Daemon Port",
+      "sftp_port": "Port SFTP",
+      "fastdl_port": "Port FastDL",
+      "display_fqdn_footer": "Zadejte název domény (např. node.example.com), který se bude zobrazovat uživatelům místo *.daemon.panel.gg. Pokud používáte doménu, budete muset také nastavit záznam DNS, aby ukazoval na uzel, jinak to nebude fungovat podle očekávání.",
+      "automatic_allocation_footer": "Umožňuje použít tento uzel při automatickém výběru vhodného uzlu pro nasazení serveru pomocí rozhraní API.",
+      "maintenance_mode_footer": "Pokud je uzel označen jako \"V údržbě\", uživatelé nebudou moci přistupovat k serverům, které jsou v tomto uzlu.",
+      "cpu_footer": "Zadejte celkový počet procesorů dostupných v tomto uzlu pro přidělení serveru. Můžete také zadat procento, které určí množství cpu nad nastavený limit, které má být povoleno. 1 jádro = 100 %.",
+      "memory_footer": "Zadejte celkové množství paměti dostupné v tomto uzlu pro přidělení serverům. Můžete také zadat procento, které může umožnit přidělení většího množství paměti, než je definováno.",
+      "disk_footer": "Zadejte celkové množství místa na disku, které je v tomto uzlu k dispozici pro přidělení serveru. Můžete také zadat procento, které určí množství diskového prostoru nad nastavený limit, které má být povoleno.",
+      "max_web_upload_footer": "Zadejte maximální velikost souborů, které lze nahrát prostřednictvím webového správce souborů."
+    },
+    "allocations": {
+      "title": "Přidělování uzlů",
+      "create_new": "Vytvořit nový",
+      "cant_delete_in_use": "Nelze odstranit přidělení, které je připojeno k serveru.",
+      "delete_ip": "Odstranit IP",
+      "delete_ip_allocations": "Odstranění všech přidělení pro IP adresy",
+      "too_many_ports": "Přidání více než 1000 portů najednou není podporováno.",
+      "invalid_mapping": "Mapování portu {port} bylo neplatné a nemohlo být zpracováno.",
+      "cidr_out_of_range": "Zápis CIDR umožňuje pouze masky mezi /25 a /32.",
+      "port_out_of_range": "Porty v alokaci musí být v rozsahu mezi 1024 a 65535.",
+      "ip_footer": "IP adresa, která bude svázána s kontejnerem serverů, podporuje podsítě až do /25 najednou. (např. 192.168.0.192/28)",
+      "alias_footer": "Alias se zobrazí místo IP, pokud je zadán, což je užitečné pro sítě používající NAT, které vyžadují přidělení interní IP, aby uživatelé viděli veřejnou IP.",
+      "ports_footer": "Porty na zadané IP, které budou k dispozici pro přidělení. Podporuje použití rozsahů, např. 25565-25570, bude přiděleno 5 portů."
+    },
+    "configuration_not_persisted": "Daemon konfigurace byla úspěšně uložena, ale při pokusu o aktualizaci konfiguračního souboru došlo k chybě. Bude nutné ručně aktualizovat soubor /var/lib/wisp/daemon/config/wisp.yaml, aby se změny projevily."
+  },
+  "servers": {
+    "title": "Servery",
+    "copy_uuid": "Kopírovat UUID",
+    "delete_server": "Odstranit server",
+    "delete_server_notice": "Jste si jisti, že chcete odstranit server \"{name}\"? Odstranění serveru je nevratná akce a okamžitě odstraní tento server z panelu a démona.",
+    "force_footer": "Nebezpečné: Vynucené odstranění serveru odstraní server z panelu, i když démon ohlásí chybu. To může zanechat visící soubory na démonovi, pokud hlásí chybu.",
+    "cant_delete_unmigrated_nodes_server": "Nelze odstranit server v uzlu, který nemá nakonfigurovaný FQDN - pro pokračování použijte vynucené odstranění.",
+    "new": {
+      "core_details": "Základní informace",
+      "node_footer": "Uzel, do kterého bude tento server nasazen.",
+      "primary_allocation_footer": "Hlavní přidělení, které bude přiřazeno tomuto serveru.",
+      "secondary_allocations_footer": "Další alokace, které se při vytvoření přiřadí tomuto serveru.",
+      "database_limit_footer": "Celkový počet databází, které může uživatel pro tento server vytvořit. Nechte prázdné, pokud chcete povolit neomezený počet.",
+      "allocation_limit_footer": "Celkový počet alokací, které může uživatel vytvořit pro tento server. Nechte prázdné, pokud chcete povolit neomezený počet.",
+      "backup_megabytes_limit_footer": "Celkový počet megabajtů, které může server použít pro své zálohy.",
+      "cpu_footer": "Pokud nechcete omezit využití procesoru, nastavte hodnotu na 0. Hodnotu určíte tak, že vezmete počet fyzických jader a vynásobíte jej 100. Například u čtyřjádrového systému (4 * 100 = 400) je 400\nk dispozici. Chcete-li omezit server na využití poloviny jednoho jádra, nastavte hodnotu na 50. Chcete-li serveru povolit používat až dvě fyzická jádra, nastavte hodnotu na 200.",
+      "memory_footer": "Limit paměti v MB. Pokud chcete omezení paměti na serveru zakázat, stačí do pole pro paměť zadat 0.",
+      "swap_footer": "Limit odkládacího prostoru v MB. Chcete-li na serveru zakázat odkládací prostor, jednoduše zadejte do pole swap 0.",
+      "disk_footer": "Limit místa na disku v MB. Pokud chcete omezení místa na disku na serveru zakázat, jednoduše zadejte do pole disk hodnotu 0.",
+      "io_footer": "Blok IO by měl být nastaven na hodnotu mezi 10-1000.",
+      "skip_scripts_footer": "Pokud je k vybranému vajíčku připojen instalační skript, spustí se během instalace. Pokud chcete tento krok přeskočit, zaškrtněte toto políčko."
+    },
+    "about": {
+      "server_owner": "Majitel serveru",
+      "server_node": "Uzel serveru"
+    },
+    "details": {
+      "server_details": "Podrobnosti o serveru"
+    },
+    "build_configuration": {
+      "resource_limits": "Limity zdrojů",
+      "feature_limits": "Omezení funkcí",
+      "allocation_management": "Správa přidělování",
+      "oom_disabled_footer": "Zakáže OOM Killer na serveru. To umožní serveru fungovat při maximální zátěži paměti a swap-paměti."
+    },
+    "startup": {
+      "command_modification": "Úprava příkazů",
+      "service_configuration": "Konfigurace služby",
+      "access_in_startup": "Přístup při spuštění: "
+    },
+    "databases": {
+      "notice": "Hesla databáze lze zobrazit při návštěvě tohoto serveru ve front-endu.",
+      "active_databases": "Aktivní databáze",
+      "create_database": "Vytvořit databázi"
+    },
+    "advanced": {
+      "reinstall_server": "Přeinstalování serveru",
+      "reinstall_server_note": "Tím se server přeinstaluje pomocí přiřazeného servisního skriptu.\nNebezpečí! Mohlo by dojít k přepsání dat.",
+      "reinstall_started": "Proces přeinstalace byl zahájen.",
+      "install_status": "Stav instalace",
+      "install_status_note": "Pokud potřebujete změnit stav instalace z odinstalované na nainstalovanou nebo naopak, můžete tak učinit pomocí níže uvedeného tlačítka.",
+      "install_toggled": "Stav instalace byl přepnut.",
+      "rebuild_container": "Přestavba kontejnerů",
+      "rebuild_container_note": "Tím se při příštím spuštění serveru spustí obnovení kontejneru. To je užitečné, pokud jste ručně upravili konfigurační soubor serveru nebo pokud něco prostě nefungovalo správně.",
+      "rebuild_requested": "Démonovi byl odeslán požadavek na obnovení a server se při příštím spuštění sám obnoví.",
+      "suspend_server": "Pozastavení serveru",
+      "suspend_server_note": "Tím se server pozastaví, zastaví se všechny spuštěné procesy a okamžitě se zablokuje přístup uživatele k jeho souborům nebo jiná správa serveru prostřednictvím panelu nebo rozhraní API.",
+      "suspend_toggled": "Stav pozastavení byl přepnut.",
+      "updating_status": "Aktualizace stavu",
+      "updating_status_note": "Pokud potřebujete změnit stav aktualizace, můžete tak učinit pomocí níže uvedeného tlačítka.",
+      "updating_toggled": "Stav aktualizace byl přepnut.",
+      "move_server": "Přesun serveru do jiného uzlu",
+      "moving_status": "Stav pohybu",
+      "moving_status_note": "Pokud potřebujete změnit stav stěhování, můžete tak učinit pomocí níže uvedeného tlačítka.\n",
+      "moving_toggled": "Stav pohybu byl přepnut.",
+      "reset_mod_statuses": "Obnovení stavů instalace modů",
+      "reset_mod_statuses_note": "Obnoví stav instalace všech modů, pokud dojde k chybě, v případě, že server má instalace modů zcela uzamčené a jsou zaseknuté po dlouhou dobu.",
+      "reset_mod_triggered": "Všechny stavy instalace serverových modů byly resetovány.",
+      "toggle_backup_status": "Přepínání stavu zálohování",
+      "install_marked_as_failed": "Nelze přepnout stav instalace serveru, protože se nepodařilo nainstalovat. Místo toho server přeinstalujte."
+    },
+    "deployment": {
+      "no_viable_nodes": "Nebyly nalezeny žádné uzly splňující požadavky zadané pro automatické nasazení.",
+      "no_viable_allocations": "Nebyly nalezeny žádné alokace splňující požadavky pro automatické nasazení."
+    }
+  },
+  "users": {
+    "title": "Uživatelé",
+    "identity": "Identita",
+    "external_id_footer": "Ponechte prázdné, pokud nechcete tomuto uživateli přiřadit externí identifikátor. Externí identifikátor by měl být pro tohoto uživatele jedinečný a neměl by být používán jinými uživateli.",
+    "language_footer": "Pro použití výchozího jazyka ponechte prázdné. Jazyk, ve kterém se bude zobrazovat panel uživatele, lze změnit i na straně uživatele v nastavení účtu.",
+    "password": "Heslo",
+    "password_optional": "Zadání uživatelského hesla je nepovinné. Nový uživatel dostane e-mail s výzvou k vytvoření hesla ke svému účtu. Pokud je zde heslo poskytnuto, musíte najít jiný způsob, jak jej uživateli poskytnout.",
+    "root_admin_footer": "Nastavením této hodnoty získá uživatel plný přístup ke správě.",
+    "support_op_footer": "Nastavením této možnosti získá uživatel omezený přístup ke správě, aby mohl působit jako agent podpory.",
+    "support_op_bypass_footer": "Tímto nastavením se obejdete bez nutnosti výslovného povolení uživatelů k přístupu k jejich serverům prostřednictvím karty Podpora.",
+    "ignore_exceptions": "Ignorovat výjimky vyvolané při odvolávání klíčů.",
+    "ignore_exceptions_footer": "Pokud je tato možnost zaškrtnuta, budou ignorovány všechny chyby vyhozené při odvolávání klíčů napříč uzly. Pokud je to možné, měli byste se tomuto zaškrtávacímu políčku vyhnout, protože všechny neodvolané klíče by mohly být aktivní ještě 24 hodin po změně tohoto účtu. Pokud potřebujete zrušit oprávnění účtu okamžitě a potýkáte se s problémy s uzly, měli byste toto políčko zaškrtnout a poté restartovat všechny uzly, které se nepodařilo aktualizovat, aby se vymazaly všechny uložené klíče.",
+    "disable_2fa": "Zakázat dvoufázové ověřování",
+    "disable_2fa_notice": "Toto je nebezpečná akce! Tímto se zakáže ověřování založené na TOTP (pokud je povoleno) a odstraní se VŠECHNY bezpečnostní klíče z uživatelského účtu, což je nevratná akce.",
+    "2fa_disabled": "Pro účet tohoto uživatele byla vypnuta funkce 2FA.",
+    "user_has_no_2fa_configured": "Uživatel nemá nakonfigurováno 2FA, aby jej mohl používat.",
+    "delete_user": "Odstranit uživatele",
+    "delete_notice": "Jste si jisti, že chcete odstranit uživatele \"{email}\"? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "cant_delete_yourself": "Sami sebe nemůžete vymazat.",
+    "cant_delete_user_with_servers": "Uživatele nelze odstranit, dokud vlastní servery."
+  },
+  "nests": {
+    "title": "Hnízda",
+    "eggs": "Vejce",
+    "details": "Podrobnosti o hnízdě",
+    "create_nest": "Vytvořit hnízdo",
+    "delete_nest": "Smazat hnízdo",
+    "delete_notice": "Jste si jisti, že chcete odstranit vnoření \"{name}\"? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "id_footer": "Jedinečné ID sloužící k interní identifikaci tohoto hnízda a identifikaci prostřednictvím rozhraní API.",
+    "uuid_footer": "Identifikátor UUID, který je pro účely identifikace přiřazen všem serverům používajícím tuto možnost.",
+    "name_footer": "Mělo by se jednat o popisný název kategorie, který zahrnuje všechna vejce v hnízdě.",
+    "identifier_footer": "Krátké ID, které může povolit konkrétní funkce (pracovní ID: srcds, minecraft).",
+    "nest_has_servers": "Nelze odstranit hnízdo, pod kterým jsou spuštěny servery.",
+    "import_egg": "Import vajec",
+    "egg": {
+      "daemon_restart_required_after_changes": "Jakékoli změny v existující konfiguraci vajec v současné době vyžadují následný restart démonů pomocí `wisp restart`.",
+      "configuration": "Konfigurace",
+      "process_management": "Řízení procesů",
+      "delete_egg": "Odstranit vejce",
+      "delete_notice": "Jste si jisti, že chcete odstranit vajíčko \"{name}\"? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+      "egg_has_servers": "Nelze odstranit vejce, pod kterým běží servery.",
+      "egg_is_a_parent": "Toto vajíčko je nadřazeno jednomu, nebo více dalších vajíček. Před smazáním tohoto vejce je prosím smažte.",
+      "must_be_a_child": "\"Kopírovat nastavení z\" pro toto vejce musí být podřízenou volbou vybraného hnízda.",
+      "copy_alert": "Všechna pole jsou povinná, pokud v rozevíracím seznamu \"Kopírovat nastavení z\" nevyberete samostatnou možnost; v takovém případě lze pole ponechat prázdná a použít hodnoty z této možnosti.",
+      "invalid_copy": "Vejce vybrané pro kopírování skriptu buď neexistuje, nebo kopíruje skript ze sebe sama.",
+      "update_egg": "Aktualizace vejce",
+      "import_update_notice": "Importem nového souboru s vejci se přepíší všechna stávající nastavení. Pokud si přejete zachovat stávající nastavení, měli byste nové vejce importovat samostatně.",
+      "import_json_error": "Při pokusu o načtení souboru JSON došlo k chybě: {error}",
+      "import_file_error": "Zadaný soubor JSON nebyl platný.",
+      "import_invalid_json": "Poskytnutý soubor JSON není ve formátu, který lze rozpoznat.",
+      "install_script": "Instalační skript",
+      "update_script": "Aktualizační skript",
+      "variables": {
+        "create_variable": "Vytvoření spouštěcí proměnné",
+        "variable_created": "Spouštěcí proměnná byla úspěšně vytvořena.",
+        "variable_updated": "Spouštěcí proměnná \"{name}\" byla úspěšně aktualizována.",
+        "variable_deleted": "Spouštěcí proměnná \"{name}\" byla úspěšně odstraněna.",
+        "env_variable_reserved": "Proměnná prostředí {name} je rezervovaný název proměnné.",
+        "env_not_unique": "Proměnná prostředí {name} není jedinečná.",
+        "bad_validation_rule": "Validační pravidlo \"{rule}\" není platné pravidlo."
+      },
+      "thumbnail_title": "Miniatura vejce",
+      "thumbnail_recommended_size": "Poměr stran 2:1 (max. 500KB)",
+      "thumbnail_formats": "png, jpg a svg"
+    }
+  },
+  "mods": {
+    "title": "Modifikace",
+    "mod_details": "Podrobnosti o modifikaci",
+    "mod_configuration": "Konfigurace modů",
+    "delete_mod": "Odstranit mod",
+    "delete_notice": "Jste si jisti, že chcete odstranit mod \"{name}\"? Není cesty zpět, všechna data budou okamžitě odstraněna.",
+    "mod_has_servers": "Nelze změnit přidružené ID vejce, pokud jsou servery právě připojeny k módům."
+  },
+  "domains": {
+    "domain_details": "Podrobnosti o doméně",
+    "domain_name_footer": "Název domény, na kterém mohou herní servery vytvářet subdomény, což uživatelům umožňuje vybrat si subdoménu a automaticky ji nasměrovat na alokace herního serveru. V současné době podporujeme pouze subdomény na kořenové doméně.",
+    "instructions": "Aby doména správně fungovala, je třeba provést následující akce:",
+    "acquire_domain": "Zakoupit nebo použít existující doménu, kterou máte.",
+    "setup_nameservers": "Nasměrujte nameservery domény na adresy \"ns1.subdomain-manager.wisp.gg\" a \"ns2.subdomain-manager.wisp.gg\" (upozorňujeme, že propagace může trvat až 48 hodin).",
+    "update_notice": "Aktualizací názvu domény se aktualizuje každá subdoména serveru na novou doménu.",
+    "domain_already_in_use": "Zadaná doména se již používá v jiné instanci panelu a nelze ji znovu použít.",
+    "root_domain_only_supported": "V současné době podporujeme pouze kořenovou doménu.",
+    "nest_identifiers_footer": "Seznam identifikátorů hnízda, které umožňují serverům běžícím pod hnízdem vytvářet subdomény k doméně.",
+    "egg_identifiers_footer": "**Používá se hlavně k povolení konkrétních vajec v rámci hnízda, aniž by bylo nutné povolit celé hnízdo** Seznam identifikátorů vajec, které umožňují serverům běžícím pod konkrétním vejcem vytvářet subdomény k doméně.",
+    "root_record_footer": "IP adresa pro nový záznam A DNS, na který má kořenová doména ukazovat. Užitečné pro přesměrování domény.",
+    "delete_domain": "Smazat doménu",
+    "delete_notice": "Jste si jisti, že chcete odstranit doménu \"{name}\"? Není cesty zpět a všechny servery spojené s touto doménou přijdou o subdomény, které jsou s ní spojené."
+  }
+}

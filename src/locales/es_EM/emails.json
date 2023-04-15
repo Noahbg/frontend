@@ -1,0 +1,40 @@
+{
+  "hello": "¡Hola!",
+  "whoops": "¡Ups!",
+  "regards": "Saludos",
+  "all_rights_reserved": "Todos los derechos reservados.",
+  "trouble_clicking_action": "Si tiene problemas para hacer clic en el botón \"{actionText}\", copie y pegue la siguiente URL en su navegador:",
+  "greeting": "¡Hola {name}!",
+  "visit_panel": "Visitar Panel",
+  "account": {
+    "subject": {
+      "created": "Cuenta Creada",
+      "migrated": "Cuenta Migrada",
+      "reset_password": "Restablecer Contraseña"
+    },
+    "email_reason": {
+      "created": "Está recibiendo este correo electrónico porque se ha creado una cuenta para usted en nuestro Panel de Juego.",
+      "migrated": "Usted está recibiendo este correo electrónico porque su cuenta fue migrada a un nuevo Panel de Juego.",
+      "reset_password": "Está recibiendo este correo electrónico porque hemos recibido una solicitud de restablecimiento de contraseña para su cuenta."
+    },
+    "user_email": "Correo electrónico: {email}",
+    "updating_account": "Tu información puede ser cambiada en el panel del juego después de la configuración de la cuenta.",
+    "setup_your_account": "Configure su cuenta",
+    "reset_password": "Restablecer Contraseña",
+    "reset_password_requested_by_someone_else": "Si no ha solicitado un restablecimiento de la contraseña, no es necesario realizar ninguna otra acción."
+  },
+  "server": {
+    "subject": {
+      "added_to_server": "Añadido al servidor",
+      "removed_from_server": "Eliminado del servidor",
+      "installed": "Servidor Instalado"
+    },
+    "added_as_subuser": "Usted ha sido añadido como subusuario para el siguiente servidor, lo que le permite cierto control sobre el mismo.",
+    "new_account_notice": "Si todavía no tienes una cuenta, busca otro correo electrónico nuestro. Si no lo encuentras, puedes restablecer la contraseña de tu panel de juego aquí: {url}",
+    "removed_as_subuser": "Has sido eliminado como subusuario del siguiente servidor.",
+    "ready_to_be_used": "Su servidor ha terminado de instalarse y está listo para ser utilizado.",
+    "server_name": "Nombre del Servidor: {server}",
+    "visit_server": "Visita el servidor",
+    "login_and_begin_using": "Iniciar sesión y comenzar a usar"
+  }
+}

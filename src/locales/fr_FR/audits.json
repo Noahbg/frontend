@@ -1,0 +1,130 @@
+{
+  "server": {
+    "update": {
+      "title": "Serveur mis à jour",
+      "message": "{user} a mis à jour les détails de ce serveur"
+    },
+    "subuser": {
+      "create": {
+        "title": "Sous-utilisateur créé",
+        "message": "{user} a créé un nouveau sous-utilisateur pour {target}."
+      },
+      "update": {
+        "title": "Mise à jour du sous-utilisateur",
+        "message": "{user} a mis à jour les permissions de sous-utilisateur pour {target}"
+      },
+      "delete": {
+        "title": "Accès du sous-utilisateur révoqué",
+        "message": "{user} a supprimé un sous-utilisateur appartenant à {target}."
+      }
+    },
+    "database": {
+      "create": {
+        "title": "Base de données créée",
+        "message": "{user} a créé une nouvelle base de données nommée {name}."
+      },
+      "update": {
+        "title": "Base de données mise à jour",
+        "message": "{user} a régénéré le mot de passe de la base de données pour {target}."
+      },
+      "delete": {
+        "title": "Base de données supprimée",
+        "message": "{user} a supprimé la base de données {target} ."
+      }
+    },
+    "schedule": {
+      "trigger": {
+        "title": "Déclenchement de la planification",
+        "message": "{user} a déclenché la planification {target}"
+      },
+      "create": {
+        "title": "Nouvelle planification créée",
+        "message": "{user} a créé une nouvelle plannification nommé {name}"
+      },
+      "update": {
+        "title": "Plannification mise à jour",
+        "message": "{user} a mis à jour la plannification {target}"
+      },
+      "delete": {
+        "title": "Plannification supprimée",
+        "message": "{user} a supprimé la planification {target} et les tâches qui en découlent"
+      }
+    },
+    "startup": {
+      "update": {
+        "title": "Variables de démarrage mise à jour",
+        "message": "{user} a mis à jour les variables de démarrage du serveur"
+      }
+    },
+    "monitor": {
+      "update": {
+        "title": "Moniteur de santé activé",
+        "message": "{user} a activé le moniteur de santé"
+      },
+      "restart": {
+        "title": "Redémarrage du serveur",
+        "message": "Redémarrage du serveur déclenché par le moniteur de santé"
+      }
+    },
+    "crash": {
+      "title": "Crash du serveur",
+      "message": "Le serveur a crash"
+    },
+    "backup": {
+      "create": {
+        "title": "Sauvegarde créée",
+        "message": "{user} a créé une sauvegarde nommée {name}."
+      },
+      "update": {
+        "title": "Sauvegarde mise à jour",
+        "message": "{user} a verrouillé la sauvegarde {name}"
+      },
+      "deploy": {
+        "title": "Sauvegarde déployée sur le serveur",
+        "message": "{user} a déployé la sauvegarde {name} sur le serveur"
+      },
+      "download": {
+        "title": "Sauvegarde téléchargée",
+        "message": "{user} a téléchargé la sauvegarde {name}"
+      },
+      "delete": {
+        "title": "Sauvegarde supprimée",
+        "message": "{user} a supprimé la sauvegarde {name}"
+      }
+    },
+    "mod": {
+      "update": {
+        "title": "Statut des mods mis à jour",
+        "message": "{user} a basculé le statut d'installation du mod {name} ."
+      }
+    },
+    "subdomain": {
+      "create": {
+        "title": "Le sous-domaine a été crée",
+        "message": "{user} a créé le sous-domaine {subdomain}"
+      },
+      "delete": {
+        "title": "Sous-domaine supprimé",
+        "message": "{user} a supprimé le sous-domaine {subdomain}"
+      }
+    },
+    "modpack": {
+      "update": {
+        "title": "Modpack installé",
+        "message": "{user} a installé le modpack {modpack}"
+      }
+    },
+    "plugin": {
+      "update": {
+        "title": "Plugin installé",
+        "message": "{user} a installé le plugin {plugin} ."
+      }
+    },
+    "fastdl": {
+      "update": {
+        "title": "FastDL synchronisé",
+        "message": "{user} à synchronisé le contenu FastDL pour ce serveur"
+      }
+    }
+  }
+}

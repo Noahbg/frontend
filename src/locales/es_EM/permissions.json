@@ -1,0 +1,654 @@
+{
+  "server": {
+    "support": {
+      "title": "Acceso OP de Soporte",
+      "description": "Permisos relacionados con permitir el acceso de soporte a este servidor.",
+      "update": {
+        "title": "Actualizar",
+        "description": "Alternar Acceso OP de Soporte para este servidor en la pestaña Soporte."
+      }
+    },
+    "control": {
+      "title": "Controlar",
+      "description": "Permisos relacionados con el estado de energia de los servidores o consola.",
+      "console": {
+        "title": "Consola",
+        "description": "Permite al usuario ver los registros de la consola para este servidor."
+      },
+      "command": {
+        "title": "Ejecutar comandos",
+        "description": "Permite al usuario enviar comandos a la consola. Si el usuario no tiene permisos de parada o reinicio no puede enviar el comando de parada de la aplicación."
+      },
+      "start": {
+        "title": "Iniciar",
+        "description": "Permite al usuario iniciar este servidor."
+      },
+      "stop": {
+        "title": "Parar",
+        "description": "Permite al usuario detener este servidor."
+      },
+      "restart": {
+        "title": "Reiniciar",
+        "description": "Permite al usuario reiniciar este servidor."
+      }
+    },
+    "subuser": {
+      "title": "Sub Usuario",
+      "description": "Permisos que permiten a los usuarios administrar otros subusuarios asignados al servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario listar e inspeccionar subusuarios asignados a este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario editar los permisos asignados a otros subusuarios."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permite al usuario crear subusuarios adicionales en este servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permite al usuario eliminar otros subusuarios en este servidor."
+      }
+    },
+    "allocation": {
+      "title": "Adjudicación",
+      "description": "Permisos que permiten al usuario administrar todos los IP:Port asignados a este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver todas las adjudicaciones asignadas a este servidor. Los usuarios con acceso al servidor siempre pueden ver la asignación predeterminada a través de la página Detalles."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario cambiar la asignación principal."
+      }
+    },
+    "startup": {
+      "title": "Parametros de inicio",
+      "description": "Permisos que permiten a los usuarios administrar la configuración del servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver el comando de inicio y las variables asociadas para este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario modificar las variables de inicio de este servidor."
+      }
+    },
+    "database": {
+      "title": "Base de datos",
+      "description": "Permisos que permiten a los usuarios administrar bases de datos MySQL para el servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver todas las bases de datos asociadas a este servidor, incluyendo los nombres de usuario y contraseñas de las bases de datos."
+      },
+      "update": {
+        "title": "Restablecer contraseña",
+        "description": "Permite al usuario restablecer las contraseñas de las bases de datos."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permite al usuario crear bases de datos adicionales para este servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permite al usuario eliminar las bases de datos de este servidor."
+      }
+    },
+    "file": {
+      "title": "Administrador de Archivos",
+      "description": "Permisos que permiten a los usuarios gestionar los archivos almacenados en un servidor a través del Administrador de archivos o el Servidor SFTP.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Permite al usuario conectarse al servidor SFTP."
+      },
+      "list": {
+        "title": "Lista",
+        "description": "Permite al usuario listar todos los archivos y carpetas de este servidor pero no ver el contenido de los archivos."
+      },
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver el contenido de los archivos existentes."
+      },
+      "write": {
+        "title": "Escritura",
+        "description": "Permite al usuario actualizar el contenido de los archivos existentes para este servidor."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permite al usuario crear nuevos archivos para este servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permite al usuario borrar archivos de este servidor en el gestor de archivos o SFTP."
+      },
+      "archive": {
+        "title": "Archivar",
+        "description": "Permite al usuario comprimir archivos y carpetas en el administrador de archivos."
+      },
+      "git": {
+        "title": "Git",
+        "description": "Permite al usuario usar acciones git (es decir, Clonar, Pulear, Etc)."
+      },
+      "steam_workshop": {
+        "title": "Taller de Steam",
+        "description": "Permite al usuario utilizar el descargador del taller."
+      }
+    },
+    "schedule": {
+      "title": "Programaciones",
+      "description": "Permisos que permiten al usuario crear tareas automáticas que se ejecutan periódicamente en el servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario listar los programas y ver los detalles de un programa incluyendo todas las tareas asignadas."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario editar un programa incluyendo todas las tareas del programa. Esto permitirá al usuario eliminar tareas individuales, pero no eliminar el programa en sí."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permite al usuario crear una nueva programacion horaria."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permite al usuario eliminar los programas de este servidor."
+      }
+    },
+    "backup": {
+      "title": "Respaldar",
+      "description": "Permisos que permiten al usuario administrar copias de seguridad de los archivos de servidores.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver todas las copias de seguridad de este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite que el usuario bloquee/desbloquee las copias de seguridad para evitar que se eliminen automáticamente para hacer espacio para futuras copias de seguridad."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permite al usuario crear copias de seguridad para este servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permite al usuario eliminar una copia de seguridad de este servidor."
+      },
+      "deploy": {
+        "title": "Desplegar",
+        "description": "Permite al usuario desplegar una copia de seguridad en este servidor."
+      },
+      "download": {
+        "title": "Descargar",
+        "description": "Permite al usuario descargar una copia de seguridad de este servidor."
+      }
+    },
+    "details": {
+      "title": "Detalles",
+      "description": "Permisos que permiten al usuario cambiar el nombre que identifica al servidor en el panel.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver los detalles de este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario cambiar este nombre de servidor. Esto sólo permite al usuario cambiar el nombre del servidor en el panel, no en el juego."
+      }
+    },
+    "audit": {
+      "title": "Registro de Auditoría",
+      "description": "Permisos que permiten al usuario inspeccionar todas las acciones en curso para este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver los registros de acción de este servidor. Nota: Esto puede contener información que podría bloquearse tras otros permisos."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Permisos que permiten al usuario ver el enlace FastDL o sincronizar contenido a FastDL para este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver la página FastDL de este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario sincronizar el contenido FastDL de este servidor."
+      }
+    },
+    "scanner": {
+      "title": "Escáner de backdoor",
+      "description": "Permisos que permiten al usuario escanear los archivos del servidor buscando backdoors.",
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario utilizar el Escaner de backdoor para este servidor."
+      }
+    },
+    "subdomain": {
+      "title": "Gestor de subdominios",
+      "description": "Permiso para utilizar el sistema de dominio del servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso de lectura de dominios."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear un dominio utilizado para conectarse a este servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar los dominios del servidor."
+      }
+    },
+    "mod": {
+      "title": "Gestor de Mods",
+      "description": "Permisos que permiten al usuario ver e instalar mods de un solo clic para este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver mods disponibles de un solo clic para instalar en este servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario instalar mods de un solo clic en este servidor."
+      }
+    },
+    "modpack": {
+      "title": "Gestor de Modpack",
+      "description": "Permisos que permiten al usuario instalar Minecraft Modpacks en este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver qué paquetes de mods están disponibles para su instalación en este servidor."
+      },
+      "update": {
+        "title": "Instalar",
+        "description": "Permite al usuario instalar un paquete de mods en este servidor."
+      }
+    },
+    "plugin": {
+      "title": "Administrador de Plugins",
+      "description": "Permisos que permiten al usuario instalar Minecraft Plugins en este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver qué plugins están disponibles para la instalación en este servidor."
+      },
+      "update": {
+        "title": "Instalar",
+        "description": "Permite al usuario instalar un plugin en este servidor."
+      }
+    },
+    "updater": {
+      "title": "Actualizador de Steam",
+      "description": "Permisos que permiten al usuario actualizar servidores basados en Steamcmd.",
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario usar el Actualizador de Steam para este servidor."
+      }
+    },
+    "monitor": {
+      "title": "Monitor de Salud",
+      "description": "Permisos que permiten al usuario utilizar el Administrar el Seguidor de Salud de este servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver el estado del Monitor de Salud del servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario alternar el estado de Health Monitor del servidor."
+      }
+    },
+    "reinstall": {
+      "title": "Reinstalar",
+      "description": "Permisos que permiten al usuario lanzar una reinstalación para este servidor.",
+      "update": {
+        "title": "Actualizar",
+        "description": "Permite al usuario reinstalar este servidor."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licencia",
+      "description": "Permisos que permiten ver la información de la licencia de las instancias WISP.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permite al usuario ver la información de la Licencia en la página de resumen."
+      }
+    },
+    "settings": {
+      "title": "Ajustes",
+      "description": "Permisos que permiten a los administradores personalizar la instancia WISP.",
+      "update": {
+        "title": "Actualizar",
+        "description": "Posibilidad de actualizar la configuración de la instancia."
+      }
+    },
+    "migrator": {
+      "title": "Migrador",
+      "description": "Permiso para usar el sistema de migración.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer migradores."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar migradores."
+      }
+    },
+    "announcement": {
+      "title": "Anuncio",
+      "description": "Permiso para usar el sistema de anuncios.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer anuncios."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear anuncios."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar anuncios."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar anuncios."
+      }
+    },
+    "application_api": {
+      "title": "API de aplicación",
+      "description": "Permiso para usar el sistema API de aplicación.",
+      "read": {
+        "description": "Permiso para leer la aplicación APIs.",
+        "title": "Lectura"
+      },
+      "create": {
+        "description": "Permiso para crear APIs de aplicación.",
+        "title": "Crear"
+      },
+      "update": {
+        "description": "Permiso para actualizar la aplicación APIs.",
+        "title": "Actualizar"
+      },
+      "delete": {
+        "description": "Permiso para eliminar APIs de la aplicación.",
+        "title": "Eliminar"
+      }
+    },
+    "database_host": {
+      "title": "Host de Base de Datos",
+      "description": "Permiso para usar el sistema host de base de datos.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer hosts de base de datos."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear hosts de base de datos."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar hosts de base de datos."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar hosts de base de datos."
+      }
+    },
+    "location": {
+      "title": "Ubicación",
+      "description": "Permiso para usar el sistema de ubicación.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer ubicaciones."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear ubicaciones."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar ubicaciones."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar ubicaciones."
+      }
+    },
+    "node": {
+      "description": "Permiso para usar el sistema de nodos.",
+      "title": "Nodo",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer nodos."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar nodos."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar nodos."
+      }
+    },
+    "node_allocation": {
+      "title": "Adjudicaciónes del nodo",
+      "description": "Permiso para usar el sistema de asignación de nodos.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer asignaciones de nodos."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear asignaciones de nodos."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar asignaciones de nodos."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar asignaciones de nodos."
+      }
+    },
+    "user": {
+      "title": "Usuario",
+      "description": "Permiso para usar el sistema de usuarios.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer usuarios."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear usuarios."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar usuarios."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar usuarios."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Permiso para usar el sistema de mods.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer mods."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear mods."
+      },
+      "update": {
+        "title": "Instalar",
+        "description": "Permiso para actualizar mods."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar mods."
+      }
+    },
+    "nest": {
+      "title": "Nido",
+      "description": "Permiso para usar el sistema de nidos.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer nidos."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear nidos."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar nidos."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar nidos."
+      }
+    },
+    "egg": {
+      "title": "Huevo",
+      "description": "Permiso para usar el sistema de huevos.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer huevos."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear huevos."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar huevos."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar huevos."
+      }
+    },
+    "egg_variable": {
+      "title": "Variable del Huevo",
+      "description": "Permiso para usar el sistema de variables de huevo.",
+      "read": {
+        "description": "Permiso para leer las variables del huevo.",
+        "title": "Lectura"
+      },
+      "create": {
+        "description": "Permiso para crear variables de huevo.",
+        "title": "Crear"
+      },
+      "update": {
+        "description": "Permiso para actualizar las variables de huevo.",
+        "title": "Actualizar"
+      },
+      "delete": {
+        "description": "Permiso para eliminar variables del huevo.",
+        "title": "Eliminar"
+      }
+    },
+    "server": {
+      "title": "Servidor",
+      "description": "Permiso para usar el sistema del servidor.",
+      "suspend": {
+        "title": "Suspender",
+        "description": "Permiso para suspender servidores."
+      },
+      "toggle_backup": {
+        "title": "Alternar respaldo",
+        "description": "Permiso para alternar servidores de copia de seguridad."
+      },
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer servidores."
+      },
+      "create": {
+        "description": "Permiso para crear servidores.",
+        "title": "Crear"
+      },
+      "move": {
+        "title": "Mover",
+        "description": "Permiso para mover servidores."
+      },
+      "reset_mods": {
+        "title": "Resetear Mods",
+        "description": "Permiso para restablecer los servidores de mods."
+      },
+      "details_update": {
+        "title": "Actualizar detalles",
+        "description": "Permiso para actualizar detalles de servidores."
+      },
+      "toggle_move": {
+        "title": "Alternar mover",
+        "description": "Permiso para alternar mover servidores."
+      },
+      "toggle_update": {
+        "title": "Alternar actualización",
+        "description": "Permiso para alternar los servidores de actualización."
+      },
+      "toggle_install": {
+        "title": "Alternar instalación",
+        "description": "Permiso para cambiar la alternacion de servidores."
+      },
+      "build_update": {
+        "title": "Compilar Actualización",
+        "description": "Permiso para compilar servidores de actualización."
+      },
+      "rebuild": {
+        "title": "Reconstruir",
+        "description": "Permiso para reconstruir servidores."
+      },
+      "reinstall": {
+        "title": "Reinstalar",
+        "description": "Permiso para reinstalar servidores."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar servidores."
+      }
+    },
+    "server_database": {
+      "title": "Base de datos del servidor",
+      "description": "Permiso para usar el sistema de base de datos del servidor.",
+      "read": {
+        "title": "Lectura",
+        "description": "Permiso para leer bases de datos del servidor."
+      },
+      "create": {
+        "title": "Crear",
+        "description": "Permiso para crear bases de datos del servidor."
+      },
+      "update": {
+        "title": "Actualizar",
+        "description": "Permiso para actualizar las bases de datos del servidor."
+      },
+      "delete": {
+        "title": "Eliminar",
+        "description": "Permiso para eliminar bases de datos del servidor."
+      }
+    }
+  },
+  "domain": {
+    "title": "Dominio",
+    "description": "Permiso para utilizar el sistema de dominio del servidor.",
+    "read": {
+      "title": "Lectura",
+      "description": "Permiso de lectura de dominios."
+    },
+    "create": {
+      "title": "Crear",
+      "description": "Permiso para crear dominios."
+    },
+    "update": {
+      "title": "Actualizar",
+      "description": "Permiso para actualizar dominios y todos los dominios relacionados con el servidor."
+    },
+    "delete": {
+      "title": "Eliminar",
+      "description": "Permiso para eliminar dominios y todos los dominios relacionados con el servidor."
+    }
+  }
+}

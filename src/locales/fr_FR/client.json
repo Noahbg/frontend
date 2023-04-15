@@ -1,0 +1,55 @@
+{
+  "account": {
+    "update_identity": "Mise à jour de l'identité",
+    "updated_identity": "L'identité a été mise à jour !",
+    "update_email": "Mise à jour de l'adresse électronique",
+    "updated_email": "L'adresse électronique a été mise à jour !",
+    "update_password": "Mettre à jour le mot de passe",
+    "updated_password": "Le mot de passe a été mis à jour !",
+    "quick_login": "Connexion rapide",
+    "quick_login_description": "La connexion rapide vous permet de vous connectez rapidement au panel et au SFTP en utilisant votre compte de facturation.",
+    "enable_quick_login": "Activer la connexion rapide",
+    "disable_quick_login": "Désactiver la connexion rapide",
+    "failed_linking_sso": "Échec de la liaison avec le compte externe. Veuillez réessayer plus tard.",
+    "password_requirements": "Les mots de passe doivent contenir au moins un caractère majuscule, un caractère minuscule et un caractère numérique et doivent avoir une longueur minimale de 8 caractères.",
+    "invalid_confirmation_password": "Le mot de passe fourni pour votre compte n'était pas valide.",
+    "invalid_totp": "Le jeton 2FA fourni n'est pas valide.",
+    "totp_already_in_use": "Vous avez déjà activé le système 2FA.",
+    "navbar_position": {
+      "left": "Gauche",
+      "top": "Top"
+    },
+    "2fa_must_be_enabled": "L'administrateur du panneau vous a demandé d'activer la fonction 2FA pour votre compte avant de pouvoir utiliser le panneau."
+  },
+  "security": {
+    "active_sessions": "Sessions actives",
+    "sessions_disabled": "Votre hôte n'a pas activé la possibilité de gérer les sessions de compte via cette interface.",
+    "credentials_list": "Liste d'accréditation",
+    "2fa": "Authentification à deux facteurs",
+    "2fa_modal_header": "Configurer 2FA sur votre compte",
+    "2fa_secret": "Code secret",
+    "2fa_notice": "Utilisez l'application 2FA sur votre téléphone pour prendre une photo du code QR à gauche, ou saisissez manuellement le code qui se trouve en dessous. Une fois cette opération effectuée, générez un jeton et saisissez-le ci-dessous.",
+    "2fa_enabled": "L'authentification à deux facteurs est activée sur ce compte et sera nécessaire pour se connecter au panneau. Si vous souhaitez désactiver l'authentification à deux facteurs, il vous suffit de saisir un jeton valide ci-dessous et de soumettre le formulaire.",
+    "2fa_disabled": "L'authentification à 2 facteurs est désactivée sur votre compte ! Vous devez activer l'authentification à deux facteurs afin d'ajouter un niveau de protection supplémentaire à votre compte.",
+    "enable_2fa": "Activer l'authentification à deux facteurs",
+    "disable_2fa": "Désactiver l'authentification à deux facteurs",
+    "create_credentials": "Créer une clé API",
+    "memo_description": "Définissez une description facile à comprendre pour cette clé API afin de vous aider à l'identifier ultérieurement.",
+    "allowed_ips_description": "Si vous souhaitez limiter cette clé API à des adresses IP spécifiques, entrez-les ci-dessus, une par ligne. La notation CIDR est autorisée pour chaque adresse IP. Laissez vide pour autoriser n'importe quelle adresse IP.",
+    "api_key_generated": "Une nouvelle clé API client a été générée pour votre compte."
+  },
+  "security_keys": {
+    "title": "Clés de sécurité",
+    "create_security_key": "Créer une clé de sécurité",
+    "successfully_added": "La clé de sécurité a été ajoutée avec succès.",
+    "delete_key": "Supprimer la clé de sécurité",
+    "delete_key_notice": "Êtes-vous sûr de vouloir supprimer la clé de sécurité {name}?"
+  },
+  "support": {
+    "your_servers": "Vos serveurs",
+    "enable_access": "Permettre l'accès aux support",
+    "disable_access": "Désactiver l'accès au support",
+    "enable_access_submit": "L'accès au support a été activé pour votre serveur.",
+    "disable_access_submit": "L'accès au support a été activé pour votre serveur."
+  }
+}

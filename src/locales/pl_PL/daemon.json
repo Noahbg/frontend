@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Twój kontener serwera musi zostać przebudowany. Powinno to zająć tylko kilka sekund, ale może potrwać kilka minut. Nie musisz robić nic innego podczas tego procesu. Twój serwer będzie automatycznie kontynuował uruchamianie po zakończeniu tego procesu.",
+    "rebuild_started": "{yellow}Odbudowa kontenera serwera...",
+    "rebuild_in_progress": "{yellow}Proszę czekać, aż Twój serwer zostanie odbudowany.",
+    "rebuild_updating_config": "{yellow}Nowy kontener zbudowany, obracanie chomików...",
+    "rebuild_complete": "{cyan}Zakończono proces odbudowy serwera. Serwer jest teraz uruchamiany.",
+    "logs_throttled": "{yellow}Twój serwer wysyła zbyt wiele danych zbyt szybko! Uruchomiono automatyczne wykrywanie spamu.",
+    "checking_size": "{cyan}Sprawdzanie rozmiaru katalogu danych serwera...",
+    "disk_usage": "{yellow}Użycie dysku: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Zapewnienie uprawnień do plików.",
+    "initializing_container": "{yellow}Kontener jest w trakcie inicjalizacji...",
+    "running_preflight": "{yellow}Uruchomionie przedlotu serwera.",
+    "starting_container": "{green}Uruchomienie kontenera serwera.",
+    "resource_limits_modified": "{warning}Twój serwer ma zmienione limity zasobów, możesz potrzebować restartu aby je zastosować.",
+    "aborting_reboot": "{red}Przerwanie automatycznego restartu z powodu awarii w ciągu ostatnich 60 sekund.",
+    "crash_detected_rebooting": "{red}Proces serwera wykryto jako wejście do stanu awarii; ponowne uruchomienie.",
+    "crash_detected": "{bgRed}---------- Wykryto proces serwera w stanie awarii! ----------",
+    "exit_code": "{red}Kod wyjścia: {white}{exitCode}",
+    "out_of_memory": "{red}Brak pamięci: {white}{oomKilled}",
+    "error_response": "{red}Odpowiedź na błąd: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Serwer oznaczony jako {bold}ON",
+      "off": "{cyan}Serwer oznaczony jako {bold}WYŁĄCZONY",
+      "killed": "{cyan}Serwer oznaczony jako {bold}ZABITY",
+      "starting": "{cyan}Serwer oznaczony jako {bold}STARTUJĄCY",
+      "stopping": "{cyan}Serwer oznaczony jako {bold}STOPUJĄCY"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Wykryto bieżącą zmianę mapy, wstrzymanie monitorowania zdrowia...",
+    "map_change_timeout": "{yellow}Zmiana mapy trwa ponad 3 minuty, zakładając, że może zostać wznowione monitorowanie zdrowia…",
+    "map_change_finished": "{yellow}Zmiana mapy zakończona, wznawianie monitora zdrowia..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Napotkano błąd podczas próby odczytania pliku dziennika!",
+    "preflight_file_parse": "Napotkano błąd podczas przetwarzania {file} -- może to prowadzić do problemów z działaniem serwera.\n{message}",
+    "no_egg_configuration": "Nie udało się zlokalizować konfiguracji jaja serwera; przerwanie uruchamiania.",
+    "no_stop_configuration": "Dla tego jaja nie jest zdefiniowana konfiguracja zatrzymania.",
+    "fatal_start_error": "Napotkano fatalny błąd podczas uruchamiania tego serwera.",
+    "not_enough_disk_space": "Za mało miejsca na dysku! {current}M / {limit}M",
+    "disk_space_violation": "Serwer narusza limit przestrzeni dyskowej, zatrzymanie procesu! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "Mamy problemy z połączeniem się z serwerem, proszę czekać...",
+      "couldnt_validate_permissions": "Wystąpił błąd podczas sprawdzania poprawności danych uwierzytelniających podanych dla gniazda internetowego. Proszę odświeżyć stronę.",
+      "no_permission": "Nie masz uprawnień do dostępu do websocket dla tego serwera.",
+      "no_upload_permission": "Nie masz uprawnień do dostępu do gniazda upload websocket dla tego serwera.",
+      "invalid_namespace": "Websocket serwera nie został znaleziony na demonie, proszę odświeżyć stronę."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "Nie masz dostępu do tej funkcji.",
+      "not_enough_disk_space": "Za mało miejsca na dysku! {current}M / {total} M",
+      "invalid_id": "Otrzymano nieprawidłowy element warsztatu.",
+      "internal_server_error": "Coś poszło nie tak podczas próby pobrania elementu warsztatu, spróbuj ponownie później.",
+      "invalid_http_code": "Otrzymano kod HTTP {code} podczas próby pobrania elementu warsztatu.",
+      "no_results": "Nie można znaleźć żadnych wyników dla tego elementu warsztatu.",
+      "invalid_json": "Otrzymano nieprawidłowy JSON podczas próby pobrania elementu warsztatu.",
+      "failed_getting_collection": "Nie można pobrać elementów kolekcji z podanego elementu warsztatu.",
+      "unable_to_resolve_file_size": "Nie udało się ustalić rozmiaru pliku dla elementu warsztatu.",
+      "exceeds_download_size_limit": "Element przekracza maksymalny rozmiar zawartości do pobrania {max_content_size} (rozmiar elementu to {item_size})",
+      "unable_to_resolve_file_name": "Nie można ustalić nazwy pliku dla elementu warsztatu.",
+      "failed_to_download_workshop_item": "Nie udało się pobrać elementu warsztatu {title}.",
+      "failed_to_connect_to_steam": "Nie udało się nawiązać połączenia z serwerami steam, aby móc pobrać adres URL dla {title}",
+      "item_does_not_exist": "Element {title} zdaje się nie istnieć.",
+      "failed_getting_additional_information": "Nie udało się uzyskać dodatkowych informacji dla {title} (czy użytkownik steam posiada tę grę?)",
+      "item_already_exists": "Element {title} już istnieje."
+    }
+  }
+}

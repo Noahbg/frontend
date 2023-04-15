@@ -1,0 +1,407 @@
+{
+  "404": {
+    "title": "Nenalezeno",
+    "description": "Hledanou stránku se nepodařilo najít."
+  },
+  "login": {
+    "index": {
+      "title": "Přihlášení",
+      "description": "Přihlášení do panelu."
+    },
+    "totp": {
+      "title": "Zadejte kód 2fa TOTP",
+      "description": "Pro přihlášení zadejte kód 2fa TOTP."
+    },
+    "key": {
+      "title": "Bezpečnostní klíč",
+      "description": "Pro přihlášení se dotkněte bezpečnostního klíče."
+    },
+    "reset_password": {
+      "title": "Resetovat heslo",
+      "description": "Resetovat heslo vašeho účtu.",
+      "token": {
+        "title": "Resetovat heslo",
+        "description": "Dokončete resetování hesla účtu."
+      }
+    }
+  },
+  "index": {
+    "title": "Mé servery",
+    "description": "Servery, ke kterým máte přístup."
+  },
+  "account": {
+    "title": "Můj účet",
+    "settings": {
+      "title": "Nastavení účtu",
+      "details": {
+        "title": "Podrobnosti",
+        "description": "Správa údajů o účtu."
+      },
+      "2fa": {
+        "title": "Dvoufaktorové ověřování",
+        "description": "Ovládání dvoufaktorového ověřování & bezpečnostních klíčů."
+      }
+    },
+    "security": {
+      "title": "Bezpečnostní kontroly",
+      "description": "Řízení aktivních relací a dvoufaktorové ověřování."
+    }
+  },
+  "server": {
+    "title": "Můj server",
+    "system": {
+      "title": "Systém",
+      "index": {
+        "title": "Konzole",
+        "description": "Ovládejte svůj server v reálném čase."
+      },
+      "details": {
+        "title": "Detaily serveru",
+        "description": "Podívejte se na podrobnosti o herním serveru."
+      },
+      "sftp": {
+        "title": "SFTP Detaily",
+        "description": "Podrobnosti účtu pro SFTP připojení."
+      },
+      "audit_logs": {
+        "title": "Protokoly auditu",
+        "description": "Zobrazte vše, co se děje na serveru."
+      }
+    },
+    "management": {
+      "title": "Správa",
+      "files": {
+        "index": {
+          "title": "Správce souborů",
+          "description": "Spravujte všechny své soubory přímo z webu."
+        },
+        "new": {
+          "title": "Nový soubor",
+          "description": "Vytvořit nový soubor."
+        },
+        "edit": {
+          "title": "Upravit soubor",
+          "description": "Provádění úprav souboru."
+        }
+      },
+      "databases": {
+        "title": "Databáze",
+        "description": "Všechny databáze dostupné pro tento server."
+      },
+      "backups": {
+        "title": "Zálohy",
+        "description": "Správa a nasazení záloh serveru."
+      },
+      "subusers": {
+        "index": {
+          "title": "Dílčí uživatelé",
+          "description": "Řízení toho, kdo může k serveru přistupovat."
+        },
+        "new": {
+          "title": "Nový dílčí uživatel",
+          "description": "Přidejte na server nového uživatele s oprávněními."
+        },
+        "edit": {
+          "title": "Upravit dílčího uživatele",
+          "description": "Úprava přístupu uživatele k serveru."
+        }
+      },
+      "allocations": {
+        "title": "Alokace",
+        "description": "Ovládání IP adres a portů dostupných na tomto serveru."
+      }
+    },
+    "configuration": {
+      "title": "Konfigurace",
+      "startup": {
+        "title": "Parametry spuštění",
+        "description": "Kontrola spouštěcích parametrů."
+      },
+      "schedules": {
+        "index": {
+          "title": "Plánování",
+          "description": "Spravujte všechny plány tohoto serveru na jednom místě."
+        },
+        "manage": {
+          "title": "Správa plánu",
+          "description": "Spravovat úkoly a čas provádění tohoto plánu."
+        }
+      },
+      "advanced": {
+        "title": "Pokročilá nastavení",
+        "description": "Spravujte další možnosti pro váš server."
+      }
+    },
+    "tools": {
+      "title": "Nástroje",
+      "subdomains": {
+        "title": "Správce subdomén",
+        "description": "Zde můžete spravovat subdomény používané k připojení k serveru."
+      },
+      "modpacks": {
+        "title": "Správce modpacků",
+        "description": "Snadný způsob, jak nainstalovat balíčky módů."
+      },
+      "plugins": {
+        "title": "Správce pluginů",
+        "description": "Snadný způsob, jak nainstalovat pluginy."
+      },
+      "mods": {
+        "title": "Správce modifikací",
+        "description": "Snadný způsob instalace doplňků."
+      },
+      "backdoor_scanner": {
+        "title": "Skener zadních vrátek",
+        "description": "Vyhledání možného zneužitelného kódu v nainstalovaných doplňcích."
+      },
+      "fastdl": {
+        "title": "FastDL",
+        "description": "Automatický správce FastDL pro váš server."
+      }
+    },
+    "administrate": {
+      "title": "Administrace"
+    }
+  },
+  "admin": {
+    "title": "Administrátor",
+    "administration": {
+      "title": "Administrace",
+      "index": {
+        "title": "Přehled",
+        "description": "Rychlý pohled na stav panelu."
+      },
+      "settings": {
+        "title": "Nastavení",
+        "general": {
+          "title": "Všeobecné",
+          "description": "Nakonfigurujte si WISP podle vašich představ."
+        },
+        "branding": {
+          "title": "Branding",
+          "description": "Konfigurace značky panelu."
+        },
+        "embed": {
+          "title": "Embed",
+          "description": "Konfigurace hodnot OpenGraph-u pro platformy jako Discord nebo Twitter."
+        },
+        "js_injector": {
+          "title": "JS Injector",
+          "description": "Přidání dalšího JavaScriptu do panelu."
+        },
+        "css_injector": {
+          "title": "CSS Injector",
+          "description": "Přidejte další CSS do svého panelu."
+        },
+        "whmcs": {
+          "title": "WHMCS SSO",
+          "description": "Konfigurace integrace jednotného přihlášení WHMCS."
+        }
+      },
+      "migrator": {
+        "title": "Migrátor",
+        "description": "Migrujte data ze stávající instance Pterodactylu do WISP."
+      },
+      "announcements": {
+        "title": "Oznámení",
+        "description": "Vysílání zpráv všem uživatelům."
+      },
+      "application_api": {
+        "index": {
+          "title": "API klíč aplikace",
+          "description": "Řízení přístupových údajů k (staršímu) rozhraní API."
+        },
+        "new": {
+          "title": "Nové API aplikace",
+          "description": "Vytvoření nového přístupového pověření k (staršímu) rozhraní API."
+        },
+        "manage": {
+          "title": "Správa rozhraní API aplikace",
+          "description": "Správa přístupových pověření k (staršímu) rozhraní API."
+        }
+      }
+    },
+    "management": {
+      "title": "Správa",
+      "database_hosts": {
+        "index": {
+          "title": "Hostitelé databází",
+          "description": "Hostitelé databází, na kterých mohou být vytvořeny databáze serverů."
+        },
+        "manage": {
+          "title": "Spravovat hostitele databáze",
+          "description": "Zobrazení přidružených databází a podrobností pro tohoto hostitele databáze."
+        }
+      },
+      "locations": {
+        "index": {
+          "title": "Lokace",
+          "description": "Všechny umístění, ke kterým mohou být uzly přiřazeny pro snadnější kategorizaci."
+        },
+        "manage": {
+          "title": "Spravovat lokace",
+          "description": "Zobrazení přidružených uzlů a podrobností o tomto umístění."
+        }
+      },
+      "nodes": {
+        "index": {
+          "title": "Uzly",
+          "description": "Všechny uzly, které jsou v tomto panelu k dispozici pro nasazení serverů."
+        },
+        "manage": {
+          "about": {
+            "title": "Podrobnosti",
+            "description": "Rychlý přehled vašeho uzlu."
+          },
+          "settings": {
+            "title": "Nastavení",
+            "description": "Nakonfigurujte nastavení uzlu."
+          },
+          "allocations": {
+            "title": "Alokace",
+            "description": "Řízení alokací dostupných pro servery v tomto uzlu."
+          },
+          "servers": {
+            "title": "Servery",
+            "description": "Seznam serverů nainstalovaných v tomto uzlu."
+          }
+        }
+      },
+      "servers": {
+        "index": {
+          "title": "Servery",
+          "description": "Všechny servery dostupné v systému."
+        },
+        "new": {
+          "title": "Nový server",
+          "description": "Přidání nového serveru do panelu."
+        },
+        "manage": {
+          "about": {
+            "title": "Podrobnosti",
+            "description": "Stručný přehled serveru."
+          },
+          "details": {
+            "title": "Podrobnosti",
+            "description": "Úprava podrobností o tomto serveru včetně vlastníka a kontejneru."
+          },
+          "build_configuration": {
+            "title": "Konfigurace sestavení",
+            "description": "Kontroluje alokace a systémové zdroje pro tento server."
+          },
+          "startup": {
+            "title": "Spuštění",
+            "description": "Nastavení spouštěcích parametrů a proměnných."
+          },
+          "databases": {
+            "title": "Databáze",
+            "description": "Správa databází pro tento server."
+          },
+          "advanced": {
+            "title": "Pokročilá nastavení",
+            "description": "Další akce pro ovládání tohoto serveru."
+          },
+          "go_to_server": {
+            "title": "Přejít na server"
+          }
+        }
+      },
+      "users": {
+        "index": {
+          "title": "Uživatelé",
+          "description": "Všichni registrovaní uživatelé v systému."
+        },
+        "new": {
+          "title": "Nový uživatel",
+          "description": "Vytvořit nového uživatele v systému."
+        },
+        "manage": {
+          "about": {
+            "title": "Podrobnosti",
+            "description": "Správa existujícího uživatele v systému."
+          },
+          "servers": {
+            "title": "Servery",
+            "description": "Seznam serverů vlastněných tímto uživatelem."
+          }
+        }
+      }
+    },
+    "service_management": {
+      "title": "Správa služeb",
+      "nests": {
+        "index": {
+          "title": "Hnízda",
+          "description": "Všechna hnízda, která jsou v tomto systému aktuálně k dispozici."
+        },
+        "manage": {
+          "title": "Správa hnízda",
+          "description": "Správa existujícího hnízda v systému."
+        },
+        "egg": {
+          "title": "Správa vajíček",
+          "new": {
+            "title": "Nové vejce",
+            "description": "Vytvořit nové vejce, které se přiřadí serverům."
+          },
+          "configuration": {
+            "title": "Konfigurace",
+            "description": "Konfigurace existujícího vejce v systému."
+          },
+          "variables": {
+            "title": "Proměnné",
+            "description": "Konfigurace proměnných pro toto vejce."
+          },
+          "scripts": {
+            "title": "Skripty",
+            "description": "Konfigurace instalačního/aktualizačního skriptu pro toto vejce."
+          },
+          "thumbnail": {
+            "title": "Miniatura",
+            "description": "Konfigurace miniatury obrázku pro toto vejce."
+          }
+        }
+      },
+      "mods": {
+        "index": {
+          "title": "Modifikace",
+          "description": "V systému jsou k dispozici všechny servisní modifikace."
+        },
+        "new": {
+          "title": "Nový mod",
+          "description": "Vytvoření nového módu v systému."
+        },
+        "manage": {
+          "title": "Spravovat mód",
+          "description": "Správa stávajícího servisního módu v systému."
+        }
+      },
+      "domains": {
+        "index": {
+          "title": "Domény",
+          "description": "Všechny domény dostupné v systému."
+        },
+        "new": {
+          "title": "Nová doména",
+          "description": "Vytvořte v systému novou doménu."
+        },
+        "manage": {
+          "configuration": {
+            "title": "Konfigurace domény",
+            "description": "Konfigurace domény."
+          },
+          "servers": {
+            "title": "Servery",
+            "description": "Zobrazení všech serverů přidružených k této doméně."
+          }
+        }
+      }
+    }
+  },
+  "errors": {
+    "go_back": "Zpět na předchozí stránku",
+    "go_home": "Návrat domů",
+    "404": "Požadovaný prostředek se nepodařilo najít.",
+    "429": "Momentálně jste omezený, zkuste to znovu o pár minut později."
+  }
+}

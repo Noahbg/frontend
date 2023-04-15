@@ -1,0 +1,618 @@
+{
+  "server": {
+    "support": {
+      "title": "Wsparcie PO Dostęp",
+      "description": "Uprawnienia, które są związane z umożliwieniem dostępu do tego serwera pracownikom pomocy technicznej.",
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Przełączanie opcji Support OP Access dla tego serwera w zakładce Support."
+      }
+    },
+    "control": {
+      "title": "Kontrola",
+      "description": "Uprawnienia związane ze stanem zasilania serwerów lub konsoli.",
+      "console": {
+        "title": "Konsola",
+        "description": "Umożliwia użytkownikowi przeglądanie logów konsoli dla tego serwera."
+      },
+      "command": {
+        "title": "Uruchamianie poleceń",
+        "description": "Pozwala użytkownikowi na wysyłanie poleceń do konsoli. Jeśli użytkownik nie ma uprawnień do zatrzymania lub restartu, nie może wysłać polecenia zatrzymania aplikacji."
+      },
+      "start": {
+        "title": "Start",
+        "description": "Umożliwia użytkownikowi uruchomienie tego serwera."
+      },
+      "stop": {
+        "title": "Zatrzymaj",
+        "description": "Umożliwia użytkownikowi zatrzymanie tego serwera."
+      },
+      "restart": {
+        "title": "Zrestartuj",
+        "description": "Umożliwia użytkownikowi ponowne uruchomienie tego serwera."
+      }
+    },
+    "subuser": {
+      "title": "Podużytkownik",
+      "description": "Uprawnienia, które pozwalają użytkownikom zarządzać innymi podużytkownikami przypisanymi do serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi sporządzenie listy"
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Umożliwia użytkownikowi edycję uprawnień przypisanych do innych podużytkowników."
+      },
+      "create": {
+        "title": "Utwórz",
+        "description": "Umożliwia użytkownikowi tworzenie dodatkowych podużytkowników na tym serwerze."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Umożliwia użytkownikowi usuwanie innych podużytkowników na tym serwerze."
+      }
+    },
+    "allocation": {
+      "title": "Alokacja",
+      "description": "Uprawnienia pozwalające użytkownikowi na zarządzanie wszystkimi IP:Portami przypisanymi do tego serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie wszystkich alokacji przypisanych do tego serwera. Użytkownicy z dowolnym dostępem do serwera mogą zawsze wyświetlić domyślną alokację na stronie Szczegóły."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Umożliwia użytkownikowi zmianę podstawowego przydziału."
+      }
+    },
+    "startup": {
+      "title": "Parametry uruchomienia",
+      "description": "Uprawnienia pozwalające użytkownikom na zarządzanie konfiguracją serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi wyświetlenie polecenia uruchomienia i powiązanych z nim zmiennych dla tego serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Umożliwia użytkownikowi modyfikację zmiennych startowych dla tego serwera."
+      }
+    },
+    "database": {
+      "title": "Baza danych",
+      "description": "Uprawnienia, które pozwalają użytkownikom zarządzać bazami danych MySQL na serwerze.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie wszystkich baz danych powiązanych z tym serwerem, w tym nazw użytkowników i haseł do baz danych."
+      },
+      "update": {
+        "title": "Resetowanie hasła",
+        "description": "Umożliwia zresetowanie haseł do baz danych."
+      },
+      "create": {
+        "title": "Utwórz",
+        "description": "Umożliwia użytkownikowi tworzenie dodatkowych baz danych dla tego serwera."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Umożliwia użytkownikowi usunięcie baz danych z tego serwera."
+      }
+    },
+    "file": {
+      "title": "Menedżer plików",
+      "description": "Uprawnienia, które pozwalają użytkownikom na zarządzanie plikami przechowywanymi na serwerze poprzez Menedżera plików lub Serwer SFTP.",
+      "sftp": {
+        "title": "SFTP",
+        "description": "Umożliwia użytkownikowi połączenie się z serwerem SFTP."
+      },
+      "list": {
+        "title": "Lista",
+        "description": "Umożliwia użytkownikowi wyświetlenie listy wszystkich plików"
+      },
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie zawartości istniejących plików."
+      },
+      "write": {
+        "title": "Napisz",
+        "description": "Umożliwia użytkownikowi aktualizację zawartości istniejących plików dla tego serwera."
+      },
+      "create": {
+        "title": "Utwórz",
+        "description": "Umożliwia użytkownikowi tworzenie nowych plików dla tego serwera."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Pozwala użytkownikowi na usuwanie plików z tego serwera w menedżerze plików lub SFTP."
+      },
+      "archive": {
+        "title": "Archiwum",
+        "description": "Umożliwia użytkownikowi kompresowanie plików"
+      },
+      "git": {
+        "title": "Git",
+        "description": "Pozwala użytkownikowi na używanie akcji git (np. Klonowanie, Wyciąganie)."
+      },
+      "steam_workshop": {
+        "title": "Warsztat Steam",
+        "description": "Umożliwia użytkownikowi korzystanie z narzędzia do pobierania danych z warsztatu."
+      }
+    },
+    "schedule": {
+      "title": "Harmonogram",
+      "description": "Uprawnienia pozwalające użytkownikowi na tworzenie automatycznych zadań, które cyklicznie uruchamiają się na serwerze.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi tworzenie listy harmonogramów"
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na edycję harmonogramu, w tym wszystkich zadań harmonogramu. Pozwoli to użytkownikowi na usunięcie poszczególnych zadań, ale nie usunie samego harmonogramu."
+      },
+      "create": {
+        "title": "Utwórz",
+        "description": "Umożliwia użytkownikowi utworzenie nowego harmonogramu."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Pozwala użytkownikowi na usuwanie harmonogramów z tego serwera."
+      }
+    },
+    "backup": {
+      "title": "Kopia zapasowa",
+      "description": "Uprawnienia pozwalające użytkownikowi na zarządzanie kopiami zapasowymi plików serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie wszystkich kopii zapasowych dla tego serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi zablokować/odblokować kopie zapasowe, aby zapobiec ich automatycznemu usuwaniu w celu zrobienia miejsca na przyszłe kopie zapasowe."
+      },
+      "create": {
+        "title": "Utwórz stronę",
+        "description": "Umożliwia użytkownikowi tworzenie kopii zapasowych dla tego serwera."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Umożliwia użytkownikowi usunięcie kopii zapasowej należącej do tego serwera."
+      },
+      "deploy": {
+        "title": "Wdrażanie",
+        "description": "Umożliwia użytkownikowi rozmieszczenie kopii zapasowej na tym serwerze."
+      },
+      "download": {
+        "title": "Pobierz",
+        "description": "Umożliwia użytkownikowi pobranie kopii zapasowej należącej do tego serwera."
+      }
+    },
+    "details": {
+      "title": "Szczegóły",
+      "description": "Uprawnienia pozwalające użytkownikowi na zmianę nazwy identyfikującej serwer w panelu.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie szczegółów tego serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na zmianę nazwy serwera. Pozwala to użytkownikowi na zmianę nazwy serwera tylko w panelu, nie w grze."
+      }
+    },
+    "audit": {
+      "title": "Dziennik audytu",
+      "description": "Uprawnienia pozwalające użytkownikowi na wgląd we wszystkie akcje wykonywane na tym serwerze.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie logów akcji tego serwera. Uwaga: Może to zawierać informacje, które mogą być zablokowane przez inne uprawnienia."
+      }
+    },
+    "fastdl": {
+      "title": "FastDL",
+      "description": "Uprawnienia, które pozwalają użytkownikowi na wyświetlenie linku FastDL lub synchronizację treści do FastDL dla tego serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Pozwala użytkownikowi zobaczyć stronę FastDL dla tego serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na synchronizację zawartości FastDL z tego serwera."
+      }
+    },
+    "scanner": {
+      "title": "Skaner Backdorów",
+      "description": "Uprawnienia pozwalające użytkownikowi na skanowanie plików serwera w poszukiwaniu backdoorów.",
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na używanie skanera Backdoor dla tego serwera."
+      }
+    },
+    "mod": {
+      "title": "Menedżer modyfikacji",
+      "description": "Uprawnienia, które pozwalają użytkownikowi na przeglądanie",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie dostępnych modów do zainstalowania na tym serwerze za pomocą jednego kliknięcia."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na instalowanie modów na tym serwerze za pomocą jednego kliknięcia."
+      }
+    },
+    "modpack": {
+      "title": "Menedżer paczek modów",
+      "description": "Uprawnienia umożliwiające użytkownikowi zainstalowanie paczek modów Minecraft na tym serwerze.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Pozwala użytkownikowi na wyświetlenie, które paczki modów są dostępne do instalacji na tym serwerze."
+      },
+      "update": {
+        "title": "Zainstaluj",
+        "description": "Pozwala użytkownikowi zainstalować paczkę modów na tym serwerze."
+      }
+    },
+    "plugin": {
+      "title": "Menedżer wtyczek",
+      "description": "Uprawnienia, które pozwalają użytkownikowi na instalację pluginów Minecraft na tym serwerze.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi sprawdzenie, które wtyczki są dostępne do zainstalowania na tym serwerze."
+      },
+      "update": {
+        "title": "Zainstaluj",
+        "description": "Pozwala użytkownikowi zainstalować plugin na tym serwerze."
+      }
+    },
+    "updater": {
+      "title": "Aktualizator Steam",
+      "description": "Uprawnienia pozwalające użytkownikowi na aktualizację serwerów opartych na steamcmd.",
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na korzystanie z programu Steam Updater dla tego serwera."
+      }
+    },
+    "monitor": {
+      "title": "Monitor zdrowia",
+      "description": "Uprawnienia pozwalające użytkownikowi na zarządzanie Monitorem Zdrowia dla tego serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi przeglądanie stanu monitora zdrowia serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Pozwala użytkownikowi na przełączenie statusu monitora zdrowia serwera."
+      }
+    },
+    "reinstall": {
+      "title": "Reinstalacja",
+      "description": "Uprawnienia pozwalające użytkownikowi na uruchomienie reinstalacji dla tego serwera.",
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Umożliwia użytkownikowi ponowną instalację tego serwera."
+      }
+    }
+  },
+  "admin": {
+    "license": {
+      "title": "Licencja",
+      "description": "Uprawnienia pozwalające na przeglądanie informacji o licencji instancji WISP.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Umożliwia użytkownikowi wyświetlenie informacji o licencji na stronie przeglądu."
+      }
+    },
+    "settings": {
+      "title": "Ustawienia",
+      "description": "Uprawnienia pozwalające administratorom na dostosowanie instancji WISP do własnych potrzeb.",
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Możliwość aktualizacji ustawień instancji."
+      }
+    },
+    "migrator": {
+      "title": "Migrator",
+      "description": "Uprawnienie do korzystania z systemu migratora.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienie do odczytu migratorów."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Uprawnienie do aktualizacji migratorów."
+      }
+    },
+    "announcement": {
+      "title": "Ogłoszenia",
+      "description": "Zezwolenie na korzystanie z systemu ogłoszeń.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Zezwolenie na czytanie ogłoszeń."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Zezwolenie na tworzenie ogłoszeń."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację ogłoszeń."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Zezwolenie na usuwanie ogłoszeń."
+      }
+    },
+    "application_api": {
+      "title": "Api aplikacji",
+      "description": "Uprawnienie do korzystania z systemu api aplikacji.",
+      "read": {
+        "description": "Uprawnienie do odczytu apisów aplikacji.",
+        "title": "Czytaj"
+      },
+      "create": {
+        "description": "Uprawnienie do tworzenia apisów aplikacji.",
+        "title": "Utwórz"
+      },
+      "update": {
+        "description": "Zezwolenie na aktualizację apisów aplikacji.",
+        "title": "Aktualizacja"
+      },
+      "delete": {
+        "description": "Uprawnienie do usuwania apisów aplikacji.",
+        "title": "Usuń"
+      }
+    },
+    "database_host": {
+      "title": "Host bazy danych",
+      "description": "Uprawnienie do korzystania z systemu hosta bazy danych.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienie do odczytu hostów bazy danych."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienia do tworzenia hostów bazy danych."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Uprawnienia do aktualizacji hostów bazy danych."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienia do usuwania hostów bazy danych."
+      }
+    },
+    "location": {
+      "title": "Lokalizacja",
+      "description": "Zezwolenie na korzystanie z systemu lokalizacji.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Zezwolenie na odczyt lokalizacji."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienie do tworzenia lokalizacji."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację lokalizacji."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Zezwolenie na usuwanie lokalizacji."
+      }
+    },
+    "node": {
+      "description": "Uprawnienie do korzystania z systemu węzłów.",
+      "title": "Węzeł",
+      "read": {
+        "title": "Czytaj",
+        "description": "Zezwolenie na odczyt węzłów."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację węzłów."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienie do usuwania węzłów."
+      }
+    },
+    "node_allocation": {
+      "title": "Przydział węzłów",
+      "description": "Zezwolenie na korzystanie z systemu przydziału węzłów.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienie do odczytu alokacji węzłów."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienie do tworzenia przydziałów węzłów."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację przydziałów węzłów."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienie do usuwania przydziałów węzłów."
+      }
+    },
+    "user": {
+      "title": "Użytkownik",
+      "description": "Uprawnienie do korzystania z systemu użytkownika.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienia do odczytu użytkowników."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienia do tworzenia użytkowników."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Uprawnienia do aktualizacji użytkowników."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienie do usuwania użytkowników."
+      }
+    },
+    "mod": {
+      "title": "Mod",
+      "description": "Zezwolenie na używanie systemu modów.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Pozwolenie na czytanie modów."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienia do tworzenia modów."
+      },
+      "update": {
+        "title": "Zainstaluj",
+        "description": "Zezwolenie na aktualizację modów."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Zezwolenie na usuwanie modów."
+      }
+    },
+    "nest": {
+      "title": "Nest",
+      "description": "Zezwolenie na korzystanie z systemu gniazd.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Zezwolenie na czytanie gniazd."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Zezwolenie na tworzenie gniazd."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację gniazd."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Zezwolenie na usuwanie gniazd."
+      }
+    },
+    "egg": {
+      "title": "Jajko",
+      "description": "Zezwolenie na korzystanie z systemu jaj.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Zezwolenie na czytanie jaj."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Zezwolenie na tworzenie jaj."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Zezwolenie na aktualizację jaj."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Zezwolenie na usuwanie jaj."
+      }
+    },
+    "egg_variable": {
+      "title": "Zmienna jaja",
+      "description": "Zezwolenie na używanie systemu zmiennych jaj.",
+      "read": {
+        "description": "Zezwolenie na odczyt zmiennych dotyczących jaj.",
+        "title": "Czytaj"
+      },
+      "create": {
+        "description": "Zezwolenie na odczyt zmiennych dotyczących jaj.",
+        "title": "Utwórz "
+      },
+      "update": {
+        "description": "Zezwolenie na aktualizację zmiennych dotyczących jaj.",
+        "title": "Aktualizacja"
+      },
+      "delete": {
+        "description": "Uprawnienie do usuwania zmiennych dotyczących jaj.",
+        "title": "Usuń"
+      }
+    },
+    "server": {
+      "title": "Serwer",
+      "description": "Uprawnienia do korzystania z systemu serwera.",
+      "suspend": {
+        "title": "Zawieś",
+        "description": "Uprawnienie do zawieszania serwerów."
+      },
+      "toggle_backup": {
+        "title": "Przełączanie kopii zapasowej",
+        "description": "Uprawnienie do przełączania serwerów kopii zapasowych."
+      },
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienia do odczytu serwerów."
+      },
+      "create": {
+        "description": "Uprawnienia do tworzenia serwerów.",
+        "title": "Utwórz"
+      },
+      "move": {
+        "title": "Przesuń",
+        "description": "Zezwolenie na przenoszenie serwerów."
+      },
+      "reset_mods": {
+        "title": "Reset modów",
+        "description": "Zezwolenie na resetowanie serwerów modów."
+      },
+      "details_update": {
+        "title": "Aktualizuj szczegóły",
+        "description": "Uprawnienia do szczegółów serwerów aktualizacji."
+      },
+      "toggle_move": {
+        "title": "Przełącz ruch",
+        "description": "Uprawnienie do przełączania serwerów move."
+      },
+      "toggle_update": {
+        "title": "Przełączanie aktualizacji",
+        "description": "Uprawnienie do przełączania serwerów aktualizacji."
+      },
+      "toggle_install": {
+        "title": "Przełącz instalację",
+        "description": "Uprawnienie do przełączania serwerów instalacji."
+      },
+      "build_update": {
+        "title": "Aktualizacja budowy",
+        "description": "Uprawnienie do budowania serwerów aktualizacji."
+      },
+      "rebuild": {
+        "title": "Przebudowa",
+        "description": "Uprawnienia do przebudowy serwerów."
+      },
+      "reinstall": {
+        "title": "Reinstalacja",
+        "description": "Uprawnienia do reinstalacji serwerów."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienia do usuwania serwerów."
+      }
+    },
+    "server_database": {
+      "title": "Baza danych serwera",
+      "description": "Uprawnienia do korzystania z systemu bazy danych serwera.",
+      "read": {
+        "title": "Czytaj",
+        "description": "Uprawnienia do odczytu baz danych serwera."
+      },
+      "create": {
+        "title": "Utwórz ",
+        "description": "Uprawnienia do tworzenia baz danych serwera."
+      },
+      "update": {
+        "title": "Aktualizacja",
+        "description": "Uprawnienia do aktualizacji baz danych serwera."
+      },
+      "delete": {
+        "title": "Usuń",
+        "description": "Uprawnienie do usuwania baz danych serwera."
+      }
+    }
+  }
+}

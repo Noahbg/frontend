@@ -1,0 +1,45 @@
+{
+  "weekdays": [
+    "Zondag",
+    "Maandag",
+    "Dinsdag",
+    "Woensdag",
+    "Donderdag",
+    "Vrijdag",
+    "Zaterdag"
+  ],
+  "months": [
+    "Januari",
+    "Februari",
+    "Maart",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Augustus",
+    "September",
+    "Oktober",
+    "November",
+    "December"
+  ],
+  "formats": {
+    "L": "DD/MM/YYYY",
+    "LT": "h:mm A",
+    "LLLL": "dddd, MMMM D, YYYY h:mm A"
+  },
+  "relative_time": {
+    "future": "over {time}",
+    "past": "{time} geleden",
+    "s": "een paar seconden",
+    "m": "een minuut",
+    "mm": "{time} minuten",
+    "h": "een uur",
+    "hh": "{time} uren",
+    "d": "een dag",
+    "dd": "{time} dagen",
+    "M": "een maand",
+    "MM": "{time} maanden",
+    "y": "een jaar",
+    "yy": "{time} jaren"
+  }
+}

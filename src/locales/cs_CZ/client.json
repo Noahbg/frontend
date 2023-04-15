@@ -1,0 +1,55 @@
+{
+  "account": {
+    "update_identity": "Aktualizace identity",
+    "updated_identity": "Identita byla aktualizována!",
+    "update_email": "Aktualizace e-mailové adresy",
+    "updated_email": "E-mailová adresa byla aktualizována!",
+    "update_password": "Aktualizace hesla",
+    "updated_password": "Heslo bylo aktualizováno!",
+    "quick_login": "Rychlé přihlášení",
+    "quick_login_description": "Rychlé přihlášení umožňuje rychlé přihlášení do panelu a SFTP pomocí vašeho fakturačního účtu.",
+    "enable_quick_login": "Povolení rychlého přihlášení",
+    "disable_quick_login": "Zakázat rychlé přihlášení",
+    "failed_linking_sso": "Nepodařilo se propojit externí účet. Zkuste to prosím později.",
+    "password_requirements": "Hesla musí obsahovat alespoň jeden velký, malý a číselný znak a musí mít délku alespoň 8 znaků.",
+    "invalid_confirmation_password": "Heslo zadané k vašemu účtu bylo neplatné.",
+    "invalid_totp": "Zadaný token 2FA byl neplatný.",
+    "totp_already_in_use": "Službu 2FA již máte povolenou.",
+    "navbar_position": {
+      "left": "Vlevo",
+      "top": "Horní"
+    },
+    "2fa_must_be_enabled": "Správce panelu vás požádal, abyste pro svůj účet povolili 2FA, než budete moci panel používat."
+  },
+  "security": {
+    "active_sessions": "Aktivní relace",
+    "sessions_disabled": "Váš hostitel nepovolil možnost spravovat relace účtu prostřednictvím tohoto rozhraní.",
+    "credentials_list": "Seznam pověření",
+    "2fa": "Dvoufaktorové ověřování",
+    "2fa_modal_header": "Konfigurace 2FA na vašem účtu",
+    "2fa_secret": "Tajný kód",
+    "2fa_notice": "Pomocí aplikace 2FA v telefonu vyfoťte QR kód vlevo nebo pod něj ručně zadejte kód. Jakmile tak učiníte, vygenerujte token a zadejte jej níže.",
+    "2fa_enabled": "Na tomto účtu je povoleno dvoufaktorové ověřování, které bude vyžadováno pro přihlášení do panelu. Pokud chcete 2FA vypnout, jednoduše zadejte platný token níže a odešlete formulář.",
+    "2fa_disabled": "Dvoufaktorové ověřování je na vašem účtu vypnuto! Pokud chcete na svém účtu přidat další úroveň ochrany, měli byste 2FA povolit.",
+    "enable_2fa": "Povolení dvoufaktorového ověřování",
+    "disable_2fa": "Zakázat dvoufázové ověřování",
+    "create_credentials": "Vytvoření klíče API",
+    "memo_description": "Nastavte srozumitelný popis tohoto klíče API, který vám později pomůže s jeho identifikací.",
+    "allowed_ips_description": "Pokud chcete omezit tento klíč API na konkrétní IP adresy, zadejte je výše, jednu na řádek. Pro každou IP adresu je povolen zápis CIDR. Pokud chcete povolit libovolnou IP adresu, ponechte prázdné pole.",
+    "api_key_generated": "Pro váš účet byl vygenerován nový klientský klíč API."
+  },
+  "security_keys": {
+    "title": "Bezpečnostní klíče",
+    "create_security_key": "Vytvořit bezpečnostní klíč",
+    "successfully_added": "Bezpečnostní klíč byl úspěšně přidán.",
+    "delete_key": "Odstranit bezpečnostní klíč",
+    "delete_key_notice": "Jste si jisti, že chcete odstranit bezpečnostní klíč {name}?"
+  },
+  "support": {
+    "your_servers": "Vaše servery",
+    "enable_access": "Povolit přístup k podpoře OP",
+    "disable_access": "Zakázat přístup k OP Podpora",
+    "enable_access_submit": "Pro váš server byla povolena zákaznická podpora.",
+    "disable_access_submit": "Pro váš server byla povolena zákaznická podpora."
+  }
+}

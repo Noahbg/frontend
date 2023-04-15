@@ -1,0 +1,30 @@
+{
+  "sign_in": "Iniciar Sessão",
+  "or": "ou",
+  "sso": "Login com SSO",
+  "struggling_to_login": "Está com dificuldade para logar?",
+  "reset_password": "Redefinir Senha",
+  "back": "Voltar para Iniciar Sessão",
+  "password_reset_email_sent": "Se houver uma conta associada, as instruções para redefinir a senha serão enviadas para o seu e-mail.",
+  "passwords": {
+    "throttled": "Você foi temporariamente suspenso devido a muitas tentativas de alteração de senha, por favor tente novamente mais tarde.",
+    "token": "Token inválido associado ao pedido de senha, por favor tente solicitar um novo link para redefinir a senha.",
+    "user": "Não é possível redefinir a senha para um usuário inválido.",
+    "confirmation": "A senha fornecida e a confirmação da senha não coincidem."
+  },
+  "security_keys": {
+    "insert_and_touch": "Insira sua chave de segurança e toque nela.",
+    "not_responding": "Se sua chave de segurança não estiver respondendo, ",
+    "not_responding_click_here": "clique aqui.",
+    "unknown_key": "Você usou uma chave de segurança desconhecida, tente novamente com outra chave ou use TOTP se configurado. Caso contrário, entre em contato com um administrador do painel."
+  },
+  "two_factor_token": "Token de Dois Fatores",
+  "use_different_method": "Utilize um método diferente",
+  "invalid_user": "As credenciais fornecidas não coincidem com as que temos no registro. Se você não tiver certeza de que sua senha está correta, tente redefini-la.",
+  "invalid_mfa_session": "A sessão anterior expirou, por favor tente novamente.",
+  "sso_down": "Não foi possível contactar os servidores para verificar a conta, por favor tente novamente mais tarde.",
+  "sso_failed": "Algo correu mal ao tentar verificar a conta, por favor tente novamente mais tarde.",
+  "sso_invalid": "A sessão anterior expirou, por favor tente novamente.",
+  "sso_non_existing_account": "Não conseguimos encontrar uma conta associada no painel. Por favor, use o login normal e habilite o login rápido a partir das configurações da conta.",
+  "sso_disabled_for_account": "Esta conta tem o login rápido desativado. Por favor, use o login normal em seu lugar."
+}

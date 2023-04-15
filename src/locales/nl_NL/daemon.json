@@ -1,0 +1,69 @@
+{
+  "generic": {
+    "rebuild_required": "{yellow}Uw server container moet herbouwd worden. Dit zou slechts een paar seconden moeten duren, maar kan ook een paar minuten duren. U hoeft niets anders te doen terwijl dit gebeurt. Uw server zal automatisch verder gaan met opstarten zodra dit proces is voltooid.",
+    "rebuild_started": "{yellow}Heropbouw server container...",
+    "rebuild_in_progress": "{yellow}Wacht alstublieft terwijl uw server herbouwd wordt.",
+    "rebuild_updating_config": "{yellow}Nieuwe container gebouwd, draaiende hamsters...",
+    "rebuild_complete": "{cyan}Herbouwproces voor server voltooid. Server is nu aan het opstarten.",
+    "logs_throttled": "{yellow}Uw server verstuurt te veel data te snel! Automatische spamdetectie geactiveerd.",
+    "checking_size": "{cyan}Controle van de grootte van de server data directory...",
+    "disk_usage": "{yellow}Schijfgebruik: {current}M / {limit}M",
+    "ensuring_permissions": "{yellow}Bestandspermissies verzekeren.",
+    "initializing_container": "{yellow}Container wordt geïnitialiseerd...",
+    "running_preflight": "{yellow}Bezig met server preflight.",
+    "starting_container": "{green}Start server container.",
+    "resource_limits_modified": "{warning}Uw server heeft enkele resource limieten gewijzigd, het kan zijn dat u moet herstarten om ze toe te passen.",
+    "aborting_reboot": "{red}Automatisch herstarten afgebroken wegens crash binnen de laatste 60 seconden.",
+    "crash_detected_rebooting": "{red}Serverproces gedetecteerd als zijnde in een gecrashte toestand; herstart.",
+    "crash_detected": "{bgRed}---------- Serverproces in gecrashte toestand gedetecteerd! ----------",
+    "exit_code": "{red}Afsluitcode: {white}{exitCode}",
+    "out_of_memory": "{red}Geen geheugen meer: {white}{oomKilled}",
+    "error_response": "{red}Fout reactie: {white}{error}",
+    "state_changed": {
+      "on": "{cyan}Server gemarkeerd als {bold}AAN",
+      "off": "{cyan}Server gemarkeerd als {bold}UIT",
+      "killed": "{cyan}Server gemarkeerd als {bold}KILLED",
+      "starting": "{cyan}Server gemarkeerd als {bold}STARTEN",
+      "stopping": "{cyan}Server gemarkeerd als {bold}STOPPING"
+    }
+  },
+  "health": {
+    "detected_map_change": "{yellow}Lopende kaartverandering gedetecteerd, gezondheidsmonitor gepauzeerd...",
+    "map_change_timeout": "{yellow}Map verandering duurt meer dan 3 minuten, ervan uitgaande dat Health Monitor kan worden hervat...",
+    "map_change_finished": "{yellow}Map verandering voltooid, gezondheidsmonitor hervat..."
+  },
+  "errors": {
+    "unable_to_read_log_file": "Er is een fout opgetreden bij het proberen te lezen van het logbestand!",
+    "preflight_file_parse": "Er is een fout opgetreden tijdens het verwerken van {file} -- dit kan leiden tot problemen met het draaien van de server.\n{message}",
+    "no_egg_configuration": "Er kon geen server-ei-configuratie worden gevonden; het opstarten wordt afgebroken.",
+    "no_stop_configuration": "Voor dit ei is geen stopconfiguratie gedefinieerd.",
+    "fatal_start_error": "Er is een fatale fout opgetreden bij het opstarten van deze server.",
+    "not_enough_disk_space": "Niet genoeg schijfruimte! {current}M / {limit}M",
+    "disk_space_violation": "Server overschrijdt limieten voor schijfruimte, proces wordt gestopt! {current}M / {limit}M",
+    "socket": {
+      "trouble_connecting": "We hebben problemen om verbinding te maken met uw server, wacht alstublieft...",
+      "couldnt_validate_permissions": "Er is een fout opgetreden bij het valideren van de inloggegevens voor de websocket. Vernieuw de pagina.",
+      "no_permission": "U heeft geen toestemming voor toegang tot de websocket voor deze server.",
+      "no_upload_permission": "U heeft geen toestemming voor toegang tot de upload websocket voor deze server.",
+      "invalid_namespace": "De websocket van de server is niet gevonden op de daemon, vernieuw de pagina a.u.b."
+    },
+    "steam_workshop": {
+      "no_access_to_this_feature": "U hebt geen toegang tot deze functie.",
+      "not_enough_disk_space": "Niet genoeg schijfruimte! {current}M / {total} M",
+      "invalid_id": "Een ongeldig workshop item ontvangen.",
+      "internal_server_error": "Er is iets misgegaan bij het ophalen van het werkplaatsvoorwerp, probeer het later nog eens.",
+      "invalid_http_code": "HTTP code {code} ontvangen bij het proberen op te halen van het workshop item.",
+      "no_results": "Kon geen resultaten vinden voor het werkplaats item.",
+      "invalid_json": "Ongeldige JSON ontvangen bij het ophalen van het workshop item.",
+      "failed_getting_collection": "Kan de collectie-items van het opgegeven werkplaats-item niet ophalen.",
+      "unable_to_resolve_file_size": "Kan de bestandsgrootte voor het werkplaatsitem niet oplossen.",
+      "exceeds_download_size_limit": "Het item overschrijdt de max downloadbare inhoudsgrootte van {max_content_size} (item grootte is {item_size})",
+      "unable_to_resolve_file_name": "Kan de bestandsnaam voor het werkplaatsitem niet oplossen.",
+      "failed_to_download_workshop_item": "Het downloaden van het werkplaatsitem is mislukt {title}.",
+      "failed_to_connect_to_steam": "Mislukte verbinding met steam servers om de download URL te kunnen ophalen voor {title}",
+      "item_does_not_exist": "Het item {title} lijkt niet te bestaan.",
+      "failed_getting_additional_information": "Het lukt niet om extra informatie te krijgen voor {title} (bezit de steam gebruiker dit spel?)",
+      "item_already_exists": "Het item {title} bestaat al."
+    }
+  }
+}
