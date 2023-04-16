@@ -414,6 +414,16 @@ export const routes: RouteRecordRaw[] = [
                             permission: 'fastdl.read',
                             feature: 'fastdl',
                         }
+                    },
+                    {
+                        name: 'server.tools.wipe',
+                        path: 'wipe',
+                        component: () => import('~/views/server/wipe/Index.vue'),
+                        meta: {
+                            icon: 'trash',
+                            permission: 'file.delete',
+                            feature: 'wipe',
+                        }
                     }
                 ],
             },

@@ -80,7 +80,7 @@ export class Server extends BaseModel {
     }
 
     public get joinURL() {
-        if (this.nest?.shortName === 'srcds') {
+        if (this.nest?.shortName === 'srcds' || this.nest?.shortName === 'rust') {
             return `steam://connect/${this.primaryAllocation().displayName()}`;
         }
     }
