@@ -7,6 +7,7 @@ export { default as BackupsService } from './backups';
 export { default as DatabaseHostsService } from './databaseHosts';
 export { default as DatabasesService } from './databases';
 export { default as FastdlService } from './fastdl';
+export { default as WipeService } from './wipe';
 export { default as FilesService } from './files';
 export { default as ModpacksService } from './modpacks';
 export { default as ModsService } from './mods';
