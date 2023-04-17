@@ -1,5 +1,11 @@
 <template>
-    <container title="server.databases.title" :description="['server.databases.using_databases', { count: databaseCount, limit: databaseLimit === null ? '∞' : databaseLimit }]" no-padding>
+    <div class="mb-4" :hidden="!euNode">
+        <alert type="info" icon="info-circle"
+            title="When connecting from the game server, use the IP 172.0.0.2 rather than the public IP" />
+    </div>
+    <container title="server.databases.title"
+        :description="['server.databases.using_databases', { count: databaseCount, limit: databaseLimit === null ? '∞' : databaseLimit }]"
+        no-padding>
         <template #actions>
             <div class="text-right">
                 <create-database-modal />
@@ -10,11 +16,11 @@
             <template #headers-after>
                 <th />
             </template>
-            
+
             <template #no-items-extra>
-              <div class="pt-2">
-                <create-database-modal />
-              </div>
+                <div class="pt-2">
+                    <create-database-modal />
+                </div>
             </template>
 
             <template #field-connection="{ result }">
@@ -25,7 +31,8 @@
                 <td class="p-6 text-right">
                     <div class="flex justify-end space-x-4">
                         <skeleton :content="12">
-                            <form v-if="result.host.phpmyadminUrl" :action="result.host.phpmyadminUrl" method="post" target="_blank">
+                            <form v-if="result.host.phpmyadminUrl" :action="result.host.phpmyadminUrl" method="post"
+                                target="_blank">
                                 <input type="hidden" id="pma_username" name="pma_username" :value="result.username">
                                 <input type="hidden" id="pma_password" name="pma_password" :value="result.password">
 
@@ -36,7 +43,8 @@
                         </skeleton>
 
                         <skeleton :content="8">
-                            <v-button color="warning" permission="database.update" class="py-3 px-6" @click="rotatePassword(result.id)" spinner>
+                            <v-button color="warning" permission="database.update" class="py-3 px-6"
+                                @click="rotatePassword(result.id)" spinner>
                                 <t path="generic.reset_password" />
                             </v-button>
                         </skeleton>
@@ -68,6 +76,7 @@ export default defineComponent({
 
             databaseLimit: computed(() => state.models.server?.featureLimits.databases || 0),
             databaseCount,
+            euNode: computed(() => state.models.server?.primaryAllocation().ip.startsWith("194.69.160") || false),
 
             rotatePassword: (id: number) => useService('databases@rotatePassword', true, {
                 id
