@@ -12,12 +12,18 @@ interface UserPreferences {
     language: string;
 }
 
+interface UserDiscord {
+    id: string;
+    username: string;
+}
+
 export class User extends BaseModel {
     public email = '';
     public nameFirst = '';
     public nameLast = '';
     public has2fa = false;
     public preferences: UserPreferences | undefined;
+    public discord: UserDiscord | undefined;
 
     public get fullName(): string {
         return `${this.nameFirst} ${this.nameLast}`;
