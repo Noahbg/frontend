@@ -11,18 +11,11 @@
                     </div>
 
                     <div class="grid xl:grid-cols-2 gap-x-6">
-                        <v-select class="flex-grow" name="preferences.language" prefix="generic.languages" rule="required" :value="currentLanguage" :options="languages" />
-                        <v-select
-                            class="flex-grow"
-                            name="preferences.navbar_position"
-                            prefix="client.account.navbar_position"
-                            label-prop="name"
-                            value-prop="id"
-                            rule="required"
-
-                            :value="navbarPosition"
-                            :options="[{id:0,name:'left'},{id:1,name:'top'}]"
-                        />
+                        <v-select class="flex-grow" name="preferences.language" prefix="generic.languages" rule="required"
+                            :value="currentLanguage" :options="languages" />
+                        <v-select class="flex-grow" name="preferences.navbar_position"
+                            prefix="client.account.navbar_position" label-prop="name" value-prop="id" rule="required"
+                            :value="navbarPosition" :options="[{ id: 0, name: 'left' }, { id: 1, name: 'top' }]" />
                     </div>
 
                     <div class="text-right">
@@ -34,13 +27,34 @@
                 <v-form service-id="account@update" on-success="client.account.updated_email">
                     <v-input type="hidden" name="action" value="email" />
 
-                    <v-input label="components.form.fields.new_email" name="email" :value="user?.email" rule="required|email" />
+                    <v-input label="components.form.fields.new_email" name="email" :value="user?.email"
+                        rule="required|email" />
                     <v-input type="password" name="current_password" rule="required" />
 
                     <div class="text-right">
                         <v-submit color="primary" label="client.account.update_email" />
                     </div>
                 </v-form>
+            </container>
+            <container title="client.account.discord_login" class="sm:pb-4">
+                <div class="mb-4">
+                    <t path="client.account.discord_login_description" />
+                </div>
+
+                <div v-if="user?.discord?.id !== null" class="mb-4">
+                    <h3 class="text-sm font-semibold">
+                        Discord ID <span class="text-gray-500">#{{ user?.discord?.id }}</span>
+                        <br />
+                        Discord Username <span class="text-gray-500">#{{ user?.discord?.username }}</span>
+                    </h3>
+                </div>
+
+                <div class="text-right">
+                    <v-button :color="(user?.discord?.id === null) ? 'primary' : 'danger'" @click="discord">
+                        <t
+                            :path="(user?.discord?.id === null) ? 'client.account.discord_login_enable' : 'client.account.discord_login_disable'" />
+                    </v-button>
+                </div>
             </container>
         </div>
 
@@ -50,7 +64,8 @@
                     <v-input type="hidden" name="action" value="password" />
 
                     <v-input type="password" name="current_password" rule="required" />
-                    <v-input type="password" name="new_password" footer="client.account.password_requirements" rule="required" />
+                    <v-input type="password" name="new_password" footer="client.account.password_requirements"
+                        rule="required" />
 
                     <v-input type="password" name="new_password_confirmation" rule="required" />
                     <v-switch name="invalidate_sessions" footer="client.account.invalidate_sessions_footer" />
@@ -67,10 +82,12 @@
 
                 <div class="text-right">
                     <v-button color="primary" @click="sso">
-                        <t :path="user?.ssoEnabled ? 'client.account.disable_quick_login' : 'client.account.enable_quick_login'" />
+                        <t
+                            :path="user?.ssoEnabled ? 'client.account.disable_quick_login' : 'client.account.enable_quick_login'" />
                     </v-button>
                 </div>
             </container>
+
         </div>
     </div>
 </template>
@@ -89,17 +106,37 @@ export default defineComponent({
         const [ssoCode, ssoState] = [query.get('code'), query.get('state')];
         if (ssoCode && ssoState) {
             history.replaceState({}, document.title, `${window.location.origin}/account`);
+            if (query.get('discord') === '1') {
+                useService<{ id: string, username: string }>('account@update', true, {
+                    action: 'discord',
+                    sso_code: ssoCode,
+                    sso_state: ssoState,
+                })
+                    .then(({ id, username }) => {
+                        state.user.data?.update({
+                            discord: {
+                                id,
+                                username,
+                            },
+                        })
+                        dispatch('alerts/add', {
+                            type: 'success',
+                            title: ['client.account.discord_login_linked'],
+                        });
+                    });
+            } else {
 
-            // TODO: loader for action
-            useService('account@update', true, {
-                action: 'sso',
-                sso_redirect: redirectURL,
-                sso_code: ssoCode,
-                sso_state: ssoState,
-            })
-                .then(() => dispatch('user/update', {
-                    ssoEnabled: true,
-                }));
+                // TODO: loader for action
+                useService('account@update', true, {
+                    action: 'sso',
+                    sso_redirect: redirectURL,
+                    sso_code: ssoCode,
+                    sso_state: ssoState,
+                })
+                    .then(() => dispatch('user/update', {
+                        ssoEnabled: true,
+                    }));
+            }
         }
 
         return {
@@ -120,6 +157,24 @@ export default defineComponent({
                     else dispatch('user/update', {
                         ssoEnabled: !state.user.data?.ssoEnabled,
                     });
+                }),
+            discord: () => useService<{ url: string }>('account@update', true, {
+                action: 'discord',
+            })
+                .then(({ url }) => {
+                    if (url) window.location.href = url;
+                    else {
+                        state.user.data?.update({
+                            discord: {
+                                id: null,
+                                username: null,
+                            },
+                        });
+                        dispatch('alerts/add', {
+                            type: 'success',
+                            title: ['client.account.discord_login_unlinked'],
+                        });
+                    }
                 }),
         };
     },
