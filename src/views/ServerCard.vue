@@ -75,7 +75,7 @@
                 <p v-tippy="'generic.server.players'" class="block md:flex 2xl:block flex-col items-center text-white text-sm xl:text-normal tracking-tight">
                     <skeleton :content="8">
                         <fa class="text-white/50 mr-1 inline md:block 2xl:inline" :icon="['fas', 'user']" size="sm" fixed-width />
-                        {{ stats.query?.players?.length ?? '--' }} / {{ stats.query?.maxplayers ?? '--' }}
+                        {{ stats.query?.players ?? '--' }} / {{ stats.query?.maxplayers ?? '--' }}
                     </skeleton>
                 </p>
             </div>
