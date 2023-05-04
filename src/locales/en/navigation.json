@@ -154,6 +154,10 @@
                 "title": "Backdoor Scanner",
                 "description": "Find possibly exploitable code in your installed addons."
             },
+            "loading_screen": {
+                "title": "Loading Screen",
+                "description": "Customize your server's loading screen."
+            },
             "fastdl": {
                 "title": "FastDL",
                 "description": "Automatic FastDL Manager for your server."

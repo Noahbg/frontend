@@ -406,6 +406,15 @@ export const routes: RouteRecordRaw[] = [
                         },
                     },
                     {
+                        name: 'server.tools.loading_screen',
+                        path: 'loading-screen',
+                        component: () => import('~/views/server/loading-screen/Index.vue'),
+                        meta: {
+                            icon: 'sync',
+                            feature: 'loading-screen',
+                        },
+                    },
+                    {
                         name: 'server.tools.fastdl',
                         path: 'fastdl',
                         component: () => import('~/views/server/fastdl/Index.vue'),
