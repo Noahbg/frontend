@@ -1,4 +1,4 @@
-# Phsygun Panel Frontend
+# Physgun Panel Frontend
 
 This is the frontend used by the Physgun Game Panel
 
