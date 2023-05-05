@@ -5,7 +5,7 @@
             <div class="text-accent-500 terminal-prompt">
                 $
             </div>
-            <v-input class="flex-grow" name="" permission="control.command" placeholder="server.console.type_a_command"
+            <v-input class="flex-grow" name="console" permission="control.command" placeholder="server.console.type_a_command"
                 v-model:value="textInput" @keydown="inputKeyDown" no-margin hide-label />
             <div class="flex flex-row items-center justify-center pr-2">
                 <upload-logs-button />
