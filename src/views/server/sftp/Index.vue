@@ -10,7 +10,7 @@
                     <div class="flex">
                         <input class="input flex-grow mr-3" id="address" v-clipboard="address" :value="address" readonly>
 
-                        <v-button color="info" :href="address">
+                        <v-button color="info" :href="sftpLink">
                             <t path="generic.server.launch_sftp" />
                         </v-button>
                     </div>
@@ -53,6 +53,13 @@ export default defineComponent({
                 const server = state.models.server;
 
                 return server ? `${user?.email}.${server.uuidShort}` : undefined;
+            }),
+            sftpLink: computed(() => {
+                const server = state.models.server;
+                const user = state.user.data;
+                const username = user ? `${user.email}.${server?.uuidShort}` : undefined;
+
+                return server ? `sftp://${username}@${server.node.displayFqdn}:${server.node.ports.sftp}` : undefined;
             }),
         };
     },
